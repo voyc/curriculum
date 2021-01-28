@@ -1,0 +1,3 @@
+# Curriculum
+
+The Curriculum wiki.
