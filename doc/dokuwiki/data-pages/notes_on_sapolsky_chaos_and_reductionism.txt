@@ -1,0 +1,122 @@
+====== Notes on Sapolsky 21. Chaos and Reductionism ======
+
+https://youtu.be/_njf8jwEGRo
+
+[[Notes on Sapolsky Human Behavioral Biology|Back to top]]
+
+James Gleick: Chaos: Making a New Science
+
+Different ways of thinking
+
+Mention //Where the Wild Things Are//, 1963 children's picture book.
+
+Homework: cellular automata.
+
+400 AD, Rome falls, dark ages.  Words: audit, oral argument, hearing. Illiteracy. No words progress, ambition. Intellectual isolation. Social isolation. Small villages with unique non mutually intelligible dialects. Average person never went 12 miles away from birthplace. No information about causality.
+
+1085 AD, Toledo (Al hambra) Spain, Muslim city conquered by Christians. Had a library. More books than in all Europe. 
+
+Transitive thought. a > b && b > c therefore a > c. Syllogism. 
+
+Thomas Aquinas, god cannot: \\
+1 sin\\
+2 make a copy of himself\\
+3 make a triangle with more than 180°
+
+Modes of thought:
+
+If it's broke you can fix it.
+
+You can reconstruct an event by looking at overlapping parts. Solving a crime for example.
+
+Reductionism. Break a complex system down to its component parts. if you understand the parts you can understand the whole.
+
+Linearity. Additivity. Add the parts together and the complexity increases linearly.
+
+if you know the starting State You can predict the ending state and vice versa.
+
+Extrapolate.
+
+X + y = z
+X + 1 + y = z + 1
+
+Blueprint.
+
+Variability = Noise. Instrument error. Get rid of it. More reduction. As you look closer, the variability lessens.
+
+Body, organs, cells, molecules.
+
+20:02 reductionism has to fail when you are looking at biological systems.
+
+Hubel and Wiesel & the Neural Basis of Visual Perception. 50s and 60s
+
+How the visual cortex works.\\
+Retina to first layer.\\
+1st layer: dots.\\
+2nd layer: lines\\
+3rd layer: curves\\
+4th layer: 3D\\
+...\\
+Top layer: facial recognition (your grandmother's face). Grandmother neurons. Assumed but they don't exist. This point for point reductionism was replaced by the theory of...
+
+Neural networks. Patterns.
+
+Example.
+Bifurcation pattern. Nile Delta looks like dendrites on a neuron. Scale-free.
+
+Chance plays a role in systems. The way mitochondria are distributed in cell division.
+
+Experiment with 10 fish. Put them together in pairs and calculate the dominance hierarchy. then put all 10 together and note the actual dominance hierarchy of the group. The dyadic pairing method is way off. It has zero predictability.
+
+Summary. Reductionism does not work in biological systems, because 1 not enough genes, 2 no way to account for chance.
+
+==Chaos==
+43:44
+
+Non-linear non-additive systems.
+
+You know all the parts, but since they are non-additive you have no predictive capability of what the whole will look like.
+
+Three classifications:
+
+Deterministic Periodic. Aka, linear. The sequence of numbers 1 2 3 4 5 is periodic. You can predict the value at the 15th step.
+
+Deterministic Aperiodic. Non-linear. A sequence of numbers has rules defining each step, but there is not a constant period. So you cannot predict the value at the 15th step. Instead you have to calculate each step individually.
+
+Non-deterministic. Includes randomness. No rules. cannot predict.
+
+In Chaos Theory we are interested in deterministic nonlinear systems.
+
+Non-linear aperiodicity => chaotic systems.
+
+51:22 the water wheel example. Starts periodic. As you increase the input pressure, eventually it becomes Aperiodic; the pattern never repeats.
+
+Boiling water.
+
+Constant single period, doubled period, triple period (3 parts to the cycle), chaos. Three parts means chaos is eminent.
+
+1:00:52 All systems are chaos. Scientists ignore the chaos parts as noise, and analyze only the deterministic parts.
+
+Attractor. Spiral graph. At the center is the point of stability, of complete predictability. When you mess with the system you get data points in the shape of a spiral, gradually returning to the stable point.
+
+Strange attractor. Butterfly wing graph. Constantly oscillating, never reaching a stable point.
+
+Butterfly effect. A butterfly in Paris flapping his wings changes the weather in Indiana. Degree of precision. A difference at a very fine degree of precision can produce a significant change at a gross degree of precision. 
+
+It doesn't matter how closely you look, how good your reductive tools are, the variability is still there. The system is scale-free.
+
+1:16:12 fractal. scale-free.
+
+An infinitely long line in a finite space.
+
+A system of fractional dimensions. Neither one dimension nor two dimensions, but somewhere in between.
+
+Circulatory system, pulmonary system, dendritic system, a river, a tree. All are fractal.
+
+Fractal genes. Define a system independent of scale.
+
+Robert and a grad student did a big study. Calculated the coefficient of variability in the data of all scientific papers. Compared those at different scales: society, individual, organ, cell, molecule. The coefficient of variability does NOT decrease at finer scales.
+
+So what is reduction good for? Those times when an average is good enough.
+
+It's not because they are failing to be what they are supposed to be and match the norm.

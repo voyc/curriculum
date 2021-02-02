@@ -36,12 +36,11 @@ Sex and aggression [[Notes on Sapolsky Sex|Notes]]\\
 19. Aggression III\\
 20. Aggression IV\\
 
-Etc [[Notes on Sapolsky Etc|Notes]]\\
-21. Chaos and Reductionism\\
-22. Emergence and Complexity\\
-23. Language\\
-24. Schizophrenia\\
-25. Individual Differences\\
+21. [[Notes on Sapolsky Chaos and Reductionism|Chaos and Reductionism]]\\
+22. [[Notes on Sapolsky Emergence and Complexity| Emergence and Complexity]]\\
+23. [[Notes on Sapolsky Language|Language]]\\
+24. [[Notes on Sapolsky Schizophrenia|Schizophrenia]]\\
+25. [[Notes on Sapolsky Individual Differences|Individual Differences]]\\
 
 ==== 1. Introduction to Human Behavioral Biology ====
 

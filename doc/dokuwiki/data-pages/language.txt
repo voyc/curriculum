@@ -43,3 +43,5 @@ Talking to oneself.  One form of cognition.
 ===== Resources =====
 
 Noam Chomsky: //Syntactic Structures//, 1952
+
+Robert Sapolsky: Human Behavioral Biology, chapter 23. Language, 2010, Stanford, [[https://youtu.be/SIOQgY1tqrU|Youtube]], [[Notes on Sapolsky Language|Notes]]

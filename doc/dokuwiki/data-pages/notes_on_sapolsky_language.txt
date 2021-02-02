@@ -1,0 +1,131 @@
+====== Notes on Sapolsky 23. Language ======
+
+https://youtu.be/SIOQgY1tqrU
+
+[[Notes on Sapolsky Human Behavioral Biology|Back to top]]
+
+Universal elements of all languages.
+
+Nim Chimpsky
+
+Skinner at Harvard, Behaviorists: reward for making a sound
+
+Chomsky at MIT: 
+the nature of language acquisition
+somewhere during the child's development, he will say a sentence that he has never heard or said before
+generative
+kids generate language constructions they have never heard before
+
+an innate structure of language
+kids can generalize the rules of language to generate sentences they've never heard
+even when there instruction is less than perfect
+
+the poverty of stimulus argument
+there is an explosion of development in the child where is learning 10 words per day
+by college, a child has a vocabulary of 60,000 words
+
+statistical patterns
+word pairs
+one word always followed by another
+play tapes for child, suddenly throw in the word with another word following, the child's heart rate increases
+This proves the child can learn statistical patterns in language.
+
+Any kid can learn any language.
+
+As a child acquires his own language, he loses the ability to detect subtle phoenemic differences in sounds of different languages.  Brain imaging shows Wernicke's is not distinguishing between two sounds.
+
+Language acquisition in children:
+  * By three months, kids are paying attention to proper language, as opposed to nonsense.
+  * 3 to 6 months, paying attention to vowel sounds
+  * 8 to 9 months, babbling, along with stronger facial expressions on the right side of the face.
+  * 11 months, focused on his own language, losing the ability to distinguish subtle sound differences in other languages
+  * 11 months, generating sentences
+
+Directed teaching of language in schools.\\
+Unique.  Only in the last 1000 years in western cultures.\\
+Not clear whether it helps.
+
+Second language:
+If you learn it after age 12, you will never be able to speak it without an accent.
+If you learn it before six, both languages are handled by overlapping areas in Broca and Wernicke.  After six, the second language will be handled by a peripheral area of Broca and Wernicke.
+
+Inventing a new language.  By children.  New languages transfer laterally and downward, but not upward to older people.
+
+Example: Nicaraguan Sign Language.  After the revolution, the first attempts to build schools for deaf children, adults where trying to decide which system to teach  (American, British, whatever) meanwhile the kids developed their own language, which is now official.
+Fully-formed grammar after three generations.
+
+Language is invented, shaped, modified by the young.  People older than them don't pick up on it.
+
+58:45
+
+Pre-natal, 12 to 16 weeks.  Thickening of Broca's and Wernickes on the left side of the brain.  Different patterns of [[Genetics#gene expression]] on the left vs the right.
+
+Kids tend to myelinate the Wernicke's Area before the Broca's Area.  Kids are starting comprehension of language before producing it.  Wernicke's at 9 months.  Broca's a few months after that.
+
+1:00:45
+
+Social, environmental aspects.    
+
+Peer influences are very important in language acquisition.  Kids grow up with the accent of the community around them, rather than that of their parents.  Judith Rich Harris, psychologist.
+
+Values.  Kids embarrassed by their parents' accents.  
+
+Example French Revolution.  After the revolution, everyone should use the familiar.
+
+Example of Tolstoy as a young boy.  After the revolution, his nurse referred to him in the familiar, and he threw a fit.
+
+1:04:10
+
+kinship terms, intertwined relationships
+
+1:05:06
+
+ego-centric languages like English, directions expressed with respect to my body
+
+non-egocentric languages, like Australian aboriginal, directions expressed in terms of external languages 
+
+egocentric: stories go left to right, relative to my body position at the moment
+
+nonegocentric: stories go east to west, the direction of the sun, regardless of my body position.  
+"non-egocentric directionality"
+
+1:07:05
+
+Sapir-Whorf Hypothesis: language constrains thought, debated endlessly
+
+communication, language, is woven into the fabric of thought, that it is one and the same
+
+examples: two cultures in the Amazon, one has only three numbers 1, 2, and bigger.  The second has only six numbers: 1,2,3,4,5,bigger.  People in these cultures have difficulty distinguishing among the larger numbers.  Number is not important in these cultures.
+
+Debage
+  * how much does language shape the way you think?
+  * How much does thinking shap the language you come up with?
+
+No matter how similar the language, when talking to someone else, it is going to mean something slightly different to you.
+
+ethology soundbite: "Interview an animal in its own language."
+
+Flipside: if you could interview a lion in its own language, you wouldn't have a clue what it was talking about.
+
+Multi-lingual people say: different emotional styles, expressivity, analytical among languages.
+
+1:12:35
+
+Animal communication.
+
+Vervet Monkeys.  One sound to indicate something dangerous on the ground.  Another sound to indicate danger up above.  Both sounds have same emotional content.  Different semantic content.  (That's a word.)
+
+Chickens do the same.
+
+Multi-modal pathways of communication.  Facial gestures coordinated with vocalizations.
+
+Experimental demonstration.  Rhesus monkeys.  Video facial gesture plus vocalizations.  Mix them up and show them to another monkey.  The test monkey shows elevated heart rate, indicating he knows something is off.
+
+Intentionality of communication.  As opposed to automatic stimulus-response reaction.
+ 
+Vervet monkeys will give alarm calls when relatives are around than when non-relatives are around.
+
+Squirrels do the same.  Less likely to give an alarm call to a competitive aggressive neighbor squirrel.
+
+Proto building block steps of theory of mind.
+
