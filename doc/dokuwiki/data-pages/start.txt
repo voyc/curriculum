@@ -1,8 +1,13 @@
 ====== Curriculum ======
+
   * [[Preface]]
+
   * Part 1. [[Energy and Matter]]
+
   * Part 2. [[Life]]
+
   * Part 3. [[Humanity]]
+
   * Part 4. [[Tools]]
-  * [[notes miscellaneous]]
+
   * [[Appendix]]

@@ -1,0 +1,27 @@
+
+https://en.wikipedia.org/wiki/History_of_computing_hardware
+
+
+Charles Babbage, Lucasian Professor of Mathematics at Cambridge from 1828 to 1839, planned such a machine, called the Analytical Engine, but it was never completed.  Entirely mechanical.
+
+Manchester Machine, 
+
+Alan Turing, 
+discrete state machine
+
+IBM 360 Mainframe
+
+Apple II
+
+IBM PC
+
+From Alan Turing, 1950: Computing Machinery and Thinking
+
+The original question,  ‘Can machines think!’ I believe to be too  meaningless  to  deserve  discussion.  Nevertheless  I  believe  that  at  the end of the century the use of words and general educated opinion will have altered so much that one will be able to speak of machines thinking without expecting  to  be  contradicted. 
+
+discrete-state machines
+
+I  assume  that  the reader  is  familiar  with  the  idea  of  extra-sensory  perception,  and  the meaning of the four items of it, telepathy, clairvoyance, precognition and  psycho-kinesis.  These  disturbing  phenomena  seem  to  deny  all  our usual scientific ideas. How we should like to discredit them! Unfortunately the statistical evidence, at least for telepathy, is overwhelming.
+
+In the process of trying to imitate an adult human mind we are bound to think a good deal about the process which has brought it to the state that it is in. We may notice three components, //(a)// The initial state of the mind, say at birth, //(b)// The education to which it has been subjected, //(c)// Other experience, not to be described as education, to which it has been subjected. Instead of trying to produce a programme to simulate the adult mind, why not rather try to produce one which simulates the child’s? If this were then subjected to an appropriate course of education one would obtain the adult  brain.
+

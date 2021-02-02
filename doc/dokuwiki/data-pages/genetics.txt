@@ -9,6 +9,16 @@ DNA
 RNA
 
 
+==== gene expression ==== 
+
+== transcription ==
+- DNA in a gene is copied to produce an RNA transcript called messenger RNA (mRNA).  This is carred out by an enzyme called RNA polymerase which uses available bases from the nucleus of the cell to form the mRNA.
+
+== translation == 
+
+See more at 
+https://www.yourgenome.org/facts/what-is-gene-expression#:~:text=Gene%20expression%20is%20the%20process,it%20is%20called%20gene%20expression%3F.
+
 
 
 ===== Gene Transfer =====

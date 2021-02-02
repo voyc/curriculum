@@ -8,6 +8,40 @@ Computer languages are orderly and elegant.  One command has one meaning.  Each 
 
 Human languages are comparatively messy.  Many words have multiple meanings.  The meanings change from time to time.  New words are invented constantly.  Words can be arranged into sentences in a variety of ways.  There are rules, but they are constantly changing.
 
+
+Two halves:
+
+  * input: Natural Language Understanding (NLU) - aka information extraction
+  * output: Natural Language Generation (NLG)
+
+Scale:
+  * large-scale: Computation Linguistics
+  * small-scale: Conversational NLP
+
+Applications:
+
+
+===== Computational Linguistics =====
+
+Applications:
+  * speech recognition
+  * email filters: spam, social, promotional, etc.
+  * search results
+  * question answering
+  * predictive text: autocorrect, autocomplete, etc.
+  * language translation
+  * sentiment analysis
+  * intent classification
+  * urgency detection
+  * assistants: chatbots, Siri, Alexa
+
+Corpora
+
+Techniques
+  * data cleaning, prep
+  * pattern recognition
+
+
 ===== Conversational NLP =====
 
 If a human wants to use a computer, he has to learn the computer's language.
@@ -48,7 +82,7 @@ Sentiment
 
 Rasa
 
-=== Terms ===
+==== Terms ====
 
 corpus
 
@@ -63,6 +97,56 @@ lemma
 chunking
 
 chinking
+
+stop word removal
+
+==== Parsing ====
+
+  * result is tree
+  * can be diagrammed
+  * based on a grammar
+  * based on syntax
+
+Two kinds:
+  * Constituency Parsing 
+    * based on phrase structure grammar (PSG), aka context-free grammar
+    * sentence > noun phrase + verb phrase
+  * Dependency Parsing
+    * based on dependency grammar (DG)
+    * verb has two dependencies: subject and object
+
+Java Stanford CoreNLP
+AllenNLP
+Python StanfordNLP
+
+
+==== Named-Entity Recognition ====
+
+Bank of America is one name\\
+America is also one name
+
+Two parts:
+  * detection, aka chunking
+  * classification
+
+Classification ontology hierarchies:
+  * BBN categories, proposed in 2002, is used for question answering and consists of 29 types and 64 subtypes.
+  * Sekine's extended hierarchy, proposed in 2002, is made of 200 subtypes.
+  * in 2011 Ritter used a hierarchy based on common Freebase entity types in ground-breaking experiments on NER over social media text.
+
+
+Classifications
+  * person
+  * place
+  * organization
+  * temporal expressions
+  * numerical expressions
+
+
+Approach
+  * manual, using grammar
+  * neural net classifiers
+
 
 ===== Corpus =====
 

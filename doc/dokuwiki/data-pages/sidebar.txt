@@ -68,6 +68,7 @@
         * Dimensions
         * [[Geometry]]
     * [[Computer Science]]
+      * [[Computing Machine]]
       * [[Software]]
         * [[Linux]]
         * [[Python]]
@@ -84,5 +85,4 @@
       * artificial consciousness
       * Human vs artificial consciousness
       * Unknown things about AI
-  * [[notes miscellaneous]]
   * [[Appendix]]
