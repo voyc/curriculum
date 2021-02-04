@@ -2,16 +2,39 @@
 
 [[Notes on Sapolsky Human Behavioral Biology|Back to top]]
 
-==== 4. Molecular Genetics I ====
+===== 4. Molecular Genetics I =====
 https://www.youtube.com/watch?v=_dRXA1_e30o&index=4&list=PL150326949691B199
+
+we are now switching to a new approach
+
+a summary of what we learned so far, and the criticisms of those ideas...
+  * heritability - assuming that behaviors have a genetic component, basis, cause
+  * adaptation - everything you see is optimized.  opposing view: much of what we see is spandrels, spinning off with no reason
+  * gradualism - small incremental changes, we 
+  * political agendas - running through every aspect of this topic.  people get lobotomy, who is exterminated, who is viewed as uneducatable
+
+social biologist, evolutionary psychologist, their approach:
+  * look at behavior
+  * look at evolution
+    * individual selection
+    * kin selection
+    * reciprocal altruism
+  * compare the two
+  * build a model built of rules
+
+new approach: molecular genetics
+
+4:50
+
+==== Genes ====
 
 Molecular Biology:  Genes
 
-genes = molecules = strings of DNA
+genes = molecules = information = strings of DNA
 
-== Proteins ==
+=== Proteins ===
 
-proteins
+proteins are important
   * structurally the most important thing we've got making up cells
   * hold shapes of cells together
   * form messengers: hormones, neurotransmitters
@@ -22,6 +45,8 @@ proteins
 what codes for proteins?
 this is where genes come in
 genes specify proteins
+
+******* Hang on, I'm lost, what does "genes specify proteins mean".  backing up to study genetics *******
 
 proteins are made of
 amino acids, 20 different ones
@@ -188,7 +213,7 @@ switches
 transcription factors
 
 
-==== 5. Molecular Genetics II ====
+===== 5. Molecular Genetics II =====
 https://youtu.be/dFILgg9_hrU
 
 gradualism
@@ -225,7 +250,7 @@ Russian silver fox, bred for tameness, 35 generations
 
 antibiotic resistance
 
-==== 6. Behavioral Genetics I ====
+===== 6. Behavioral Genetics I =====
 https://www.youtube.com/watch?v=e0WZx7lUOrY
 
 How do you know when a behavior has a genetic component?third approach: Behavior Genetics
@@ -364,7 +389,7 @@ The licking affects the transcription factors that trigger the genes for making 
 
 
 
-==== 7. Behavioral Genetics II ====
+===== 7. Behavioral Genetics II =====
 
 https://www.youtube.com/watch?v=RG5fN6KrDJE
 
@@ -424,7 +449,7 @@ Gene environment interaction.  Genes have different effects in different environ
 
 The number of fingers you have has 0% heritability.  because there is no variability.
 
-==== 8. Recognizing Relatives ====
+===== 8. Recognizing Relatives =====
 https://www.youtube.com/watch?v=P388gUPSq_I
 
 == summary of previous lecture ==
@@ -554,7 +579,7 @@ Cognition vs innate.
 How do we choose who to mate with.  When raised in a kibbutz, you never marry someone you were raised with up to age six.  Non-rational.
 
 Pseudo kinship. Pseudo speciation. We are malleable as to who we feel related to. Non-rational.
-==== 9. Ethology ====
+===== 9. Ethology =====
 
 https://youtu.be/ISVaoLlW104
 

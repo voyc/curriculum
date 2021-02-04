@@ -1,4 +1,25 @@
-====== Genetics =====
+====== Genetics ======
+
+Three branches:
+  * Molecular Genetics - molecules of gene, DNA, RNA, protein
+  * Mendelian Genetics aka Transmission Genetics - how traits are passed to offspring
+  * Population Genetics - how variation of trains in a population can lead to evolution
+
+These three branches can be studied in three contexts:
+  * Bacteria
+  * Archaea
+  * Eukaryotes
+
+Likewise, in the context of
+  * Evolution
+  * Deisease and health
+  * Society
+
+Course concept:
+  * Flipped Classroom
+  * Team Based Learning
+
+Terms
 
 gene
 
@@ -8,6 +29,30 @@ DNA
 
 RNA
 
+Central Dogma: DNA is transcribed into mRNA.  mRNA is translated into protein (trait).
+The protein can be thought of as a trait.  This is a general guideline.  There are variations in different cases.
+
+DNA       ->         RNA      ->        protein
+     Transcription       Translation
+
+$$ \text{DNA} \rightarrow \text{mRNA} \rightarrow \text{protein} $$
+
+$$ \ce{DNA -> mRNA -> protein} $$
+
+DNA is drawn as a double helix.
+
+Gene is a piece of the DNA chain.
+
+Gene Glut2 -> protein Glut2
+
+Glut2 protein is a receptor on the outside of a cell that brings glucose into the cell.
+
+genetic variation = differences in inherited traits found in individuals in a population
+
+example: Glut2 mutation where glucose enters the cell less efficiently.  This mutation is associated with Diabetes Type II.
+     
+Genotype ->  -> Phenotype
+
 
 ==== gene expression ==== 
 
@@ -15,11 +60,6 @@ RNA
 - DNA in a gene is copied to produce an RNA transcript called messenger RNA (mRNA).  This is carred out by an enzyme called RNA polymerase which uses available bases from the nucleus of the cell to form the mRNA.
 
 == translation == 
-
-See more at 
-https://www.yourgenome.org/facts/what-is-gene-expression#:~:text=Gene%20expression%20is%20the%20process,it%20is%20called%20gene%20expression%3F.
-
-
 
 ===== Gene Transfer =====
 
@@ -56,3 +96,16 @@ Gene delivery = artificial HGT
 
 
 
+===== Resources =====
+
+What is gene expression?  
+https://www.yourgenome.org/facts/what-is-gene-expression#:~:text=Gene%20expression%20is%20the%20process,it%20is%20called%20gene%20expression%3F.
+
+Robert Sapolsky: Human Behavioral Biology, lectures 4-9, 
+https://www.youtube.com/watch?v=_dRXA1_e30o&index=4&list=PL150326949691B199
+
+Eric Lander: DNA Replication, MIT Fundamentals of Biology
+https://www.youtube.com/watch?v=DRBREvFL19g
+
+Steven Gorsich, Central Michigan University: Introduction to Genetics, 
+https://youtu.be/5Ez_NVQ5BY4

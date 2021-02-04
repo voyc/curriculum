@@ -47,4 +47,4 @@ wget https://github.com/liffiton/dokuwiki-plugin-mathjax/archive/master.zip
 # MathJax [http://mathjax.org] parsing of TeX math expressions in wiki pages.
 # Edit equations online here: https://www.codecogs.com/latex/eqneditor.php
 # in mathjax, use \textrm instead of \textup
-
+# use \require{mhchem} to get \ce{} for chemical equations

@@ -13,7 +13,7 @@ https://www.robertsapolskyrocks.com/reading-materials.html
 2. Behavioral Evolution I\\
 3. Behavioral Evolution II\\
 
-Genetics [[Notes on Sapolsky Molecular Genetics|Notes]]\\
+[[Notes on Sapolsky Molecular Genetics|Genetics]]\\
 4. Molecular Genetics I\\
 5. Molecular Genetics II\\
 6. Behavioral Genetics I\\
@@ -21,14 +21,14 @@ Genetics [[Notes on Sapolsky Molecular Genetics|Notes]]\\
 8. Recognizing Relatives\\
 9. Ethology\\
 
-Neuroscience and Endocrinology [[Notes on Sapolsky Neuroscience|Notes]]\\
+[[Notes on Sapolsky Neuroscience|Neuroscience and Endocrinology ]]\\
 10. Introduction to Neuroscience I\\
 11. Introduction to Neuroscience II\\
 12. Endrocrinology\\
 13. Advanced Neurology and Endocrinology\\
 14. Limbic System\\
 
-Sex and aggression [[Notes on Sapolsky Sex|Notes]]\\
+[[Notes on Sapolsky Sex|Sex and aggression]]\\
 15. Human Sexual Behavior I\\
 16. Human Sexual Behavior II\\
 17. Human Sexual Behavior III and Aggression I\\
@@ -41,6 +41,12 @@ Sex and aggression [[Notes on Sapolsky Sex|Notes]]\\
 23. [[Notes on Sapolsky Language|Language]]\\
 24. [[Notes on Sapolsky Schizophrenia|Schizophrenia]]\\
 25. [[Notes on Sapolsky Individual Differences|Individual Differences]]\\
+
+Extras\\
+[[Notes on Sapolsky Religion|Religion]]\\
+[[Notes on Sapolsky Stress|Stress]]\\
+[[Notes on Sapolsky Depression|Depression]]\\
+[[Notes on Sapolsky Hate|Hate]]
 
 ==== 1. Introduction to Human Behavioral Biology ====
 

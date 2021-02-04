@@ -1,16 +1,24 @@
 ======Chemistry======
 
-====Timeline====
+$$\require{mhchem}$$
+$$\ce{H2O}$$
+
+===== Timeline =====
 
 1903 Ernest Rutherford began to speak of the possibility of atomic energy.
 
 1911 Geiger-Marsden gold foil experiments.
 
 1913 Ernest Rutherford described the nucleus to explain the gold foil experiments.
-====Go====
 
-Periodic Table of Elements
+===== Periodic Table of Elements =====
+
+<html><iframe width="560" height="315" src="https://www.ptable.com" frameborder="0" allowfullscreen></iframe></html>
+Interactive table
 https://www.ptable.com/
+
+<html><iframe width="560" height="315" src="https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk" frameborder="0" allowfullscreen></iframe></html>
+Spreadsheet
 https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk
 
 

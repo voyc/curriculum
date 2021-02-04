@@ -4,11 +4,343 @@ https://youtu.be/nEnklxGAmak
 
 [[Notes on Sapolsky Human Behavioral Biology|Back to top]]
 
+[[#Schizophrenia|Jump down to Schizophrenia]]
+
+===== Language (continued) =====
+
 Genetics of language
 
-FoxP2. A transcription factor.
+covariance
 
-Pigeon to creole.
+adopted individuals, twins, etc.:  a fair degree of heritability of 
+  * vocabulary complexity
+  * spelling ability
+  * phoenology skill
+
+little heritability of dyslexia, that type of learning disorder
+
+FoxP2. A transcription factor.  A mutation in this family.
+preferentially expressed in the basal ganglia, the part of the brain playing a role in gesturing and facial prosody
+The family has cognitive impairment in the realm of language.
+
+FoxP2 found in birds, mammals, but a different version
+in mice, less and simpler vocalization
+
+Humans have a very differ version of FoxP2.  Newer, only 200,000 years old.
+
+In mice, replace the FoxP2 with the human version: you get more and more complex vocalization.
+
+8:32
+
+bring people together from different cultures: you get pidgin
+Pigeon evolves into a creole language within one or two generations.
+A creole is a real language.
 
 All creole languages have the same grammatical structure. Seems to buttress the idea that there is a default, innate human grammar.
+
+24 different ways to arrange subject verb object etc.
+Only 15 are used in the 6000 human languages.
+The vast majority use only 4 of them.
+
+pidgin to creole transition
+
+14:28
+
+ecological factors in language
+
+diverse eco systems produce diverse cultures
+a rain forest is diverse, many different types of plants and animals
+here you find polytheism, diversity in the culture
+more biological diversity => more linguistic diversity
+
+currently, languages are disappearing even faster than species
+in the next century 90% of languages will go extinct
+of the 6000 languages, the vast majority of people speak only 10
+in the pacific  northwest there are a couple dozen languages that are spoken only by the elderly
+someday soon, there will come a time when only one remaining human knows that language
+
+loss of cultural diversity, loss of language diversity, mcdonald's culture, lowest common denominator
+
+17:55
+
+evolution of human language
+
+click languages, seen in hunter gathers in Africa, probably the first languages
+also see in aboriginal populations in Australia
+click language is a fundamental way humans come up with communication systems
+
+selection issues, advantages, 
+  * easier to store knowledge
+  * easier to coordinate hunts
+  * easier to figure out what we did the last time there was a famine
+
+Steve Pinker: language is how we outsmart plants
+
+language evolution is all about sequence
+that is what the construction of tools is about also
+sequential processes, tool use, language use emerge in parallel
+
+language enhances cooperation in 
+  * kin selection
+  * reciprocal altruism
+
+language allows you to lie
+dissociation between messenger and message
+dogs have to put the lid on their fear pheromones by tucking their tail
+the capacity to lie => a whole world of evolutionary strategizing
+
+huge disproportionate share of motor neurons devoted to facial expressions
+to lie, you want good control over your facial expression
+
+in game theory settings, where one team has language and the other does not, huge advantage
+
+===== Schizophrenia =====
+
+23:07
+
+note: there will be no "depression" lecture.  the material is all presented in the zebras book.
+
+definition
+
+when you meet a schizophrenic, you know it within two or three sentences
+
+a disease of thought disorder, inappropriate emotions, inappropriate attribution of things
+
+many subtypes
+  * paranoid
+  * catatonic
+  * schizo affective disorders (depression)
+
+cognitive abnormalities, abnormal sequential thought, "loose associations", tangential thinking
+
+== Loose Associations ==
+most of us can tell a story, keeping it sequentially ordered so that others can follow it
+schizophrenics cannot.  sequential thinking is greatly impaired.
+instead of having logical sequences of information, things tangent all over the place.
+
+words with multiple meanings (caddy, boxer) can trip up a schizo.  Boxer.  Talking about the sport.  Suddenly talking about dogs.  Loose associations.
+
+== Concreteness of Thought ==
+
+trouble with abstraction.
+
+most of us can tell the level of abstraction of a story.  Is it a literal narrative, a parable, a vague second-hand story?  We have a good sense of how concrete or how abstract the information is.
+
+schizos cannot.  Interprets things more concretely.  "concreteness of thought"
+
+Test.  What do these items have in common?  apple, orange, banana.  They are all multi-syllabic words.
+
+Can I take a picture?  I don't have a picture to give you.
+
+Can you write a sentence for me?  Any sentence.  Written response: "A sentence for me.  Any sentence"
+
+No, what I mean is can you come up with a sentence and write it.  Written response: "it"
+
+Proverb Test
+
+A proverb is a parable.  It is abstract.  "Birds of a feather flock together."
+
+"A rolling stone gathers no moss."  
+
+"Loose lips sink ships."
+
+== Delusions ==
+
+Belief in things that cannot be.
+
+Belief that they have participated in historical events.
+
+== Paranoid ==
+
+What do the apple, orange, and banana have in common?  They are all listening to you.
+
+== Hallucinations ==
+
+Mostly auditory.  Hearing voices.
+
+Structured.
+
+== Social Withdrawal ==
+
+abnormal social affiliation
+
+ostracized, alone
+
+apathy
+
+absence of affect
+
+== Self Injury, Suicide ==
+
+we hear often of incidents of horrific terrorist acts by schizophrenics, and it does happen but this is misleading.
+
+actually, schizophrenics are far less dangerous than normal individuals.
+
+Low rates of violence except for self-injury.
+
+Damage to oneself.  Genitals, breasts, thighs...
+
+Delusion of possessed by satan, obsessed by sexual thoughts.  Castrated himself.  Tried to remove his own adrenal glands.  Hit a blood vessel.  Went to ER and said, "I'm trying to remove my adrenal glands and I'm having trouble, can you give me a hand?"
+
+Half of all schizophrenics attempt suicide.
+
+Suicide is more likely in period of remission.  IE.  when you get clear-headed enough to see what your life is like most of the time, you attempt suicide.
+
+Andrew Weil said: "Schizophrenia is hidden blessings".   Bullshit.
+
+45:00
+
+aging 
+
+adolescent onset
+
+response to major stressors, car wreck, lost boyfriend
+
+frontal cortex develops during late adolescence early adulthood.  during this growth spurt, it is vulnerable.
+
+1 to 2% of the population gets it.
+
+The majority of street people are schizophrenic.  Not alcoholic.  
+
+Descent into the least-cared-for strata of society.
+
+48:40
+
+ideology
+
+psychiatrists give a diagnosis to a political dissident.  The diagnosis destroys his life.
+
+50:20
+
+Cross-cultural example.  The Masai, in Africa.  Men at puberty become warriors.  Married to 13 year old girl.  Life expectancy in the 30s.  
+
+"She hears voices."  "Well, you hear voices."  "She hears voices at the wrong time."
+
+Schizophrenia is abnormal thinking.
+So the first step is to know what is normal thought.  This can be different in different cultures.
+
+Who decides what is normal vs abnormal thinking?
+
+58:26
+
+Many historical examples of great artists who turned out to be schizophrenic.
+The schizophrenia is NOT what gave them creativity.
+It is what destroyed their careers.
+
+We are intolerant of the mentally ill.
+
+59:09
+
+Neurochemistry
+
+Dopamine hypothesis.  Somewhere in the brain there is a build-up of dopamine in the synapses.  What is the evidence?
+  * elevated levels of dopamine breakdown products in the bloodstream
+  * all of the classic drugs that work with schizophrenia block dopamine receptors
+  * if you give a schizophrenic dopamine, his symptoms get worse
+  * post-mortem, elevated levels of dopamine receptors in the frontal cortex
+
+Dopamine is also used in the substantia nigra, a basal ganglia structure, involved with fine motor control.  A dopaminergic system.
+  * a little damage: tremor of old age
+  * lot of damage: Parkinson's.  Losing all the dopamine signaling in this part of the brain.  90% of the neurons in the die.
+
+In the 1960s, one of the first drug treatments for any neurological disease: El Dopa.  
+Too little dopamine, give them replacement dopamine.  It is hard to get Dopamine into the brain, back up one step in the biosynthesis.  Give them El Dopa which gets converted into Dopamine.  Successful with Parkinsons.
+
+The movie Awakenings with Robert De Niro and Robin Williams is real.  A resident, Oliver Sachs, figured that post-encephalitic paralysis, "stiff man syndrome", was an extreme form of Parkinsons and he got miraculous results with El Dopa.
+
+A parkinsons patient has low dopamine levels in the substantia nigra, normal levels everywhere else.  Raising dopamine levels systemically with an oral drug, raises dopamine levels throughout the brain and the patient becomes psychotic, indistinguishable from a schizophrenic.  That's what happened to the Robert De Niro character.
+
+Amphetamines cause a rapid dumping of dopamine.  Too much and subject can appear schizophrenic transiently.  When a patient comes to ER with loose associations, delusions, hallucinations; is it schizophrenia or amphetamine psychosis?  Pump his stomach.  If he gets better, it was amphetamines.
+
+Conversely, if you over-medicate schizophrenics, too much El Dopa, they exhibit Parkinson's symptoms.  Tardar Dyskinesia, people with this look Parinsonian, afer taking these drugs for 25 years or so.
+
+Excess dopamine in the frontal cortex.  Stimulating normal executive functions.  Frontal cortex not making sense, loose associations.
+
+1:07:26
+
+Serotonin.  The major hallucinogens - LSD, Mescalin, Psylocibin - are all nearly identical in chemical structure.  And they all fit into and activate Serotonin receptors.  
+
+Glutamate. When you take a drug that wildly stimulates a certain subtype of glutamate receptor - Phencyclidine (PCP), you get schizo-like symptoms.  Some very small evidence of a connection.  In rats, PCP in the brain increases the number of serotonin receptors.
+
+Summary re neurotransmitters and schizophrenia - 
+  * dopamine, the dopamine hypotheses, overwhelmingly dominant theory
+  * serotonin, medium
+  * glutamate, low
+
+1:09:40
+
+Brain Metabolism 
+
+EEG brain imaging shows, when a person takes a hallucinogen, high levels of metabolism, high levels of stimulation throughout the brain.  Except for the first couple layers of visual and auditory cortex.  In other words, the subject is seeing and hearing things that did not originate from outside stimuli.
+
+Give a schizophrenic a standard declarative memory task, and metabolism in the hippocampus does not increase as much as in other individuals.
+
+1:10:46
+
+Structural features of the disease.
+
+Multiple structural abnormalities in schizophrenics.  How do we know this?
+
+1. Post-mortem analysis.  
+
+Problems with this:
+  * brains wait differing lengths of time before autopsy
+  * post-mortem artifacts - squeezing the brain when removing it
+
+Research hospitals now have rapid autopsy teams to get the brain out of the deceased quickly.
+
+More Problems
+  * subject may be elderly
+  * subject has been taking drugs all his life
+  * subject usually has had terrible diet
+
+Diet, drugs, and age may be responsible for brain abnormalities.
+
+So the goal is to get young unmedicated subjects at first diagnosis, 
+
+2. Imaging in situ (while subject is still alive)
+
+1:14:12
+
+Structural abnormalities:
+
+  * Enlarged ventricles.  With corresponding contraction, compression of the cortex.  Particularly in the frontal.
+
+  * In the hippocampus, fewer neurons, and some of the neurons are flipped over, projecting the wrong way.  (disrupting sequential thought)
+
+  * Frontal cortex, fewer neurons, fewer glia, lower levels of protein reelin, which has to do with maturation of the brain.  Again, failure of the burst of development of the frontal cortex that is supposed to take place in late adolescence 18-23.
+
+1:16:58
+
+Genetics
+
+50% heritability for schizophrenia
+
+in a family, one child has schizophrenia
+  * a identical twin has a 50% chance of having schizophrenia
+  * a sibling has a 25% chance
+  * half-sibling 12%
+  * higher than expected number of close relatives have mild versions of thought disorder
+
+a random person on the street has a 1 to 2% chance
+
+1:18:29
+
+molecular approaches, getting genetic markers
+not identifying the gene itself
+but a stretch of genes that is different in the schizo from non-schizo
+
+first genetic markers for schizophrenia discovered in the 1980s
+each researcher was finding a different marker
+
+now not looking at the marker, but at the specific genes
+coding for an enzyme 
+
+...
+
+I'm lost - going back to re-study "genetics"
+
+
+
+
 
