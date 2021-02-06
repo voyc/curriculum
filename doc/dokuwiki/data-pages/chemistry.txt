@@ -1,7 +1,15 @@
 ======Chemistry======
 
+Re: mathjax
+
 $$\require{mhchem}$$
 $$\ce{H2O}$$
+H<sub>2</sub>O
+
+\chemfig not supported\\
+\cf deprecated\\
+$$\chemfig{}$$
+$$\cf{H2O}$$
 
 ===== Timeline =====
 

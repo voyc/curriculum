@@ -1,5 +1,11 @@
 ====== Preface ======
 
+===== Prerequisites =====
+
+
+{{ flow_prerequisite.png|Prerequisites}}
+
+
 I am a programmed device.  
 All the decisions I appear to make are the result of models and numeric values of parameters.
 Therefore, I can create a duplicate of myself in software.  This desire to replicate myself is part of my programming.
