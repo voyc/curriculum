@@ -1,0 +1,13 @@
+======Web Development=====
+
+Client-side technologies:
+  * HTML
+  * CSS
+  * Javascript
+
+Server-side technologies:
+
+
+AJAX
+
+Client-server architecture

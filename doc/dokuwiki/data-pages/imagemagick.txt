@@ -1,0 +1,25 @@
+====== ImageMajick ======
+
+===== How to use =====
+
+Three commands:
+  identify [options] filename.jpg
+  display [options] filename.jpg
+  convert input_file.jpg [options] output_file.jpg
+
+Options:
+  ‐background black  # default to white, used for letterbox
+  ‐gravity center
+  ‐resize 1920x1080  # scale down to fit, preserve aspect ratio
+  ‐extent 1920x1080 # scale up to fit, preserve aspect ratio
+
+Example:
+  convert infile.jpg -gravity center -background transparent -resize 1920x1080 -extent 1920x1080 ou
+
+Notes:
+  * order of the keywords is significant, -gravity and -background must come before -extent
+  * without -resize, with -extent only, the image will not be enlarged.
+
+Example on multiplie files:
+  find . -name "*.jpg" -exec convert {} -gravity center -background transparent -resize 1920x1080 -
+

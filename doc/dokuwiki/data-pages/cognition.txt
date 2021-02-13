@@ -1,0 +1,105 @@
+====== Cognition ======
+
+o "the mental action or process of acquiring knowledge and understanding through thought, experience, and the senses".[2] It encompasses many aspects of intellectual functions and processes such as: attention, the formation of knowledge, memory and working memory, judgment and evaluation, reasoning and "computation", problem solving and decision making, comprehension and production of language. Cognitive processes use existing knowledge and generate new knowledge.
+
+
+Cognitive processes are analyzed from different perspectives within different contexts, notably in the fields of linguistics, anesthesia, neuroscience, psychiatry, psychology, education, philosophy, anthropology, biology, systemics, logic, and computer science.[3] These and other different approaches to the analysis of cognition are synthesised in the developing field of cognitive science, a progressively autonomous academic discipline.
+
+con = with
+gnosis = knowledge
+
+cognize = to know
+
+ sensation, attention, and perception. Cognition also includes complex mental operations such as memory, learning, language use, problem solving, decision making, reasoning, and intelligence. 
+
+
+  * thought
+  * experience
+  * the senses
+
+intellectual functions and processes such as: 
+  * attention
+  * the formation of knowledge
+  * memory and working memory
+  * judgment and evaluation, 
+  * reasoning and "computation", 
+  * problem solving and decision making, 
+  * comprehension and production of language
+
+Cognitive processes 
+  * use existing knowledge and
+  * generate new knowledge.
+
+Chomsky
+cognitive capacities
+  * have not changed in 50,000 years
+  * must be elicited by experience
+
+continuity of objects
+
+vision
+language
+math
+music
+
+===== Cognitive Science =====
+
+George Miller, in recent article, a meeting in 1956, Cambridge, (MIT or Harvard), radio engineers, experimental human psychology.  a paper by Noam, another paper by Herb Simon.  Miller claims these papers started conitive science.
+
+Shift away from behavior and its products, toward the states and properties of the brain and mind.
+
+inner workings of the mind
+mind = relevant properties, states, and processes of the brain
+
+in the new view, behavior is data only, to be used with other data, like EEG data for example
+
+away from 
+behavioral science, structuralism, statistical analysis of texts
+
+toward
+cognitive science
+
+from natural history toward natural science
+
+computational representational systems
+like a software problem
+
+a pattern
+unification (of scientific theories)
+
+universal grammar
+the innate language capability, as observed in an infant
+is unique in the animal world
+also, the fact of "discrete infinity" is rare in the animal world
+
+language acquisition
+stable at puberty
+
+assume the parser exists, does not grow, is universal, has switches to flip between languages, is easy and quick (false)
+
+signal
+
+Linguistics, a subhead under language
+NLP, related to statistical analysis of texts
+
+
+
+
+
+
+====== Who's Who ======
+
+=== Noam Chomsky ===
+
+MIT
+ 
+1950: cognitive, generative grammar, paper
+
+
+Language: The Cognitive Revolution, 1 Dec 2015, 1:39:32
+https://youtu.be/0hzCOsQJ8Sc
+
+
+=== Albert Einstein ===
+
+

@@ -1,0 +1,10 @@
+====== Database ======
+
+[[SQL]] - Structured Query Language, the language used by relational databases
+
+[[PostgreSQL]] - relational database
+
+[[PostGIS]] - add-on to PostgreSQL for geographic coordinates
+
+[[Blockchain]] - distributed journal
+

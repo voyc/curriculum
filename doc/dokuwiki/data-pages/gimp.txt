@@ -1,0 +1,11 @@
+======Gimp======
+
+=====How to use=====
+
+====Transparent Background====
+
+https://graphicdesign.stackexchange.com/questions/5446/making-the-background-of-an-image-transparent-in-gimp
+
+  - Select the magic wand tool.
+  - Click on the background color.
+  - Select colors -> color to alpha -> OK.

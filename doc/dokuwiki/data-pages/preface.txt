@@ -1,11 +1,17 @@
 ====== Preface ======
 
-===== Prerequisites =====
+===== Subject Sequence =====
 
+Math\\
+Science\\
+Software\\
 
 {{ flow_prerequisite.png|Prerequisites}}
 
+working
+https://docs.google.com/spreadsheets/d/1s1YfPCQiMtmR0q1xW8KGx2nUpfO6CSV19GECTLktzwc/edit#gid=0
 
+===== Preface =====
 I am a programmed device.  
 All the decisions I appear to make are the result of models and numeric values of parameters.
 Therefore, I can create a duplicate of myself in software.  This desire to replicate myself is part of my programming.

@@ -1,0 +1,19 @@
+====== Media Editing ======
+
+All are open source.
+
+[[Blender#3D modeling|Blender]] - 3D modeling
+
+[[Blender#video sequence editing|Blender]] - video sequence editor
+
+[[OBS]] - video capture from screen
+
+[[Handbrake]] - video file converter: format, frame rate, dimensions, etc
+
+[[Audacity]] - audio file editor
+
+[[ImageMagick]] - image file conversions
+
+[[Gimp]] - image editor
+
+[[Calibre]] - ebook editor

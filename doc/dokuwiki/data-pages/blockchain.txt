@@ -1,0 +1,7 @@
+======Blockchain======
+
+Blockchain is a distributed journal.
+
+It has no central server or repository.
+
+Because of this it is appealing to projects that do not want to rely on a single hierarchical entity to control the data.

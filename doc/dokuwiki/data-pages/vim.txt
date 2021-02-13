@@ -1,0 +1,31 @@
+====== vim ======
+
+===== How to use =====
+
+:scriptnames   # list vimrc files in use
+
+:set nowrap  # set a setting
+
+:set nowrap?  # get a setting
+
+:set tabstop=8
+
+:set expandtab    # replaces tabs with n spaces on file open  
+
+:set softtabstop=0    # insert n spaces tabkey
+
+:set shiftwidth=0   # insert n spaces on >>, << 
+
+:set autoindent
+
+:set smartindent
+
+:set cindent
+
+:set showmode # show “insert” mode on bottom line
+
+to leave insert mode
+  * ESC
+  * Ctrl+[
+  * Ctrl+C
+	

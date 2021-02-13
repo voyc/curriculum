@@ -1,15 +1,4 @@
-======Chemistry======
-
-Re: mathjax
-
-$$\require{mhchem}$$
-$$\ce{H2O}$$
-H<sub>2</sub>O
-
-\chemfig not supported\\
-\cf deprecated\\
-$$\chemfig{}$$
-$$\cf{H2O}$$
+====== Chemistry ======
 
 ===== Timeline =====
 
@@ -21,13 +10,32 @@ $$\cf{H2O}$$
 
 ===== Periodic Table of Elements =====
 
-<html><iframe width="560" height="315" src="https://www.ptable.com" frameborder="0" allowfullscreen></iframe></html>
+{{https://www.wuwm.com/sites/wuwm/files/201912/AdobeStock_238869971.jpg}}
+
 Interactive table
 https://www.ptable.com/
 
-<html><iframe width="560" height="315" src="https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk" frameborder="0" allowfullscreen></iframe></html>
 Spreadsheet
 https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk
+
+===== Terms =====
+
+Atom
+
+Element
+
+Molecule - bonds
+
+Compound - bonds
+
+Mixture - no bonds ?
+
+Bonds
+
+Characteristics of Elements
+
+solid, liquid, gas
+
 
 
 Heavy Metals
@@ -42,12 +50,28 @@ Named after places
 Silly names: Unobtanium
 Radioactive Elements
 
-
+===== Atoms =====
+==== Atomic Structure ====
 
 Atomic Structure, shells, traits, bonds, reactions
 YouTube:AtomicSchool playlist 
 https://www.youtube.com/playlist?list=PLYbDrmR0pxgrTmNsqqSXC-6xrJIkCjpfo
 
+
+==== Characteristics of Elements ====
+
+===== Molecules =====
+
+==== Molecular Structure ====
+
+==== Characteristics of Compounds ====
+
+acid = molecule or ion capable of:
+  * donating a proton
+  * making a covalent bond with an electron pair
+
+
+===== Radiation =====
 
 Electromagnetic radiation is absorbed or emitted as electrons move out or in among the shells respectively. Electrons in the higher shells have a higher energy level than those in the inner shells.
 
@@ -61,7 +85,7 @@ Four types of nuclear radiation, defined by the type of particle emitted from th
   * Neutron
 
 
-Bombs
+===== Bombs =====
 
 Naming systems
 
@@ -70,7 +94,18 @@ Naming systems
 
 Why the word hydrogen?
 
-==== Coffee ====
+===== Health Supplements =====
+
+vitamins
+minerals
+protein for muscle building
+protein enzymes for ?
+link to organic chemistry, biochemistry
+
+
+
+
+===== Coffee =====
 
 grind: course, medium, fine
 filter coffee: one coffee bean yields 100 particles
@@ -124,7 +159,7 @@ The cost of retinning is about half the cost of a new pan. Any silversmith shoul
 https://www.highya.com/articles-guides/comparing-cookware-stainless-steel-vs-copper
 
 
-====References====
+===== References =====
 
 Wikipedia: "Chemistry", [[https://en.wikipedia.org/wiki/Chemistry]], Retrieved 23-Mar-2019.
 
@@ -136,3 +171,7 @@ Crash Course: "The History of Atomic Chemistry",[[https://www.youtube.com/watch?
 
 NIH: PubChem (open chemistry database)
 [[https://pubchem.ncbi.nlm.nih.gov/]]
+
+Professor Dave Explains: "General Chemistry", 
+https://youtube.com/playlist?list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm
+

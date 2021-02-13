@@ -1,0 +1,50 @@
+======Blender======
+
+3D Modeling
+
+Also includes a video sequence editor.
+
+Keyboard shortcut cheatsheet:
+https://drive.google.com/drive/folders/0ByidsAQcVcUUei0wc1lpVWlfUFU
+
+
+=====3D Modeling=====
+
+User preferences:
+  Emulate numpad on
+  Select with left mouse button
+  View3D =>View 3D Global => map semicolon to view_selected
+
+Left mouse button: select object (customized)
+
+Middle mouse button: orbit
+
+Shift + middle mouse: pan
+
+Numpad ; focus on select object, view selected (customized)
+
+Numpad 7: top view
+
+Numpad 1: front view
+
+Numpad 3: side view
+
+Numpad 5: swap orthographic and perspective views
+
+shift+A: add an object primitive
+
+
+=====Video Sequence Editing=====
+
+Solve problems with audio-video sync.
+  https://www.youtube.com/watch?v=n7qeKekS10E
+  In this video, Mikeycal Myers explains importing videos from a smart phone.
+  Changing the fps from variable to constant 24 using Handbrake.
+  If there is an extra frame on the audio track, use Hold-Offset-End property to bring it back.
+
+scroll and zoom video sequencer (squeeze height of channels)
+  set user preferences input to emulate middle mouse button, using alt by default.
+  alt left drag to scroll sequencer up, down, right, left
+  ctrl alt left drag to zoom sequencer up, down (height), right, left (width)
+
+

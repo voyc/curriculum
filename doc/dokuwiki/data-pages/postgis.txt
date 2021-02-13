@@ -1,0 +1,94 @@
+====== PostGIS ======
+
+===== How to use =====
+
+REVOKE ALL ON TABLE music.track FROM PUBLIC;
+
+GRANT  ALL ON TABLE music.track TO cpses_vopiv2h0hh;
+
+GRANT  ALL ON TABLE music.composer TO cpses_vopiv2h0hh;
+
+psql 
+
+PGPASSWORD=password psql -U voyccom_jhagstrand -d voyccom_dads78s -c "select * from music.composer"
+
+psql -U voyccom_jhagstrand -d voyccom_dads78s -c "select * from music.composer"
+
+psql -U voyccom_jhagstrand -d voyccom_dads78s -c "GRANT  ALL ON TABLE music.composer TO cpses_vopiv2h0hh;"
+
+psql -U username -d myDataBase -a -f myI
+
+ls -al voyc-backup.20??0101.*.sql
+
+tar -czvf fpd-backup.20120101.tar.gz fpd-backup.20120101.030210.sql
+
+1,652,664,000  1.6 GB
+
+c:\Windows\System32\Drivers\etc\hosts	
+
+pg_dump -Fp -b -U jhagstrand_voyc -n public -f /home/jhagstrand/db_backups/public-backup.`date +%Y%m%d`.`date +%H%M%S`.sql jhagstrand_voyc
+
+pg_dump -Fp -b -U jhagstrand_voyc -n voyc -f /home/jhagstrand/db_backups/voyc-backup.`date +%Y%m%d`.`date +%H%M%S`.sql jhagstrand_voyc
+
+pg_dump -Fp -b -U jhagstrand_voyc -n fpd -f /home/jhagstrand/db_backups/fpd-backup.`date +%Y%m%d`.`date +%H%M%S`.sql jhagstrand_voyc
+
+psql -U jhagstrand_voyc -d jhagstrand_voyc -c 'select id, st_astext(the_geom) from fpd.fpd' >/home/jhagstrand/db_backups/fpd-geom.`date +%Y%m%d`.`date +%H%M%S`.sql
+
+pg_dump --inserts -b -U jhagstrand_78s -n music -f ~/db_migrate/dads78s.`date +%Y%m%d`.sql jhagstrand_78s
+
+pg_dump\\ 
+--inserts (write INSERTs instead of COPY)\\
+-b (include blobs)\\
+-U jhagstrand_78s (username)\\ 
+-n music (schema name to dump)\\
+-f ~/db_migrate/dads78s.`date +%Y%m%d`.sql\\ 
+jhagstrand_78s (dbname)\\
+
+pg_dump -U username dbname > dbexport.pgsql\\
+-Fp  default plain text\\
+-b include blobs\\
+-n name dump named schema only\\
+--inserts\\
+
+scp -pr -P 22 jhagstrand@web612.webfaction.com:db_migrate/* .
+
+      
+REVOKE ALL ON TABLE music.track FROM voyccom_webuser64;
+
+GRANT  ALL ON TABLE music.track TO voyccom_webuser64;
+
+REVOKE ALL ON TABLE music.track FROM PUBLIC;
+
+GRANT  ALL ON TABLE music.track TO cpses_vopiv2h0hh;
+
+GRANT  ALL ON TABLE music.composer TO cpses_vopiv2h0hh;
+
+psql -U voyccom_jhagstrand voyccom_dads78s < dads78s.20190326.sql
+
+http://docs.webfaction.com/user-guide/databases.html
+ionice -c2 -n6 mysqldump -u jhagstrand_pwiki jhagstrand_pwiki -p > dump_pwiki_20131126.sql	
+
+===== Migration =====
+
+==== Example webfaction to a2 ====
+
+In webfaction:
+
+  pg_dump -O -Fp -b -U jhagstrand_voyc -n fpd -f /home/jhagstrand/db_backups/fpd-backup.`date +%Y%m%d`.`date +%H%M%S`.sql jhagstrand_voyc
+  
+  -O no commands to change the owner
+  -Fp format plain-text SQL
+  -b include blobs (default)
+  -U username
+  -n dbname
+  -f ouput.filename.sql
+
+  tar -czvf fpd-backup.20190908.050650.tar.gz fpd-backup.20190908.050650.sql
+
+In a2:
+
+  scp -pr -P 22 jhagstrand@web612.webfaction.com:db_archive .
+  
+  tar -xvzf fpd-backup.20190908.050650.tar.gz
+  
+  psql -f fpd-backup.20190908.050650.sql voyccom_voyc voyccom_jhagstrand

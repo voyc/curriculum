@@ -1,0 +1,18 @@
+====== gpg ======
+
+An implementation of PGP, Pretty Good Privacy.
+
+===== How to Use =====
+
+==== Encrypt ====
+
+Use symmetric algorithm
+  gpg -c myfile.txt
+Rename output file
+  gpg -o outfile.bin
+Combine
+  gpg -co outfile.bin myfile.txt
+
+==== Decrypt ====
+
+gpg outfile.bin

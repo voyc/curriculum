@@ -1,0 +1,131 @@
+====== git ======
+
+source code version control
+
+Written by Linus Torvalds to replace svn and cvs.
+
+===== How to use =====
+
+====Create a new repository====
+create a remote repository in the git folder
+	cd webapps/git/repos
+	git init --bare flash.git
+create a local repository in the flash folder
+	cd webapps/flash
+	git init
+	git config user.email "john@hagstrand.com"
+	git config user.name "jhagstrand"
+	git add .
+	git commit -m 'Initial file load.'
+in the local repository, point the name 'origin' to the remote repository
+	git remote add origin http://git.hagstrand.com/flash.git
+	git remote  # list all remotes.  A remote is a "shortcut" to another repository.
+in the local repository, push all files up to the remote repository
+	git push origin master
+	git push -u origin master
+
+====Workflow:  develop, request pull, deploy====
+in the local repository, create a branch to work on
+	git branch  # list all branches, asterisk by current one
+	git branch mybranch   # create new branch
+	git checkout mybranch # switch to the new branch
+in the local repository, remove a file
+	git rm normalize.css
+in the local repository, commit changes on mybranch
+	git add .   # adds any changed or new files to staging
+	git commit -m 'new file changes'
+in the local repository, merge mybranch into master
+	git checkout master
+	git merge mybranch
+	git branch -d mybranch
+	git status
+	git log
+in the local repository, bring local master up to date
+	git pull --rebase origin master
+in the local repository, push completed work in master up to central repository 
+	git push origin master
+	note: changes in the working directory are 
+List all files in the master branch
+	git ls-tree -r master --name-only
+
+====Diff====
+git diff         # before the add	git add .
+
+git diff HEAD    # after the add
+	
+git diff -U0	# do not display context
+
+git diff -w	# ignore whitespace
+
+git diff -w --word-diff-regex=[^[:space:]]	# ignore whitespace additional
+
+In .gitconfig, add 
+[core] whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+
+====Add submodule to super-project====
+	cd webapps/peg
+	git submodule add https://github.com/necolas/normalize.css
+	git submodule add http://git.hagstrand.com/repos/accounts.git
+	git commit -am 'added submodules'
+	git submodule update --init    # init + update info in .git/config.  (You may also edit manually.)
+	git submodule foreach git pull origin master  # pull latest files for all submodules
+
+====Clone a super-project====
+	cd webapps
+	git clone http://git.hagstrand.com/peg.git
+	cd peg
+	git submodule update --init --recursive
+	git submodule foreach git pull origin master  # pull latest files for all submodules
+
+====Pull latest submodule files into super-project====
+	git submodule foreach git pull origin master  # pull latest files for all submodules
+	git add .
+	git commit -m ‘pull latest’   # this changes the commit hash identifier in .git/FETCH_HEAD
+	git push origin master
+
+====Begin====
+	cd webapps/drzinn
+	git clone https://github.com/voyc/model    # start with model
+	mv model drzinn           # rename to drzinn
+	cd drzinn       
+	git submodule update --init   # copies entries from .gitmodules to .git/config, and pulls each
+
+====Fork====
+In github ui, fork repo from voyc to hagstrand.  A fork is a server-side clone.
+
+Locally:
+	git clone https://github.com/hagstrand/flash flashbang   # specified target <directory>
+	git remote add upstream https:github.com/voyc/flash   # second remote
+	git pull --rebase upstream master   # pull changes from upstream, update local, no commit
+	# pull does a fetch and merge into local directory.  No need to commit.
+	git push origin master   
+	Todo: Rename?
+	Todo: In github UI, “Pull Request” to bring forked project back into upstream.
+
+====See the current changes====
+	git diff  # before staging (git add *)
+	git diff --staged # after staging
+
+=====Alternative Workflows=====
+====Centralized Workflow====
+  * One central repository. One branch named "master".
+  * Each developer has his own copy of the central repository, so he can branch, work, and commit without connecting to the central repository.  This is helpful for worldwide distributed teams who may not have good internet connectivity.
+
+====Feature Branch Workflow====
+  * Same as above, but a feature branch in the central repository.
+  * Push changes to the feature branch instead of master.  Now your local work is backed up in the central repository.
+  * After push to feature branch, do a Pull-Request.  This is like a code review.
+When approved, 
+
+====GitFlow Workflow====
+Same as Feature Branch Workflow, plus, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
+
+====Forking Workflow====
+Fundamentally different than the other workflows discussed in this tutorial. Instead of using a single server-side repository to act as the “central” codebase, it gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.	
+
+=====Terms=====
+index
+
+working tree
+
+

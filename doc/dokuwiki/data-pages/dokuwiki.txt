@@ -1,0 +1,46 @@
+====== Dokuwiki ======
+
+This document is written in dokuwiki.
+
+The markup syntax is described here:
+https://www.dokuwiki.org/wiki:syntax
+
+===== Images =====
+
+For syntax examples, see [[Gallery of Curves]].
+
+
+===== Math Equations =====
+
+For math equations, we use the MathJax extension.
+
+For upright text, use \textrm or \mtext instead of \textup
+
+For syntax examples, see [[Gallery of Curves]].
+
+Edit equations online here: https://www.codecogs.com/latex/eqneditor.php
+
+===== UML Drawings =====
+
+
+===== Chemical Figures =====
+
+\chemfig not supported\\
+
+===== Chemical Equations =====
+
+For chemical formulas and equations we use the //mhchem// extension to the MathJax extension.  
+  * Embed chemical notation in the \ce{} tag.
+  * Use the \require{mhchem} tag once on each page that uses \ce{}. 
+
+  $$\require{mhchem}$$
+  $$\ce{H2O}$$
+  $$\ce{HCl (aq) + NaOH (aq) -> H2O (l) + NaCl (aq)}$$
+
+$$\require{mhchem}$$
+$$\ce{H2O}$$
+$$\ce{HCl (aq) + NaOH (aq) -> H2O (l) + NaCl (aq)}$$
+
+Edit chemical equations online here:
+http://visualmatheditor.equatheque.net/VisualMathEditor.html
+
