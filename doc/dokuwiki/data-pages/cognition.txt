@@ -1,5 +1,13 @@
 ====== Cognition ======
 
+cognition
+intelligence
+knowlege
+thought
+perception
+intellect
+
+
 o "the mental action or process of acquiring knowledge and understanding through thought, experience, and the senses".[2] It encompasses many aspects of intellectual functions and processes such as: attention, the formation of knowledge, memory and working memory, judgment and evaluation, reasoning and "computation", problem solving and decision making, comprehension and production of language. Cognitive processes use existing knowledge and generate new knowledge.
 
 
@@ -37,10 +45,26 @@ cognitive capacities
 
 continuity of objects
 
-vision
-language
-math
-music
+?:
+  * vision
+  * language
+  * math: abstract principles, number, magnitude
+  * music
+
+chomsky?:
+  * visual space
+  * facial recognition
+  * abstract principles of numbers
+  * music
+  * social structures
+  * language
+
+reasoning, argument
+
+Executive function (EF) = refers to the collection of cognitive skills (inhibition, working memory updating, task-set switching, attention) that give rise to goal-directed behaviour.
+
+Executive function => goal-seeking
+
 
 ===== Cognitive Science =====
 
@@ -81,25 +105,4 @@ signal
 
 Linguistics, a subhead under language
 NLP, related to statistical analysis of texts
-
-
-
-
-
-
-====== Who's Who ======
-
-=== Noam Chomsky ===
-
-MIT
- 
-1950: cognitive, generative grammar, paper
-
-
-Language: The Cognitive Revolution, 1 Dec 2015, 1:39:32
-https://youtu.be/0hzCOsQJ8Sc
-
-
-=== Albert Einstein ===
-
 

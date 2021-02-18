@@ -1,8 +1,10 @@
 ~~NOCACHE~~
-  * [[Preface]]
-  * [[Matter]]
-    * [[Physical world]]
+[[Preface]]
+
+**[[Matter]]**
     * [[Patterns]]
+    * [[Dimensions]]
+    * [[Physical world]]
     * [[Limits]]
     * [[Chemistry]]
     * [[Physics]]
@@ -10,11 +12,10 @@
     * [[Electronics]]
     * [[Thermodynamics]]
     * [[Subatomic Theories]]
-    * dimensions
     * Explosions, animation
     * astronomy
     * [[Geography]]
-  * [[Life]]
+**[[Life]]**
     * [[Organic Chemistry]]
     * [[Biochemistry]]
     * [[Molecular biology]]
@@ -29,7 +30,8 @@
         * plant
         * animal
         * [[Neuroscience]]
-  * [[Humanity]]
+    * [[Humanity]]
+**[[Mind]]**
     * [[Sensation]]
     * [[Psychology]]
       * Motivations
@@ -55,13 +57,12 @@
     * psychopathy
     * [[Eastern models]]
     * human is machine
-    * [[transcendence]]
+    * [[Transcendence]]
     * [[Cognition]]
-    * [[language]]
-  * [[Tools]]
+    * [[Language]]
+    * [[Consciousness]]
+**[[Tools]]**
     * [[Math]]
-        * Dimensions
-        * [[Geometry]]
     * [[Computer Science]]
       * [[Computing Machine]]
       * Hardware
@@ -86,4 +87,5 @@
       * artificial consciousness
       * Human vs artificial consciousness
       * Unknown things about AI
-  * [[Appendix]]
+
+[[Appendix]]

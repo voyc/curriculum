@@ -4,11 +4,15 @@ Geologic Time vs Cosmologic, Biologic, Human, Civilized, Historical
 
 Plate Tectonics
 
-Split of Pangea animation
+{{pangea_animation.mp4?560|Pangea Animation}}
+Video source: 
 https://www.youtube.com/embed/HhkyXrWNoVA
 
-
-{{wiki:https://www.youtube.com/embed/HhkyXrWNoVA}}
+Split of Pangea:
+  * North America and Eurasia split apart
+  * South America and Africa split apart
+  * India, Australia, Antarctica split apart
+  * India slams up into Asia 
 
 <html>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o5ddyj0RAHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -20,6 +24,8 @@ https://en.wikipedia.org/wiki/Plate_tectonics#/media/File:Plates_tect2_en.svg
 India slams into Asia pushing up the Himalayas and the Tibetan Plateau
 https://www.youtube.com/embed/QhldiOaFqpE?start=39&end=49
 
+<html>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QhldiOaFqpE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></html>
 
 Pacific Plate, Pacific Rim, Ring of Fire
 

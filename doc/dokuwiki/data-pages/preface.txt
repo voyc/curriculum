@@ -11,6 +11,27 @@ Software\\
 working
 https://docs.google.com/spreadsheets/d/1s1YfPCQiMtmR0q1xW8KGx2nUpfO6CSV19GECTLktzwc/edit#gid=0
 
+consider making a reverse tree of apps including robotics going out to the right from AI, making AI the center nexus of a torus
+
+humanity == mind ?
+
+tools == mind 
+
+robotics, virtual robotics = part of mind, matter, tools, 
+
+mind tools, mental skills to use like tools
+
+math requires machines: abacus, turing's custom machines, calculators, computers
+
+computers: hardware and software are inseparable.  software cannot exist without the hardware.
+
+Morpheus: "the body cannot live without the mind"
+
+"consciousness requires a body"  false, who said that?
+
+
+
+
 ===== Preface =====
 I am a programmed device.  
 All the decisions I appear to make are the result of models and numeric values of parameters.

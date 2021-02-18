@@ -1,6 +1,7 @@
 ====== Math ======
 
   * [[Number Systems]]
+  * dimensions
   * [[Gallery of Curves]]
   * [[Algebra]]: the study of generalizations of arithmetic operations  
     * [[Polynomial]]
@@ -31,6 +32,16 @@
   * [[Statistics]]
     * [[Probability]]
   * Analysis, modeling
+
+Gil Strang's course 18.065
+  * Linear Algebra (Matrix Math)
+  * Statistics and Probability
+  * Optimization (Calculus)
+  * Deep Learning (Neural Net)
+
+project-based. no tests.  "that's how people learn"
+
+[[Notes on Gilbert Strang Deep Learning]]
 
 ==== Timeline ====
   * 2000 BC, Babylon, algebra in use

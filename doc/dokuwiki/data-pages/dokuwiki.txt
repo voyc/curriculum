@@ -7,7 +7,38 @@ https://www.dokuwiki.org/wiki:syntax
 
 ===== Images =====
 
-For syntax examples, see [[Gallery of Curves]].
+Embedded images.
+  * title after vertical bar
+  * Use white space to specify alignment: left, right, center.
+  * size as cgi parameter (after question mark)
+  * non-supported format as cgi parameter
+
+  {{ straight_line.png|Straight Line}}
+  {{straight_line.png|Straight Line }}
+  {{ straight_line.png|Straight Line }}
+  {{straight_line.png?300}}
+  {{straight_line.png?300x100}}
+  {{straight_line.svg?300&.png}}
+
+
+===== Video =====
+
+We embed local video files uploaded to the media folder.
+  * Append ?540 to the filename to set the width.
+  * Beneath the embedded video, add an external link to the original source.
+
+  {{:elon_musk_mechanics.mp4?540 | Elon Musk on Mechanics}}
+  Video source: Joe Rogan podcast #1609, 12 Feb 2021 
+  [[https://spotify.com?204230984 | on Spotify]]
+
+Note:
+  * Use OBS to capture the video (mkv)
+  * Use Blender to crop (mp4)
+  * Use https://www.videosmaller.com/ to optimize the filesize (mp4)
+
+Also note:
+  * We tried to use Handbrake to optimize, but they output the (m4v) format and dokuwiki will not accept that.
+  * We also tried to embed YouTube videos.  They do a great job of optimizing the download, but they insert distracting and irrelevant recommendations and other junk.
 
 
 ===== Math Equations =====

@@ -1,8 +1,8 @@
 ====== Mechanics ======
 
-{{ :elon_musk_mechanics_short.mp4 |}}
+{{ :elon_musk_mechanics_short.mp4?540 |}}
 
-Video Source: Joe Rogan Podcast #1609, 11 Feb 2021, https://open.spotify.com/episode/2aB2swgyXqbFA06AxPlFmr
+Video source: Joe Rogan Podcast #1609, 11 Feb 2021  [[https://open.spotify.com/episode/2aB2swgyXqbFA06AxPlFmr|on Spotify]]
 
 Ubiquitous ratios in mechanics:
   * Surface to Volume Ratio

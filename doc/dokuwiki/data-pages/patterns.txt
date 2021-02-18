@@ -1,5 +1,11 @@
 ====== Patterns ======
 
+intelligence = pattern recognition
+
+Therefore, we will look at patterns.
+
+Gallery of Patterns
+
 Attraction and repulsion
 
 patterns, shapes, fields, force fields
@@ -43,4 +49,54 @@ Simplicity complexity
 efficiency, redundancy, repetition, balance
 
 [[Limits]]
+
+The whole contained within the part.
+
+Lock and key
+
+Innate patterns within humans: 
+  * story-telling, 
+  * play-acting, 
+  * song, 
+  * dance, 
+  * drawing, 
+  * language,
+
+unification vs divergence
+
+venturi effect in the center of the field
+
+parts of a torus, field
+  * venturi effect
+  * dense center, diffuse periphery
+  * two pyramids
+  * spirals
+  * discrete levels of energy in rings, distance from center
+
+the center cylinder of a torus: worm, human, electric wire, water pipe
+
+polarity or not
+
+Threshold, discreet levels, solid liquid gas, electron orbits
+
+
+Kevin Kelly, //Out of Control//, 1992,
+on complex chaotic systems that manage without a controlling hierarchy
+
+
+Elon musk on surface tension, size, why a single cell does not grow large. Diffusion only works at a given size. Above that you need a circulatory system.
+
+Mathematical laws.  Are those patterns?  No.  These are mental description and measurement of a physical system.
+
+Mammals all share the same skeleton.
+
+The big get bigger
+
+
+
+
+
+
+
+
 

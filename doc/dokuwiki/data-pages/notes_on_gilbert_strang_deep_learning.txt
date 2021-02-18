@@ -1,0 +1,40 @@
+======Notes on Gilbert Strang Linear Algebra======
+
+Course 18.065 at MIT
+
+Youtube Playlist of 35 lectures via MIT OpenCourseWare
+
+Four topics:
+
+1. The Column space of A contains all vectors Ax
+
+A is matrix, x is vector
+
+Multiply a matrix by a vector
+
+Ax
+
+dot product
+
+column space C
+
+row space R
+
+independent columns
+
+rank = the number of independent columns
+
+a rank 1 matrix gives a line - the domain of "linear" algebra
+
+a rank 2 matrix gives a plane, the column space is a plane, two independent columns one dependent column.  the two independent columns is the //basis// of the column space
+
+A = C R
+
+column rank == row rank
+
+C transpose = R
+
+C(A<sup>T</sup>) == row space
+
+
+

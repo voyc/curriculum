@@ -1,5 +1,7 @@
 ======Index======
 
+Project:  Build a spreadsheet with tags that can generate an index, glossary, gazetteer, who's who.
+
 Intelligence
 
 Thought
@@ -20,3 +22,20 @@ prosody - Emotional prosody or affective prosody is the various non-verbal aspec
 basal ganglia - brain part
 
 substantia nigra - brain part
+
+===== Who's Who =====
+
+=== Noam Chomsky ===
+
+MIT
+ 
+1950: cognitive, generative grammar, paper
+
+
+Language: The Cognitive Revolution, 1 Dec 2015, 1:39:32
+https://youtu.be/0hzCOsQJ8Sc
+
+
+=== Albert Einstein ===
+
+
