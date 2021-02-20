@@ -10,6 +10,12 @@
     * [[Physics]]
     * [[Mechanics]]
     * [[Electronics]]
+    * [[Computers]]
+    * [[Vehicles]]
+      * [[Scooters]]
+      * [[Quadcopters]]
+      * [[Batteries]]
+    * [[Robotics]]
     * [[Thermodynamics]]
     * [[Subatomic Theories]]
     * Explosions, animation
@@ -63,21 +69,15 @@
     * [[Consciousness]]
 **[[Tools]]**
     * [[Math]]
-    * [[Computer Science]]
-      * [[Computing Machine]]
-      * Hardware
-      * Distributed Processing
-      * Networking
-      * [[Software]]
-        * [[Linux]]
-        * [[Python]]
-        * [[Web Development]]
-        * [[Database]]
-        * [[Media Editing]]
-        * [[Developer Tools]]
-      * hacking
-    * [[Robotics]]
-      * biomimicry
+    * [[Software]]
+      * [[Linux]]
+      * [[Python]]
+      * [[Web Development]]
+      * [[Database]]
+      * [[Media Editing]]
+      * [[Developer Tools]]
+      * [[Networking]]
+      * [[Hacking]]
     * [[AI]]
       * machine learning
       * narrow

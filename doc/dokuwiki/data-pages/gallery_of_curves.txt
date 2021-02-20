@@ -83,6 +83,12 @@ $$y = x² + 2ax + b$$
 {{quadratic_3.png|Quadratic 3}}
 
 ~CLEAR~
+
+===== Spirals =====
+{{archimedes_spiral.png|Archimedes Spiral}}
+{{logarithmic_spiral.png|Logarithmic Spiral}}
+{{helix.png|Helix}}
+
 ==== References ====
   * Scripts for these graphs are found in http://samantha.voyc.com/doc/script
   * For more, see https://en.wikipedia.org/wiki/Gallery_of_curves.

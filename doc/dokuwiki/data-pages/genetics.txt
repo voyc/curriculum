@@ -93,6 +93,30 @@ mechanisms
 
 Gene delivery = artificial HGT
 
+===== Notes =====
+
+The cell nucleus contains 46 chromosomes, 23 pairs, 22 non-sexual, 21 sexual. One chromosome is a long strand of DNA. DNA is a protein. A section of DNA is named a gene. A gene defines a trait.
+ 
+The human body is made of proteins. Types of proteins:
+Membrane 
+DNA 
+ 
+One DNA molecule IE 1 chromosome contains billions of atoms arranged in pairs.one DNA molecule contains hundreds or thousands of genes.
+New line 
+Gene expression
+The gene causes a protein molecule to be created.
+
+We want to understand intelligence. Intelligence is related to thought. our best guess is that intelligence and thought are functions of the brain. To understand the brain we study neurology and psychology. Neurology requires an understanding of neurotransmitters and hormones which are proteins. To understand proteins we must and understand basic chemistry, how atoms combine to molecules. A protein is a molecule.
+ 
+Furthermore one aspect of AI is named genetic algorithms. to understand these algorithms we need and understanding of genetics.
+
+
+Crispr,
+Casp competition every two years,
+AlphaFold from deep mind wins the competition,
+
+CRISPR, gene editing animation
+https://youtu.be/4YKFw2KZA5o 
 
 
 
