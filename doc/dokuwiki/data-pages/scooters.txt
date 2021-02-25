@@ -1,19 +1,254 @@
 ======Scooters======
 
+FYI, according to the US Department of Transportation, the number of fatalities per vehicle mile traveled was 37 times higher for motorcycles than for cars.[7]
 
-Electric scooters
-factors:
-Wheel size
-Mirrors
-Lights: turn signals, brake
-Disk Brakes
+
+
+Motorcycle = motorbike = conventional motorcycle = feet on pegs, manual transmission
+
+scooter = motor scooter = step-through design, with flat floorboard for feet, CVT automatic
+
+kick scooter = motorized scooter = standup design
+
+moped = motor plus pedals
+
+Essence:
+  * Battery specs
+  * Motor specs
+  * Wheel size
+
+max rpm * outside tire diameter = gives max speed
+
+how to measure torque
  
-Battery specs
-Motor specs
- 
+Regenerative braking?  How implemented?
+
 Comparison to petrol bikes
 50, 110, 125 cc
- 
+
+
+1 hp = 746 W = .746 kW
+1 hp = 15 cc (14 to 17 cc)
+1 hp = 32 cc
+
+1000 cc = 200 hp
+1000 cc = 60 hp
+
+Torque and speed (single vs dual motors)
+
+Acceleration, max speed
+
+watts, volts, amps
+
+amp  hours
+
+
+^cc  ^hp  ^ torque ^ max speed ^ watts (motor) ^ volts (battery) ^
+|50  |    |        |           |               |                 |
+|110 |    |        |           |               |                 |
+|125 |9-14|        |           | 11 kw         |                 |
+|150 |    |        |           |               |                 |
+|250 |    |        |           |               |                 |
+
+Range
+
+
+
+====Components====
+
+  * Frame with rear Suspension
+  * Front fork with suspension
+  * Kick stand
+  * Wheels
+  * Brakes
+  * Splatter guards
+  * Seat
+  * Foot pegs
+  * Handlebars
+  * turn signals, brake lights
+
+  * physical UI
+    * Throttle
+    * Brakes
+    * Mirrors
+    * turn signals
+
+  * electronic UI
+    * bluetooth
+    * usb plugin for charging
+    * smartphone holder
+    * android app
+      * power on, power off
+      * replicate dashboard display
+
+  * Cladding
+  * Storage compartments
+
+  * Battery
+  * Motors
+  * Speed controllers
+
+==== Design Principles ====
+
+Compatible with a 125 cc petrol scooter.
+  * power: 12 hp, 9kw (746W = 1 hp)
+  * acceleration: 0 to 60 kph in 7 seconds
+  * max speed: 100 kph
+  * range: 400 km (10 liter tank and 40 km per liter at 80 kph = 400 km in 5 hours)
+  * tire size: 100/90-19 (100 mm width, 90% sidewall height = 90 mm, 19 inch rim diameter) 
+  * suspension: front and rear
+  * kerb weight: 150 kg
+  * max load weight: 150 kg
+  * passengers: driver plus one
+  * price new: 3000 USD
+  * ground clearance: 150-170 mm
+  * saddle height: 760-780 mm
+  * handlebar height: 1160 mm
+  * torque: 10 Nm
+  * wheelbase: 1250-1280 mm
+
+Safety first.
+  * Keep all tried and true design features of today's 125 cc petrol scooter.
+  * form factor - conform to other motorist's expectations
+  * UI - throttle, brakes, dashboard - require no additional learning to drive
+  * acceleration - for superior maneuverability in traffic
+  * brake lights, turn signals
+  * mirrors
+  * wheel size - for traction and stability on today's roads
+
+Minimalist design.  No cladding.  No storage compartments.  No luggage rack.
+
+Frame design decisions.
+  * battery down low, to lower center of gravity, for stability of the ride
+  * step-through design, with battery below the feet
+    * ? ground clearance
+    * heavy steel bottom
+    * battery pack size, height
+  * upright driver position - handlebars higher than the seat
+  * two-person saddle
+    * the bicycle post seat is rejected as uncomfortable
+
+Dual hub motors.
+  * dual motors has favorable cost-performance ratio over a single motor
+  * a drive chain would apply only on the rear
+  * eliminate cost, engineering, wear of a drive chain.
+  * accept the additional wear on the rear motor due to road vibration
+
+==== Frame ====
+
+Must connect:
+  * rear wheel with suspension and brakes
+    * modern bikes use a double-sided swingarm, a single shock, and a linkage
+  * battery
+  * foot pegs
+  * seat
+  * front fork which must support:
+    * wheel with suspension and brakes
+    * steering
+    * handlebars, with dashboard, throttle, brake handles, light switches
+    * head lamp, turn signals, brakelights
+
+Material:
+  * steel
+  * aluminum
+  * carbon fiber
+  * magnesium
+  * titanium
+  * composite
+
+
+====Electronics====
+
+Sensors
+  * speedometer
+  * tachometer
+  * battery gauge
+  * braking sensors
+  * roll
+
+bluetooth radio
+
+Processor
+  * connection to smartphone app
+  * broadcast sensor data
+  * receive and execute commands
+
+====Motors====
+
+Placement
+  * mid motor with belt drive to rear wheel
+  * hub motor on front wheel
+  * hub motor rear wheel
+  * dual hub motors, front and rear
+
+Why use dual motors?
+  * redundancy
+  * traction
+  * power
+    * at low power, single motor is more efficient
+    * at high power, dual motors can be more efficient
+
+electronic free wheeling vs regenerative braking
+
+Using only one of two motors makes no sense, because the idle motor drags.
+Always share the load between multiple motors. 
+If motors are unequal, split based on power ratio.
+
+==Hookup==
+
+One throttle, two controllers.
+
+Use Y cable to split throttle signal.
+
+====Resources====
+//Multi-motor drive systems//, from Grin Technologies
+https://www.youtube.com/watch?v=Ub4EP2_mAds&t=165s
+
+//Motor Simulator//, from Grin Tech, interactive simulation.
+https://ebikes.ca/tools/simulator.html
+
+
+==== Disk Brakes ====
+leave 25-28 mm for disk calipers
+
+====Hub Motor Manufacturers====
+
+EV-Propulsion, 
+http://ev-propulsion.com/motorcycle-hub-motors.html\\
+mostly sells parts for electric cars\\
+But they also seem to sell the EnerTrak hub motor for motorcycles.
+
+EnerTrak, https://www.enertrac.net/index.php\\
+1295 USD motorcycle hub motor
+
+
+https://www.made-in-china.com/products-search/hot-china-products/Disc_Brake_Hub_Motor.html
+
+
+QS Motor
+http://www.qs-motor.com/product/qs205-2000w-spoke-hub-motor-v3-for-electric-motorcycle/
+==== Examples ====
+
+Carbon fiber Novus
+https://africaautomotivenews.com/2019/03/22/novus-electric-motorbike-stuns-with-all-carbon-design/
+
 2000 usd electric scooter
-ttps://youtu.be/bAeZguzKKSc 
- 
+https://youtu.be/bAeZguzKKSc 
+
+WAYRA
+https://evnerds.com/design/electric-motorcycle-design/wayra-electric-motorbike-vision-from-designer-pablo-baranoff-dorn/
+
+==== Implementation Plan ====
+
+  - Procure batteries, wheels with hub motors, speed controllers, throttle
+  - Design and build a test frame to hold the wheels and put a load on them.
+  - Design and build electronics
+  - Design and program Android app
+  - Get all the above working
+  - Design frame
+  - Fabricate frame (outsourced)
+  - Procure remaining components - salvage a wrecked bike?
+  - Assembly (outsourced)
+  - Government registration
+
+look for a wrecked Vespa or Filano or other step-through 125cc scooter

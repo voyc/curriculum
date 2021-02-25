@@ -4,3 +4,16 @@
 Weld lithium battery cells into a lithium battery pack.
 https://youtu.be/b3eRv_FZjBc 
  
+
+
+per battery size per volts
+
+battery size ranges
+  * quad copter
+  * laptop computer
+  * smartphone
+  * kick scooter
+  * 125 scooter
+  * car Tesla
+  * house
+
