@@ -8,4 +8,5 @@
 [[Essays, Interviews]]\\
 [[Samantha Project]]\\
 [[Notes]]\\
-[[Dokuwiki]]
+[[Dokuwiki]]\\
+[[Projects]]
