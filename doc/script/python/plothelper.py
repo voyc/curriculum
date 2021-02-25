@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 plotfolder = '/home/john/webapps/curriculum/curriculum/doc/dokuwiki/data-media/'
 
-def formatgraph(title):
+def formatgraph(title, legend=True):
 	fig = plt.gcf()
 	fig.set_size_inches(4,3)
 	ax = plt.gca();
@@ -15,7 +15,8 @@ def formatgraph(title):
 	plt.grid()
 	if title:
 		plt.title(title)
-	plt.legend() # (loc=9) upper-center
+	if legend:
+		plt.legend() # (loc=9) upper-center
 	return;
 
 def formatspiral(title):

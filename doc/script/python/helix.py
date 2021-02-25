@@ -4,15 +4,15 @@ from mpl_toolkits.mplot3d import Axes3D
 
 title = 'Helix'
 
-n = 1000
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.add_subplot(121, projection='3d')
 
-# Plot a helix along the x-axis
+# Plot a helix along the z-axis
+n = 1000
 theta_max = 8 * np.pi
 theta = np.linspace(0, theta_max, n)
-x = theta
-z =  np.sin(theta)
+z = theta
+x =  np.sin(theta)
 y =  np.cos(theta)
 ax.plot(x, y, z, 'b', lw=2)
 
@@ -27,7 +27,30 @@ ax.plot(x, y, z, 'b', lw=2)
 # Remove axis planes, ticks and labels
 #ax.set_axis_off()
 
-formatgraph(title)
-savegraph(title)
+#formatgraph(False)
+#savegraph(title)
+#plt.show()
+
+
+title = 'circle in cartisean coordinates'
+
+# x**2 + y**2 = r**2  # cartesian equation for a circle, with r = radius
+
+theta = np.linspace(0, 2*np.pi, 100)  # 100 points from 0 to 2pi
+r = np.sqrt(10)  # radius
+
+x = r*np.cos(theta)
+y = r*np.sin(theta)
+z = theta
+
+#fig, ax = plt.subplots(1)
+#ax.plot(x,y)
+#ax.set_aspect(1)
+#plt.show()
+
+ax = fig.add_subplot(122, projection='3d')
+ax.plot(x,y,z,'b')
+#ax.plot(x, y, z, 'b', lw=2)
 plt.show()
+
 
