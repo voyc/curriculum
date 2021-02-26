@@ -12,18 +12,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.widgets import Slider, Button, RadioButtons
 from matplotlib.widgets import Slider, Button, RadioButtons, CheckButtons
-
-ax  = False  # ax for 3d view
-axp = False  # axp for polar view
-
-# sine wave
-#t = np.arange(0.0, 1.0, 0.001)
-#a0 = 5
-#f0 = 3
-#delta_f = 5.0
-#s = a0 * np.sin(2 * np.pi * f0 * t)
-#l, = plt.plot(t, s, lw=2)
-#ax.margins(x=0)
+import copy
 
 # spiral settings
 nRings = 4
@@ -40,17 +29,28 @@ polar = False
 spin = 31
 flip = 9
 
-def setupview():
-	print('setupview')
-	fig = plt.figure()
-	fig.set_size_inches(8,8)
-	plt.subplots_adjust(bottom=0.25)
-	if polar:
-		axp = fig.add_subplot(121, projection='polar')
-		ax  = fig.add_subplot(122, projection='3d')
-	else:
-		ax = fig.add_subplot(111, projection='3d')
-	return ax
+fig = plt.figure(figsize=(10,8))
+plt.subplots_adjust(bottom=0.25)
+
+specf = fig.add_gridspec(ncols=1, nrows=1)
+specd = fig.add_gridspec(ncols=2, nrows=1, width_ratios = [0.7, 1.3])
+
+#for row in range(3):
+#    for col in range(3):
+#        ax = fig5.add_subplot(spec5[row, col])
+#        label = 'Width: {}\nHeight: {}'.format(widths[col], heights[row])
+#        ax.annotate(label, (0.1, 0.5), xycoords='axes fraction', va='center')
+
+ax = fig.add_subplot(specf[0], projection='3d')
+axp = fig.add_subplot(specd[0], projection='polar')
+
+def showPolar(bool):
+	if bool:
+		axp.set_visible(True)
+		ax.set_position(specd[1].get_position(fig))
+	else:	
+		axp.set_visible(False)
+		ax.set_position(specf[0].get_position(fig))
 
 def calc_polar_r(r, theta, spiralstyle, a):
 	rs = False
@@ -73,10 +73,12 @@ def drawspiral():
 	theta = np.linspace(1, nRings*2*np.pi, nRings*360)
 
 	rs = calc_polar_r(radius,theta,style,deltar)
+	axp.cla()  # clear axes
+	axp.plot(theta,rs)
+
 	x = rs * np.cos(theta)
 	y = rs * np.sin(theta)
 	z = deltaz * theta
-
 	ax.cla()  # clear axes
 	ax.plot(x,y,z)
 
@@ -97,8 +99,6 @@ def drawspiral():
 	ax.view_init(flip, spin)
 	plt.draw()
 
-
-ax = setupview()
 
 # setup UI
 axcolor = 'lightgoldenrodyellow'
@@ -155,14 +155,14 @@ radiostyle.on_clicked(setstyle)
 
 checkboxpolar = CheckButtons(axpolar, ('polar',), (polar,))
 def setpolar(value_selected):
-	global polar
+	global polar,ax,axp
 	polar = not polar
-	print(polar)
-	setupview()
 	drawspiral()
+	showPolar(polar)
 checkboxpolar.on_clicked(setpolar)
 
 drawspiral()
+showPolar(polar)
 plt.show() # block
 
 
