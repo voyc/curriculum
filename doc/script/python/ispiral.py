@@ -1,11 +1,4 @@
-''' 
-ispiral.py  - interactive spiral
-
-polar equation for spiral = r, theta, where r = radius
-equation for circle = x**2 + y**2 = r**2
-circle = spiral with no delta r
-helix = circle with delta z
-'''
+''' ispiral.py  - interactive spiral '''
 
 import numpy as np
 import matplotlib.pyplot as plt  
@@ -15,6 +8,7 @@ from matplotlib.widgets import Slider, Button, RadioButtons, CheckButtons
 import copy
 
 # spiral settings
+nPoints = 6
 nRings = 4
 nArmscw = 1
 nArmsccw = 0
@@ -25,37 +19,47 @@ deltaz = 1
 deltar = .01
 
 # view settings
-polar = False
+polar = True 
+matrix = True
 spin = 31
 flip = 9
 
 fig = plt.figure(figsize=(10,8))
-plt.subplots_adjust(bottom=0.25)
+plt.subplots_adjust(bottom=0.25,top=0.98,left=0.02,right=0.98)
 
 specf = fig.add_gridspec(ncols=1, nrows=1)
-specd = fig.add_gridspec(ncols=2, nrows=1, width_ratios = [0.7, 1.3])
+spect = fig.add_gridspec(ncols=3, nrows=1, width_ratios = [0.2, 0.4, 0.3])
+specp = fig.add_gridspec(ncols=2, nrows=1, width_ratios = [0.2, 0.7])
+specm = fig.add_gridspec(ncols=2, nrows=1, width_ratios = [0.6, 0.3])
 
-#for row in range(3):
-#    for col in range(3):
-#        ax = fig5.add_subplot(spec5[row, col])
-#        label = 'Width: {}\nHeight: {}'.format(widths[col], heights[row])
-#        ax.annotate(label, (0.1, 0.5), xycoords='axes fraction', va='center')
+axp = fig.add_subplot(spect[0], projection='polar')
+axc = fig.add_subplot(spect[1], projection='3d')
+axd = fig.add_subplot(spect[2]) # matrix
 
-ax = fig.add_subplot(specf[0], projection='3d')
-axp = fig.add_subplot(specd[0], projection='polar')
+#axd.spines['bottom'].set_linewidth(0)
+#axd.spines['left'].set_linewidth(0)
+axd.set_xticklabels([])
+axd.set_yticklabels([])
+axd.set_xticks([])
+axd.set_yticks([])
 
-def showPolar(bool):
-	if bool:
-		axp.set_visible(True)
-		ax.set_position(specd[1].get_position(fig))
+def showViews():
+	axp.set_visible(polar)
+	axd.set_visible(matrix)
+
+	if polar and matrix:
+		axc.set_position(spect[1].get_position(fig))
+	elif polar:
+		axc.set_position(specp[1].get_position(fig))
+	elif matrix:
+		axc.set_position(specm[0].get_position(fig))
 	else:	
-		axp.set_visible(False)
-		ax.set_position(specf[0].get_position(fig))
+		axc.set_position(specf[0].get_position(fig))
 
 def calc_polar_r(r, theta, spiralstyle, a):
 	rs = False
 	if spiralstyle == 'circle':
-		rs = r
+		rs = r + theta - theta  # make an array the same dim as theta
 	elif spiralstyle == 'arithmetic':
 		rs = theta
 	elif spiralstyle == 'logarithmic':
@@ -70,35 +74,48 @@ def calc_polar_r(r, theta, spiralstyle, a):
 	return rs
 
 def drawspiral():
-	theta = np.linspace(1, nRings*2*np.pi, nRings*360)
-
+	theta = np.linspace(1, nRings*2*np.pi, nRings*nPoints)
 	rs = calc_polar_r(radius,theta,style,deltar)
-	axp.cla()  # clear axes
-	axp.plot(theta,rs)
 
-	x = rs * np.cos(theta)
-	y = rs * np.sin(theta)
-	z = deltaz * theta
-	ax.cla()  # clear axes
-	ax.plot(x,y,z)
+	# redraw polar
+	if polar:
+		axp.cla()
+		axp.plot(theta,rs)
+	
+	# redraw cartesian
+	if True:
+		x = rs * np.cos(theta)
+		y = rs * np.sin(theta)
+		#z = deltaz * theta
+		z = range(0, len(theta),1)
+		axc.cla()  # clear axes
+		axc.plot(x,y,z)
+		axc.view_init(flip, spin)
 
+		# plot a second arm in the reverse direction
+		if False: #nArms == 2:
+			x = 0 - x
+			y = 0 - y
+			axc.plot(x,y,z)
 
-	# plot a second arm in the reverse direction
-	if False: #nArms == 2:
-		x = 0 - x
-		y = 0 - y
-		ax.plot(x,y,z)
+	
+	# redraw matrix - very slow
+	if matrix:
+		cell_text = []
+		nrows = min(len(theta)-1,30)
+		for i in range(0,nrows):
+			row_text = [f'{theta[i]:.2f}',f'{rs[i]:.2f}',f'{x[i]:.2f}',f'{y[i]:.2f}']
+			cell_text.append(row_text)
+		col_labels = ('theta', 'r', 'x', 'y')
+		axd.table(cell_text, loc='center', colLabels=col_labels)
 
-	#ax.plot(x,y,z)
+	plt.draw()
 
-	# rotate the axes and update
+# anime - rotate the axes and update
 #	for angle in range(0, 360):
 #		ax.view_init(angle, angle)
 #		plt.draw()
 #		plt.pause(.001)
-	ax.view_init(flip, spin)
-	plt.draw()
-
 
 # setup UI
 axcolor = 'lightgoldenrodyellow'
@@ -153,16 +170,19 @@ def setstyle(value_selected):
 	drawspiral()
 radiostyle.on_clicked(setstyle)
 
-checkboxpolar = CheckButtons(axpolar, ('polar',), (polar,))
-def setpolar(value_selected):
-	global polar,ax,axp
-	polar = not polar
+checkboxpolar = CheckButtons(axpolar, ('polar','matrix'), (polar,matrix,))
+def setview(value_selected):
+	global polar,matrix
+	if value_selected == 'polar':
+		polar = not polar
+	if value_selected == 'matrix':
+		matrix = not matrix
 	drawspiral()
-	showPolar(polar)
-checkboxpolar.on_clicked(setpolar)
+	showViews()
+checkboxpolar.on_clicked(setview)
 
 drawspiral()
-showPolar(polar)
+showViews()
 plt.show() # block
 
 
