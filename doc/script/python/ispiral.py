@@ -101,6 +101,9 @@ def calc_polar_r(style, theta, a, b):
 	elif style == 'hyperbolic':
 		r = a / theta  # Required: theta > 0 
 
+	elif style == 'multi':
+		r = (((n*a)/(2*np.pi)) * theta) + (k * a)
+
 	else:
 		print('unrecognized style')
 		quit()
@@ -117,6 +120,8 @@ def drawspiral():
 	if polar:
 		axp.cla()
 		axp.plot(theta,r)
+		if nArmsCCW:
+			axp.plot(0-theta,r)
 	
 	# redraw cartesian
 	if True:
@@ -137,7 +142,7 @@ def drawspiral():
 			axc.set_ylim(auto=True)
 
 		# plot a second arm in the reverse direction
-		if False: #nArms == 2:
+		if nArmsCCW:
 			x = 0 - x
 			y = 0 - y
 			axc.plot(x,y,z)
