@@ -10,10 +10,15 @@ Drawing Tool]] simulating compass and straight-edge\\
 
 ====Notes====
 
-pokerface i2d.py\\
-pokerface ispiral.py \\
-pokeerface liner.html \\
+pokerface scripts
+  * i2d.py
+  * ispiral.py
+  * liner.html
 
+curriculum python scripts
+  * example_sinewave_interactive.py
+  * helix3.py - renamed
+  * ispiral.py
 
 khan academy - vector dot product and vector length \\
 khan academy - matric vector products \\
