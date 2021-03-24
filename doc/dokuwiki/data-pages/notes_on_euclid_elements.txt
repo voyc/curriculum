@@ -19,6 +19,7 @@ curriculum python scripts
   * example_sinewave_interactive.py
   * helix3.py - renamed
   * ispiral.py
+  * test3ddraw.py
 
 khan academy - vector dot product and vector length \\
 khan academy - matric vector products \\
