@@ -1,9 +1,13 @@
 ====== Math ======
 
-  * [[Number Systems]]
-  * dimensions
-  * [[Gallery of Curves]]
+  * [[Arithmetic]]
+    * add, subtract
+    * multiply, divide
+    * exponent, logarithm
+    * fractions, decimals
   * [[Algebra]]: the study of generalizations of arithmetic operations  
+    * [[Gallery of Curves]]
+    * [[Spirals]]
     * [[Polynomial]]
     * [[Linear]]
     * [[Quadratic]]
@@ -13,25 +17,36 @@
     * [[Exponent]]
     * [[Logarithm]]
   * [[Geometry]]: the study of shape  
-  * [[Trigonometry]]:  
-  * [[Calculus]]: the mathematical study of continuous change  
-    * [[Differential Calculus]]: rates of change and slopes of curves  
-    * [[Integral Calculus]]: accumulation of quantities and the areas under and between curves  
-  * [[Nonlinear Programming]]
+  * [[Trigonometry]]: the study of the triangle 
+  * [[Miscellaneous Concepts]]
+    * [[Sets]] - set theory
+    * [[Classifications]] - real, integer, whole, rational, etc.
+    * [[Dimensions]] - 2D, 3D, 4D, nD
+    * [[Logic]] - if then else
+    * [[Functions]]
+    * [[Linear, non-linear, curve, curvilinear]]
+      * [[Nonlinear Programming]]
+    * [[Number Systems]] - base-10, base-2, etc.
+    * Number theory - prime numbers
+    * [[Scale]]
   * [[Linear Algebra]]  
     * [[Matrix Math]]
     * [[Matrix Multiplication]]
-  * [[Regression Analysis]]
-    * [[Linear Regression]]
-        * Simple Linear Regression 
-        * Multiple Linear Regression  
-        * Multi-Variate Linear Regression
-    * [[Non-Linear Regression]]
-    * [[Logistic Regression]]
-  * [[Logic]] - set theory, number systems
+  * [[Calculus]]: the mathematical study of continuous change  
+    * [[Differential Calculus]]: rates of change and slopes of curves  
+    * [[Integral Calculus]]: accumulation of quantities and the areas under and between curves  
   * [[Statistics]]
     * [[Probability]]
-  * Analysis, modeling
+  * [[Linear Regression]]
+    * Analysis, modeling
+    * Simple Linear Regression 
+    * Multiple Linear Regression  
+    * Multi-Variate Linear Regression
+    * [[Non-Linear Regression]]
+    * [[Logistic Regression]]
+  * [[Neural Net]]
+    * NN Variations
+    * Deep Learning
 
 Gil Strang's course 18.065
   * Linear Algebra (Matrix Math)

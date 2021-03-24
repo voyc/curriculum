@@ -17,3 +17,32 @@ All are open source.
 [[Gimp]] - image editor
 
 [[Calibre]] - ebook editor
+
+====Data Formats====
+
+== 3D Models ==
+
+dwg - Autodesk proprietary
+
+dxf - semi-public format controlled by Autodesk, listed by ISO
+
+dae - aka Collada, public XML format controlled by Khronos industry consortium
+
+bvh - Bounding Volume Hierarch
+
+svg - Scalable Vector Graphics
+
+ply - "polygon", Stanford Triangle format
+
+fbx - now controlled by Autodesk
+
+gltf, glb - Graphics Language Transmission Format, now controlled by Khronos
+
+obj - geometry definition file, originally developed by Wavefront
+
+x3d, wrl - successor to VRML, listed by ISO
+
+stl - microsoft
+
+
+

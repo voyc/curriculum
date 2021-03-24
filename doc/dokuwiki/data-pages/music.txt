@@ -1,0 +1,78 @@
+======Music======
+scale - different meanings, math, music scale, major, minor, 12-tone, pentatonic
+
+Bobby McFerrin demonstrates the pentatonic scale, and says its universal in all people
+https://youtu.be/ne6tB2KiZuk
+
+well-tempered clavier
+
+
+note	Hz	cm
+
+A4	440.00	78.41
+A#4 	466.16	74.01
+B4	493.88	69.85
+C5	523.25	65.93
+C#5 	554.37	62.23
+
+D5	587.33	58.74
+D#5 	622.25	55.44
+E5	659.25	52.33
+F5	698.46	49.39
+F#5 	739.99	46.62
+G5	783.99	44.01
+G#5 	830.61	41.54
+A5	880.00	39.20
+
+minor second:   A A# : 466.16 - 440 =  26.16
+major second:   A B  : 493.88 - 440 =  53.88 
+major third:    A C# : 554.37 - 440 = 114.37
+perfect fourth: A D  : 587.33 - 440 = 147.33
+perfect fifth:  A E  : 659.25 - 440 = 219.25
+
+Frequencies and wavelengths of the well-tempered scale
+https://pages.mtu.edu/~suits/notefreqs.html
+
+Throat singing demo, at 2:40, overtones pentatonic scale
+https://www.youtube.com/watch?v=Q3K3RimjsnQ
+
+Throat singing, overtones, demo
+https://youtu.be/LCgzLdCWJrE
+
+====Melody====
+frequencies - measured in degrees, one frequency for each note
+
+angles - intervals between notes, subtract the frequencies of notes in a chord
+
+"More angular" interval, more dissonance
+
+half-step = 30$^\circ$
+
+
+====Harmony====
+
+notes that go together, melody in thirds, underlying chord progression
+
+the harmonic series (sequence) - measure and diagram the notes in the chord
+
+[[https://en.wikipedia.org/wiki/Scale_of_harmonics|wikipedia: Scale of harmonics]]
+
+throat-singing
+
+Tuvan throat singing
+
+V -> I progression, "resolution"
+
+IV -> I progression, "amen"
+
+
+====Rythym====
+
+====Lyric====
+
+
+====Emotional Content====
+
+How do the patterns in music connect to emotional feelings in the body?
+
+How can a composer tell a story?

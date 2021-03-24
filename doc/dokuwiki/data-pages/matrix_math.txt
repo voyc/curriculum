@@ -118,6 +118,54 @@ $$A^{-1}=\begin{bmatrix}-1.7&0.25&1.4\\0.025&0.0625&-0.05\\0.75&-0.125&-0.5\end{
 
 Multiplying a matrix times it's inverse results in the Identity matrix. $A*A^{-1}=I$
 
+==== Operations ====
+
+scalar, vector, matrix, tensor
+
+add, multiply, dot
+
+cartesian product?
+
+linear combination?
+
+====Product====
+
+In general, "product" is the result of a multiplication.
+
+When we multiply sets, vectors, matrices, formulas, etc., then there begin to be variations
+in the way the multiplication can be carried out.
+
+In advanced topics, we see several concepts and several types of products, 
+and often the terms are used inconsistently.
+
+For now, we resolve all the different concepts down to two: dot product and Cartesian product.
+
+Cartesian product is also known as:
+  * direct product
+  * cross product
+  * element-wise multiplication
+
+The term "math multiplication" may refer to either.
+
+Either type of multiplication can be taken for each of the following pairs of terms:
+  * product of two scalars
+  * product of scalar times vector
+  * product of two vectors
+  * product of scalar times matrix
+  * product of vector times matrix
+  * product of two matrices
+  * product of scalar times tensor
+  * product of vector times tensor
+  * product of matrix times tensor
+  * product of two tensors
+
+====Case Studies====
+
+1. Computer graphics.  The sun rising over a landscape.
+
+2. Data analysis.  How to predict the size of a person's bank account.
+
+
 ==== Determinate ====
 ==== Dot product ====
 ==== Cross product ====

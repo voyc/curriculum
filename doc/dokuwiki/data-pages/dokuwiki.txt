@@ -45,11 +45,42 @@ Also note:
 
 For math equations, we use the MathJax extension.
 
-For upright text, use \textrm or \mtext instead of \textup
+For upright text, use \text{hello} instead of \textup{hello}.
 
-For syntax examples, see [[Gallery of Curves]].
+===Alignment===
 
-Edit equations online here: https://www.codecogs.com/latex/eqneditor.php
+Align multiple equations like this: 
+  \begin{align}
+  x   &= 3       & 10    &abc def\\
+  xyz &= a_2 b_3 & 1000  &xy\\
+  12  &= 8y^4           && explain\\
+  y   &= a_1 b_1        && this\\
+  \end{align}
+
+\begin{align}
+x   &= 3       & 10    &abc def\\
+xyz &= a_2 b_3 & 1000  &xy\\
+12  &= 8y^4           && explain\\
+y   &= a_1 b_1        && this\\
+\end{align}
+
+The ampersands split the section into columns.\\
+The columns alternate between right and left alignment.\\
+Two adjacent ampersands skips a column.\\
+
+===Symbols===
+
+\begin{align}
+x=1 &\iff y = 72 && \text{\iff} \\
+x=2 &\therefore y = 43.2 && \text{\therefore} \\
+x=3 &\rightarrow y = 25.92 && \text{\rightarrow} \\
+x=4 &\Rightarrow y = 15.552 && \text{\Rightarrow} \\
+x   &= 30^\circ             && \text{^\circ} \\
+\end{align}
+
+Edit math equations online here: \\
+https://www.codecogs.com/latex/eqneditor.php
+
 
 ===== UML Drawings =====
 

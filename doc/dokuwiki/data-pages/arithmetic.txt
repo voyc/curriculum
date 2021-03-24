@@ -1,0 +1,41 @@
+======Arithmetic======
+
+====add, subtract====
+
+====multiply, divide====
+
+====exponent, logarithm====
+
+===Exponent===
+2 raised to the power of 3 = 8 \\
+2 times itself three times = 8 \\
+2 * 2 * 2 = 8 \\
+2 is the base \\
+3 is the exponent \\
+8 is the result \\
+
+
+===Logarithm===
+logarithm is the reverse \\
+what is the exponent? \\
+Given the base and the result, what is the exponent? \\
+what power of 2 gives 8? \\
+what exponent of 2 gives 8? \\
+to what power must I raise 2 to get 8? \\
+$\log_2(8) = ?$ \\
+
+
+\begin{align}
+2^3 &= 8 && \text{exponential equation} \\
+\log_2(8) &= 3 && \text{logarithmic equation} \\
+\\
+2^3 = 8 &\implies \log_2(8) = 3 \\
+\end{align}
+
+===Advanced Topics===
+
+logarithmic scale \\
+natural logs \\
+
+====fractions, decimals====
+

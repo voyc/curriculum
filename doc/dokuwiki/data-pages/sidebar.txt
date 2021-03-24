@@ -3,24 +3,16 @@
 
 **[[Matter]]**
     * [[Patterns]]
-    * [[Dimensions]]
-    * [[Physical world]]
     * [[Limits]]
     * [[Chemistry]]
     * [[Physics]]
+    * [[Thermodynamics]]
     * [[Mechanics]]
     * [[Electronics]]
-    * [[Computers]]
-    * [[Vehicles]]
-      * [[Scooters]]
-      * [[Quadcopters]]
-      * [[Batteries]]
-    * [[Robotics]]
-    * [[Thermodynamics]]
     * [[Subatomic Theories]]
-    * Explosions, animation
-    * astronomy
     * [[Geography]]
+    * [[Astronomy]]
+    
 **[[Life]]**
     * [[Organic Chemistry]]
     * [[Biochemistry]]
@@ -37,6 +29,7 @@
         * animal
         * [[Neuroscience]]
     * [[Humanity]]
+
 **[[Mind]]**
     * [[Sensation]]
     * [[Psychology]]
@@ -67,8 +60,14 @@
     * [[Cognition]]
     * [[Language]]
     * [[Consciousness]]
+
 **[[Tools]]**
-    * [[Math]]
+    * [[Vehicles]]
+      * [[Scooters]]
+      * [[Quadcopters]]
+      * [[Batteries]]
+    * [[Robotics]]
+    * [[Computers]]
     * [[Software]]
       * [[Linux]]
       * [[Python]]
@@ -78,6 +77,7 @@
       * [[Developer Tools]]
       * [[Networking]]
       * [[Hacking]]
+    * [[Math]]
     * [[AI]]
       * machine learning
       * narrow

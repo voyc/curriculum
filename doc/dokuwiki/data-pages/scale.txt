@@ -1,0 +1,176 @@
+======Scale======
+
+The word "scale" has several different meanings.
+
+Generally it means size.
+
+====Patterns====
+
+Which natural phenomenon end up on which type of scale?
+
+scientific notation
+
+orders of magnitude
+
+significant digits
+====Set, Sequence, Progression, Series====
+
+Sequence = a progression of numbers
+
+Series = the sum of a sequence (a scalar)
+
+Recursive sequence, each value related to the one before:
+  * arithmetic - add a constant to the previous number, $1, 3, 5, 7, 9,\cdots$
+  * linear = arithmetic
+  * algebraic = arithmetic
+  * geometric - multiply the previous number by a constant, $1, 2, 4, 8, 16,\cdots$
+  * exponential - raise the previous number by an exponent, $2, 4, 16, 256, 65536,\cdots$
+  * logarithmic 
+
+Non-recursive sequence:
+  * exponential - square an arithmetic sequence, $1^2, 2^2, 3^2, 4^2, 5^2,\cdots \rightarrow 1, 4, 9, 16, 25, \cdots$
+
+The above examples use 
+x 1,2,3,4,5
+y 1,3,5,7,9
+
+x 1,2,3,4,5
+y 1,2,4,8,16
+
+
+
+Same examples with x and y
+constant amount
+constant ratio
+
+arithmetic sequence grows by a constant amount
+geometric sequence grows by a constant ratio
+
+geometric sequence
+
+initial value
+ratio
+
+\begin{align}
+\text{initial value } c &= 120 \\
+\text{ratio } r &= 0.6 \\
+x &= 0,1,2,3,4,5 \\
+y &= cr^x \\
+x=0 &\implies y = (120)0.6^0 = 120 \\
+x=1 &\implies y = (120)0.6^1 = 72 \\
+x=2 &\implies y = (120)0.6^2 = 43.2 \\
+x=3 &\implies y = (120)0.6^3 = 25.92 \\
+x=4 &\implies y = (120)0.6^4 = 15.552 \\
+x=5 &\implies y = (120)0.6^5 = 9.3312 \\
+\end{align}
+
+\begin{align}
+\text{initial value } c &= 1 \\
+\text{ratio } r &= 2 \\
+x &= 0,1,2,3,4,5 \\
+y &= cr^x \\
+x=0 &\implies y = (1)2^0 = 1 \\
+x=1 &\implies y = (1)2^1 = 2 \\
+x=2 &\implies y = (1)2^2 = 4 \\
+x=3 &\implies y = (1)2^3 = 8 \\
+x=4 &\implies y = (1)2^4 = 16 \\
+x=5 &\implies y = (1)2^5 = 64 \\
+\end{align}
+
+\begin{align}
+y &= cr^x \\
+x &= \{ 0,1,2,3,4,5 \} \\
+\text{initial value } c &= 1 \\
+\text{ratio } r &= 2 \\
+x=0 &\implies y = (1)2^0 = 1 \\
+x=1 &\implies y = (1)2^1 = 2 \\
+x=2 &\implies y = (1)2^2 = 4 \\
+x=3 &\implies y = (1)2^3 = 8 \\
+x=4 &\implies y = (1)2^4 = 16 \\
+x=5 &\implies y = (1)2^5 = 64 \\
+\end{align}
+
+
+===Infinite Expression===
+
+\begin{align}
+a_0+a_1+a_2+\cdots
+\end{align}
+
+
+===Infinite Series===
+
+\begin{align}
+\sum\limits_{i=0}^\infty a_n = a_0+a_1+a_2+a_3+a_4+\cdots
+\end{align}
+
+===Harmonic Series===
+
+\begin{align}
+\sum\limits_{n=1}^\infty \frac{1}{n} = \frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots
+\end{align}
+
+https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)
+
+Terms used in both music and math:
+  * harmonic progression - referring to chord changes
+  * scale - multiple kinds of scales in music: major, minor, 12-tone, pentatonic, etc.
+
+
+===Logarithmic vs exponential===
+
+opposites
+  * exponential growth accellerates
+  * logarithmic growth slows
+
+software system efficiency - logarithmic growth of resource usage is a good thing,
+it "scales" 
+
+Warning
+
+growth of bacteria shows exponential growth
+
+but when plotted on a graph with a logarithmic scale, you get a straight line
+
+transformations
+
+===arithmetic vs geometric sequence===
+
+the exponentiation of an arithmetic sequence results in a geometric sequence, why?
+
+the logarithm of the geometric sequence results in the arithmetic sequence
+
+===Geometric Sequence vs Exponential Function====
+
+geometric sequence is discrete
+
+exponential function is continuous
+
+Ray Kurzweil: //Second Half of the Chessboard//
+
+====To Do====
+
+Khan: Intro to Geometric Sequences
+https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-geometric-sequences/v/geometric-sequences-introduction
+
+Khan: Intro to Logarithms
+https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/a/intro-to-logarithms
+
+Khan: Forms of linear equations review
+https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:summary-forms-of-two-variable-linear-equations/a/forms-of-linear-equations-review
+
+Khan: Systems of Equations
+https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/x2f8bb11595b61c86:solving-systems-elimination/v/king-s-cupcakes-solving-systems-by-elimination?modal=1
+
+Wikipedia: Quadratic Equation
+https://en.wikipedia.org/wiki/Quadratic_equation
+
+Wikipedia: Geometric progression
+https://en.wikipedia.org/wiki/Geometric_progression
+
+Stack Overflow: Logarithmic slider with matplotlib
+https://mail.google.com/mail/u/0/#inbox/QgrcJHrnvrNsgvhwfZxwXLlPhDPbxVSnkjB
+
+"Be careful, if you want to have 10^3 as initial value 
+you have to pass in valinit=3 not 10**3. Same for valmax and valmin. 
+You can use log10(desired_value) if you can not easily type it."

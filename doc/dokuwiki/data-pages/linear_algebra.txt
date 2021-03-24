@@ -1,12 +1,371 @@
 ====== Linear Algebra ======
 
+Linear algebra is the branch of mathematics concerning linear equations, and linear maps, 
+and their representations in vector spaces and through matrices.
+
+Includes matrix math.
+
+Linear algebra is central to geometry and to almost all areas of mathematics.
+
+Linear algebra is also used in most sciences and fields of engineering, 
+because it allows modeling many natural phenomena, and computing efficiently with such models.
+
 == Linear Transformation ==
 
 == Eigen Values ==
 
 == Determinants ==
 
+We have already learned equations, curves, Cartesian coordinates, polar coordinates.
+Now we learn three different notations to represent the same ideas.
+  * matrix math
+  * unit vector algebra
+  * parametric equations
+
+These new notations allow us to deal with multiple dimensions.
+
+====Vectors====
+vector: magnitude & direction
+
+example vector:
+$$\begin{bmatrix}
+4\\ 
+3
+\end{bmatrix}$$
+
+tuple - ordered list of numbers.  The vector above is a 2-tuple.
+
+${R}^2$ - real coordinate space, all possible vectors of real numbers in two dimensions
+
+The vector can also be drawn as an arrow on a graph.
+Addition of two vectors, or multiplication by a scalar,
+can be shown as matrix math and as arrows on a graph.
+
+====Unit Vectors====
+
+Start with vector V as (2,3) or as:
+$$\vec{V} = \begin{bmatrix}
+2\\ 
+3
+\end{bmatrix}$$
+
+Unit vector i moves 1 unit in the horizontal direction.
+$$\hat{i} = \begin{bmatrix}
+1\\ 
+0
+\end{bmatrix}$$
+
+Unit vector j moves 1 unit in the vertical direction.
+$$\vec{j} = \begin{bmatrix}
+0\\ 
+1
+\end{bmatrix}$$
+
+Now vector V can also be represented as:
+$$\vec{V} = 2 \hat{i} + 3 \hat{j}$$
+
+Add two vectors using unit vector notation like this:
+\begin{align}
+\vec{b} &= -1\hat{i} + 4\hat{j} \\
+\vec{V} + \vec{b} &= (2-1)\hat{i} + (3+4)\hat{j} = \hat{i} + 7 \hat{j}
+\end{align}
+
+Viola.  Straight algebra.
+
+====Parametric Equations====
+
+A parametric representation of a geometric object.
+
+For example, this pair of equations forms a parametric representation of a circle.  
+$t$ is the parameter.
+
+$$
+\begin{align*}
+x &= \cos t\\
+y &= \sin t
+\end{align*}
+$$
+
+A set of colinear vectors:
+
+$$
+\begin{align*}
+\vec{V} &= \begin{bmatrix}2\\1\end{bmatrix}
+\\S &= \begin{Bmatrix}c \vec{V} \mid c \in \mathbb{R} \end{Bmatrix}
+\end{align*}
+$$
+
+Given the vector $\vec{V}$, the set $S$ is the set of colinear vectors : 
+
+the constant $c$ times the vector $\vec{V}$ where $c$ is in the set of real numbers.
+
+Multiple ways to express a 2D line:
+
+\begin{align}
+y &= 3x + 2 && \text{with an algebraic equation} 
+\\ \vec{a} &= \begin{bmatrix} 3\\ 1 \end{bmatrix}
+ \vec{b} = \begin{bmatrix} 2\\ 0 \end{bmatrix} && \text{with vectors}
+\\L &= \begin{Bmatrix} \vec{x} + t \vec{V} \mid t \in \mathbb{R} \end{Bmatrix}
+&& \text{and set notation}
+\end{align}
+
+====A 3D Line====
+
+Define a 3D line, four different ways
+
+==1. Using an algebraic equation==
+\begin{align}
+x + y + z = k && \text{Nope. That is not a line. It is a plane.}
+\end{align}
+
+It is not possible to define a 3D line with an algebraic equation.
+
+For more than two dimensions, we must use vector and set notation and parameterized equations.  
+
+==2. Using set notation==
+
+\begin{align}
+\vec{P}_{1} &= \begin{bmatrix} -1\\2\\7 \end{bmatrix}
+\vec{P}_{2} = \begin{bmatrix} 0\\3\\4 \end{bmatrix} 
+&& \text{for two vectors } \vec{P}_{1} \text{ and } \vec{P}_{2}
+
+\\L &= \begin{Bmatrix} \vec{P}_{1} + t (\vec{P}_{1} - \vec{P}_{2}) \mid t \in \mathbb{R} \end{Bmatrix} 
+&& L \text{ defines the line}
+
+\\L &= \begin{Bmatrix} \begin{bmatrix}-1\\2\\7\end{bmatrix} + t \begin{bmatrix}-1\\-1\\3\end{bmatrix} \mid t \in \mathbb{R} \end{Bmatrix}
+&& \text{substitution and subtraction}
+
+\end{align}
+
+==3. Using parametric equations==
+
+\begin{align}
+x &= -1 + -1t
+\\y &= 2 + -1t
+\\z &= 7 + 3t
+\end{align}
+
+==4. Using a graph==
+Draw the line using Python and the parameterized equations.
+
+  import numpy as np
+  import matplotlib.pyplot as plt
+  from mpl_toolkits.mplot3d import Axes3D
+  
+  t = np.linspace(-10, 10, 100)  # create parameter t
+  x = -1 + -1*t                  # calc vectors x,y,z
+  y = 2 + -1*t
+  z = 7 + 3*t
+  
+  fig = plt.figure()
+  ax = fig.add_subplot(projection='3d')
+  ax.plot(x,y,z)                 # plot vectors x,y,z
+  plt.show()
+
+====Linear Combination====
+
+Multiply each vector by an arbitrary scalar and sum the resulting products.
+
+\begin{align}
+c_{1} \vec{V}_{1} + c_{2} \vec{V}_{2} + \cdots + c_{n} \vec{V}_{n} 
+\end{align}
+
+===Span===
+
+\begin{align}
+\text{span } (\vec{a}, \vec{b}) 
+\end{align}
+
+===Zero Vector===
+
+$$\vec{0} = \begin{bmatrix}0\\0\end{bmatrix}$$
+
+===Independence===
+
+Given a set of vectors, a vector is dependent 
+if it can be represented as a combination of the others.
+If not, then the vector is linearly independent.
+
+If a vector is dependent it is redundant.  
+In many data analysis problems, our first task will be to eliminate all dependent vectors.
+Our working set of data should include only independent vectors. 
+Therefore we need ways to identify and separate the independent vs dependent vectors. 
+
+For example, consider these three vectors.
+$$ $$
+
+The first two vectors define a 2D line.
+The third vector is on that line.  It adds no additional information.  It is redundant.
+It is dependent.
+Before doing any work, we want to eliminate dependent vectors.
+
+
+
+The 
+
+One of the ways is to use the this rule.
+
+
+Given two vectors, if one is dependent, then the other is also dependent?
+
+
+Trick. 
+
+if both c_{1} and c_{2} are zero, then they are independent.
+If either c_{1} or c_{2} is non-zero, then they are dependent.  
+
+c_{1} + c_{2} = 0 \Rightarrow \text{independent}
+
+if vectors are independent, then their span is the whole of real number set.
+
+if vectors are dependent, then their span is a line.
+
+
+c_{1} + c_{2} are independent, \Rightarrow \text{span}(\vec{a}, \vec{b}) = \mathbb{R}
+
+====Subspace====
+
+Linear Algebra = doing multiply and divide operations on vectors.  
+Specifically, scalar multiplication and tip-to-tail addition of vectors.
+
+Vector Space = the set of all vectors.
+
+Vector Subspace = a place where we can do linear algebra.  \\
+That is, where we can safely add and multiply vectors,\\
+such that the resulting vectors are still in the same subspace.\\
+
+$S$ is a subset of the vector space.
+
+Is $S$ also a //subspace// of the vector space?  
+
+The answer is yes if three requirements have been met:
+
+1.  The zero vector must be included in S.
+
+2.  Assuming vectors x and y are in the subspace and scalar c is a Real number,
+if we multiple c times x, the resulting vector must still be within the S subspace.
+That is called "closure under scalar multiplication."
+
+3. Likewise, if we add a + b, the resulting vector must be in subspace S.  
+That is called "closure under addition".
+
+Given:
+
+\begin{align}
+S &\in \mathbb{R}\\
+c &\in \mathbb{R}\\
+\vec{x}, \vec{y} &\in S\\
+\end{align}
+
+S is a //subspace// of a Vector Space if the following three conditions are met
+
+\begin{align}
+\vec{0} &\in S \\
+c \vec{x} &\in S  \\
+\vec{x} + \vec{y} &\in S  \\
+\end{align}
+
+The span of any set of vectors is a subspace of $\mathbb{R}^n$.
+
+====Basis====
+
+The basis of a subspace is the minimum set of vectors that spans the subspace.
+
+By "minimum" set, we mean the vectors in this set must be linearly independent.
+No redundant vectors.
+
+====Dot Product====
+
+\begin{align}
+\vec{a} \cdot \vec{b}
+=
+\begin{bmatrix}
+a_1 \\ a_2 \\ \vdots \\ a_n
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+b_1 \\ b_2 \\ \vdots \\ b_n
+\end{bmatrix}
+=
+a_1 b_1 + a_2 b_2 + \cdots + a_n b_n
+\end{align}
+
+The dot product equals a single number, a scalar.
+
+The distributive, associative and commutative properties apply to dot products.
+====Length====
+
+The length of a vector, taken from the Pythagorean theorem, is a kind of multidimensional 
+hypotenuse.
+
+\begin{align}
+\left \| \vec{a} \right \| = \sqrt{a^1+a^2+\cdots+a^n}
+\end{align}
+
+The length of a vector can also be expressed as 
+the square root of the dot product of a vector times itself.
+
+\begin{align}
+\left \| \vec{a} \right \| &= \sqrt{\vec{a} \cdot \vec{a}} \\
+{\left \| \vec{a} \right \|}^2 &= \vec{a} \cdot \vec{a}
+\end{align}
+
+====Cauchy-Schwarz inequality====
+
+Given two non-zero vectors, \\
+compare the dot product vs. the product of the lengths.
+
+The dot product will be less than the product of the lengths, except \\
+when one vector is a scalar of the other.
+
+\begin{align}
+\vec{x},  \vec{y} \in \mathbb{R} \text{ and }
+\vec{x}, \vec{y} \ne \vec{0} \\
+
+\left | \vec{x} \cdot \vec{y} \right | \le 
+\left \| \vec{x} \right \| \left \| \vec{y} \right \| \\
+
+\vec{x} = c\vec{y} \iff
+\left | \vec{x} \cdot \vec{y} \right | =
+\left \| \vec{x} \right \| \left \| \vec{y} \right \| \\
+\end{align}
+
+====Angle between vectors====
+
+We started with Length of a vector above.
+
+Now we define the angle between two vectors.
+
+from Trigonometry, Triangle Inequality,
+the length any two sides is greater than or equal to the length of the remaining side.
+$$c \le a + b$$
+
+Now we construct a triangle of vectors such that the length of the third side 
+is equal to the difference between the lengths of the first two sides.
+
+\begin{align}
+(\vec{a} - \vec{b}) = \left\|\vec{a}\right\| + \left\|\vec{b}\right\|
+\end{align}
+
+from geometry:\\
+law of cosines: $c^2 = a^2 + b^2 - 2ab\cos\theta$
+
+The dot product of vectors $\vec{a}$ and $\vec{b}$ is equal to 
+the length of $\vec{a}$ times the length of $\vec{b}$ times the cosine of theta.
+
+\begin{align}
+(\vec{a} \cdot \vec{b}) = \left \| \vec{a} \right \| \left \| \vec{b} \right \| \cos \theta\\
+\end{align}
+
+
 
 ==== References ====
-  * //Essence of Linear Algebra//, playlist of 15 videos by 3blue1brown: http://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE//ab
 
+//Essence of Linear Algebra//, 3blue1brown, 
+[[http://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE|playlist of 15 youtubes]]
+
+//Linear Algebra//, Khan Academy, Salmon Khan, 
+[[https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/vectors/v/vector-introduction-linear-algebra?modal=1|video course]]
+
+Dr. Trefor Bazett explains subspaces
+[[https://youtu.be/rgxyxcTwvuo]]

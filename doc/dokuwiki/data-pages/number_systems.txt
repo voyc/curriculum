@@ -1,10 +1,143 @@
-====== Number Systems ======
+====== Concepts ======
 
-== Real Numbers ==
+=====Set Theory=====
+
+\begin{align}
+A &= \left \{ m,n,o \right \} && \text{A is the set of members m, n, and o} \\
+o &\in A && \text{In.  Object o is in set A.} \\
+\\
+A &\subset B && \text{Subset.  Set A is a subset of set B.} \\
+B &\supset A && \text{Superset.  B is a superset of A.} \\
+\\
+A &\cup B && \text{union of sets A and B} \\
+A &\cap B && \text{intersection of sets A and B} \\
+A &\setminus B && \text{set difference.  in A, but not in B.} \\
+A &\triangle B && \text{symetric difference.  in A or B, but not in both.} \\
+A &\times B && \text{Cartesian product.  All possible ordered pairs.} \\
+\end{align}
+
+=====Classifications=====
+
+\begin{align}
+\mathbb{R} &= \text{real numbers} \\
+\mathbb{Q} &= \text{rational numbers (q for quotient)} \\
+\mathbb{Z} &= \text{integers } (\cdots,-3,-2,-1,0,1,2,3,\cdots) \\
+\mathbb{N} &= \text{natural numbers, positive integers } (1,2,3,\cdots) \\
+\mathbb{W} &= \text{whole numbers, counting numbers, positive integers and zero } (0,1,2,3,\cdots) \\
+\mathbb{P} &= \text{prime numbers } (1,3,5,7,11,\cdots) \\
+
+\mathbb{R} &\supset
+\mathbb{Q} \supset
+\mathbb{Z} \supset
+\mathbb{N} \supset 
+\mathbb{W} \supset 
+\mathbb{P} \\
+\\
+\mathbb{C} &= \text{complex numbers} \\
+\mathbb{C} &\not\subset \mathbb{R} \\
+\end{align}
+
+Either boldface $\mathbf{R}$ or "blackboard bold" $\mathbb{R}$ is used to symbolize a set.
+
+==== Real Numbers ====
+
 $\mathbb{R} $
 
-All numbers except for imaginary numbers.
+All numbers except imaginary and complex numbers.
 
-== Imaginary Numbers ==
+Real numbers include integers, fractions, decimals, and zero.
 
-Square root of a negative number.
+==== Rational Numbers ====
+
+A rational number can be written as a quotient, that is, a fraction, 
+a ratio of two integers, like for example
+$\frac{3}{1}$ or $\frac{1}{3}$
+
+When written in decimal form, a rational number is terminating or repeating.
+
+$\mathbb{Q}$ represents the set of rational numbers.
+
+==== Irrational Numbers ====
+
+Irrational numbers cannot be written as a quotient.
+
+When written in decimal form, an irrational number never terminates 
+and does not repeat.
+
+The following are irrational numbers.
+
+\begin{align}
+\pi &= 3.14159265359\cdots && \text{pi}\\
+e &= 2.7182818284\cdots && \text{Euler's number}\\
+\varphi &= 1.6180339887\cdots && \text{golden ratio} \\
+\sqrt{2} &= 1.4142135237\cdots && \text{square root of 2} \\
+\end{align}
+
+There is no standard-accepted symbol for the set of irrational numbers, 
+though sometimes you see $\mathbb{I}$ or $\mathbb{Q}\prime$ or $(\mathbb{R} - \mathbb{Q})$.
+
+====Imaginary Numbers====
+
+An imaginary number is a negative number that can have a square root.  
+
+It is not a real number.
+
+It is written as $bi$ such that $b$ is a real number 
+and $i$ is the imaginary unit number.
+
+For example:
+  * The square root of $9$ is $3$ or $-3$.
+  * The square root of $-9$ is impossible.
+  * The square root of $9i$ is $3$ or $-3$.
+
+In that example, $9$, $-9$, $3$, and $-3$ are real numbers, and $9i$ is an imaginary number.
+
+===Imaginary Unit Number===
+
+The imaginary Unit Number $i$ is a special number that exists
+for the purpose of creating imaginary numbers.
+
+\begin{align}
+i^2 &= -1 \\
+i &= \sqrt{-1} \\
+\end{align}
+
+===Complex Numbers===
+
+A complex number includes a real part and an imaginary part, 
+written in the form $(a + bi)$.
+
+\begin{align}
+(a + bi) &\in \mathbb{C} \\
+a &= \text{the real part}  \\
+bi &= \text{the imaginary part}  \\
+i &= \text{the imaginary unit number} \\
+a,b &\in \mathbb{R} \\
+i, bi &\not\in \mathbb{R} \\
+\end{align}
+
+=====Logic=====
+
+\begin{align}
+A &\Rightarrow B && \text{if A then B; or, A implies B} &\text{\Rightarrow} \\
+A &\iff B && \text{if and only if A, then B} &\text{\iff} \\
+A &\therefore B && \text{A is true, therefore B is true} &\text{\therefore} \\
+A &\mid B && \text{A, such that B} &\text{\mid} \\
+\end{align}
+
+=====Functions=====
+
+=====Dimensions=====
+
+=====Other Concepts=====
+
+Number Theory - a branch of mathematics devoted to the study of integers, 
+especially of prime numbers.
+
+Number System - aka numeral system. - a writing system for expressing numbers.
+Examples include:
+  * base-10 or decimal system, 
+  * base-2 or binary system, 
+  * base-16 or hexadecimal system
+  * base-1 or unary numeral system, used in tallying.
+

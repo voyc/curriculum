@@ -1,0 +1,103 @@
+======Notes on Euclid Elements======
+
+[[http://farside.ph.utexas.edu/Books/Euclid/Elements.pdf|pdf in Greek and English]]
+
+David Joyce, Clark University: 
+[[https://mathcs.clarku.edu/~djoyce/elements/elements.html|Commentary]]
+
+geogebra.org: [[https://www.geogebra.org/calculator|
+Drawing Tool]] simulating compass and straight-edge\\
+
+====Contents====
+
+^ Book ^ Title ^ Definitions^ Propositions^
+|   1 | Fundamentals of Plane Geometry Involving Straight-Lines    |  23|   48|
+|   2 | Fundamentals of Geometric Algebra                          |   2|   14|
+|   3 | Fundamentals of Plane Geometry Involving Circles           |  11|   37|
+|   4 | Construction of Rectilinear Figures In and Around Circles  |   7|   16|
+|   5 | Proportion                                                 |  18|   25|
+|   6 | Similar Figures                                            |   4|   33|
+|   7 | Elementary Number Theory                                   |  22|   39|
+|   8 | Continued Proportion                                       |   0|   27|
+|   9 | Applications of Number Theory                              |   0|   36|
+|  10 | Incommensurable Magnitudes                                 |  16|  115|
+|  11 | Elementary Stereometry (Solid Geometry)                    |  28|   39|
+|  12 | Proportional Stereometry (Measurement)                     |   0|   18|
+|  13 | The Platonic Solids (Regular Solids)                       |   0|   18|
+|     |                                                            |  131|  465|
+
+Each proposition describes how to draw a geometric shape 
+using only a straight-edge and a compass,
+
+proving equality and inequality of lines and angles, 
+without explicit measurement of either.
+
+Each proposition builds on the ones before.
+
+And therefore, each proposition is an axiom.
+
+
+
+====Book 1.  Plane geometry.====  
+2D shapes that lie in a single plane.  Polygons.\\
+point, line, plane, surface\\
+angle: acute, obtuse, perpendicular\\
+boundary, figure: circle, rectilinear\\
+circle, center, semicircle\\
+rectilinear figures: trilateral, quadrilateral, multilateral\\
+trilateral: equilateral, isosceles, scalene, right-angled, obtuse-angled, acute-angled\\
+quadrilateral: square, oblong, rhombus, rhomboid, trapezia\\
+parallel lines (infinite)\\
+
+{{ :euclid_propi1.gif?300|}}
+Proposition 1.1.  How to construct an equilateral triangle. 
+  * Draw the base of the triangle as a line segment $\overline{AB}$.  
+  * Use a compass to draw a circle with center $A$ and radius $B-A$.
+  * Draw a second such circle with center $B$.
+  * Take the point $C$ where the two circles intersect.
+  * The triangle $ABC$ is equilateral.
+
+Proposition 1.2.  How to draw two line segments of equal length.
+
+Proposition 1.3.  Same as 1.2, alternate method.
+
+Proposition 1.4  A proof that two triangles with two sides and the intervening angle equal,
+are equal triangles.
+
+Proposition 1.5  A proof that in an isosceles triangle, the two angles at the base 
+are equal.
+
+Proposition 1.6  A proof that in a triangle having two angles equal, 
+the opposite sides will be equal also.
+
+Proposition 1.7  A proof that for any three points, there is only one triangle.
+
+Proposition 1.8  
+
+Proposition 47.  A proof of the Pythagorean theorem.
+
+====Book 2. Geometric algebra.====  
+10 of the 14 propositions can be restated algebraically.
+quadratic equations.
+
+Proposition 1.  The distributive property of multiplication over addition.
+
+\begin{align}
+x(y_1+y_2+\cdots+y_n) = xy_1+xy_2+\cdots+x y_n\\
+\end{align}
+
+Euclid did not use the word "distributive", nor did he use this equation.\\
+He told the story in terms of lines and rectangles. \\
+x is the length of a line.  xy is the area of a rectangle.\\
+
+Proposition 2. Same as prop 1, but only using 1 cut, two rectangles.
+
+\begin{align}
+x(y_1+y_2) = xy_1+xy_2\\
+\end{align}
+
+Proposition 3. 
+
+\begin{align}
+x = y + z \iff xy = y_2 + yz\\
+\end{align}

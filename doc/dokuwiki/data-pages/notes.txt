@@ -15,3 +15,5 @@
 [[Notes on Sapolsky Human Behavioral Biology]]
 
 [[Notes on Sadhguru]]
+
+[[Notes on Gilbert Strang Deep Learning]]

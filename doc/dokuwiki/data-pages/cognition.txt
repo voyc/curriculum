@@ -1,5 +1,7 @@
 ====== Cognition ======
 
+
+
 cognition
 intelligence
 knowlege
@@ -47,9 +49,9 @@ continuity of objects
 
 ?:
   * vision
-  * language
-  * math: abstract principles, number, magnitude
-  * music
+  * [[Language]]
+  * [[Math]] - abstract principles, number, magnitude
+  * [[Music]]
 
 chomsky?:
   * visual space

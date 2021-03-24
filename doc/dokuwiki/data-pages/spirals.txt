@@ -1,0 +1,96 @@
+====== Spirals ======
+
+The equation for a spiral can be given by polar coordinates or by Cartesian coordinates.
+
+In **polar coordinates** $r$ and $\theta$
+
+$$ r = f(\theta)$$
+
+where:\\
+  * $\theta$ is an angle in radians, and 
+  * $r$ is distance from the origin in units
+
+An angle can be given in either degrees or radians.
+1 radian = 57.29 degrees.
+
+$$\pi = 3.141592653589793$$
+$$2\pi r = \text{gives the circumference of a circle where r is the radius}$$
+$$1 \text{rad} = \frac{360^{\circ}}{2 \pi} = 57.29^{\circ}$$
+$$\text{a circle contains} 360^{\circ} \text{and} 2 \pi \text{rad}$$
+
+$$e = 2.718281828459045$$
+
+In python, $e^x$ can be expressed as math.e**x or math.exp(x)
+
+n == math.log(math.exp(n))
+
+logarithm is the inverse of exponent
+
+log() is the inverse of exp()
+
+x^a = log(a,x)
+
+pow(2,5) == 2**5 == 32
+
+
+**Cartesian coordinates** $x$ and $y$ can be derived from the polar coordinates as
+
+$$x = r  \text{cos}  \theta$$
+$$y = r \text{sin} \theta$$
+
+Adding a $z$ dimension turns any spiral into a **helix**.
+$$z = \theta$$
+
+clockwise = right-handed
+counter-clockwise = left-handed
+
+as you approach a spiral staircase, look up and sight along the z-axis, the steps are going up clockwise, and you would reach out with your right-hand to grab the rail.
+
+
+====Circle====
+
+In Polar coordinates, $r$ is a constant.
+
+In Cartesian coordinates, $x^{2} + y^{2} = r^{2}$ where r is a constant.
+
+====Arithmetic Spiral====
+
+aka **Archimedes** spiral.
+
+In Polar coordinates, $r = a + b\theta$
+
+In Cartesian coordinates, $f(r,\theta) = \theta$
+
+====Logarithmic Spiral====
+
+aka **Equiangular** spiral and **Bernoulli** spiral.
+
+Often found in nature, as in the shape of the nautilus shell, the arrangement of sunflower seeds in the sunflower...
+
+
+In Polar coordinates, $r = \theta$ \\  
+"...it shall widen and lengthen in the same unvarying proportions."
+
+In Cartesian coordinates, $f(r,\theta) = r^{a * \theta}$, 
+where $a$ is between 0 and 1
+
+====Parabolic Spiral====
+
+aka **Fermat's** spiral.
+
+In Polar coordinates, $r = a \sqrt{\theta}$ \\
+where $\theta >= 0$
+
+In Cartesian coordinates, $f(r,\theta) = a \sqrt{\theta}$ \\
+where $\theta >= 0$
+
+====Hyperbolic Spiral=====
+aka **Fermat's** spiral.
+
+In Polar coordinates, $r = \frac{a}{\theta}$ \\
+where $\theta \neq 0$
+
+In Cartesian coordinates, $f(r,\theta) = \frac{a}{\theta}$ \\
+where $\theta \neq 0$
+
+

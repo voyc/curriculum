@@ -252,3 +252,37 @@ https://evnerds.com/design/electric-motorcycle-design/wayra-electric-motorbike-v
   - Government registration
 
 look for a wrecked Vespa or Filano or other step-through 125cc scooter
+
+SONDORS Metacycle: First affordable 80 MPH electric motorcycle?
+5000 usd
+Battery weight low
+https://youtu.be/6BG8fFma6nM 
+
+10 scooters
+https://youtu.be/5XVdOe6YvJo 
+
+9 Scooters
+- 450X by an Indian company Ather Mobility;
+- SEAT MÓ eScooter 125;
+-  NQi model lineup by the NIU brand;
+- Yadea G5 and V7;
+- recent additions to Gogoro smartscooter lineup;
+- TVS iQube
+- Bgauss B8-WOW E-Scooter from Italy.
+https://youtu.be/WImNcD2vLc8 
+
+
+For each motor
+Define requirements for:
+   battery: volts, amps, watts
+   Wheel: dimensions, spokes
+   Frame: axle width, clearance
+   Controller: comes with?
+   Speedometer:  comes with?
+   
+Controller
+Throttle
+Dash display
+
+Define desired specs for motor
+Torque, power, rpm, volts

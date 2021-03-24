@@ -1,0 +1,137 @@
+======Algebra======
+
+In [[arithmetic]] we learned the
+arithmetic operations: addition, subtraction, multiplication, division, 
+and exponentiation.
+
+In **algebra** we learn to apply those operations in **equations**.
+
+The word algebra can be traced back to the Persian al-jabr.  
+In a book written by ninth century mathematician and astronomer
+al-Khawarizmi, the term al-jabr refers to the operation of 
+moving a term from one side of an equation to the other.  
+(Note: this will be illustrated below.)
+
+[[https://www.dummies.com/education/math/algebra/algebra-i-for-dummies-cheat-sheet/
+|dummies: Algebra I Cheatsheat]] \\
+[[https://www.dummies.com/education/math/algebra/algebra-ii-for-dummies-cheat-sheet/
+|dummies: Algebra II Cheatsheat]]
+====Equation====
+
+\begin{align}
+a = b
+\end{align}
+
+We can transform an equation many times and many ways, so long as we maintain the equality.
+
+
+====Properties====
+
+Commutative
+
+\begin{align}
+a+b &= b+a && \text{addition} \\
+ab &= ba && \text{multiplication} \\
+\end{align}
+
+Associative
+
+\begin{align}
+(a+b)+c &= a+(b+c) && \text{addition} \\
+(ab)c &= a(bc) && \text{multiplication} \\
+\end{align}
+
+Distributive
+
+\begin{align}
+& a(x+y)\\
+& ax + ay \\
+\end{align}
+
+
+
+====Variables and Expressions====
+
+Simplify expressions
+  * Put added terms together using coefficients.
+\begin{align}
+ & x+x+x\\
+ & 3x
+\end{align}
+
+  * Put multiplied terms together using exponents.
+\begin{align}
+ & x*x*x\\
+ & x^{3}
+\end{align}
+
+  * Add like terms together.
+\begin{align}
+ & 2x^{2}+3ab-x^{2}+ab\\
+ & x^{2}+4ab
+\end{align}
+
+  * Multiply bracketed terms using the distributive property. 
+\begin{align}
+ & x(2x+3)\\
+ & (x*2x)+(x*3)\\
+ & 2x^{2}+3x
+\end{align}
+
+  * Factor.  Reverse-multiply bracketed terms. 
+\begin{align}
+ & 6x^{5}+3x^{2}\\
+ & 3x^{2}(2x^{3}+1)
+\end{align}
+
+====Equations====
+
+  * Apply an operation on both sides of an equation, and the equality remains.
+
+\begin{align}
+a &= b && \text{given }\\
+a+c &= b+c && \text{add a constant to both sides }\\
+ac &= bc && \text{multiply a constant on both sides } \\
+\end{align}
+
+
+===Functions===
+
+in functional notation: $a = b \Rightarrow f(a) = f(b)$
+
+
+
+===Substitution===
+
+
+
+
+===Solving===
+
+Subtract a term from both sides of the equation.
+
+Apply a function to both sides of the equation, systematically, 
+to simplify or to isolate a target variable.
+
+
+
+=====Linear Equations=====
+ax + b = y
+
+
+Solving equations.
+
+=====System of Equations=====
+
+Express the problem as a set of equations.
+
+Multiple ways to solve.
+  * graph
+  * elimination
+  * substitution
+
+Subtract one equation from another.  
+Is the same as subtracting one value from both sides of an equation
+because the the two sides are equal.
+
+

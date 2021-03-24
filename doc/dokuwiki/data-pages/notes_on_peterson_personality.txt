@@ -682,6 +682,11 @@ Motivational system. Usually hypothalamic.
 
 Motivational state. Sets a goal, and the framework within which goals are pursued. Tunes perception to see only what is relevant. Activates or inhibits Behaviors to pursue the goal. Preps the body to receive the goal. Like a sub-personality.
 
+"It's useful to think about ... a **motivated state** as a **micro personality**."
+
+...as we've already talked about with regards to **psycho-dynamic theory**
+
+
 Emotions track progress toward goals.
 
 Some basic motivations: [circuits?]

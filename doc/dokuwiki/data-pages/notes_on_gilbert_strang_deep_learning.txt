@@ -2,6 +2,8 @@
 
 Course 18.065 at MIT
 
+https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/syllabus/18.065-course-introduction/
+
 Youtube Playlist of 35 lectures via MIT OpenCourseWare
 
 Four topics:
