@@ -1,12 +1,75 @@
 ======Notes on Euclid Elements======
 
-[[http://farside.ph.utexas.edu/Books/Euclid/Elements.pdf|pdf in Greek and English]]
+[[http://farside.ph.utexas.edu/Books/Euclid/Elements.pdf|Euclid pdf]] in Greek and English
 
 David Joyce, Clark University: 
-[[https://mathcs.clarku.edu/~djoyce/elements/elements.html|Commentary]]
+[[https://mathcs.clarku.edu/~djoyce/elements/elements.html|Eudlid html]] with Commentary
 
 geogebra.org: [[https://www.geogebra.org/calculator|
 Drawing Tool]] simulating compass and straight-edge\\
+
+====Notes====
+
+pokerface i2d.py\\
+pokerface ispiral.py \\
+pokeerface liner.html \\
+
+
+khan academy - vector dot product and vector length \\
+khan academy - matric vector products \\
+khan academhy - vectors and spaces - defining the angle between vectors \\
+ikhan academy - electric motors - the dot product \\
+
+Gil Strang lecture 1: The column space of A contains all vectors Ax
+
+
+tibetan buddhist chant\\
+https://www.youtube.com/watch?v=iei5QA_aPp8 \\
+
+Projects
+  * Beauty patterns
+  * Model sk8 actuators
+  * Linear arithmetic algebraic geometric exponential logarithmic 
+  * Patterns earthquakes 
+  * String ball not tangle tangled knot skein 
+  * Normal Pareto
+
+Mauy in Phuket 
+https://www.thephuketnews.com/mauy-the-graffiti-artist-spraying-a-wall-near-you-73183.php
+
+Street Art in Chiang Mai
+http://www.hipthailand.net/variety/art-design/624
+ 
+
+Chomsky\\
+The capacity for language and for mathematics did not come about through natural selection.
+https://youtu.be/1X-AkJZUIiE 
+
+
+Explanation of complex numbers
+https://youtu.be/ALc8CBYOfkw 
+
+Tesla battery plant in India
+https://www.scmp.com/news/asia/south-asia/article/3123802/india-promises-tesla-lowest-production-costs-will-persuade
+
+Sapolsky: three brains: reptilian, limbic, neo cortex
+https://youtu.be/hg6XUYWj-pk 
+
+
+George Carlin: sociology: individuals versus groups
+https://youtu.be/Y2NjUKOw1Qg 
+
+
+Chomsky on merge function
+  * Combine two objects into bigger one
+  * Example of language used as thought
+https://youtu.be/9JScy7ulDpE 
+
+Looking for a variation of multi-armed archemides spiral
+https://math.stackexchange.com/questions/3718071/looking-for-a-variation-of-multi-armed-archemides-spiral
+
+
+
 
 ====Contents====
 
