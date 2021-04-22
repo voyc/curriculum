@@ -11,6 +11,9 @@ biomimetic
 biomimicry
 
 
+
+
+
 Swarm
 
 Collective intelligence
@@ -19,4 +22,79 @@ Collective intelligence
 https://youtu.be/k8IsYb31He8 
 
 
- 
+
+Suppliers
+
+You can buy parts, like an erector set.
+
+
+ServoCity
+
+
+
+Brushless Motor
+
+speed controller
+settings
+control position, control speed
+
+
+Servo
+
+The word "servo" usually implies position control, and is usually controlled by sending a PCW signal
+to the device.
+
+* an electric motor is built with a specific torque and speed
+
+* use a gearbox to choose desired ratio between torque and speed: more torque, less speed
+
+* a servo can be also defined by it's rotation: 360, 504, 663, 840, 1260, or continuous.
+360 is a single rotation
+
+* control: speed, position, both
+
+* use a gearbox to choose blend of rotation, torque, speed
+
+
+Matching Battery to Motor
+
+Matching Motor to Controller
+
+===== Suppliers =====
+
+==ServoCity==
+Winfield KS\\
+parent: RobotZone\\
+brand: Actobotics\\
+website: https://www.servocity.com , good educational and hobbyist material\\
+
+==Dart Actuators==
+website: http://dartactuators.com/ \\
+
+==Progressive Automation==
+video of linear actuator: https://www.youtube.com/watch?v=7P-odLxBteE
+video of high-speed actuator: https://www.youtube.com/watch?v=3fNQYsApN-8
+
+==DGR Electric==
+chinese factory\\
+video of high-speed linear server: https://youtu.be/2P8FTF8fm1U\\ 
+lift cylinder: https://www.dgrelectriccylinder.com/product/small-electric-lift-cylinder-for-medical-equipment/ \\
+
+
+==iR3 Creative Engineering==
+brand: Dart Actuators\\
+
+==Tolomatics==
+video of rod-style actuator: https://www.youtube.com/watch?v=bh5q1eW_LSc
+
+
+==Thomson==
+video introduction: https://www.youtube.com/watch?v=Y0Ip51pvMuM \\
+
+==Nissan Pulse America==
+website: https://www.nipponpulse.com/ \\
+video of linear server: https://www.youtube.com/watch?v=hFCxiF2284A \\
+
+
+
+

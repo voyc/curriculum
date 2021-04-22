@@ -1,6 +1,9 @@
 ======Index======
 
-Project:  Build a spreadsheet with tags that can generate an index, glossary, gazetteer, who's who.
+Project:  Build a spreadsheet with tags that can generate 
+an index, glossary, gazetteer, who's who.
+
+mind - [[mind]], [[this>doku.php?do=search&q=mind | mind]]
 
 Intelligence
 
@@ -14,11 +17,18 @@ cybernetics
 
 Ethology - the study of animal behavior, beginning with Charles Darwin (d 1882). 
 
-Theory of mind - the ability to attribute mental states to ourselves and others.  A foundational element for social interaction.  At 15 months, a child begins to realize that other people can have beliefs about the world that contrast with reality. 
+Theory of mind - the ability to attribute mental states to ourselves and others.  
+A foundational element for social interaction.  
+At 15 months, a child begins to realize that other people can have beliefs 
+about the world that contrast with reality. 
 
-prosody - Emotional prosody or affective prosody is the various non-verbal aspects of language that allow people to convey or understand emotion. It includes an individual's tone of voice in speech that is conveyed through changes in pitch, loudness, timbre, speech rate, and pauses. It can be isolated from semantic information, and interacts with verbal content.
+prosody - Emotional prosody or affective prosody is the various non-verbal 
+aspects of language that allow people to convey or understand emotion. 
+It includes an individual's tone of voice in speech that is conveyed through 
+changes in pitch, loudness, timbre, speech rate, and pauses. 
+It can be isolated from semantic information, and interacts with verbal content.
 
-
+&q=
 basal ganglia - brain part
 
 substantia nigra - brain part
