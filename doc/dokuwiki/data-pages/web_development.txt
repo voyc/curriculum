@@ -11,3 +11,17 @@ Server-side technologies:
 AJAX
 
 Client-server architecture
+
+Client-side apps
+
+Drawing apps
+
+Vector Paint
+https://vectorpaint.yaks.co.nz/
+
+Geacron
+https://geacron.com/home-en/
+
+GeoGebra
+https://www.geogebra.org/geometry?lang=en
+

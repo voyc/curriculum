@@ -11,6 +11,11 @@ methane\\
 amonia\\
 
 
+[[https://www.youtube.com/watch?v=TJUm860AjNw | 
+Salman Khan: Common and systematic naming: iso-, sec-, and tert- prefixes | Organic chemistry ]]
+
+[[https://en.wikipedia.org/wiki/Hydrocarbon | Wikipedia: Hydrocarbons]]
+
 Amino acid cheatsheet
 https://www.pinterest.com/pin/693765517568686025/sent/?sfo=1&sender=692780492587648492&invite_code=2154546dd3944c788fda2208064b596b
 https://pin.it/vz4mammqap7oel
@@ -41,3 +46,28 @@ Domain of Science, 2017 Map, "Map of Chemistry", https://www.youtube.com/watch?v
 
 Domain of Science, 2017 Dec, "Map of Biology", https://www.youtube.com/watch?v=wENhHnJI1ys&feature=youtu.be, accessed 2019 May.
 
+
+===== Hydrocarbon =====
+
+
+{{https://youtu.be/oPqq3Ex6viM | Salman Kahn: Hydrocarbon overview}}
+
+molecules made up of only carbon and hydrogen
+
+note:  look at khan academy section on organic chemistry
+
+[[https://en.wikipedia.org/wiki/Hydrocarbon | wikipedia: Hydrocarbon]]
+
+
+Methane
+Ethane
+Propane
+Butane
+Pentane
+Hexane
+Heptane
+Octane
+Nonane
+Decane
+Undecane
+Dodecane

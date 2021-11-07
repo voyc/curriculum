@@ -1,0 +1,13 @@
+====== Python Programming for Statistics and Probability ======
+
+
+packages
+  * matplotlib - histogram()
+  * numpy - required by matplotlib
+  * seaborn - distplot()
+  * pandas - required by seaborn
+  * scipy - required by seaborn
+
+  import seaborn as sns
+  sns.displot()
+  sns.histplot()

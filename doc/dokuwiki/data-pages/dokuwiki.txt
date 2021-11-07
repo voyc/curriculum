@@ -45,6 +45,7 @@ Also note:
 
 For math equations, we use the MathJax extension.
 
+===Text===
 For upright text, use \text{hello} instead of \textup{hello}.
 
 ===Alignment===
@@ -81,6 +82,8 @@ x   &= 30^\circ             && \text{^\circ} \\
 Edit math equations online here: \\
 https://www.codecogs.com/latex/eqneditor.php
 
+Reference list of math symbols: \\
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols#Set_and.2For_logic_notation
 
 ===== UML Drawings =====
 
@@ -106,3 +109,5 @@ $$\ce{HCl (aq) + NaOH (aq) -> H2O (l) + NaCl (aq)}$$
 Edit chemical equations online here:
 http://visualmatheditor.equatheque.net/VisualMathEditor.html
 
+[[https://download.nus.edu.sg/mirror/ctan/macros/latex/contrib/mhchem/mhchem.pdf | 
+mhchem reference, pdf]]

@@ -305,8 +305,16 @@ What happens when a virus invests a computer?
 Can an AI jump into a self-driving vehicle or robot and take it over?
 
 
+characteristics
+  * sapient
+  * sentient
+  * intelligent
+  * conscious
 
-
+precursors
+  * maze runner
+  * evolutionary algorithms
+  * 
 ==== Timeline ====
   * 1600s: Isaac Newton and Gottfried Leibniz invent calculus
   * 1828 [[Least Squares]], used by Carl Frederich Gauss to find orbits of comets and planets around the sun.\\

@@ -1,4 +1,4 @@
-
+====== Biochemistry ======
 
 Relative sizes of neurotransmitters and neurons.
 
@@ -21,3 +21,54 @@ https://en.wikipedia.org/wiki/Peptide
 
 How enzymes work
 https://youtu.be/yk14dOOvwMk
+
+===== Oxidation and Reduction =====
+
+Khan Academy: Oxidation and Reduction from Biology point of view
+https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/oxidation-and-reduction-from-biological-view?utm_source=YT&utm_medium=Desc&utm_campaign=biology
+
+OIL RIG
+  * Oxidation Is Losing (electrons)
+  * Reduction Is Gaining (electrons), more like "hogging" 
+
+reaction equation
+
+$$\require{mhchem}$$
+
+$$\ce{2H2(g) + O2(g) -> 2H2O + \text{heat}}$$
+
+combustion reaction
+
+Oxidation in chemistry, biochemistry, cellular respiration 
+
+\begin{align}
+\text{glucose + oxygen} &-> \text{carbon dioxide + water + energy}\\
+\ce{C6H12O6 (aq) + 6O2 &-> 6CO2 + 6H2O + 38 ATP}\\
+\ce{C6H12O6(aq)} &= \text{glucose in aqueous solution}\\
+\ce{O2} &= \text{oxygen}\\
+\ce{CO2} &= \text{carbon dioxide}\\
+\ce{H2O} &= \text{water}\\
+\ce{C10H16N5O13P3} &= \text{Adenosine Triphosphate (ATP)}\\
+\end{align}
+
+1 mole of glucose in aqueous solution\\ 
+plus 6 moles of oxygen\\
+yields 6 moles of carbon dioxide\\
+plus 6 moles of water\\
+plus 38 ATPs
+
+===== Photosynthesis =====
+
+
+Khan Academy: Photosynthesis
+https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/v/photosynthesis#:~:text=Photosynthesis%20is%20usually%20represented%20by,Created%20by%20Sal%20Khan.
+
+\begin{align}
+\text{carbon dioxide + water + sunlight} &-> \text{carbohydrate + oxygen}\\
+\ce{CO2 + H2O} + \text{photons} &-> \ce{CH2O + O2}\\
+\end{align}
+
+Bozeman Science: Photosynthesis and respiration
+https://www.youtube.com/watch?v=0IJMRsTcwcg
+
+10:41  line graph of atmosphere $\ce{O2}$ contents

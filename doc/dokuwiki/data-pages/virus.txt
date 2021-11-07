@@ -59,3 +59,34 @@ Replication
 
 
 
+====== Virology ======
+
+Virology Lectures 2021, Youtube
+Vincent Racaniello, Ph.D.
+Columbia University
+
+Lecture 1. What is a virus?
+
+24:06  map, spread of man from africa outward, 
+populations traced by variations in the polyomavirus, 
+which is found in 90% of humans
+
+25:20  viruses shape host populations, and vice versa
+
+38:45  scale of size, viruses smaller than bacteria, larger than ribosomes
+
+54:00  replication, only within cell, eclipse period building components, 
+then burst of new virus particles created
+
+56:25  https://talk.ictvonline.org/taxonomy/
+
+Lecture 2. The Infectious Cycle
+
+Lecture 3.  Genomes and Genetics
+
+"Nucleic acid is the genetic code."
+
+nucleic acid
+  * deoxyribonucleic acid (DNA)
+  * ribonucleic acid (RNA)
+

@@ -31,3 +31,6 @@ hypothesis vs speculation
 the singularity
 
 Surfing Weimea Bay
+
+temperature of solid, liquid, gas for each element
+

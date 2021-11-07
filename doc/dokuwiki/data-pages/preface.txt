@@ -8,6 +8,8 @@ Software\\
 
 {{ flow_prerequisite.png|Prerequisites}}
 
+STEM cheatsheet
+
 working
 https://docs.google.com/spreadsheets/d/1s1YfPCQiMtmR0q1xW8KGx2nUpfO6CSV19GECTLktzwc/edit#gid=0
 

@@ -1,12 +1,39 @@
 ====== Chemistry ======
 
-===== Timeline =====
+[[Notes on Khan Academy Chemistry]]
 
-1903 Ernest Rutherford began to speak of the possibility of atomic energy.
+$$\require{mhchem}$$
 
-1911 Geiger-Marsden gold foil experiments.
+element, compound, atom, molecule
 
-1913 Ernest Rutherford described the nucleus to explain the gold foil experiments.
+chemical bond, chemical formula, chemical equation
+
+pubchem
+
+periodic table
+
+hydrogen, helium
+
+
+===== Experiments =====
+
+balloon rubbed in the hair, static electricity
+
+===== Atoms =====
+
+reactions that join elements into a compound molecule based on valence
+
+wants an electron, halogens
+
+has an extra electron to give away, alkali metals
+
+sodium chloride NaCl
+
+sodium iodide NaI
+
+potassium chloride KCl
+
+lithium chloride LiCl
 
 ===== Periodic Table of Elements =====
 
@@ -17,6 +44,170 @@ https://www.ptable.com/
 
 Spreadsheet
 https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk
+
+{{https://youtu.be/TDFAYRtrYuk | video: Breaking Bad credits}}
+
+===== Molecule, Bond =====
+
+salt
+
+baking soda
+
+dissolved in water
+
+reaction
+
+chemical equation
+
+chemical bonds
+===== Chemical Formula =====
+
+
+[[https://en.wikipedia.org/wiki/Chemical_formula | wikipedia: Chemical Formula]]
+
+describe a molecule or compound
+
+molecular formula
+
+empirical formula
+
+condensed formula
+
+structural formula
+
+semi-structural formula
+
+
+
+===== Chemical Equation =====
+
+describe a reaction
+
+
+===== Tastes =====
+
+Sweet
+Salty
+Sour
+Bitter
+Umami (savory)
+
+===== Coffee =====
+
+https://makezine.com/projects/the-florence-siphon/
+
+Breaking Bad
+
+chemistry lab supplies
+===== Nutrients =====
+
+
+https://en.wikipedia.org/wiki/Nutrient#Essential_nutrients
+
+water
+nine amino acids, 
+two fatty acids,
+thirteen vitamins and 
+fifteen minerals
+
+===== Nomenclature =====
+
+==== Suffixes ====
+
+-ose sugar
+-ide salt
+-ate salt
+
+==== Prefixes ====
+hydr- water
+mono- one
+poly- multiple
+
+
+carbonate
+carbohydrate
+
+
+===== Acid-Base =====
+
+Two definitions
+  * Bronsted-Lowry
+  * Lewis
+
+
+====Bronsted-Lowry====
+
+https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:introduction-to-acid-base-reactions/v/bronsted-lowry-definition-of-acids-and-bases
+
+proton = hydrogen anion $\ce{H+}$
+
+acid = proton donor
+
+base = proton acceptor
+
+hydrochloric acid
+
+hydrogen having a covalent bond with chlorine
+
+water can act as acid or as base
+
+conjugate base
+
+conjugate acid
+===== Acid =====
+
+Two types:
+  * a moledule capable of donating a proton
+  * a molecule capable of forming a covalent bond with an electron pair
+
+Characteristics:
+
+
+Common acids:
+  * carbonated water
+  * aspirin
+  * hydrochloric acid
+  * citric acid
+
+
+
+===== Base =====
+
+===== Salt =====
+
+A chemical compound consisting of an ionic assembly of cations and anions.
+
+
+
+$\ce{NaCl}$  sodium chloride
+
+$\ce{Na}$  sodium
+
+$\ce{Cl}$  chlorine
+
+$\ce{Cl}$  chlorine is the element with atomic number 17, in period 3 with 1 electron short of argon.
+
+$\ce{Cl-}$  chloride is the negative ion of chlorine with one extra electron added, 
+when joined to another element in a compound
+
+$\ce{NaCl}$  sodium chloride
+$\ce{KCl}$  potassium chloride
+$\ce{CaCl}$  calcium chloride
+
+
+
+
+===== Carbohydrate =====
+
+
+===== Timeline =====
+
+1903 Ernest Rutherford began to speak of the possibility of atomic energy.
+
+1911 Geiger-Marsden gold foil experiments.
+
+1913 Ernest Rutherford described the nucleus to explain the gold foil experiments.
+
 
 ===== Terms =====
 
@@ -157,6 +348,202 @@ Copper is unbeatable for cooking because it conducts heat so evenly. Tin-lined p
 The cost of retinning is about half the cost of a new pan. Any silversmith should be able to provide this service. Look in the Yellow Pages, or call the best cookware store in your area and see whom they recommend. In the future, you could buy stainless-steel-lined copper pans, which cost about twice as much, but don’t wear out like tin-lined pans do.
 
 https://www.highya.com/articles-guides/comparing-cookware-stainless-steel-vs-copper
+
+===== Chemical Reactions =====
+
+{{https://youtu.be/TStjgUmL1RQ | 
+video: Salman Khan: Chemical Reactions Introduction}} 
+
+using two examples
+  * combine molecular hydrogen and oxygen into energy and water (oxidation-reduction) 
+  * combine bicarbonate anion and a hydrogen cation into carbonic acid (reversible)
+
+
+reduction
+
+oxidation-reduction
+
+
+hydrolysis
+
+
+$$\require{mhchem}$$
+
+
+reactants $->$ products
+
+reagents $->$ products
+
+
+
+==== Balancing ====
+
+{{https://youtu.be/TUuABq95BBM | video: Salman Khan: Balancing Chemical Equations}}
+
+using example of combining aluminum and oxygen (dioxygen) to form aluminum oxide
+
+finding the quantity of each molecule on both sides of the equation.
+
+The initial equation identifies the molecules and the reaction.  Theoretical
+
+Balancing shows the quantity of each molecule in the reaction.  Actual
+
+==== Equation====
+
+1.  the molecules involved
+
+2.  the quantity of each molecule
+
+3.  the change in charge of each molecule
+
+4.  the energy exchange (thermodynamics)
+
+
+===== Complete vs Net Equations =====
+
+{{https://youtu.be/BgTpPM9BMuU | 
+video: Salman Khan: Molecular, complete iconic, and net iconic equations}}
+
+
+Showing ionic charge explicitly in an equation.
+
+
+Sodium chloride plus silver nitrate -> ? plus silver chloride
+
+Molecular equation:
+$$\ce{NaCl(aq) + AgNO3(aq) -> NaNO3(aq) + AgCl(s)}$$
+
+Complete ionic equation:
+$$\ce{Na+(aq) + Cl^{-}(aq) + Ag+(aq) + NO3^{-}(aq) -> Na+NO3^{-}(aq) + AgCl(s)}$$
+
+Net ionic equation:
+$$\ce{Cl^{-}(aq) + Ag+(aq) -> AgCl(s)}$$
+
+
+spectator ion
+
+
+"Water is a polar molecule.  That's what makes it such a good solvent."
+
+
+
+===== Energy States ======
+
+electrons
+
+electro-negativity
+
+
+how energy is released or required when an electron changes state
+
+
+
+shell = energy level
+
+outer shells have higher energy level ?
+===== Electron Configuration =====
+
+==== Binding Energy ====
+
+shells
+subshells and orbitals
+
+Electrons closer to the nucleus have a higher binding energy.
+They are bound more tightly to the nucleus.
+It takes more energy to knock them away from the nucleus.
+
+{{https://youtu.be/UaTWrOTh4qU | Salman Khan: Introduction to photoelectron spectroscopy}}
+
+Atoms are bombarded with XRay photons which knock the electrons away from the nucleus
+onto a detector.
+The detector then gives us a map of the binding energy of the electrons.
+The photoelectron spectrum.
+Electrons from the outer shell fly the farthest because they have the lowest binding energy.
+
+==== Valence ====
+
+{{https://youtu.be/cZTdBsAjPPk | Salman Khan: Valence electrons}}
+
+Knowing the configuration of electrons in an atom gives us clues as to how 
+that atom will react to other atoms.
+  * is it reactive or inert?
+  * will it dissolve in water?  hydrophobia, hydrophillic  (attraction, repulsion)
+  * is it electronegative
+  * does it conduct electricity
+  * does it have polarity
+  * does it have a charge?  neutral, positive, or negative
+  * is it radioactive?
+  * at what temperature does it convert from solid to liquid to gas? 
+  * 
+==== Atomic radius ====
+
+{{https://youtu.be/q--2WP8wXtk | Salman Khan: Atomic radius trends on periodic table}}
+
+Coulomb attraction: between nucleus and electrons.
+
+Atoms get smaller trending to the right on the periodic table.  
+Because the larger number of protons creates a stronger positive charge in the nucleus
+and the larger number of valence electrons creates a stronger negative charge in the outer
+shell.
+So these stronger charges pull the electron shells in closer to the nucleus.
+
+So krypton is smaller than potassium.  
+It has more protons and electrons, so you might think it would be bigger.
+But it is smaller because of the increased charge.
+
+Helium is the smallest atom.  Smaller than hydrogen.
+
+The radius increases down and to the right across the periodic table.
+Down, because each additional shell is farther away from the nucleus.
+To the right, because the charge between the nucleus and the outer shell increases. 
+
+===== Analytic Chemistry =====
+
+Analyze a mixture.  What chemicals are there by mass?
+
+isotopes
+
+atomic mass for each element
+
+Sal Khan working math problems.
+
+1.  NaCl plus contaminates.
+
+https://www.khanacademy.org/science/chemistry/x822131fc:more-about-mixtures/x822131fc:mixtures/v/worked-example-analyzing-purity-of-a-mixture?modal=1
+
+sodium chloride NaCl
+
+sodium iodide NaI
+
+potassium chloride KCl
+
+lithium chloride LiCl
+
+Na
+Cl
+I
+K
+Li
+
+2.  Potassium supplement as KCl,  g per mol, mass, mol, molar mass
+
+https://www.khanacademy.org/science/chemistry/x822131fc:more-about-mixtures/x822131fc:mixtures/v/worked-example-calculating-mass-of-substance-in-mixture?modal=1
+
+
+Sal Khan: Isotopes and mass spectrometry
+
+https://www.khanacademy.org/science/chemistry/x822131fc:untitled-537/mass-spectrometry/v/mass-spectrometry?modal=1
+
+how spectrometry is used to detect and measure the amounts of isotope in a sample
+
+using zirconium Zr as an example
+
+
+Sal Khan: Identifying an element from its mass spectrum
+
+https://www.khanacademy.org/science/chemistry/x822131fc:untitled-537/mass-spectrometry/v/worked-example-identifying-element-from-mass-spectrum?modal=1
+
+using strontium Sr as an example
 
 
 ===== References =====

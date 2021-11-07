@@ -1,11 +1,199 @@
 ======Blender======
 
-3D Modeling
+Blender contains a:
 
-Also includes a video sequence editor.
+  * 3D Modeler, and a
+  * Video Sequence Editor (VSE)
+
+3D models can be used in three applications:
+  - fabricating and manufacturing
+  - video games
+  - animation for film and video
+
+This later use requires video editing, and therefore, the Video Editing capabilities
+were added into Blender, and integrated with the 3D modeling.
+
+===== Structure =====
+
+The blend file is a database.  
+
+It contains objects and scenes and collections.
+
+Each object is referenced into one or more collections.
+
+Each scene has a collection.
+
+The user can also create collections for his own organizational purposes.
+
+Collections can be named, colored, and nested hierarchically.
+
+A collection can be appended or linked from another blend file.
+
+
+
+===== UI =====
+
+The Blender window is divided into three parts:
+  - Topbar - one line at the top containing menus.
+  - Current Workspace - the large space between the Topbar and the Status Bar.
+  - Status Bar - one line at the bottom containing status info.
+
+The Status Bar is optional.  It can be turned off via the Window menu.
 
 Keyboard shortcut cheatsheet:
 https://drive.google.com/drive/folders/0ByidsAQcVcUUei0wc1lpVWlfUFU
+
+
+==== Top Bar ====
+
+The Topbar contains four menus.
+
+  - main menu - App, File, Edit, Render, Window, Help
+  - workspace tabs - one tab for each open workspace and a plus-sign Add Workspace button.
+  - Scene menu - a drop-down menu of scenes, plus New and Delete buttons
+  - View Layer menu - a drop-down menu of view layers, plus New and Delete buttons
+
+There is always at least one workspace tab, one Scene, and one View Layer.
+
+==== Visible UI Elements ====
+
+workspace, area, editor, panel, tab
+
+A **workspace** occupies the window space between the Topbar and the Status Bar.
+
+A workspace is divided into one or more rectangular **area**s.
+
+Each area contains one **editor**.
+
+Some editors contain one or more **panel**s.
+
+Groups of panels can be toggled into view via **tabs**.
+
+=== Workspace ===
+
+There is always one **current workspace** visible.
+Choose among the open workspaces by clicking on its tab in the Topbar.
+
+A **default workspace** is a named layout of areas.
+There are 22 default workspaces divided into 5 categories.
+Nine of these are open by default when you start Blender.
+
+To close a workspace, right-click on its tab and select Delete.
+
+To open a workspace, click on the Add Workspace (plus-sign) button in the Topbar,
+and then choose from among the default workspaces listed in the menu.
+
+To create a custom workspace, right-click on any tab and select Duplicate.
+Then double-click the new tab and rename it.
+
+[Note: When Blender says add and delete workspace, they really mean open or close.]
+
+[Note: Custom workspaces are saved in the blend file.  
+To make them globally available, click File - Defaults - Save Startup File.]
+
+=== Area === 
+
+An area is a rectangular area of the workspace.
+
+Areas are tiled, not overlapping.
+
+Create a new area by splitting an existing area.  
+  * Move the mouse to a corner until you see the plus sign cursor.  
+  * Now drag the corner to split the window.
+
+Delete an area by joining it to an adjacent window.  
+  * Move the mouse to the divider between the areas until you see the double arrow cursor.  
+  * Right click.  The two areas become selectable.  
+  * Click on the one you want to keep.     
+
+=== Editor ===
+
+Each area contains one editor.
+
+An editor is of an Editor Type.  
+There are some 20 editor types grouped into 4 categories.
+
+The top left corner of each area contains an icon button to drop down a menu of Editor Types.  
+Use this menu to change the editor shown in the area.
+Notice that the icon identifies the editor type.
+
+=== Panel ===
+
+A panel is a rectangular area within an editor.
+
+A panel can be collapsed or expanded.
+
+A panel can grabbed and dragged to reorder the panels.
+
+A panel can have sub-panels.  
+For example, in the Properties editor, in the Output panel, 
+a different set of sub-panels is shown depending on your setting of File Format.
+
+Some editors contain a side panel on the right that can be toggled into view by clicking n.
+[Example: Video Sequencer.]
+
+=== Tabs ===
+
+Tabs are sometimes used to switch among multiple sets of panels.
+
+Tabs can be on the left, the right, or above the panel viewing area.
+
+[Example.  See the Properties Editor.]
+
+=== Preferences ===
+
+Startup File - default file with layouts, settings, and preferences
+  * File - Defaults - Save Startup File
+  * File - Defaults - Load Factory Settings
+
+Preferences
+  * Edit - Preferences - menu - Save Preferences (saves preferences only to the startup file)
+  * Edit - Preferences - menu - Load Factory Preferences
+
+The Preferences are a subset of the data in the startup file
+and can be saved and reloaded separately.
+
+[[https://www.youtube.com/watch?v=XqX5wh4YeRw | 
+YouTube: The CG Essentials: Creating and Saving CUSTOM WORKSPACES in Blender!]]
+
+
+===== Python within Blender =====
+
+Edit - Preferences - Interface - Python Tooltips: check on
+
+areas (Editor Type - Scripting): 
+  * Text Editor - write python scripts here.  Save and open files.  Alt-P to run script.
+  * Info - history of python commands executed by the UI.
+  * Python Console - interactive python console.  import bpy has been at done automatically.
+
+System Console Window - 
+Errors from python scripts run in the Text Editor display in the System Console Window, 
+not in the Python Console.
+In Linux, start blender from the command line.
+The terminal window is the System Console Window.   
+If you close the terminal window, Blender stops immediately without saving.
+
+[[https://www.youtube.com/watch?v=XqX5wh4YeRw | 
+YouTube: Curtis Holt: Python Crash Course for Blender!]]
+
+===== Command-line =====
+
+Blender's command-line options allow you to execute a pipeline of 
+digital video processing and rendering
+on any number of files in a background, GUI-less process.
+
+  Example: 
+      blender <filename.blend> -b -P <scriptname.py>
+  
+  where:
+  -b 
+        Run in background, no UI.
+  
+  -P  <scriptname> 
+        Auto-run the named python script.
+
+[[https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html |
+Blender Manual: Command-Line Options]]
 
 
 =====3D Modeling=====
@@ -37,14 +225,243 @@ shift+A: add an object primitive
 =====Video Sequence Editing=====
 
 Solve problems with audio-video sync.
-  https://www.youtube.com/watch?v=n7qeKekS10E
-  In this video, Mikeycal Myers explains importing videos from a smart phone.
-  Changing the fps from variable to constant 24 using Handbrake.
-  If there is an extra frame on the audio track, use Hold-Offset-End property to bring it back.
+  * https://www.youtube.com/watch?v=n7qeKekS10E
+  * In this video, Mikeycal Myers explains importing videos from a smart phone.
+  * Changing the fps from variable to constant 24 using Handbrake.
+  * If there is an extra frame on the audio track, use Hold-Offset-End property to bring it back.
 
 scroll and zoom video sequencer (squeeze height of channels)
-  set user preferences input to emulate middle mouse button, using alt by default.
-  alt left drag to scroll sequencer up, down, right, left
-  ctrl alt left drag to zoom sequencer up, down (height), right, left (width)
+  * set user preferences input to emulate middle mouse button, using alt by default.
+  * alt left drag to scroll sequencer up, down, right, left
+  * ctrl alt left drag to zoom sequencer up, down (height), right, left (width)
+
+Timeline
+  * mousewheel: zoom in and out horizontally
+  * shft-mousewheel: pan timeline up and down
+  * ctrl-mousewheel: pan timeline left and right
+  * MMB drag: pan timeline left, right, up, down
+  * ctrl-MMB drag: zoom timeline, horizontal and vertical
+
+Playhead
+  * alt-mousewheel: move (scrub) playhead forward and back
+  * VCR controls: jump to start, jump to end, play forward, play backward, pause
+
+move strips around the timeline
+
+keep video and audio together: select both and click ctrl-G to make a metastrip
+
+click tab to toggle into and out of metastrip view
+
+click shft-L to lock a strip.  shft-alt-L to unlock
+
+
+
+
+From camera to Blender
+  - Shoot video with camera phone.
+  - Copy to video work folder, using SSHelper and SCP.
+    - scp -r -P 2222 '192.168.1.100:/storage/emulated/0/DCIM/Camera/VID*.mp4' .
+  - Open each video clip in Handbrake.
+    - Change the output folder.
+    - Goto video tab and change settings
+      - Framerate: 24
+      - Constant Framerate
+    - Start, save.
+  - In Blender, drag clip to timeline.
+  - Compare audio to video.  If audio length is one frame longer:
+    - Click on the audio track
+    - goto property panel
+    - click the Time dropdown
+    - property Hold Offset End, increase from 0 to 1
+    - The two tracks should now match
+  - set end, three ways:
+    - Timeline, View, Range, Set Frame Range to Strips
+    - set explicitly to 10000
+    - position blue line at one frame before the end, and click Ctrl-End
+  - repeat above steps for each clip
+  - crop each clip
+    - position the playhead, select the tracks, click k to cut
+    - select the unwanted pieces and click delete (Yes)
+    - select the strips to move, click G to grab, then X to constrain to X axis
+    - drag the strips to the right until the border turns red, then click to drop into next frame
+ 
+
+==== Green Screen ====
+
+{{https://www.youtube.com/watch?v=Nu-k8emFauU | YouTube: Ryan King Art: How to Green Screen with Blender}}
+
+{{https://www.youtube.com/watch?v=i_CiCjuG7y4 | YouTube: CG Cookie: Learn Green Screen Basics with Blender }}
+
+
+make two blender files, one with Video Editing, one with Compositor
+
+
+  - Framing the talking head.
+    - Divide the screen into thirds.
+    - Eyes should be just above the top horizontal line.
+    - Leave two fingers of space above the head.
+    - Shoot with horizontal center.
+    - Later when editing with background graphics, if you shift the head to the left,
+    - center the head on the left vertical line.
+    - Keep camera at eye level.
+    - Keep head 20 cm in front of the green screen to minimize shadows around the head.
+  - Use handbrake to sync audio and video framerates.
+    - Framerate 24
+    - Constant Framerate
+    - To: project folder
+    - Optional, specify range for a sample file.
+    - Start
+  - Make blender project to filter green screen.
+    - New General Compositing.
+    - Check Use Nodes.
+    - Delete the Render Layers node.  Keep the Composite Node.
+    - Shft-A to add a node, Input - Movie Clip.  Open: select the handbrake output.
+    - Add node, Output - Viewer.
+    - Draw a line connecting Movie Clip Image to Viewer Image.
+    - Click Backdrop to see Viewer Image in compositor window behind the nodes.
+    - Add node, Matte - Keying.
+      - Drop it onto the line between Movie Clip and Viewer. 
+      - Choose Key Color with eye dropper.
+    - Draw a line from Keying Image to Composite Image.
+  - Render the Composite Node.
+  - New Blender project for VSE.
+    - Find output frames folder rendered in previous step.
+
+Pan and zoom head using Effect Strip, Transform, and Keyframes
+https://www.youtube.com/watch?v=hFVPXTO7px8
+
+
+Fade in
+  - Select a strip
+  - position counter to first frame
+  - in properties panel: Adjust - Compositing
+  - change opacity to 0
+  - with cursor over the value, click i to create a keyframe
+  - reposition counter to frame 24
+  - change opacity to 1 and make keyframe
+  - do the same for Adjust - Sound - Volume
+  - use a Graph Editor window to edit the keyframes
+  - [[https://www.youtube.com/watch?v=-aFv5Zl5K_g&list=PLsGl9GczcgBvGY-RN0fRXs16F-IynZ0JJ&index=5 | YouTube: Ryan King Art: Video Editing Part 3]]
+
+keyframe color codes
+  * gray: normal
+  * yellow: on a keyframe
+  * green: between keyframes
+
+right-click on any value in the property panel to bring up the keyframes context menu
+
+
+==== Presentation Slides ====
+
+  - Make presentation slide show in LibreOffice Impress or Google Slides.
+  - Export as PDF.
+  - Use ImageMagick to convert pdf to multiple PNGs.
+    - convert 
+  - First time, ease policy restrictions in ImageMagick.
+    - Edit the file in etc named ImageMagick-6/policy.xml
+    - Comment out the line containing "PDF"
+
+===== Audio Voiceover Enhancement =====
+
+In Blender, separate the video and audio strips.
+  - Create a new project, open the video with a voiceover.
+  - Render - Render Audio...
+  - Select format mp3, enter output filename, click OK.
+
+In Audacity, open the new audio file.
+  - Noise Reduction
+  - Equalizer
+  - Compressor
+    - Threshold: 12 or 30
+    - Noise floor: 50
+    - Ratio: 3 to 1
+    - Attack and release: minimum
+  - Normalize (aka Amplify)
+  - 
+  - 
+
+https://www.youtube.com/watch?v=dQCB72S64L4 \\
+https://www.youtube.com/watch?v=TYF5ytMDFpA \\
+https://www.youtube.com/watch?v=twlY29iX1dU \\
+
+===== File Extensions =====
+
+  * mp4 - original shoot from camera phones, with variable framerate
+  * m4v - from Handbrake, with constant framerate of 24 fps
+  * mkv - clips captured in OBS Studio
+  * mp3 - audio track separated out by Blender Mixdown, input and output to Audacity
+  * jpg, jpeg - stills, no alpha channel
+  * png - stills with alpha channel possible
+  * frames/*.png - individual frames rendered by Blender compositor render after green screen filtering
+  * odt - script document from LibreOffice Writer
+  * odp - slideshow presentation from LibreOffice Impress
+  * slides/*.png - individual frames from slideshow, output by ImageMagick from PDF
+
+===== Directory Structure =====
+
+clips
+stills
+host
+slides
+
+=====Install=====
+
+Today is 10 Oct 2021.
+  * My current version is 2.82.
+  * sudo apt search blender returns blender 2.82
+  * blender.org says the latest version is 2.93
+
+If I want to move to 2.93,
+I think I have to uninstall my current version 
+and then install the new version by downloading from blender.org.
+
+
+====== Video Editing Setup ======
+
+Preferences
+  * Interface
+    * Python Tooltips: checked
+    * Resolution Scale:  1.30
+
+Remove File Browser
+
+Two Video Sequencers
+  * one in sequencer view
+    * View - Waveform Display: On
+  * one in preview view
+    * right click in top menu bar
+    * show header: not checked
+
+Properties
+  * Dimensions - Resolution: 1920 x 1080
+  * Dimensions - Frame Rate: 24
+  * Output - destination folder name
+  * Output - File Format: PNG or FFmpeg
+  * Output - Encoding - Video: H.264, medium quality, good speed
+  * Output - Encoding - Audio: MP3 for youtube, AAC for mac/iphone
+  * Color Management - View Transform: Standard (Filmic for 3D model rendering)
+
+Timeline
+  * Playback - Sync: AVSync (No Sync for simulations)
+  * Playback - Audio Scrubbing: checked
+
+[[ https://www.youtube.com/watch?v=zh6tKdhThME&t=2s | 
+YouTube: Ryan Art King: Video Editing with Blender! Part 1]]
+
+====== Combine 3D Model, Python, Timeline, Sequencer ======
+
+In the Layout editor, choose a camera view.
+
+In the Scene menu, do a Full Copy to create a second scene.  
+(You cannot add the current scene to the Sequencer.  
+You can only add other non-current scenes.)
+
+In the Sequencer, Add - Scene - select the scene.
+
+
+
+
+[[https://www.youtube.com/watch?v=o8nIHVGWyCY |
+YouTube: Adding 3d scene into video sequencer]]
 
 

@@ -1,0 +1,163 @@
+====== Probability ======
+
+===== Sets =====
+
+aka "set theory"
+
+\begin{align}
+A \cup B &&& \text{union (A or B)}\\
+A \cap B &&& \text{intersection (A and B)}\\
+A \setminus B &&& \text{B substracted from A (A minus B)}, also \\
+              &&& \text{relative complement of B in A (A and not B)}\\
+\\
+A \subset B &&& \text{A is a proper subset of B}\\
+A \subseteq B &&& \text{A is a subset of B} \\
+A \nsubseteq B &&& \text{A is not a subset of B} \\
+A \supset B &&& \text{A is a proper superset of B} \\
+A \supseteq B &&& \text{A is a superset of B} \\
+A \nsupseteq B &&& \text{A is not a superset of B} \\
+\\
+x \in A &&& \text{x is in A} \\
+x \notin A &&& \text{x is not in A} \\ 
+A \owns x &&& \text{A owns x} \\ 
+\end{align}
+
+A subset can be equal to its super. A proper subset cannot.
+
+Note.  Salman Khan uses the term "strict" subset as synonymous with "proper" subset, 
+and he uses a different symbol for it.
+
+Subsets exist within a universe.
+The absolute complement of a set, is everything in the universe not in the set.
+When comparing two sets, the relative complement means relative to the other set.
+
+
+===== Terms =====
+
+\begin{align}
+P\left ( A \right ) &&& \text{probability of A}\\
+\end{align}
+
+probability:  number between 0 and 1
+
+ratio:  1 to 4, 1:4, 1 out of four
+
+odds: 1 to 3
+
+fraction:  1/4
+
+decimal:  .25
+
+percentage:  25
+
+1 = certainty
+
+0 = impossible
+
+ratio of one outcome to another:  1 to 3
+ratio of one outcome to the total possibilities: 1 out of 4 
+
+probability .25
+
+odds .25 / .75
+
+six-sided die
+probability of rolling a 3: 1/6
+probability of not rolling a 3: 5/6
+odds of rolling a 3:  1/6 / 5/6  or 1/5
+
+Probability
+
+Odds
+
+Ratio
+
+
+sample space - the set of all the possible outcomes
+
+subsets of sample space - the subset of those outcomes that satisfy a condition
+
+theoretical probability - calculated, like a coin or a die
+
+experimental probability - derived from data
+
+trial - one flip of the coin, one roll of the die
+
+law of large numbers - as the number of trials increases, the experimental probability
+tends to match the theoretical probability
+
+simulations using random numbers can be used to calculate experimental probability
+
+statistical significance - if the probability of an experimental outcome happening by chance
+is greater than 5%, then it is significant
+
+Use a venn diagram to represent union vs intersection  of two subsets
+within the sample space.
+
+A compound sample space has multiple variables.  Ways that an event can vary.
+
+A sample space of multiple independent variables can be represented graphically.
+  * venn diagram, for a small number of variables 
+  * tree diagram, for a small number of variables
+  * grid, for two variables
+  * table, for two or three variables
+
+To calculate the probability of two or more independent events, 
+multiply the individual probabilities together.
+
+$P \left ( n \: \text{throws in a row} \right ) = P \left (\text{1 throw} \right ) ^n$
+
+==== Dependency====
+
+independent events - with replacement
+
+dependent events - without replacement, first event changes the sample space
+
+\begin{align}
+P(A) &&& \text{probability of A} \\
+P(B) &&& \text{probability of B} \\
+P(B | A) &&& \text{probability of B given A} \\
+\end{align}
+
+
+===== Conditional probability ===== 
+
+Applies to dependent events.
+
+If:\\
+\begin{align}
+P(A) &= \text{probability of A} \\
+P(B) &= \text{probability of B} \\
+P(B \cap A) &= \text{intersection of B and A} \\
+P(B \mid A) &= \text{probability of B given A} \\
+\end{align}
+\\
+Then:
+\begin{align}
+P(B \mid A) &= \frac{P(B \cap A)} {P(B)} \\
+\end{align}
+\\
+And:
+\begin{align}
+P(A \mid B) &= \frac{P(A \cap B)} {P(A)} \\
+\end{align}
+
+
+
+
+==== Monty Hall problem ==== 
+
+==== Bayes Theorem ==== 
+
+
+Named after Thomas Bayes, describes the probability of an event, 
+based on prior knowledge of conditions that might be related to the event.
+
+For example, if the risk of developing health problems is known to increase with age, 
+Bayes' theorem allows the risk to an individual of a known age to be assessed 
+more accurately (by conditioning it on their age) 
+than simply assuming that the individual is typical of the population as a whole.
+
+
+[[https://en.wikipedia.org/wiki/Bayes%27_theorem | Wikipedia: Bayes' Theorem]]
+

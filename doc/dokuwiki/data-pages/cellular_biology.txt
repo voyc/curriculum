@@ -1,0 +1,91 @@
+====== Cellular Biology ======
+
+Ninja Nerd: Cell Cycle: Interphase & Mitosis
+https://www.youtube.com/watch?v=LUDws4JrIiI&list=PLTF9h-T1TcJi_1FdKlH4dbf_3uI4wuT99
+
+Human cells
+  * membrane or "wall"
+  * nucleus, containing DNA
+  * cytoplasm
+    * organnelles
+
+mytosis - cycle through which cells replicate
+
+amytotic cells do not replicate
+
+Three types of cells:
+  * Labile - replicating all the time:  skin, GI tract, urinary tract
+  * Stable - liver
+  * Permanent - do not replicate, nerves, skeletal muscles
+
+
+===== Cell Structure =====
+
+Khan Academy, Cell Theory, Cell Structure
+https://www.youtube.com/watch?v=Hmwvj9X4GNY
+
+  * cellular membrane
+  * nucleus
+    * membrane
+    * nucleolus - densely packed bundle of proteins, ribosomal RNA is produced here
+    * DNA
+      * chomatin
+      * proteins
+  * cytosol
+  * ribosomes - translate mRNA into proteins, made of ribosomal RNA
+  * endoplasmic reticulum - tunnels lead from nucleus to Golgi bodies, ribosomes attached.  These ribosomes output proteins into the tunnel so they can exit the cell.
+  * Golgi bodies
+  * organelle - membrane-bound subunit of a cell
+    * vesicles - clump of protein surrounded by membrane, floating around in the cell. It can float to the cell wall where the membrane can merge with the cellular membrane allowing the protein to exit the cell.
+    * lysosomes (animal) - contain enzymes that dissolve other things.
+    * lytic vacuole (plant) - same purpose as lysosome 
+    * mitochrondria - cellular respiration, where sugars are turned into ATP.  Contain their own DNA and can reproduce on their own.  Speculation: at one time, mitochondria may have been independent prokaryotes and later decided to live within a cell.
+    * chloroplasts (plant) - photosynthesis, likewise has their own DNA and ribosomes
+  * cell wall (plant, non-animal) - celulose, adds strength to cellular membrane
+  * actin filaments - add structure to cell, facilitate transportation within the cell
+  * microtubules - ?
+  * centrioles - microtubules
+
+
+  * prokaryote
+    * bacteria
+    * archaea
+  * eukaryote
+    * plants
+    * animals
+    * fungi
+
+DNA, transcribed into mRNA, translated by the ribosomes into proteins
+
+===== Mitochondria =====
+
+Khan Academy, Mitochondria
+https://www.youtube.com/watch?v=i1dAnpSFbyI
+
+mitochondrion, singular from of mitochondria 
+
+a membrane-bound organelle, much like the Eukaryote
+
+ATP factory, releases energy used in the body for movement, thinking, etc.
+
+in ATP form, you have adenosine triphosphate.  Remove one of the phosphate groups, energy is released.
+
+glucose 
+
+lots of mitochondria in the muscles
+
+At one time, mitochondria were independent organisms, like bacteria.  Now living in symbiosis inside a cell.
+
+outer membrane
+  * phospho lipids - outer membrane of the mitochondria
+  * porins - proteins, holes in the outer membrane, so some cells can pass thru
+
+inner membrane 
+  * phospho lipid
+  * folds to increase surface area, crista (singular), cristae (plural)
+
+intermembrane space
+  * electron transport chain
+  * ATP synthase
+
+glycolysis occurs in cytosus

@@ -1,0 +1,31 @@
+====== Statistics and Probability ======
+
+Statistics and probability are related areas of mathematics 
+which concern themselves with analyzing the relative frequency of events.
+
+[[Statistics]] looks at the past.  Events that have already happened.
+
+[[Probability]] looks at the future.  What event is likely to happen next?
+
+(Draw a picture, with a line and arrow pointing back into the past, and forward into the future.)
+
+
+Statistics are the inputs to probability calculations.
+
+Probability can only be computed based on statistics.
+
+The future can only be predicted by looking at what has happened in the past.
+
+
+For example, draw a line graph, basic algebra.
+What is the probability that a point with x value equal to 7 will have a y value of 42?
+
+aka
+
+probability theory, statistical inference
+
+data analysis
+
+Bayes theorem in AI, Bayesian Inference, Naive Bayes, Naive Bayes Classifier, 
+Bayesian Methods
+

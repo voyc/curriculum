@@ -3,6 +3,7 @@
 
 **[[Matter]]**
     * [[Patterns]]
+    * [[Laws]]
     * [[Limits]]
     * [[Chemistry]]
     * [[Physics]]
@@ -17,7 +18,7 @@
     * [[Organic Chemistry]]
     * [[Biochemistry]]
     * [[Molecular biology]]
-    * Cellular biology
+    * [[Cellular biology]]
     * Single Cell Organisms
     * Multi Cell Organisms
     * [[worm brain]]
@@ -29,8 +30,10 @@
         * animal
         * [[Neuroscience]]
     * [[Humanity]]
+    * [[Health Science]]
 
 **[[Mind]]**
+    * [[Neurology]]
     * [[Sensation]]
     * [[Psychology]]
       * Motivations
@@ -53,6 +56,7 @@
       * [[Love]]
       * [[Cosmic consciousness]]
     * Exploitation: Rom-com, religion
+    * [[Mind Control]]
     * psychopathy
     * [[Eastern models]]
     * human is machine

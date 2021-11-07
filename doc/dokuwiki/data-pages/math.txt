@@ -35,7 +35,8 @@
   * [[Calculus]]: the mathematical study of continuous change  
     * [[Differential Calculus]]: rates of change and slopes of curves  
     * [[Integral Calculus]]: accumulation of quantities and the areas under and between curves  
-  * [[Statistics]]
+  * [[Statistics and Probability]]
+    * [[Statistics]]
     * [[Probability]]
   * [[Linear Regression]]
     * Analysis, modeling

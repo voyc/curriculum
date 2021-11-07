@@ -1,7 +1,193 @@
 ====== Statistics ======
-aka **Probability**
+
+See also [[Probability]], where we try to predict future events based on statistics.
+
+Parent [[Statistics and Probability]].
+
+Tell a story: good or bad.  Stretch or squeeze the axes.
+
+sports stats\\
+nba.com
+
+===== Distribution =====
+
+median, range, IQR
+
+box-and-whisker plot
+
+
+box plot vs dot plot
+
+
+
+===== Frequency Distribution =====
+
+dot plot
+
+mean absolute deviation (MAD)
+
+
+
+
+central tendancy
+  * mean, aka arithmetic mean, $\mu$ = average
+  * median = middle number of rank ordered set
+  * mode = most frequent number
+
+spread
+  * range = max - min
+  * interquartile range (IQR) = diff between top half median and bottom half median
+  * variance, sigma squared, $\sigma^2$ = $\frac{\sum_{x=1}^{N}(x_i-\mu)^2}{N}$ 
+  * standard deviation, sigma, $\sigma$ = $\sqrt{\sigma^2}$
+
+with a tight distribution, mean and standard deviation work best
+
+with a skewed distribution, median and interquartile range work best
+
+
+do algebra on the variance formula
+
+
+\begin{align}
+\mu &= \frac{\sum_{x=1}^{N}(x_i)}{N} &&\text{mean formula}\\
+
+\sigma^2 &= \frac{\sum_{x=1}^{N}(x_i-\mu)^2}{N} &&\text{variance formula 1}\\
+
+\sigma^2 &= \frac{\sum_{x=1}^{N}(x_i)^2}{N} - \mu^2  &&\text{variance formula 2}\\
+
+\sigma^2 &= \frac{\sum_{x=1}^{N}(x_i)^2}{N} - \frac{\left [\sum_{x=1}^{N}(x_i)\right ]^2}{N^2}  &&\text{variance formula 3}\\
+\end{align}
+
+
+=== Population vs Sample ===
+
+We can work with an entire population.\\
+Or we can work with a sample from the population.\\
+The math is the same except for two things.
+
+  - The symbols are different.
+    * For a population, we use 
+      * $\mu$ for the mean, 
+      * $\sigma$ for standard deviation, and 
+      * $N$ for the number of points.
+    * For a sample, we use 
+      * $\bar{x}$ for the mean, 
+      * $s_x$ for standard deviation, and
+      * $n$ for the number of points.
+  - The divisor in the standard deviation formula is different.
+    * For a population, we divide by N.
+    * For a sample, we divide by n-1.
+
+==== Relative Frequency ====
+
+y axis is percent instead of raw frequency count
+
+
+==== Density Curve ====
+
+Make histogram bars more and more narrow until the top becomes a line.
+
+The data points can take on any value in a continuum, 
+as opposed to being lumped into coarse buckets.
+
+Area under the curve is 100%.
+
+The curve will never go negative.
+
+Measure the area under the density curve between two values,
+to get the percentage of data points falling between those two values.
+This can sometimes be estimated by calculating the area of the rectangle.
+
+You cannot calculate the percent of a single value, 
+because there is no rectangle.
+The line has no width.
+
+
+=== Symmetric Density Curve ===
+
+mean and median are equal, both cut the area under the curve in half
+
+in the bell curve, the mode is also equal to the mean and median
+
+picture a bimodal symmetric curve
+
+the area under the left half is equal to the area under the right half
+
+=== asymmetric density curve ===
+
+aka skewed
+
+mean will be towards the long tail from the median
+
+long tail to the right => right-skewed distribution
+
+and vice versa
+
+==== Probability Distribution ====
+
+Distribution\\
+Frequency Distribution\\
+Binomial Distribution\\
+Percentile\\
+Density Curve\\
+Probability Distribution\\
+Cumulative Probability Distribution\\
+
+
+
+==== Binomial Distribution ====
+
+uses factorial in the formula
+
+is discreet function
+
+each trial has boolean result, ie, success or failure
+
+
+===== Distribution =====
+
+Look at past events and organize them into patterns which tell a story and 
+allow us to understand how, when, and why things happen.
+
+The graph of a distribution is a curve.
+
+There are several kinds of distributions.
+
+discrete vs continuous
+
+
+
+distributions
+  * linear growth, errors, offsets
+    * normal, Gaussian
+  * exponential growth, prices, incomes, populations
+    * log-normal, a single quantity whose log is normally distributed
+    * Pareto, a single quantity whose log is exponentially distributed
+  * uniformly distributed
+    * discrete uniform distribution, for a finite set of values, coin, die
+    * continuous uniform distribution, for continously distributed values
+  * Bernoulli trials
+    * Bernoulli distribution (success/failure, yes/no)
+    * Binomial distribution, ?
+    * negative binomial distribution, 
+    * geometric distribution, number of failures before the first success
+  * categorical outcomes (events with K possible outcomes)
+  * Poisson process (events that occur independently with a given rate)
+  * absolute values of vectors with normally distributed components
+  * normally distributed quantities opereated with sum of squares
+  * as conjugate prior distribution in Bayesian inference
+  * some specialized applications
+  * 
+
+Naive Bayes Classifier in AI is based on Bayes' Theorem in probability theory.
+
+
+{{https://en.wikipedia.org/wiki/Probability_distribution | 
+Wikipedia: Probability distribution}}
 
 ===== Normal Distribution =====
+
+aka Bell Curve or Gauss Distribution.
 
 
 ==== Bell Curve ====
@@ -24,3 +210,107 @@ Characteristics:
 ==== Median ====
 ==== Standard Deviation ====
 
+
+Salmon Khan uses problems from ck12.org open source flex book: AP Statistics
+
+Empirical Rule:  68 - 95 - 99.7
+  * Values within plus-or-minus 1 standard deviation account for 68% of the universe.
+  * Values within plus-or-minus 2 standard deviation account for 95% of the universe.
+  * Values within plus-or-minus 3 standard deviation account for 99.7% of the universe.
+
+==== Standard Normal Distribution ====
+
+a distribution where
+
+$$\mu = 0 \text{ and } \sigma = 1$$
+
+z-score = number of standard deviations away from the mean
+
+$$ \text{z-score} = \frac{x - \mu}{\sigma}$$
+
+allows comparison of values on different scales and distributions, like LSAT and MCAT
+
+Standard Normal Table, aka z-table - a table based on the Standard Normal Distribution
+
+gives cumulative probability for any z-score
+
+where cumulative probability is the area under the curve to the left of the z-score
+
+How to find the cumulative probability of a value in the distribution. 
+  * Calculate the z-score
+  * Look up the z-score in the standard normal table
+
+===== Normal vs Pareto =====
+
+Walter Scheidel: The Great Leveler
+https://press.princeton.edu/books/paperback/9780691183251/the-great-leveler
+the only things that can level wealth inequality are:
+war
+revolution
+state collapse
+plague
+
+nomal
+iq
+conscientiousness
+openness
+
+pareto
+productivity
+creative output
+
+Price's Law
+Derek De Sola Price
+1960s study: a vanishingly small proportion of scientests operating in a given domain, produce half the output
+a tiny number of people produce almost all of everything
+aka square root law 
+The square root of a number of people in a domain produce half the output
+if you have 10 employees, 3 of them produce half the output
+if you have 100 employees, 10 of them produce half the output
+if you have 10,000 employees, 100 of them produce half the output
+
+The Matthew Principle
+From those who have everything, more will be given.
+From those who have nothing, all will be taken.
+(An economic principle, copying language from the new testament.)
+
+iq, conscientiousness, openness are normally distributed and are good predictors of long-term performance
+but creative output is NOT normally distributed
+
+2017 Personality 21: Biology & Traits: Performance Prediction
+https://www.youtube.com/watch?v=Q7GKmznaqsQ&t=0s
+
+2017 Personality 18: Biology & Traits: Openness, Intelligence, Creativity
+https://www.youtube.com/watch?v=D7Kn5p7TP_Y&t=5393s
+
+[[https://www.youtube.com/watch?v=fjs2gPa5sD0 |
+YouTube: Jordan Petersen - IQ and the Job Market]]
+
+[[https://www.youtube.com/watch?v=jSo5v5t4OQM | 
+YouTube: Jordan Peterson - Controversial Facts about IQ]]
+
+[[https://www.youtube.com/watch?v=h02w5E7FGlY |
+YouTube: Jordan Peterson - The Big IQ Controversy]]
+
+
+The SAT, GRE, the LSAT, all of those are IQ tests.
+They are more crystallized than fluid.
+
+IQ 
+145 to 160 - to be the best.  1 in 10,000
+116 to 130  - 95-86 percentile
+115-110 - 85-73 percentile
+below 87 - no jobs
+below 83 -  10% of pop. , cannot join the army
+
+
+[[https://www.youtube.com/watch?v=7HRmfIEWtyo |
+YouTube: Udacity: IQ score distribution]]
+
+{{ :iq_normal_distribution.png?400|}}
+
+
+[[Python Programming for Statistics and Probability]]
+
+[[https://docs.google.com/spreadsheets/d/1EOx-bmlxPC3ALXfaJTQ83ml8lPFt5zJI4MQN8Hp1d5g/edit#gid=1427780055
+| spreadsheet of usa deaths 2015 to 2020]]

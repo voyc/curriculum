@@ -119,6 +119,142 @@ CRISPR, gene editing animation
 https://youtu.be/4YKFw2KZA5o 
 
 
+===DNA, the blueprint of life, how does it work===
+
+https://www.youtube.com/watch?v=zwibgNGe4aY
+
+
+Sapolsky Molecular Genetics I
+https://www.youtube.com/watch?v=_dRXA1_e30o&list=PL150326949691B199&index=6
+
+
+=====Biological Molecules=====
+
+https://opentextbc.ca/biology/chapter/2-3-biological-molecules/
+
+====Macromolecules====
+
+carbohydrates, lipids, proteins, and nucleic acids
+
+Biological macromolecules are organic, meaning that they contain carbon. In addition, they may contain hydrogen, oxygen, nitrogen, phosphorus, sulfur, and additional minor elements.
+
+===Carbon===
+
+$$\require{mhchem}$$
+
+$\ce{CH4}$ = methane, the simplest organic carbon molecule
+
+{{ :chemfig-methane.png?400|}}
+
+Figure 2.13 These examples show three molecules (found in living organisms) 
+that contain carbon atoms bonded in various ways to other carbon atoms and the 
+atoms of other elements. 
+
+(a) This molecule of stearic acid has a long chain of carbon atoms.
+
+$$\ce{C17H35CO2H}$$
+
+(b) Glycine, a component of proteins, contains carbon, nitrogen, oxygen, and hydrogen atoms. 
+
+(c) Glucose, a sugar, has a ring of carbon atoms and one oxygen atom.
+=====Proteins=====
+
+====Protein Functions====
+
+<HTML><iframe width="540" height="315" src="https://www.youtube.com/embed/_dRXA1_e30o?start=343&end=379" frameborder="0"></iframe></HTML>
+
+
+<HTML><iframe width="540" height="315" src="https://www.youtube.com/embed/_dRXA1_e30o?start=663&end=777" frameborder="0"></iframe></HTML>
+
+Functions:
+
+  * structural, hold the shape of cells together
+
+  * messengers, hormones, neurotransmitters, fit into other things, lock and key
+
+  * enzymes - catalyze reactions
+
+  * shape, changing to effect function, as in channel
+
+====Protein Structure====
+
+made up of amino acids, approximately 20 different amino acids
+
+====Protein Synthesis====
+
+<HTML><iframe width="540" height="315" src="//www.youtube.com/embed/_dRXA1_e30o?start=379&end=663" frameborder="0"></iframe></HTML>
+
+genes specify proteins
+
+made up of amino acids, approximately 20 different amino acids, 
+each amino acid coded for with a different DNA sequence
+
+===DNA sequence===
+three letters, three nucleotides
+
+DNA codes for amino acids
+
+a string of DNA coding for a sequence of amino acids, 
+which get plugged together to create a protein
+
+RNA, an intermediary step (between DNA and protein)
+
+if you know the sequence of DNA:
+  * you will know the sequence of RNA
+  * you will know the amino acid sequence
+  * you will know the protein that thus is made
+  * you will know the shape of the protein
+  * you will know the function of the protein
+
+everything about protein function is built around shape
+
+every effector protein fits into another effector protein like a "lock and key", 
+hormones, neurotransmitters
+
+amino acids, attracted to or repelled from, water
+hydrophillic, hydrophobic
+amino acids are mostly swimming in water
+the sequence of amino acids determines the shape, based on the way amino acids fit together
+
+(all enzymes are proteins)\\
+enzymes, catalyze a reaction, pulling something apart, or putting two things together\\
+this is done with a change in shape by the protein
+
+channel
+
+
+four examples of a protein that changes shape to accomplish it's function
+  * enzyme to break apart two things
+  * enzyme to put two things together
+  * channel, open or close to allow an ion through the cell wall
+  * motor
+
+
+====Central Dogma====
+
+13:00
+
+
+DNA -> RNA -> Protein
+
+"DNA is running everything".  no.  DNA knows everything.  
+
+1970's Central Dogma denied
+
+discovery of RNA-based viruses
+
+17:00
+
+micromutations
+
+one letter is changed, miscopied, changed by radiation, etc.
+
+three base pairs
+
+
+
+
+
 
 ===== Resources =====
 
