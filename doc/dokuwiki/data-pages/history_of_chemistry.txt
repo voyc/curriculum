@@ -1,0 +1,11 @@
+====== History of Chemistry ======
+back to [[Chemistry]]
+$$\require{mhchem}$$
+
+1903 Ernest Rutherford began to speak of the possibility of atomic energy.
+
+1911 Geiger-Marsden gold foil experiments.
+
+1913 Ernest Rutherford described the nucleus to explain the gold foil experiments.
+
+

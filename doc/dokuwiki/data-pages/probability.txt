@@ -107,6 +107,28 @@ multiply the individual probabilities together.
 
 $P \left ( n \: \text{throws in a row} \right ) = P \left (\text{1 throw} \right ) ^n$
 
+==== Multiple Events ====
+
+3 coin flips
+
+3 throws of the die
+
+people in chairs
+permutations
+combinations
+
+red balls and blue balls
+
+
+How many total possible outcomes of 8 coin flips?  = $2^{8}$
+
+==== Permutations and Combinations ====
+
+\begin{align}
+_{n}P_{r} &= \frac{n!}{(n-r)!} \\
+_{n}C_{r} &= \frac{n!}{(n-r)!r!} \\
+\end{align}
+
 ==== Dependency====
 
 independent events - with replacement

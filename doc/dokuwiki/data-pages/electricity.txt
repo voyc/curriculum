@@ -1,0 +1,734 @@
+====== Electricity ======
+
+prerequisite: [[Electrochemical Reactions]]
+
+Three most basic quantities of electricity are:
+  * current
+  * voltage
+  * resistance
+
+^ quantity     ^ measured in ^ description                ^
+| current I    | amps A      | flow (volume) of electrons |
+| voltage V    | volts V     | force, pressure, or load   |
+| resistance R | ohms Ω      | resistance to the flow     |
+
+These three quantities can be measured with a multimeter.
+
+===== Ohm's Law =====
+
+Ohm's Law defines the relationships among these three quantities.
+
+\begin{align}
+voltage &= current * resistance \\
+V &= I * R \\
+volts &= amps * ohms \\
+V &= A * Ω \\
+\end{align}
+
+Examples:
+  * For a motor with a given resistance, increasing the voltage will increase the current.
+  * If you want to increase the current to the motor, increase the voltage.
+  * If you choose a motor with a higher resistance, the voltage must be increased to achieve the same current.
+  * As the resistance is increased, the voltage must be increase to maintain the same current.
+
+
+=== Human body sensitivity to electricity ===
+
+Internal resistance between the ears is 100 ohms.
+
+From finger to toe, 500 ohms.
+
+More resistance, more current.  
+
+A current of 0.1 amp for 2 seconds can be fatal.
+
+A human has been killed at as low as 42 volts.
+
+Hanging on a wire vs touching the wire and the ground.
+
+^ Current      ^ Reaction                                                  ^
+| 1 mA         | Faint tingle.                                             |
+| 5 mA         | Slight shock.  Disturbing.  Most people can let go.       |
+| 6-30 mA      | Painful shock.  Loss of muscular control.                 |
+| 50-150 mA    | Extreme pain.  Cannot let go.  Death is possible.         |
+| 1000-4300 mA | Ventricular fibrillation. Nerve damage.  Death is likely. |
+| 10,000 mA    | Cardiac arrest.  Severe burns.  Death is probable.        |
+
+Wet skin - 1000 ohms
+
+Dry skin - 500,000 ohms
+
+Length of time.  1 tenth of an amp, 100 mA, for 2 seconds can be fatal.
+
+The human body is an eletro-chemical-mechanical device.
+A nerve is a kind of conductor.
+Muscles contract in response to an electrical stimulus.
+
+
+
+===== Current =====
+
+current - flow of electric charge 
+
+electric charge flows when there is voltage present across a conductor
+
+current is measured in amps
+
+current can also be measured as electrons per second
+
+one electron has a charge of 1.602e-19
+
+one ampere = one coulomb per second
+
+one coulomb = 6.242e+18 electrons
+
+one ampere =  6.242e+18 electrons per second
+
+===== Voltage =====
+
+voltage is the force or pressure that causes current to flow in a circuit
+
+voltage is measured in volts
+
+the resistance of a conductor is the opposition to the passage of a current through that conductor
+
+electric charge flows when there is voltage present across a conductor
+
+"voltage present across a conductor"
+
+"flow in a circuit"
+
+"electric charge"1 
+
+===== Resistance =====
+
+resistance is measured in ohms
+
+voltage forces charge to flow in a conductor, resistance opposes that force
+2
+===== Power =====
+
+A fourth quantity, power, measured in watts, is a combination of current and voltage.
+
+\begin{align}
+power &= voltage * current \\
+P &= V * I \\
+watts &= volts * amps \\
+W &= V * A \\
+\end{align}
+
+Power is a combination of the force and speed of electrons.
+
+A household lightbulb can be defined by wattage, because household current is a given.  In Europe and Asia it is 220VAC.
+
+So a 60 watt light bulb will pull $60w / 220v = .27 amps$.
+
+===== Capacitor, Inductor, Resistor =====
+
+The three elementary electrical components:
+  * capacitor
+  * inductor
+  * resistor
+
+More:
+  * transformer
+  * relay
+  * switch
+
+==== Capacitor ====
+
+A capacitor has two plates separated by a space.
+{{https://cdn1.iconfinder.com/data/icons/capatitors/100/electronic_component_capatitor-01-512.png?40}}
+
+Each plate has area $A$.  The plates are separated by distance $d$.
+
+Between the plates is a dielectric material (not to be confused with dialectic).
+
+A dielectric material is an insulator that can be polarised by an electric field.  The electrons in the dielectric material cannot drift through the material, but they can shift slightly, causing dielectric polarisation.
+
+The dialectic material has a dialectic constant $ε$.
+
+Wires from a power supply are connected to the plates so that one is positive and the other is negative.
+
+An electric field arises between the plates.
+
+The electric field is measured in volts per meter $V / m$.
+
+Electrical energy is stored in the field.
+
+flux capacity
+
+inductor, induce
+
+
+==== Capacitance ====
+
+The capacitance of a capacitor indicates how much charge the capacitor can store.
+
+Capacitance is measured in farads (F) or microfarads (mF), named for Michael Faraday.
+
+
+===== Inductance =====
+
+An inductor is a coil.
+{{ https://cdn1.iconfinder.com/data/icons/electronic-components-1/100/electronic_component-33-512.png?40}}
+
+The coil is wound around a core of dielectric material.
+
+A linear coil is called a solenoidal inductor.
+
+===== Frequency =====
+
+
+
+===== Projects =====
+
+electric “train” made of battery, magnets, coil
+https://youtu.be/J9b0J29OzAU 
+ 
+
+===== Electricity vs Electronics =====
+
+electrical circuit - controlled by mechanical switches
+
+electronic circuit - controlled by electronic signals
+
+===== Electrical Components =====
+
+==== Wire =====
+
+Wire can be distinguished by size and length.
+
+There are three ways to denote the size of a wire.
+  - by gauge, per American Wire Gauge (AWG). (bigger gauge : thinner wire)
+  - by diameter, measured in mm
+  - by cross-sectional area, measured in $mm^2$, used in EU countries
+
+This wire size chart compares the three systems.
+https://docs.google.com/spreadsheets/d/1r1-3WnBmyDpDbZnRkZ8a1wJSJUb3sJyFJXpQcI2ucDY/edit#gid=0
+
+Calculate cross-sectional area from diameter with this equation:
+$$ A = \frac{D^2 * pi}{4}$$
+
+For wires made of bundled strands, use the same equation but multiply by n numbers of strands.
+
+==== Diode =====
+
+Light Emitting Diode (LED)
+
+==== Generator ====
+
+Convert motive power into electrical power.
+
+The first generators were built in the 1830's.
+
+Several types:
+  * dynamo - uses a commutator to flip the AC to DC, generating a pulsing DC current.
+  * magneto - generates AC current using permanent magnets
+  * alternator - generates AC current using field coils
+
+==== Commutator ====
+
+A metal ring split into two halves, with an electrode attached to each halve.
+Used in motors and in generators.
+
+==== Motor as Generator ====
+
+Regenerative braking - Electric vehicles use the motor as a generator to recharge the battery.
+
+===== Electronic Components =====
+
+==== Transistor ====
+
+replaced vacuum tube
+
+Types of transistor:
+  * field effect transistor (FET)
+    * metal-oxide-semiconductor FET (MOSFET) - most widely used type
+  * bipolar junction transistor (BJT)
+
+====== Electromagnetism ======
+
+inductance
+reluctance = resistance
+conductance
+
+mechanical linear
+mechanical rotational
+electrical 
+magnetic
+
+flux
+force
+
+magnetomotive force vs flux
+
+reluctance = ratio of force to flux in a circuit
+
+
+circuit, field
+
+reluctance
+impedance
+inductance
+
+
+reluctance R = F / flux ϕ
+It is sometimes known as Hopkinson's law and is analogous to Ohm's Law with resistance replaced by reluctance, voltage by MMF and current by magnetic flux.
+
+permeance, the reciprocal of reluctance, P = 1/R
+
+in electromagnetism, permeance is the inverse of reluctance
+a magnetic circuit
+   acts as though flux is conducted
+   permeance is larger for a larger cross-section of material
+
+in electricity, conductance is the inverse of resistance
+an electric circuit
+    conductance and resistance
+    
+-----
+
+Triboelectric effect and charge
+https://www.khanacademy.org/science/physics/electric-charge-electric-force-and-voltage/charge-electric-force/v/triboelectric-effect-and-charge?modal=1
+
+balloon rubbed on the hair, electrons are moving from hair to balloon
+hair becomes positive, balloon becomes negative
+
+lightening
+
+rubber shoes on carpet, touch doorknob
+
+"charge"
+positive, negative
+opposite attract, like repel
+framework, model
+protons, electrons
+
+e = charge of a proton
+-e = charge of an electron
+
+coulomb
+1C ~= 6.24 * 10^18e
+e = 1.60 * 10^-19C    reciprocal
+
+Coulomb's Law
+https://www.khanacademy.org/science/physics/electric-charge-electric-force-and-voltage/charge-electric-force/v/coulombs-law?modal=1
+
+1785 Charles Augustin de Coulomb
+q_1 = charge 1
+q_2 = charge 2
+r = distance between charges
+
+F_e = K_e |q_1q_2|   / r^2       Coulomb's law of electrostatic force
+K_e ~= 8.987551 * 10^9   * Nm^2 / C^2                    electrostatic constant
+resulting units Newton meter squared / coulomb squared
+
+F_G = G m_1 m_2 / r^2       Newton's law of gravity
+G ~= 6.674×10^−11 m^3⋅kg^−1⋅s^−2
+
+
+q_1 = +5 * 10^3 C 
+q_2 = -1 * 10^-1 C
+r = 0.5m
+
+
+voltage drop across a component
+the entire voltage is dropped across the whole circuit
+resistors wired in series share the voltage drop proportionate to the resistance in ohms
+
+AC generator types
+standard - produce electricity in a single phase
+invertor - produce electricity in three phases, invert to DC, invert back to more stable AC
+induction (asynchronous) - 
+synchronous - 
+brushed - produce AC with sine wave fairly close to grid wave
+brushless - use electromagnetic induction instead of mechanical brushes
+
+                      generator motor AC DC single 3-phase
+induction
+brushed
+brushless
+
+
+
+
+any two different kinds of metal can be placed in a conducting solution and you get a battery. 
+
+copper and zinc strips into a lemon or a potato
+
+soda can, the soda from the can, and some copper.
+
+Zinc copper soda
+
+https://en.m.wikipedia.org/wiki/Battery_balancing
+Battery balancing and battery redistribution refer to techniques that improve the available capacity of a battery pack with multiple cells (usually in series) and increase each cell's longevity.[1] A battery balancer or battery regulator is an electrical device in a battery pack that performs battery balancing.[2] Balancers are often found in lithium-ion battery packs for laptop computers, electrical vehicles. etc.
+
+state of charge (SOC)
+
+Balancing is only necessary for packs that contain more than one cell in series. 
+
+Parallel cells will naturally balance since they are directly connected to each other, 
+
+but groups of parallel wired cells, wired in series (parallel-series wiring) must be balanced between cell groups.
+
+Active balancing passive balancing
+
+Bottom balancing top balancing
+
+Balancing while not charging
+
+https://youtu.be/OjGAvbULBH8
+Battery pack with BMS made for three lithium ion cells
+Thin wires for balancing thick wires for carrying current
+
+Thickness 0.10, 0.12, 0.15, 0.20 mm
+Width 5, 8, 10 mm
+
+Student make battery
+https://sciencing.com/making-wet-cell-battery-4781656.html
+
+AC vs DC: ohm's law applies equally unless there is a capacitance or an inductance in the circuit.
+
+Faraday
+Lenz
+Franklin
+
+Voltage drop
+http://wiresizecalculator.net/calculators/voltagedrop.htm
+
+Inductor ac vs dc
+https://www.homemade-circuits.com/inductors-in-acdc-circuits-explained/
+
+induction = asynchronous
+an induction motor can be used as a generator and vice-versa
+an induction machine is both a generator and a motor
+induction is for AC only
+is induction always three-phase AC?
+1. start with induction motor attached to the AC input line
+2. apply a torque to the rotor to bring it up to match the speed of AC input line, the synchronous speed, current falls to zero
+3. speed up the rotor past the synchronous speed, reverse current is generated
+
+synchronous and induction generators are both alternators
+
+
+https://www.homemade-circuits.com/inductors-in-acdc-circuits-explained/
+
+inductors and capacitors are often used together. they are complementary.
+
+inductor and capacitor and battery all store electric energy
+
+inductor stores energy in the form of magnetic energy
+
+inductor capacitor
+inductor | initial energy stored | energy released after |
+capacitor | energy stored gradually | when is energy released?
+
+an inductor in AC == a resistor in DC
+
+inductor 
+in DC: behave and produce a short across inself
+in AC: offer an opposing or restricting response, aka "choke"
+
+suppressing high frequencies, suppressing surge currents, for bucking or boosting voltages
+
+inductance: the property of opposiing instantaneous current 
+reactance: the magnitude of this opposing force, proportional to frequence and current
+
+made of coils or turns of wire
+
+
+https://theelectronicshobbyblog.com/2019/03/25/beginners-corner-inductors-in-dc-circuits/
+
+inductor - stores energy in a magnetic field
+capacitor - stores energy in an electric field
+
+
+https://electronicsphysics.com/faradays-law-of-electromagnetic-induction-for-emf/
+this author uses the verb "induce" incorrectly
+
+Oersted: current carrying wire produces magnetic field around it
+Biot-Savart law, Ampere's circuital law, Fleming's right hand thumb rule, Maxwell's corkscrew rule
+
+the reverse is also true
+
+a current is induced in a conductor in a varying magnetic field 
+Faraday's law of electromagnetic induction
+induced EMF
+electromotive force (EMF)
+the EMF can drive a current
+
+faraday law 1
+Whenever a conductor is placed in a varying magnetic field, an electromotive force is induced. If the conductor circuit is closed, a current is induced, which is called induced current.
+Note: the EMF is a potential.  The current is actual.
+
+faraday law 2 - calculate the magnitude of the induced EMF
+e = N × dΦ / dt
+
+Lenz's Law
+e = -N × dΦ / dt
+Add minus sign.  The polarity of induced EMF is such that it would produce a current which opposes the change in magnetic flux that produced it.
+Φ =  change in magnetic flux
+t = time
+N = Number of turns
+e = EMF
+
+
+electromagnetic induction
+https://en.wikipedia.org/wiki/Electromagnetic_induction
+directly proportional to number of turns/coils in the conductor
+variance.  moving the field or the conductor.  using AC. 
+
+analogies	
+Lenz's law may be seen as analogous to Newton's third law in classical mechanics[2][3] and Le Chatelier's principle in chemistry.[4]
+
+laws: qualitative vs quantitative (equation ?)
+
+difference between magnetic and electric circuit
+https://circuitglobe.com/difference-between-magnetic-and-electric-circuit.html
+table
+^ magnetic circuit             ^ electric circuit                    ^
+| magnetic flux                 | electric current                   |
+| flux = mmf / reluctance | current = emf / resistance  |
+| mmf                               |  emf                                    |
+| reluctance                     | resistance                             |
+| current                           | flux                                      |
+| permeance                    | conduction                          |
+| permeability                  | conductivity                         |
+| reluctivity                       | resistivity                             |
+| flux density                    | current density                    |
+| magnetic intensity         | electric density                   |
+| mmf drop                       | voltage drop                       |
+| nothing flows                 | electrons flow                     |
+| no insulators                  | many perfect insulators      |
+| reluctance is not constant | resistance is almost constant |
+| magnetic lines of flux flow from north to south | electric current flows from positive to negative |
+
+
+AC to DC
+Rectifier plus capacitor
+
+Tesla 
+model S
+induction motor
+conventional well-proven 
+Squirrel cage rotor
+3% inefficiency
+Model 3
+Ipm sim rm
+Magnetic and reluctance action
+Four permanent magnets on rotor
+RMF rotating magnetic field, can be DC 2 phase or three phase
+PM motor
+Good starting torque
+Back EMF at high speeds
+Synchronous reluctance motor SynRM
+Good at high speeds, No back EMF 
+
+Combined PM and SynRM
+
+3 phase ac power to the stator
+Produces a rmf
+A 4 pole Rmf
+Induces current on the rotor bars
+
+In an induction motor
+The rotor speed always lags behind the rmf
+Rotor speed < rmf speed
+
+No brushes
+No permanent magnets
+Speed depends on the frequency of the ac power supply
+Variable frequency drive - controls motor speed
+From 0 to 18,000 RPM
+
+Jan 14 10 am
+
+three-phase induction motor - has three separated pairs of coils in the stator
+
+The stator generates an RMF.
+
+The shaft is connected to the rotor.
+
+Squirrel cage rotor - Two end rings connected by some bars, resembling a hamster wheel.
+
+The squirrel cage is effectively a set of wire loops.  The RMF generated by the stator induces a current in each of the wire loops of the squirrel cage.  The current in each wire loop generates a magnetic field. This magnetic field in the rotor interacts with the magnetic field in the stator resulting in rotation.
+
+Induction, four types
+
+electrostatic - a redistribution of electric charge in an object, caused by the influence of nearby charges
+
+Electromagnetic induction - Current in a wire generates/produces/creates/induces a magnetic field around the wire.
+
+Electric induction - a changing magnetic field induces a current in a nearby conductor.
+
+Magnetic induction - is the process of magnetization of materials in an external magnetic field. (Same as electrostatic ?)
+
+
+One of the four fundamental forces in the universe is the electromagnetic force. Not the electrical force or the magnetic force, but the electromagnetic force.
+
+Can a battery drive a three-phase ac motor?
+
+In north America, split phase system.
+
+Variable frequency drive (VFD)
+Rectifier - 3 phase ac to pulsed dc, 6 diodes
+DC bus - smooth dc, capacitor
+Inverter - DC to ac pwm, igbt's 
+
+Insulated-gate bipolar transistor - 
+https://m.youtube.com/watch?v=yEPe7RDtkgo
+
+Potentiometer - variable resistor
+
+PWM
+Control lighting 
+control motor speed 
+create efficient power supplies
+
+Also used to send data
+Tv remote control
+
+Also used in audio amplifiers
+99% efficient, as opposed to 25 to 50% efficiency of non pwm amplifiers
+
+Switching frequency
+Duty cycle
+
+Average voltage, perceived power
+
+Use PCM to control lighting
+The flicker fusion rate in the human brain is 18 times per second
+Frequency 100 times per second
+Duty cycle 25%
+
+Older systems use DC voltage control
+By placing a variable resistor in the circuit
+Excess energy wasted as heat, always the same current regardless of dimming
+More narrow range of variability
+Smoother power delivery
+
+
+The PCM used for servos is different
+Position of a servo
+Acceleration of an esc
+
+Between 1000 and 2000 microseconds
+
+555 IC
+
+The pulse wave is a square wave meaning it has a low and a high value meaning it can be used to represent binary data.
+
+Torque ripple
+
+Applications
+Rooftop ventilation fan
+Elevator
+Drone propeller
+Electric motorcycle
+Robotic elbow
+DIY generator
+DIY motor
+
+Rectifier | ac to dc
+Inverter | DC to ac
+Transformer | ac to ac
+Converter | DC to DC
+
+Any motor becomes a generator if you spin it.
+
+AC and DC generators, animation
+https://www.khanacademy.org/science/in-in-class-12th-physics-india/in-in-electromagnetic-induction/x51bd77206da864f3:ac-generator/v/ac-dc-generator
+brushes and slip rings = AC generator
+brushes and split rings = commutator = DC generator
+
+three phase generator, motor
+six wires I get, three wires, 9 wires, 12 wires I don't get
+
+
+https://m.youtube.com/watch?v=K8Ir1-COjnc&t=0s
+In a balanced three phase generator the fourth wire the neutral wire will have zero current and therefore it can be removed.
+
+
+radial flux vs axial flux - orientation of the coil windings in the stator
+
+
+Bldc and pmsm are both synchronous and both use permanent magnets
+
+permanent magnet Synchronous machine (PMSM)
+
+Differentiation: shape of back emf voltage
+
+==== Light Emitting Diode (LED) ====
+
+https://components101.com/diodes/5mm-round-led
+
+Anode - Positive terminal of LED
+
+Cathode - Negative terminal of LED
+
+symbol
+
+direction of current
+
+^ LED Color ^ Forward Voltage ^ 
+| Red       | 1.63 ~ 2.03V    |
+| Yellow    | 2.10 ~ 2.18V    |
+| Orange    | 2.03 ~ 2.10V    |
+| Blue      | 2.48 ~ 3.7V     |
+| Green     | 1.9 ~ 4.0V      |
+| Violet    | 2.76 ~ 4.0V     |
+| UV        | 3.1 ~ 4.4V      |
+| White     | 3.2 ~ 3.6V      |
+
+
+==== Applications ====
+  * Elevator (industrial)
+  * Drill ac (household)
+  * Drill dc
+  * Quadcopter
+  * Motorcycle
+  * Car
+
+servo - robotic elbow
+
+stepper - 
+
+==== Instruments ====
+
+Multimeter
+
+Oscilloscope
+
+Clamp Meter
+
+
+==== EMF ====
+
+voltage vs emf vs flux
+https://www.khanacademy.org/science/in-in-class-12th-physics-india/in-in-electromagnetic-induction/x51bd77206da864f3:ac-generator/v/emf-flux-equation-graph-of-ac-generator
+
+====  motor types ====
+
+
+there is no such thing as a dc motor
+
+Servo =
+DC motor
+Gear box
+Potentiometer
+Circuit board
+
+Gearbox step down rpm, increase torque
+Output of gearbox connects to potentiometer
+Closed loop - potentiometer turns 180 degrees
+Open loop - potentiometer turns 360 degrees
+
+
+Syllogism vs dialectic
+
+==== Magnet ====
+
+Eletromagnet vs permanent magnet.
+
+Often a permanent magnet is painted, so the south pole is blue, and the north pole is red.

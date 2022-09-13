@@ -1,5 +1,20 @@
 ====== Brain Parts ======
+
+google: blender brain model
+
+TurboSquid \\
+https://www.turbosquid.com/Search/3D-Models/brain/blend
+
+
+Brain by breddowen \\
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/1138359
+
+Realistic Brain Model (Subcortical Structures)by Blenderinho \\
+https://www.turbosquid.com/3d-models/3d-obj-realistic-subcortical-structures-human-brain/818190
+
+
 ==== Brain Anatomy ====
+
 Neuroanatomy
 
 Hindbrain
@@ -95,3 +110,45 @@ Sapolsky: Human Behavioral Biology [[https://www.youtube.com/watch?v=NNnIGh9g6fA
 
 Jordon Peterson: Personality [[https://www.youtube.com/playlist?list=PL22J3VaeABQAhrMCQUa6sde_Y9DVbLYRv|YouTube Playlist]] [[Notes on Peterson Personality|Notes]]
 
+
+https://www.hopkinsmedicine.org/health/conditions-and-diseases/anatomy-of-the-brain
+
+  * cerebrum
+  * cerebral cortex
+    * frontal lobe
+    * parietal lobe
+    * occipital lobe
+    * temporal lobe
+  * cerebellum
+  * brainstem
+    * midbrain
+    * pons
+    * medulla
+  * cerebellum
+  * meninges, three layers of protective covering
+  * pituitary gland
+  * hypothalamus
+  * amygdala
+  * hippocampus
+  * pineal gland
+  * ventricles, cerebrospinal fluid
+  * blood vessels
+    * vertebral arteries
+    * carotid arteries
+    * basilar artery
+    * circle of Willis
+  * cranial nerves
+    * originating in the cerebrum
+      * 1 olfactory
+      * 2 optic
+    * originating in the midbrain
+      * 3 oculomotor
+      * 4 trochlear
+      * 5 trigeminal
+      * 6 abducens
+      * 7 facial
+      * 8 vestibulocochlear
+      * 9 glossopharyngeal
+      * 10 vagus
+      * 11 accessory
+      * 12 hypoglossal

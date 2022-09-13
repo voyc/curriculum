@@ -1,0 +1,62 @@
+====== Periodic Table of Elements ======
+
+back to [[Chemistry]]
+
+The basic building block of matter is the **atom**.
+
+There are 118 types of atoms.  Each of these types is called an **element**.
+
+The elements are organized into a table of 7 rows and 18 columns.  Each row is considered a period, and therefore we call this table the **Periodic Table** of the elements.
+
+{{https://www.wuwm.com/sites/wuwm/files/201912/AdobeStock_238869971.jpg}}
+
+An interactive version of the Periodic Table
+https://www.ptable.com/
+
+A spreadsheet listing of all the elements
+https://docs.google.com/spreadsheets/d/1-i-CU-5BUZndE6IFHtZ-gagMftD691Z9e0o-GWmp0iI/edit?usp=drivesdk
+
+{{https://youtu.be/TDFAYRtrYuk | YouTube: Breaking Bad credits}}
+
+PubChem - a searchable database of all elements, molecules, chemical formulas, etc.
+[[https://pubchem.ncbi.nlm.nih.gov/]]
+
+Form at room temperature.
+  * Solid
+  * Liquid
+  * Gas
+  * Unknown
+
+Groups of elements
+  * Metals
+      * Alkali metals
+      * Alkaline earth metals
+      * Lanthanoids
+      * Actinoids
+      * Transition metals
+      * Post-transition metals
+    * Metalloids
+    * Nonmetals
+      * Reactive nonmetals
+      * Noble Gases
+
+Identifiers for each element
+  * atomic number - the number of protons in one atom of this element
+  * symbol - a one or two-letter abbreviation of the name
+  * name - the name of the element
+  * atomic weight - the average weight of an atom of this element
+
+table structure
+  * 7 rows
+  * 18 columns
+
+Example: Hydrogen
+  * Position: row 1, column 1
+  * Atomic number: 1.  That means the atom has one proton.
+  * symbol: H
+  * name: Hydrogen
+  * weight: 1.008
+
+
+Atoms are made of **protons**, **neutrons**, and **electrons**.
+

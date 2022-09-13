@@ -1,0 +1,18 @@
+
+
+Polynomial Regression
+
+Linear or not?
+
+https://en.wikipedia.org/wiki/Linear_regression#/media/File:Polyreg_scheffe.svg
+
+Example of a cubic polynomial regression, which is a type of linear regression. 
+Although polynomial regression fits a nonlinear model to the data, 
+as a statistical estimation problem it is linear, 
+in the sense that the regression function E(y | x) is linear in the unknown parameters 
+that are estimated from the data. 
+For this reason, polynomial regression is considered to be a special case of multiple linear regression.
+
+[[https://en.wikipedia.org/wiki/Linear_regression | Wikipedia: Linear Regression]]
+
+

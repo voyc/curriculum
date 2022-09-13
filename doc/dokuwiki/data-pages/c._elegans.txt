@@ -1,0 +1,258 @@
+====== C. Elegans ======
+
+https://www.youtube.com/watch?v=zjqLwPgLnV0&t=37s
+
+transparent nematode, 1 mm long, lives in temperate soil
+
+no respiratory system
+
+no circulatory system
+
+mostly hermaphrodites, a few males with specialized tails
+
+model organism, because:
+  * whole genome sequenced, first organism to have done
+  * connectome completed, 302 circuits, as of 2019, only organism to have done
+  * modelled at OpenWorm simulation 
+  * are transparent and therefore each cell can be observed
+
+connectome = neuronal wiring diagram.  The human brain contains 
+100 billion neurons and 60 trillion synapses.
+ 
+
+
+eat 
+  * in the wild, the bacteria then help the decay of decomposing plant matter
+  * in the lab, E Coli 
+
+primitive behaviors
+  * feeding
+  * locomotion
+  * reproduction
+
+complex behaviors
+  * learning
+  * mating
+  * social behaviors
+
+
+
+====== Developmental Biology ======
+
+a youtube playlist of 5 video lectures
+https://www.youtube.com/playlist?list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT
+
+
+===== Overview =====
+
+https://www.youtube.com/watch?v=dTjK9e6MvXw&list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT
+
+
+Preformationism - either sperm or egg is already a fully formed organism 
+called a homonulus.
+A ridiculous concept attempted in 16 and 17 hundreds (post dark ages).
+
+Epigenesis
+
+one egg (one cell)
+one sperm (one cell)
+develop into multicell organism
+
+The term epigenesis traces to Aristotle who observed the development of 
+chicken embryos by cracking eggs open and various stages.
+
+
+what cellular processes happen during epigenesis?
+  - generation of reproductive cells, gametogenesis, germline stem cells, ips stem cells
+  - fusion of sperm and egg, fertilization
+  - mitosis, cell division, embryonic cleavages
+  - generation of diverse cell types  
+    - cell fate specification
+    - differentiation, gene expression
+  - patterning, tissue organization
+    - axis specification
+    - gastrulation, form outer, middle, inner layers
+    - organogenesis, form organs
+  - post-embryonic development
+    - metamorphosis, butterflies
+    - regeneration, limbs in salamanders, regenerative medicine
+    - aging
+
+classic embryology, 18th and 19th centuries, descriptive (observation)
+
+developmental biology, 20th and 21st centuries, mechanistic (genetics)
+
+===== Intro to Drosophila =====
+
+https://www.youtube.com/watch?v=ePBghFrPb7Y&list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT&index=2
+
+drosophila melanogaster = fruit fly
+
+structure
+  * like all insects, segmented body: head, thorax, abdomen
+  * 3 pairs of legs, 1 pair of wings, 1 pair of antennae
+    * antennae detect odor, sound, temperature
+  * 1 pair compound eyes
+
+length 3 mm
+
+lifespan 30 days
+
+
+male chases females, courtship dance, copulation 15 minutes, fertilization
+
+sperm is 2 mm long, 30 times longer than human sperm
+
+pupal stage 4 days, metamorphosis into fruit fly
+
+===== Analyzing Gene Function =====
+
+https://www.youtube.com/watch?v=iLtkhSx7Vfw&list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT&index=4ene 
+
+genotype - the version of a DNA sequence that an individual has
+
+phenotype - the observable traits that an individual has, influenced by genotype and environment
+
+Two methods to analyze gene function?  Forward or reverse.
+
+Forward Genetics
+
+Step 1.  Identify a phenotype of interest.
+
+Step 2.  Determine what genotype is associated with that phenotype.
+
+Reverse Genetics 
+
+Step 1.  Alter genotype.  Inhibit one gene.
+
+Step 2.  Determine phenotype.  Observe the changes in traits when that gene is inhibited.
+
+Two methods of Reverse Genetics
+
+1. Gene knockout.  Delete one gene from the genotype.
+
+2. RNA Interference (RNAi).  "Use double-stranded RNA to basically
+trick cells into shutting off the expression of the gene that you want to characterize."
+
+
+===== Analyzing Gene Expression =====
+
+https://www.youtube.com/watch?v=adf87y7GPTU&list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT&index=5
+  
+genomic equivalence - all of our somatic (non-reproductive) cells are genetically identical.
+
+differential gene expression - different cell types express different types of genes
+
+express - 
+
+==== Central Dogma ====
+
+What Francis Krick referred to as the central dogma of molecular biology.
+
+gene expression has two steps:
+  - transcription: DNA -> RNA
+  - translation: RNA -> protein
+
+transcription - make an RNA copy of the gene
+
+mRNA - the copy that has been transcribed
+
+non-coding RNA - Most RNA codes for a specific protein. Some does not.  
+
+translation - mRNA is exported from the nucleus, translated by the ribosome in the cytoplasm
+to generate a protein.  "The protein is what actually does something to control development."
+
+==== Experimental Techniques for Analyzing Gene Expression ====
+
+- Detect mRNA expression ("transcription")
+- Detect protein expression ("translation" ?)
+- Transgenics
+
+
+
+====== off topic =====
+
+==== Timing in Gene Expression ====
+
+https://iastate.pressbooks.pub/genagbiotech/chapter/gene-expression-part-2-translation/
+
+The importance of gene expression is evident when you observe the changes plants go through during their lifecycle or during a season. Trees and bushes, for example have dormant buds through the winter. Environmental signals affiliated with the coming of spring induce genes in the buds to turn on and drive the dramatic changes of leaf development and flowering. The genes were always present in those bud cells but were controlled to turn on at the proper time. Understanding gene expression thus requires an examination of two processes, the activation of gene expression to make a “message” and the reading of this message to build a specific protein.
+
+
+https://en.wikipedia.org/wiki/Gene_product
+
+A gene product is the biochemical material, either RNA or protein, resulting from expression of a gene.
+
+https://en.wikipedia.org/wiki/Gene_expression
+
+gene expression - producing RNA or protein as specified by a gene.
+Summarized by the Central Dogma.
+Used by all known life, and also by viruses.
+The genotype gives rise to the phenotype.
+
+gene product - the RNA or protein resulting from expression of a gene
+
+coding
+
+coded for
+
+non-coding
+
+regulation - All steps in the gene expression process may be regulated, including
+transcription
+RNA splicing
+translation
+post-translational modification
+
+Regulation gives control over 
+timing
+location
+amount 
+of a given gene product present in a cell.
+
+Regulation is the basis for
+cellular differentiation
+development
+morphogenesis
+versatility
+adaptability
+of any organism.
+
+Regulation may therefore serve as a substrate for evolutionary change.
+
+==== Mechanism ====
+
+
+==== Regulation ====
+
+
+RNA polymerase (RNAP) - an enzyme that synthesizes RNA from a DNA template.
+
+Deoxyribonucleic acid (DNA) - a polymer composed of two polynucleotide chains that 
+coil around each other to form a double helix
+
+macromolecule - one of a protein, lipid, polysaccharide, nucleic acid
+
+
+
+DNA template
+
+
+===== Todo =====
+
+https://en.wikipedia.org/wiki/DNA \\
+https://duckduckgo.com/?q=express+definition&t=brave&ia=definition \\
+https://iastate.pressbooks.pub/genagbiotech/chapter/gene-expression-part-2-translation/ \\
+https://www.youtube.com/watch?v=adf87y7GPTU&list=PLRpzoKf2CRvTUmwA3DJ4UneuONwDk0EhT&index=5 \\
+https://en.wikipedia.org/wiki/Caenorhabditis_elegans \\
+https://www.nationalgeographic.com/science/article/how-many-cells-are-in-your-body \\
+https://www.youtube.com/watch?v=lzHdQ0n6o7E \\
+
+YouTube the origin of the brain
+https://m.youtube.com/watch?v=yCwW-UJb5Gs
+
+Wikipedia voltage gated ION channel
+https://en.m.wikipedia.org/wiki/Voltage-gated_ion_channel
+
+Wikipedia cell biology
+https://en.m.wikipedia.org/wiki/Cell_biology

@@ -62,11 +62,14 @@ Matching Motor to Controller
 
 ===== Suppliers =====
 
-==ServoCity==
-Winfield KS\\
-parent: RobotZone\\
-brand: Actobotics\\
-website: https://www.servocity.com , good educational and hobbyist material\\
+== Servo City ==
+https://www.servocity.com\\
+Winfield KS, parent: RobotZone\\
+- motors, batteries, controllers, structural parts\\
+- good educational and hobbyist materials\\
+- brushed motors only, no bldc\\
+brand Actobotics: older, imperial\\
+brand goBilda: newer, metric\\
 
 ==Dart Actuators==
 website: http://dartactuators.com/ \\
@@ -95,6 +98,9 @@ video introduction: https://www.youtube.com/watch?v=Y0Ip51pvMuM \\
 website: https://www.nipponpulse.com/ \\
 video of linear server: https://www.youtube.com/watch?v=hFCxiF2284A \\
 
+===== 3D Printing =====
 
+[[https://www.shapeways.com/business/3d-printing-services |
+Shapeways 3D Printing Service]]
 
 

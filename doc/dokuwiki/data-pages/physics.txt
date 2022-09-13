@@ -1,5 +1,20 @@
 ======Physics======
 
+==== Great Works ====
+1687, Isaac Newton: //Philosophiae Naturalis Principia Mathematica//, 
+three books written in Latin, on laws of motion and law of universal gravitation.
+
+1855, James Clerk Maxwell: //On Faraday's Lines of Force//
+
+1861, James Clerk Maxwell: //On Physical Lines of Force//. A four-part paper.
+Derived the equations of electromagnetism in conjunction with "a sea of molecular vortices"
+which he used to model Faraday's lines of force.
+
+1905, Albert Einstein: //Annus Mirabilis// papers.  
+Four papers written on space, time, mass, and energy, including $E=mc^2$.
+
+==== other ====
+
 Isaac Newton\\
 Max Planck\\
 Albert Einstein
@@ -16,7 +31,145 @@ In 1862, the Scottish mathematician James Clerk Maxwell developed a set of funda
 Physics formulas
 https://www.pinterest.com/pin/2392606039180789/
 
+==== Lines of Force ====
+
+[[Lines of Force]]
+
+=== Michael Faraday ===
+
+1830s Michael Faraday introduced the use of field lines as an aid
+for visualizing electric and magnetic fields.
+
+electric lines of force
+  * originate on a positive charge, or infinity
+  * terminate on a negative charge, or infinity
+  * have a tendency of termination towards a negative charge
+  * will bend and terminate towards the negative charge, and away from a positive charge
+  * can never intersect
+  * are closer where field is stronger, spread out where field is weaker
+  * never exist in a closed loop, because a line can never begin and end on the same charge
+  * do not pass through a conductor (lightening strikes a car)
+  * can pass through an insulator (lightening strikes a tree)
+
+the number of lines originating or terminating 
+is directly proportional to magnitude of charge
+
+the tangent at a point on a line of force 
+gives the direction and force of the field at that point
+
+=== Coulomb's Law === 
+the electrostatic force between two particles is
+  * proportional to the product of their charges
+  * inversely proportional to the square of the distance between them
+
+===== Newton's Laws of Motion =====
+
+The original form of Newton's second law states that the net force acting upon an object is equal to the rate at which its momentum changes with time. If the mass of the object is constant, this law implies that the acceleration of an object is directly proportional to the net force acting on the object, is in the direction of the net force, and is inversely proportional to the mass of the object.
+
+
+
+==== Earth's Magnetic Field ====
+
+magnetic axis is $11^{\circ}$ off of rotational (geographic) axis
+
+birds use Earth's magnetic field to navigate
+
+The Earth's magnetic field shields us from the solar wind of 400 km/second.
+The magnetic field deflects the solar wind.
+
+
 
 ====References====
 
 "Physics", Khan Academy, [[https://www.khanacademy.org/science/physics/]], Retrieved on 23-Mar-2019. [[Notes on Khan Academy Physics|Notes]]
+
+===== Physics =====
+
+matter, motion, behavior, space, time
+
+energy
+In physics, energy is the quantitative property that is transferred to a body or to a physical system, recognizable in the performance of work and in the form of heat and light. Energy is a conserved quantity; the law of conservation of energy states that energy can be converted in form, but not created or destroyed. The unit of measurement in the International System of Units (SI) of energy is the joule, which is the energy transferred to an object by the work of moving it a distance of one metre against a force of one newton.
+It (newton) is defined as 1 kg⋅m/s2, the force which gives a mass of 1 kilogram an acceleration of 1 metre per second per second. It is named after Isaac Newton in recognition of his work on classical mechanics, specifically Newton's second law of motion.
+
+force
+In physics, a force is an influence that can change the motion of an object. A force can cause an object with mass to change its velocity (e.g. moving from a state of rest), i.e., to accelerate. Force can also be described intuitively as a push or a pull. A force has both magnitude and direction, making it a vector quantity. It is measured in the SI unit of newton (N). Force is represented by the symbol F (formerly P).
+
+
+
+ Electricity and magnetism have been studied as a single branch of physics since the intimate connection between them was discovered in the early 19th century; an electric current gives rise to a magnetic field, and a changing magnetic field induces an electric current. Electrostatics deals with electric charges at rest, electrodynamics with moving charges, and magnetostatics with magnetic poles at rest.
+
+work
+  * is measured in joules, same as energy
+  * is a scalar, has magnitude only, no direction
+  * the energy transferred to or from an object via the application of force along a displacement
+  * the amount of energy consumed when one entity acts upon another NOT the word "consumed" is misleading, energy is never destroyed, only transferred from one form to another
+
+terms:
+  * energy - 
+  * work - energy is consumed by one external entity to act upon another.  
+  * joule - the use of energy is measured in joules
+  * calorie - 1 calorie = 4184 joules
+  * power - the rate at which work is done: $mass * distance / time$
+  * horsepower - 33,000 pound-foot per minute, a measurement of power, USA specific
+  * torque - 
+  * Newton - a unit of weight, 1 N = 101.97 grams
+  * watt - electrical power as the instantaneous product of voltage and current 
+  * force
+  * efficiency - a percentage: (output/input) * 100
+
+Newton is a unit of force, not power, but 1 horsepower = 746 Nm / sec.
+
+1 hp = 33,000 lb ft / min * (1 sec / 60 min)
+
+= 550 lb ft / sec * (1 m / 3.28 ft)
+
+= 168 lb m / sec * (1 kg / 2.205 lb)
+
+= 76 kg m / sec * (9.8 N / kg)
+
+= 746 N m / sec
+
+1 kilogram is equal to 9.8066500286389 newtons, or 1000 gram.
+
+force - a thing that is able to make a big change in another thing
+
+weight - a specific force.  The force due to gravity.
+
+
+=== horsepower vs watt ===
+James Watt was selling a steam engine to farmers and others using real horses to do work.
+He did experiments with horses lifting weights and turning mill wheels within a 24 hour period, accounting for rest, food and sleep, and came up with 33,000 foot-pounds per minute as one horsepower.  The term watt was named in honor of James Watt, but was arrived at much later by others, as 746 watts per horsepower, or $1 hp = .7457 kw$.
+
+==== Salman Khan ====
+
+work - energy transferred by a force
+
+energy - the ability to do work
+
+
+apply a force of 10N to move a block 7 meters
+
+\begin{align}
+work &= force * distance\\
+W &= F * d\\
+W &= 10N * 7m\\
+W &= 70 Nm\\
+W &= 70 joules\\
+\end{align}
+
+start with a block of mass m at rest\\
+apply a force F for a distance d (frictionless)\\
+
+\begin{align}
+force &= mass * acceleration\\
+F &= M * a\\
+\end{align}
+
+\begin{align}
+V_i &= initial velocity\\
+V_f &= final velocity\\
+d &= distance\\
+a &= acceleration\\
+V_f^2 &= V_i^2 + 2a * d \\
+\end{align}
+

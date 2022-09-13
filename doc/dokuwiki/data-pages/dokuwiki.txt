@@ -111,3 +111,30 @@ http://visualmatheditor.equatheque.net/VisualMathEditor.html
 
 [[https://download.nus.edu.sg/mirror/ctan/macros/latex/contrib/mhchem/mhchem.pdf | 
 mhchem reference, pdf]]
+
+===== Definition Lists =====
+
+Made possible by plugin yalist, as used in ReStructered Text and Sphinx.
+
+  ? Definition List (deflist)
+  : A list of terms and their definitions.  Implemented with html dl, dt, and dd tags.
+  ? yalist
+  : A plugin for dokuwiki that implements a definition list syntax
+  ? ReStructured Text (ReST)
+  : A document format similar to Markdown, used in Python and Blender documentation.
+  ? Sphinx
+  : A python software package that implements ReST.
+
+  
+  ? Definition List (deflist)
+  : A list of terms and their definitions.  Implemented with html dl, dt, and dd tags.
+  ? yalist
+  : A plugin for dokuwiki that implements a definition list syntax
+  ? ReStructured Text (ReST)
+  : A document format similar to Markdown, used in Python and Blender documentation.
+  ? Sphinx
+  : A python software package that implements ReST.
+  
+
+Note.  After installing the yalist plugin for dokuwiki, 
+we modified the style.css file in the lib/plugin/yal/ directory.

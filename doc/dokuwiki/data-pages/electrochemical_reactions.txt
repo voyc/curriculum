@@ -1,0 +1,56 @@
+====== Electrochemical Reactions ======
+back to [[Chemistry]]
+$$\require{mhchem}$$
+
+The study of electrochemical reactions is Electrochemistry.
+
+There are three types of electrochemical reactions:
+  * generate an electric current in an electrochemical cell (battery)
+  * corrosion
+  * electrolysis
+
+
+===== Electrochemical Cell =====
+
+prerequisite: [[Acid, Base, Salt]]
+
+see more in [[Electricity]] and [[Batteries]]
+
+batteries, chemical generation of electricity
+
+electrolyte - in batteries and in sports drinks
+
+balloon rubbed in the hair, static electricity
+
+
+===== Corrosion =====
+
+===== Electrolysis =====
+
+
+===== Suppliers =====
+=== Metal Strip Electrodes ===
+Sci Toys
+https://store.scitoys.com/electrodes.html\\
+$6 3:aluminum, copper, zinc\\
+- unable to make the store application work
+
+Home Science Tools\\
+https://www.homesciencetools.com/product/electrode-set/\\
+$6.95 4:aluminum, copper, iron, zinc\\
+
+Eisco Labs\\
+https://www.amazon.com/gp/product/B07D7H8ZJ5/ref=ox_sc_act_title_1?smid=ACTB8CBED46SR&psc=1\\
+$21 7:aluminium, copper, iron, zinc, nickel, tin, graphite \\
+- on Amazon but does not ship to Thailand or to PO Box\\
+
+Flinn Scientific \\
+https://www.flinnsci.com/metal-electrode-set/\\
+$11 6:aluminum, copper, iron, zinc, brass, lead\\
+
+ScienceKitStore by MiniScience\\
+https://sciencekitstore.com/metal-electrodes-set-of-12/\\
+$32 12:aluminum, copper, iron, zinc, brass, lead, bronze, carbon, magnesium, nickel, stainless steel, titanium\\
+- does not ship to Thailand\\
+- ordered 5 Jul, shipped to PO Box, paid with paypal
+

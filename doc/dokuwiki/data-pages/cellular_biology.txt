@@ -1,5 +1,84 @@
 ====== Cellular Biology ======
 
+
+Cells are the smallest living units of an organism.
+https://www.youtube.com/watch?v=URUJD5NEXC8
+
+All cells have
+  * membrane, separates cell interior from the environment
+  * cytoplasm, jelly-like fluid
+  * DNA, the cell's genetic material
+
+Eukaryotic cell
+  * advanced, complex, contains organelles, including nucleus
+  * examples: plants, animals, fungi
+
+Prokaryotic cell
+  * simple, no organelles, no nucleus
+  * always unicellular
+  * examples: bacteria
+
+organelle = "little organ", specialized function
+
+nucleus - an organelle, has a membrane, contains DNA
+
+DNA - dictates what the cell will do, and how it's going to do it
+ 
+chromatin - the tangled, spread out form of DNA
+
+chromosomes - When a cell is ready to divide, the DNA condenses into structures known as chromosomes.
+
+nucleolus - a structure inside the nucleus where ribosomes are made
+
+ribosomes - have the job of synthesizing proteins.  Float around in the cytoplasm outside the nucleus.
+
+
+endoplasmic reticulum (ER) -   
+
+mitochondria
+
+==== Bacteria ====
+
+https://www.youtube.com/watch?v=b15Hy3jCPDs
+
+among the oldest living organisms
+
+bad ones cause cholera, TB, plague, and others 
+
+unicellular prokaryotes 
+
+smaller than plant and animal cells
+
+found everywhere in the environment
+
+different shapes and sizes
+
+does not have a nucleus, but does have a nucleoid
+
+nucleoid - bacteria's version of a nucleus.  DNA floats in the cytoplasm in an area known as the nucleoid
+
+bacteria have two types of DNA: plasmid and chromosomal
+
+
+cell wall - bacteria has a cell wall, like plants, unlike animals
+
+flagellum - whip-like structure for locomotion
+
+ 
+
+
+
+
+
+
+10 times more bacteria cells than human cells in the human body
+
+  * 37.2 trillion human cells in the human body
+  * 370.2 trillion bacteria cells in the human body (10x)
+
+
+
+
 Ninja Nerd: Cell Cycle: Interphase & Mitosis
 https://www.youtube.com/watch?v=LUDws4JrIiI&list=PLTF9h-T1TcJi_1FdKlH4dbf_3uI4wuT99
 

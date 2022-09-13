@@ -44,3 +44,44 @@ find
 
 grep
   $ grep -r "progressive" . 
+
+rename 
+  $ rename s/JPG/jpg/ *
+
+copy files
+  $ mv SRC DEST
+  $ cp SRC DEST
+  $ scp SRC DEST
+  $ rsync SRC DEST
+
+synchronize two external hard disks
+
+  rsync --dry-run --itemize-changes --delete -avh /media/passport/ /media/seagate/ # dry run
+  
+  rsync --delete -avh /media/passport/ /media/seagate/     # for real
+  
+  --dry-run
+  --itemize-changes
+  --delete, delete extraneous files from destination (dest will mirror src)
+  -a --archive, equivalent to -rlptgoD
+    -r --recursive
+    -l --links, copy symlinks as symlinks
+    -p --perms, preserve permissions
+    -t --times, preserve modification times
+    -g --group, preserve group
+    -o --owner, preserve owner
+    -D preserve device files, preserve special files
+  -v --verbose
+  -h --human-readable number formats
+
+sync songs from hard disk to phone, skipping the cover art
+
+  rsync --delete -avh -e "ssh -p 2222" --exclude '*.jpg' /media/passport/pub/songs/ '192.168.1.100:/storage/emulated/0/media/songs/'
+
+find unique list of file types
+  $ find ../ -type f | awk -F. '!a[$NF]++{print $NF}'
+
+find and execute command on files across files
+  $ find /media/seagate/media/ -name Thumbs.db -exec rm {} \; # delete files across folders
+  $ find ../ -type f \( -name "*.jpg" -o name "*.JPG" \) -exec rm {} \;
+  $ find ../ -type f -name "*.JPG" -exec rename s/JPG/jpg/ {} \;

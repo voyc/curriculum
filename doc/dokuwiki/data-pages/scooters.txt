@@ -1,16 +1,126 @@
 ======Scooters======
 
-FYI, according to the US Department of Transportation, the number of fatalities per vehicle mile traveled was 37 times higher for motorcycles than for cars.[7]
+FYI, according to the US Department of Transportation, the number of fatalities per vehicle mile traveled was 37 times higher for motorcycles than for cars.
+
+motorcycle, motorbike, conventional motorcycle - feet on pegs, manual transmission
+
+scooter, motor scooter - step-through design, with flat floorboard for feet, CVT automatic
+
+kick scooter - standup design
+
+moped - motor plus pedals
+
+hard tail - a bike with no rear suspension, also called rigid.  Used in some Harley and Indian touring bikes.
+
+sport motorcycle - Dropped handlebars, rear-set pegs, to allow the rider to tuck in for aerodynamic position.
+
+cafe racer - a genre of sport motorcycles that originated among British motorcycle enthusiasts of the early 1960s in London. Standard production bikes that were modified by their owners and optimized for speed and handling for quick rides over short distances (from cafe to cafe).  
+[[https://duckduckgo.com/?q=cafe+racer&t=brave&iax=images&ia=images | photos]]
+
+===== Examples =====
+
+=== Novus ===
+German company \\
+[[https://africaautomotivenews.com/2019/03/22/novus-electric-motorbike-stuns-with-all-carbon-design/ | Carbon fiber frame, as of 2019, 35,000 EUR]] \\
+{{https://africaautomotivenews.com/wp-content/uploads/2019/03/Novus.png}}
+
+=== Cake ===
+Swedish company founded 2016 \\
+[[https://ridecake.com/en/osa-category-page/ | Osa model as of 2022 $11000 USD]] \\
+{{https://ridecake.com/en/wp-content/uploads/2021/12/Ösapreconfiged-clean-config02.jpg}}
+
+===== Performance =====
+
+Note kilometer to mile conversion rates.\\
+1 km = .6 mi\\
+1 mi = 1.6 km\\
+50 mi = 80 km\\
+60 mi = 96 km\\
+100 mi = 161 km\\
+
+Top speed: 60 mph (100 kph)\\
+Cruising speed: \\
+Range: 300 mi\\
+IP Rating: IP65 (protection against dust and moisture)\\
+Acceleration 0 to 30 mph (0 to 48 kph: 3 seconds\\
+Acceleration 30 to 60 mph (48 to 96 kph): 5 seconds\\
 
 
+==== Speed ====
 
-Motorcycle = motorbike = conventional motorcycle = feet on pegs, manual transmission
+Top speed
 
-scooter = motor scooter = step-through design, with flat floorboard for feet, CVT automatic
+60 mi = 96 km
 
-kick scooter = motorized scooter = standup design
+Cruising speed
 
-moped = motor plus pedals
+very fast production motorcycles can go over 300 kph (186 mph)
+
+a 125 cc motorcycle tops out between 80 and 120 kph (50 and 75 mph)
+==== Acceleration ====
+
+0 to 60 mph
+
+the fastest drag-racing bikes can reach 60 mph in less than 1 second
+
+125 to 150 cc engines 
+0 - 60 mph: 10 to 15 seconds
+0-30 mph, 30-60 mph
+
+==== Range ====
+
+===== Petrol vs Electric =====
+
+An internal combustion engine has an rpm sweet spot.
+
+An electric motor has a constant torque at all rpm's.
+
+braking, regenerative braking
+
+free wheeling
+
+range, gas tank vs batteries
+
+===== Mid-motor vs Rear Hub-motor vs dual hub-motors =====
+
+braking modes
+
+traction: acceleration, braking, steering
+
+controller, free-wheeling, avoid accidental wheelie, avoid accidental nose over stopping
+detect airborne or mud spinning situation 
+
+The mid-motor 
+
+requires drive train from motor to wheel, usually a chain drive, no drive train
+
+sprocket ratio of 3:1 means the motor must run at higher rpm
+
+weight distribution, rear vs center, center vs wheels
+
+===== water proofing =====
+
+==== IP rating ====
+Ingress Protection standard \\
+a two-digit number, each digit between 0 and 9 \\
+first digit: protection against solid foreign bodies\\
+second digit: protection against water and moisture
+
+A typical motorcycle will be rated IP65.
+
+^ First Digit: Solids ^^ Second Digit: Liquids ^^
+| 0 | No protection. | 0 | No protection. | 
+| 1 | Protected against solid objects over 50mm, e.g. accidental touch by hands. | 1 | Protected against vertically falling drops of water, e.g. condensation. |
+| 2 | Protected against solid objects over 12mm, e.g. fingers. | 2 | Protected against direct sprays of water up to 15 degrees from the vertical. |
+| 3 | Protected against solid objects over 2.5mm, e.g. tools & wires. | 3 | Protected against direct sprays of water up to 60 degrees from the vertical. |
+| 4 | Protected against solid objects over 1mm, e.g. wires & nails. | 4 | Protected against water splashed from all directions, limited ingress permitted. |
+| 5 | Protected against dust limited ingress, no harmful deposits. | 5 | Protected against low pressure jets of water from all directions, limited ingress permitted. |
+| 6 | Totally protected against dust. | 6 | Protected against strong jets of water, e.g. on ships deck, limited ingress permitted. |
+| | | 7 | protection against full immersion, up to 30 minutes and 1 meter of depth, some ingress has no damaging effects |
+| | | 8 | protection against full immersion at great depths and extended time periods, specified by the manufacturer |
+| | | 9 | protection against strong streams, jets, sprays, and washdowns |
+
+===== hmm =====
 
 Essence:
   * Battery specs
@@ -227,17 +337,6 @@ https://www.made-in-china.com/products-search/hot-china-products/Disc_Brake_Hub_
 
 QS Motor
 http://www.qs-motor.com/product/qs205-2000w-spoke-hub-motor-v3-for-electric-motorcycle/
-==== Examples ====
-
-Carbon fiber Novus
-https://africaautomotivenews.com/2019/03/22/novus-electric-motorbike-stuns-with-all-carbon-design/
-
-2000 usd electric scooter
-https://youtu.be/bAeZguzKKSc 
-
-WAYRA
-https://evnerds.com/design/electric-motorcycle-design/wayra-electric-motorbike-vision-from-designer-pablo-baranoff-dorn/
-
 ==== Implementation Plan ====
 
   - Procure batteries, wheels with hub motors, speed controllers, throttle
@@ -286,3 +385,55 @@ Dash display
 
 Define desired specs for motor
 Torque, power, rpm, volts
+
+V volts voltage force, hp  pressure
+I amps A current  load  flow rate
+R ohms (omega) resistance  pipe size
+P  W power watts
+
+V * I = P
+
+V = I * R  ohm's law
+
+hp horsepower
+T  torque
+
+sproket teeth front/rear = 3.0
+
+tire size, rimsize, rpm, top speed
+
+max eff at 75%
+
+temperature, cooling
+
+==== Chain Drive ====
+
+Chain Drive Factors
+  * cleaning
+  * lubrication
+  * tensioning
+
+
+=== Chain Tension and Sprocket Distance ===
+
+A hard-tail bike has no rear suspension, and the center-to-center distance between sprockets is fixed.  Most riders tension the chain with 13 mm slack.
+
+On soft-tail bikes, the sprocket distance varies as the swing arm travels up and down.  The greatest distance occurs when the swing arm is level with the front sprocket.  The chain should be tensioned with 13 mm slack when the swing arm is at that level position.
+
+What is the difference in sprocket distance due to swing arm travel?  Consider the following example.
+
+{{ swing_arm_travel.png}}
+
+In this diagram:
+  * Point A is the pivot bolt.
+  * Point B is the center of the rear sprocket.
+  * Line AB represents the swing arm at level position, with a length of 500 mm.
+  * Line AC represents the swing arm with 100 mm of travel upwards.
+  * Point D is the center of the front sprocket, 100 mm in front of the pivot bolt.
+  * Line DB represents the longest distance between sprockets at 600 mm.
+  * Line segment DC represents the shorter distance between sprockets at 598.3 mm.
+
+In this example, the difference in sprocket distance between level and upward positions is 1.72 mm.
+(600 - 598.3 mm)
+
+This means that if a rider were to tension his chain with the swing arm at the upward travel position, he would position the rear sprocket 1.72 mm too far to the rear, thus making the chain too tight at the level position.

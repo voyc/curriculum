@@ -700,3 +700,60 @@ A coroutine is defined with async def.  The first coroutine is called with async
 
 NOTE:  Websockets are built on asyncio.
 
+===== matplotlib =====
+
+import matplotlib.pyplot as plt
+
+
+
+ frequency distribution is a table, 2 columns: value, frequency
+ histogram is a bar graph
+
+1. an array of 1000 persons, one value per person
+2. frequency distribution or values and frequency of each value
+3. bar graph
+
+numpy.histogram()
+matplotlib.pyplot.hist()
+
+matplotlib.p)yplot.axes.Axes.bar()
+
+evidently, in an animation, we do not re-plot
+instead we change the data, and the plot is changed thereby
+
+
+three examples of animations
+1. numpy.histogram, preparing and returning a bart_container.patches, blit=True
+2. ln = plt.plot(), in loop ln.set_data(x,y), return ln, blit=True
+3. anim.py oscillation decay, blit=False
+
+pylab is deprecated
+pyplot is a collection of functions that make matplotlib work like MATLAB
+fig, ax = plt.subplots()
+
+plt.plot() # possible, plots within the current ax
+ax.plot()  # better, plots within the specified ax
+
+
+
+
+# using pyplot
+fig = plt.gcf()  # get (or create) current figure
+ax  = plt.gca()  # get current axes
+
+fig,ax = plt.subplots()
+
+ax.plot()
+ax.bar()
+ax.scatter()
+ax.hist()
+
+
+ax.hist calls np.histogram to calculate the frequency distribution, a 2D array, 
+builds a BarContainer object and plots the bars onto the ax
+
+# to print a table, use zip to transpose rows and columns
+table = tuple(zip(fd[1],fd[0]))
+for row in table:
+        print(*row)
+

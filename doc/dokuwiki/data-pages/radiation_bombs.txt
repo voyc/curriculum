@@ -1,0 +1,31 @@
+====== Radiation, Bombs ======
+back to [[Chemistry]]
+$$\require{mhchem}$$
+
+
+===== Radiation =====
+
+Electromagnetic radiation is absorbed or emitted as electrons move out or in among the shells respectively. Electrons in the higher shells have a higher energy level than those in the inner shells.
+
+A radioactive element has an unstable nucleus. the unstable nucleus will Decay by emitting particles until it becomes stable.
+
+Four types of nuclear radiation, defined by the type of particle emitted from the nucleus.
+
+  * Alpha particle, same structure as a helium nucleus.
+  * Beta particle, Electron, formed when a neutron splits into a proton and an electron
+  * Gamma rays, a type of electromagnetic radiation
+  * Neutron
+
+
+===== Bombs =====
+
+Naming systems
+
+||Fission||Atomic||A-bomb||nuclear||
+||Fusion||hydrogen||H-bomb||thermonuclear||
+
+Why the word hydrogen?
+
+
+
+

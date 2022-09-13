@@ -198,6 +198,55 @@ Blender Manual: Command-Line Options]]
 
 =====3D Modeling=====
 
+==== UI ====
+
+[[https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U&index=2
+| YouTube: Blender Guru: Blender Beginner Tutorial Part 1]]
+
+Layout workspace, 3D viewport
+
+=== move active object ===
+
+t toolbar on the left, toggle on and off\\
+buttons to move, rotate, scale, all three
+
+put mouse into a mode
+  * g grab
+  * r rotate
+  * s scale
+
+confine movement to an axis
+  * x, y, z
+  * click mmb
+
+=== navigate within the world ===
+
+scroll wheel, mmb
+  * drag with scroll wheel down, orbit, rotate the view around the center point
+  * shift-drag scroll wheel, pan the view away from center
+  * scroll wheel, zoom view in and out
+
+gizmo in upper-right corner also allows orbit and and pan 
+
+~ tilde key, emulate numpad
+  * View Selected, zoom into the active object
+
+=== add objects ===
+  * duplicate
+  * shift a, add, add - mesh - primitives menu: cube, plane, cone, monkey, torus
+
+=== render engine ===
+
+Cycles - slow, ray-traced, unbiased, for high-end movies
+
+Eevee - fast, for real-time games
+
+
+
+
+
+
+==== Huh? ====
 User preferences:
   Emulate numpad on
   Select with left mouse button
@@ -220,6 +269,56 @@ Numpad 3: side view
 Numpad 5: swap orthographic and perspective views
 
 shift+A: add an object primitive
+
+==== Force Fields, Particles, Animation ====
+
+Particles move.
+
+Force fields affect the movement of particles.
+
+For a particle to move in space, it must simultaneously move in time, 
+hence particle movement is done through animation.
+
+Particles are by nature animated.
+
+Force fields affect the movement of particles.
+
+Force fields can be experienced only in the presence of particles.
+
+Particles can be experienced only in the presence of a force field.
+
+Empty Object
+  * can enable physics properties
+  * cannot add particle emitter modifier
+  * choice of visual representation
+
+Force Field
+  * no choice of visual representation, given by type of field
+
+object properties
+  * transform
+  * relations
+  * collections
+  * instancing
+  * motion paths
+  * visibility
+  * viewport display
+  * custom properties
+
+add "effector", ie "field"
+
+add "empty"
+
+choices at add time
+  * type
+  * radius
+  * align
+  * location x,y,z
+  * rotation x,y,z
+
+types
+  * empty, type of visual representation
+  * force field, aka field, aka effector, type of force
 
 
 =====Video Sequence Editing=====
@@ -246,9 +345,11 @@ Playhead
   * alt-mousewheel: move (scrub) playhead forward and back
   * VCR controls: jump to start, jump to end, play forward, play backward, pause
 
-move strips around the timeline
+  ? move strips around the timeline
+  : select strips, hover mouse over timeline window, click g to grab, click x or y to constrain, drag with mouse
 
-keep video and audio together: select both and click ctrl-G to make a metastrip
+  ? keep video and audio together
+  : select both and click ctrl-G to make a metastrip
 
 click tab to toggle into and out of metastrip view
 
@@ -257,11 +358,11 @@ click shft-L to lock a strip.  shft-alt-L to unlock
 
 
 
-From camera to Blender
+From camera to Blender?
   - Shoot video with camera phone.
   - Copy to video work folder, using SSHelper and SCP.
     - scp -r -P 2222 '192.168.1.100:/storage/emulated/0/DCIM/Camera/VID*.mp4' .
-  - Open each video clip in Handbrake.
+  - Open each video clip in Handbrake.:
     - Change the output folder.
     - Goto video tab and change settings
       - Framerate: 24
@@ -464,4 +565,28 @@ In the Sequencer, Add - Scene - select the scene.
 [[https://www.youtube.com/watch?v=o8nIHVGWyCY |
 YouTube: Adding 3d scene into video sequencer]]
 
+
+==== Animate drawing on a video ====
+
+You are working in the video sequencer, but 
+the drawing animation must be done in the modeling view. 
+Therefore three steps are required.
+
+  - In the video sequencer:
+    - Select your desired section of video.  
+    - Render an image sequence of that section.
+  - In the modeling view:
+    - Add the image sequence from step 1 into the layout or modeling view.
+    - Draw over the video.  There are at least two ways to do the drawing.
+      - the grease pencil
+        * can be drawn by hand
+        * must be animated keyframe-to-keyframe by hand
+        * [[https://www.youtube.com/watch?v=QYYKAUO312c | YouTube: jimmy something doodles: How to draw over videos ]]
+      - the bezier curve
+        * cannot draw by hand, must manipulate the curve
+        * can be animated automatically from one end of the curve to the other
+        * [[https://www.youtube.com/watch?v=QYYKAUO312c | YouTube: Blender Made Easy: Easy Handwriting Animation ]]
+    - Render the animation as a movie.
+  - In the video sequencer:
+    * Add the movie output from step 2
 

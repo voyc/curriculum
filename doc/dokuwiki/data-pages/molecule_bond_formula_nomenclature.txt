@@ -1,0 +1,50 @@
+====== Molecule, Bond, Formula, Nomenclature =====
+back to [[Chemistry]]
+$$\require{mhchem}$$
+
+===== Chemical Formula =====
+
+
+[[https://en.wikipedia.org/wiki/Chemical_formula | wikipedia: Chemical Formula]]
+
+describe a molecule or compound
+
+molecular formula
+
+empirical formula
+
+condensed formula
+
+structural formula
+
+semi-structural formula
+
+
+
+
+===== Nomenclature =====
+
+Chemical naming conventions.
+
+^ Prefix ^       ^ Suffix ^ Meaning  ^
+| hydr-  |       |        | water    |
+| mono-  |       |        | one      | 
+| poly-  |       |        | multiple |
+|        |       | -ose   | sugar    | 
+|        |       | -ide   | salt     |
+|        |       | -ate   | salt     |
+
+
+=== Examples ===
+
+
+^ formula          ^ name           ^ components               ^ description             ^
+| $\ce{H2CO3}$     | carbonate      | carbon, salt             | a salt of carbonic acid |
+| $\ce{Cm(H2O)n}$  | carbohydrate   | carbon, water, salt      |                         |
+|                  | oxide          | oxygen plus one other element |                    |
+|                  | hydrate        | water plus something else                       |                    |                  | hydroxide      |                               |                    |
+|                  | calcium hydroxide               |              |                    |
+
+
+
+

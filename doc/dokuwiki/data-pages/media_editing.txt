@@ -18,6 +18,8 @@ All are open source.
 
 [[Calibre]] - ebook editor
 
+[[Plask]] - motion capture, web-based 
+https://www.youtube.com/watch?v=UJ_i__rJHIk&authuser=0
 ====Data Formats====
 
 == 3D Models ==

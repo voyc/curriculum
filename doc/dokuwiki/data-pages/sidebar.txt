@@ -9,6 +9,7 @@
     * [[Physics]]
     * [[Thermodynamics]]
     * [[Mechanics]]
+    * [[Electricity]]
     * [[Electronics]]
     * [[Subatomic Theories]]
     * [[Geography]]
@@ -21,6 +22,7 @@
     * [[Cellular biology]]
     * Single Cell Organisms
     * Multi Cell Organisms
+    * [[C. Elegans]]
     * [[worm brain]]
     * [[Genetics]]
     * [[Biology]]
@@ -31,6 +33,7 @@
         * [[Neuroscience]]
     * [[Humanity]]
     * [[Health Science]]
+    * [[Global Geopolitics]]
 
 **[[Mind]]**
     * [[Neurology]]
@@ -69,6 +72,7 @@
     * [[Vehicles]]
       * [[Scooters]]
       * [[Quadcopters]]
+      * [[Motors]]
       * [[Batteries]]
     * [[Robotics]]
     * [[Computers]]

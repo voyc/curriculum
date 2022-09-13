@@ -1,0 +1,84 @@
+====== Acid, Base, Salt ======
+back to [[Chemistry]]
+$$\require{mhchem}$$
+Base = Alkali or Alkaline
+
+^ Acid             ^  Neutral ^ Base              ^
+| pH < 7           |  pH = 7  | pH > 7            |
+| turns litmus red |          | turns litmus blue |
+| $\ce{H+}$ ions   |          | $\ce{OH-}$ ions   |
+| sour taste       |          | bitter taste      | 
+| sticky           |          | slippery          |
+| proton donor     |          | proton acceptor   |
+
+proton = hydrogen anion $\ce{H+}$
+
+However, they have this low pH values since acids give high amounts of H+ ions to the aqueous solution and pH is the logarithm of the inverse of H+ concentration
+
+===== Acid =====
+
+Two definitions
+  * Bronsted-Lowry
+  * Lewis
+
+
+====Bronsted-Lowry====
+
+https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:introduction-to-acid-base-reactions/v/bronsted-lowry-definition-of-acids-and-bases
+
+hydrochloric acid
+
+hydrogen having a covalent bond with chlorine
+
+water can act as acid or as base
+
+conjugate base
+
+conjugate acid
+
+Two types:
+  * a moledule capable of donating a proton
+  * a molecule capable of forming a covalent bond with an electron pair
+
+Characteristics:
+
+
+Common acids:
+  * carbonated water
+  * aspirin
+  * hydrochloric acid
+  * citric acid
+
+
+
+===== Base =====
+
+==== Lime: acid or base? ====
+
+Lime juice squeezed from the fruit is an acid.  A citric acid.  Drinking water infused with lime juice might be referred to as "lime water" (two words).
+
+Lime, a white powder made from pulverized limestone, is a base.  It is usually composed of calcium oxide $\ce{CaO}$ and/or calcium hydroxide $\ce{Ca(OH)2}$.  It is used in agriculture and construction and is sometimes sold commercially as "barn lime", "quick lime", or "garden lime".  Limewater (one word) is the common name for a saturated aqueous solution of calcium hydroxide $\ce{Ca(OH)2}$.
+
+===== Salt =====
+
+A chemical compound consisting of an ionic assembly of cations and anions.
+
+
+
+$\ce{NaCl}$  sodium chloride
+
+$\ce{Na}$  sodium
+
+$\ce{Cl}$  chlorine
+
+$\ce{Cl}$  chlorine is the element with atomic number 17, in period 3 with 1 electron short of argon.
+
+$\ce{Cl-}$  chloride is the negative ion of chlorine with one extra electron added, 
+when joined to another element in a compound
+
+$\ce{NaCl}$  sodium chloride
+$\ce{KCl}$  potassium chloride
+$\ce{CaCl}$  calcium chloride
+
+
+

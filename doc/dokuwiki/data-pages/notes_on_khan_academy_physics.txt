@@ -1,52 +1,150 @@
-======Notes on Khan Academy Physics======
+====== Notes on Khan Academy Physics ======
 
+The original videos made by Salman Khan are wonderful.
+The subsequent corrections, additions, and reorganizations made by minions are awful.
+As of June 2022 there are several different overlapping course outlines, including:
+  * Middle School Physics - NGSS
+  * High School Physics
+  * High School Physics - NGSS
+  * AP/College Physics 1
+
+We chose the one labelled "Physics Library"
 https://www.khanacademy.org/science/physics/
 
-Isaac Newton\\
-Max Planck\\
-Albert Einstein
+===== One-dimensional motion =====
+==== Introduction to Physics ====
 
-Vector has magnitude and direction\\
-Scalar has magnitude only
+Biology\\
+Chemistry\\
+Physics\\
+Math\\
 
-Distance is a scalar\\
-Displacement is a vector
-
-Speed is a scalar\\
-Velocity is a vector
-
-Frame of reference
-3 points of view: ground, car, airplane
-
-Velocity = displacement / time\\
-v = s / t\\
-v = 5 km north / 1 hr = 5 km/hr north
+Math is a pure mental world.  
+Physics applies mathematical models to interactions among objects in the world.
+Chemistry applies physics models to the smallest elements.
+Biology is based on chemistry.
 
 
-Rate of speed = distance / time\\
-r = d / t
+=== Some basic equations ===
 
-Vector symbols are bold and have an arrow above.
+\begin{align}
+\vec{F} &= m \vec{a} && \text{force} = \text{mass times acceleration} \\
+\vec{d} &= \vec{v} t && \text{displacement} = \text{velocity times time} \\
+\vec{a} &= \frac{\Delta\vec{v}}{\Delta t} && \text{acceleration} = \text{change in velocity over change in time}\\
+\end{align}
 
-Instantaneous versus average\\
-Position versus time graphs\\
+=== Personalities ===
 
-Acceleration = change in velocity over time\\
+Isaac Newton - classical mechanics \\
+Max Planck - the very small \\
+Albert Einstein - the very fast, the speed of light
+
+"When you change the way you look at things, the things you look at change."
+- Max Planck
+
+==== Displacement, velocity, and time ====
+
+==== Intro to vectors and scalars ====
+
+^ scalar        ^ vector                      ^
+| has magnitude | has magnitude and direction |
+| speed         | velocity                    |
+| distance      | displacement                |  
+
+\begin{align}
+s &= d / t && \text{speed = distance / time}\\
+s &= 5m / 2s  && \text{move a brick 5 meters in 2 seconds}\\
+s &= 2.5 m/s && \text{speed is 2.5 meters per second}\\
+\\
+\vec{v} &= \vec{d} / t && \text{velocity = displacement / time}\\
+\vec{v} &= 5m / 2s  && \text{move a brick 6 meters to the right in 2 seconds}\\
+\vec{v} &= 2.5 m/s \text{ to the right}\\
+\end{align}
+
+==== Intro to reference frames ====
+
+Point of view from which we measure things.
+
+* ground, stationary
+* plane, moving to the right at 250 m/s
+* car, moving to the left at 50 m/s
+
+
+==== Calculating average velocity or speed ====
+==== Solving for time ====
+==== Displacement from time and velocity example ====
+==== Instantaneous speed and velocity ====
+==== Position vs time graphs ====
+
+==== notes ====
+
+\begin{align}
+|\vec{v}| &= s && \text{magnitude of a vector is the speed} \\
+|\vec{d}| &= d && \text{magnitude of a displacement is the distance} \\
+\end{align}
+
+Using calculus we see that the area under a velocity-time line is distance.
+
+Slope.
+
+Instantaneous vs average velocity.
+
+==== Acceleration ====
+
+
+\begin{align}
+\vec{a} &= \frac{\Delta v}{\Delta t} && \text{Acceleration = change in velocity over change in time}\\
+\vec{a} &= \frac{60 - 0}{3 - 0} && \text{porsche 911 accelerates from 0 to 60 in 3 seconds}\\
+\vec{a} &= 20 m/h/s && \text{miles per hour per second}\\
+\vec{a} &= \frac{1}{180} m/s^2 && \text{miles per second squared}\\
+\end{align}
+
 Displacement per second per second
-
-Velocity-time line\\
-Distance is the area under the line
 
 Acceleration-time line\\
 Rise over run\\
 The area under the line gives the change in velocity
 
-The change in acceleration over time is the jerk.
+==== Kinematic formulas and projectile motion ====
 
-==Kinematic formulas and projectile motion==
+==== Old videos on projectile motion ====
 
-$Δx$ = Displacement\\
-$t$ = Time interval\\
-$v$ = Initial velocity\\
-$v$ = Final velocity\\
-$a$ = Constant acceleration\\
+\begin{align}
+\Delta x &= \text{change in position}\\
+t &= \text{time interval}\\
+\vec{v}_i &= \text{initial velocity as m/s}\\
+\vec{v}_f &= \text{final velocity as m/s}\\
+\vec{a} &= \text{constant acceleration in } m/s^2\\
+\\
+v_f &= v_i + at\\
+\Delta x &= v_i t * 1/2 at^2\\
+\Delta x &= \frac{v_f + v_i}{2} t\\
+v_f^2 &= v_i^2 + 2a\Delta x\\
+\end{align}
+
+
+===== Two-dimensional motion =====
+
+Projectile motion
+
+=== Horizontally launched projectile ===
+
+
+===== Forces and Newton's laws of motion =====
+===== Centripetal force and gravitation =====
+===== Work and energy =====
+===== Impacts and linear momentum =====
+===== Torque and angular momentum =====
+===== Oscillations and mechanical waves =====
+===== Fluids =====
+===== Thermodynamics =====
+===== Electric charge, field, and potential =====
+===== Circuits =====
+===== Magnetic forces, magnetic fields, and Faraday's law =====
+===== Electromagnetic waves and interference =====
+===== Geometric optics =====
+===== Special relativity =====
+===== Quantum Physics =====
+===== Discoveries and projects =====
+===== Review for AP Physics 1 exam =====
+===== Cosmology and astronomy =====

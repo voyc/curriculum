@@ -9,6 +9,186 @@ Tell a story: good or bad.  Stretch or squeeze the axes.
 sports stats\\
 nba.com
 
+Data
+  * collecting
+  * analyzing
+  * presenting
+
+Variability
+  * 0,0,0,0,0
+  * 0,235,17,5,318
+
+Statistical Questions:  to answer, you need to collect data with variability
+
+Population and Sample
+  * subset
+  * Simple random sample - random number generator, for example
+  * Stratified sample - by age or gender
+  * Clustered sample - randomly choose clusters (classrooms in school), then take the whole cluster
+  * Voluntary - likely to introduce bias, non-random
+  * Convenience - non-random
+  * Block design - variation of stratified sample
+
+Bias
+  * voluntary response sampling (non random)
+  * response bias (persons do not want to answer truthfully)
+  * undercoverage (missing certain groups)
+  * convenience sampling
+  * nonresponse (not everyone sampled actually responds)
+  * wording of a survey (influences the answers)
+
+Correlation vs causality
+
+types of statistical studies
+  * Sample Study - select sample from population
+  * Observational Study - looking for correlation, not causality
+  * Experiment - look for causality, use control group
+
+"margin of error"
+
+Experiment Design
+  * explanatory variable
+  * response variable
+  * blind
+  * double-blind
+  * triple-blind, people analyzing the data don't know which is which
+  * matched pairs experiment, switch the control and treatment groups after a period of time
+
+  ? Correlation Coeffecient (r)
+  : Calculated as 
+\begin{align}
+r = \frac{1}{n-1}  \sum \left ( \frac{x_i - \overline{x} }{s_x} \right ) \left ( \frac{y_i - \overline{y} }{s_y} \right )
+\end{align}
+
+=== conventions ===
+
+\begin{align}
+y &= actual y \\
+\hat{y} &= predicted y \\
+\overline{y} &= mean of all y's \\
+\end{align}
+
+=== Coefficient of Determination ===
+
+Represented by r-squared.
+
+What percentage of the total variation in y is described by the variation in x?
+
+What percentage of the variation described by the line?
+
+How good is the li{ne as a predictor? 
+
+Total variation is the squared error of y from the mean of y.
+
+\begin{align}
+r^2 &= 1 - \frac{SE_{LINE}}{SE\bar{y}} \\
+SE_{LINE} &= \text{variation described by the line} \\
+SE\bar{y} &= \text{total variation in y from the mean} \\
+\end{align}
+
+SSE_{LINE} && \text{variation described by the line}
+
+Squared error for the line, the lower the value, the better the fit.
+
+Coefficient of determination normalizes the squared error by making it 
+a percentage and a probability.
+
+The smaller the squared error, the higher the coefficient, the greater the probabiliy
+the line is a good fit.
+
+  ? Root mean square error (RMSD)
+  : Standard deviation of residuals
+
+  ? Covariance
+  : expected value can be 
+  * arithmetic mean
+  * probability weighted sum, or probability weighted integral (in a continuous distribution)
+
+  ? Coefficient
+  : can mean multiplier, factor, scalar
+
+===== Confidence Intervals =====
+
+Khan Unit: Confidence Intervals
+
+95% confidence based on 2 standard deviations
+
+the margin of error is 2 standard deviations
+
+the confidence interval is the $\hat{p}$ plus or minus the margin of error
+
+we want to know the proportion of the population that favors a candidate
+
+sample the population
+  * N = 100,000
+  * n = 100
+  * take multiple samples
+  * calc the proportion for all of the samples
+  * assume the mean of the sample proportions = the proportion of the population
+  * assume the sample proportions are normally distributed, the sampling distribution
+  * the standard deviation can be calculated by a formula
+
+\begin{align}
+\sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \\
+\end{align}
+
+calculate $\hat{p}$ as the proportion of the sample that favors your candidate
+
+from that $\hat{p}$, n and 95%, calculate the margin of error
+
+=== ratio, proportion, percentage, percentage proportion ===
+
+ratio - comparison of two quantities
+
+part-to-part ratio
+
+proportion - equality of two ratios, can be used for interpolation
+
+percentage - a fraction with 100 in the denominator
+
+percentage proportion - an equality of two ratios 
+where the second ratio has a denominator of 100
+
+==== discrete, Binomial, two-point, bernoulli distributions ====
+
+binomial - the binomial distribution with parameters n and p is the 
+discrete probability distribution of the 
+number of successes in a sequence of n independent experiments, 
+each asking a yes–no question, 
+and each with its own Boolean-valued outcome: 
+  * success (with probability p) or 
+  * failure (with probability q = 1 − p).
+
+A single success/failure experiment is also called a Bernoulli trial
+ or Bernoulli experiment, 
+
+and a sequence of outcomes is called a Bernoulli process; 
+
+for a single trial, i.e., n = 1, 
+the binomial distribution is a Bernoulli distribution. 
+
+The binomial distribution is the basis for the popular 
+binomial test of statistical significance.
+
+two-point - a random variable which can take 1 of 2 possible values
+
+bernoulli - a two-point distributions where the two possible outcomes are 0 and 1
+  * a random variable which takes the value 0 or 1
+  * success, yes, true, one
+  * failure, no, false, zero
+
+
+==== Random Variables ====
+
+variable x = a single value
+
+random variable X = a number of values, results of experiments, to calculate P(X)
+
+
+
+
+
+
 ===== Distribution =====
 
 median, range, IQR
@@ -134,6 +314,30 @@ Probability Distribution\\
 Cumulative Probability Distribution\\
 
 
+frequency - table of actual results
+
+relative frequency - division to create percentage
+
+probability = theoretical probability = relative frequency of the entire population
+
+$$ probability = \frac{\text{number of successful outcomes}}{\text{number of possible outcomes}}$$
+
+$$ relative frequency = \frac{\text{number of successful outcomes}}{\text{number of trials}}$$
+
+==== Binomial Random Variable ====
+
+each trial has boolean result, ie, success or failure
+
+trial results are independent
+
+fixed number of trials
+
+same probability in each trial
+
+==== Geometric Random Variable ====
+
+number of trials until success
+
 
 ==== Binomial Distribution ====
 
@@ -141,8 +345,22 @@ uses factorial in the formula
 
 is discreet function
 
-each trial has boolean result, ie, success or failure
+==== Geometric Distribution ====
 
+right-skewed
+==== Random Variable: Binomial vs Geometric ====
+
+|                                | Binomial | Geometric |
+| each trial has boolean result  |    x     |     x     |
+| trial results are independent  |    x     |     x     | 
+| same probability in each trial |    x     |     x     |
+| fixed number of trials         |    x     |    not    |
+
+Examples
+
+Binomial: How many sixes in 12 rolls of the die?
+
+Geometric: How many rolls of a die until one six?
 
 ===== Distribution =====
 

@@ -1,5 +1,11 @@
-======Electronics======
+====== Electronics ======
 
-electric “train” made of battery, magnets, coil
-https://youtu.be/J9b0J29OzAU 
- 
+prerequisite: [[Electricity]]
+
+===== Electricity vs Electronics =====
+
+electrical circuit - controlled by mechanical switches
+
+electronic circuit - controlled by electronic signals
+
+electronics begins with the vacuum tube and the transistor

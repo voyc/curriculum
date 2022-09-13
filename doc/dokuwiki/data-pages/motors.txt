@@ -1,0 +1,307 @@
+====== Motors ======
+
+Prerequisite: [[Electricity]]
+
+Convert electrical energy to mechanical energy.
+===== Make a motor =====
+
+Use 31 AWG wire.  Enamel coated.  The enamel acts as an insulator.
+
+
+===== Electronics =====
+
+V volts    V voltage
+I amps     A current
+R ohms     Ω resistance
+P power    W watts
+
+ohm's law: V = I * R
+
+P = V * I or W = V * A
+
+
+
+===== Specs =====
+
+Power rating
+
+Max power
+
+Amp rating
+
+Max amps
+
+RPM
+
+Max RPM
+
+
+===== Power =====
+
+volts
+
+amps
+
+more volts, less amps, thinner wires, less weight
+
+examples
+  * Tesla motors run at 400 volts.
+  * Porsche at 800V.
+
+===== Hub vs Mid =====
+
+sprocket teeth, rear/front ratio 3.0
+
+tire size, rimsize, rpm, top speed
+
+max eff at 75%
+
+temperature, cooling
+
+waterproofing ?
+
+===== Bernoulli =====
+
+probability
+
+nozzle
+
+fluid dynamics, water pressure
+
+can be applied to many problems
+
+
+
+Updated December 28, 2020
+By Lee Johnson
+How do airplanes fly? Why does a curveball follow such a strange path? And why do you have to board up the ​outside​ of your windows during a storm? The answers to all of these questions are the same: They’re a result of Bernoulli’s principle.
+
+ome other examples of Bernoulli’s principle in action can help to clarify the concepts. The most well-known is the example comes from aerodynamics and the study of airplane wing design, or airfoils (although there are some minor disagreements about the details).
+
+The top part of an airplane wing is curved while the bottom is flat, and because the air stream passes from one edge of the wing to the other in equal periods of time, this leads to a lower pressure on the top of the wing than on the bottom of the wing. The accompanying pressure difference (according to Bernoulli’s principle) creates the lift force that gives the plane lift and helps it get off the ground.
+
+Hydroelectric power plants also depend on the Bernoulli principle to work, in one of two ways. First, in a hydroelectric dam, water from a reservoir travels down some large tubes called penstocks, before striking a turbine at the end. In terms of Bernoulli’s equation, the gravitational potential energy decreases as the water travels down the pipe, but in many designs, the water exits at the ​same​ speed. By the equation, it’s clear that there must have been a change in pressure to balance the equation, and indeed, this type of turbine takes its energy from the pressure energy in the fluid.
+
+Arguably a simpler type of turbine to understand is called an impulse turbine. This works by reducing the size of tube before the turbine (using a nozzle), which increases the velocity of the water (according to the continuity equation) and reduces the pressure (by Bernoulli’s principle). The transfer of energy in this case comes from the kinetic energy of the water.
+
+==== History ====
+
+Early experimenters around 1800 included:
+  * Benjamin Franklin
+  * Charles-Augustin de Coulomb
+  * Andre-Marie Ampere
+  * Michael Faraday
+  * Anyos Jedlik
+
+The first motor design included:
+  * stator - a stationary magnetic field
+  * rotor - a rotating magnetic field
+  * commutator - a rotary electrical switch that reverses circuit through the rotor
+
+==== Structure ====
+
+AC vs DC
+
+induction motor vs reluctance motor
+
+three-phase motor - heavy loads, industrial
+
+single-phase motor - light loads, household appliances like fans
+
+two-phase - ?
+
+fixed-speed 
+
+variable-frequency drives (VFD) - energy saving, variable-torque
+
+squirrel-cage induction motor - 
+
+brushed DC motor (BDC)
+
+brushless DC motor (BLDC)
+
+servo
+
+stepper
+
+  * induction == asynchronous 
+    * wound
+    * squirrel-cage
+    * single-phase
+    * three-phase
+
+==== Power ====
+
+1 kilowatt = 1 horsepower
+
+kilowatt, horsepower, torque, newton, 
+
+rpm, tachometer, hall sensor
+
+==== EMF ====
+
+back EMF
+
+electro motive force (EMF)
+
+
+
+===== Examples =====
+
+=== QS Motors ===
+located Taizhou, Zhejiang, China (south of Shanghai) //
+mfg motors, controllers, kits, 3000W to 8000W //
+[[http://www.qs-motor.com/product-catagory/bldc-motor/ | product list]]
+{{https://ae01.alicdn.com/kf/H299cb0d39c9b408f88e22c18a8cd77d7X.jpg?200}}
+
+=== Golden Motor ===
+Changzhou, Jiangsu, China (near Shanghai) \\
+[[http://goldenmotor.com/frame-bldcmotor.htm | BLDC motors 3/5/10/20 KW]]
+[[https://www.alibaba.com/product-detail/BLDC-motor-5000W-electric-motorcycle-kit_1600071540851.html?spm=a2700.7724857.normal_offer.d_image.4f0373bc2TutEg | at alibaba]]
+{{https://www.goldenmotor.com/img/5KWFanCooling.jpg?200}}
+
+=== Wuxi Shenma ===
+located in Wuxi, Jiangsu, China (near Shanghai), mostly focused on disc brakes, no website \\
+DC Motor 138 3KW 5KW 72V 100KPH Mid Drive Motor with Disc Brake, 48-96V 3000-5000W \\
+as of 2022 $329.00 \\
+[[https://www.alibaba.com/product-detail/DC-Motorcycles-Motor-138-3KW-5KW_1600411095197.html?spm=a2700.7724857.normal_offer.d_title.4f0373bc2TutEg | at alibaba]]
+{{https://s.alicdn.com/@sc04/kf/H5426c9787dfd416094c9a2bdc4827721E/253302854/H5426c9787dfd416094c9a2bdc4827721E.jpg?quality=close:200}}
+
+===== Todo =====
+https://www.differencebetween.com/difference-between-force-and-vs-pressure/ \\
+https://arachnoid.com/gravitation_equations/force_weight.html \\
+https://circuitglobe.com/electrical-load.html \\
+https://sciencing.com/convert-amps-electrons-per-second-8628812.html \\
+https://brainmass.com/physics/electric/current-number-electrons-second-44247 \\
+https://www.rapidtables.com/calc/electric/watt-volt-amp-calculator.html \\
+https://www.youtube.com/watch?v=wBjT7KZqVuM \\
+https://en.wikipedia.org/wiki/Bernoulli%27s_principle \\
+https://sciencing.com/fluid-dynamics-overview-basics-terminology-equations-13723386.html \\
+https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=18650 \\
+https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&tab=all&SearchText=bldc+qs&viewtype= \\
+https://www.discoverboating.com/resources/electricity-101-for-boaters \\
+https://owlcation.com/stem/Watt-are-Amps-and-Volts \\
+https://duckduckgo.com/?q=amps+to+amp+hours&t=brave&ia=web \\
+
+===== Motor Controller =====
+
+aka Speed Controller or Electronic Speed Controller (ESC)
+
+Functions:
+  * Starting - some loads require greater torque to start moving than to keep moving
+  * Braking - some motors regenerative braking
+  * Reversing the rotation
+  * Controlling speed
+  * Controlling torque
+
+Controller for AC Motor
+
+Controller for DC Motor
+
+Pulse Width Modulation (PWM)
+
+===== Regenerative Braking =====
+
+freewheel - aka overrunning clutch.  a device in a transmission that disengages the driveshaft from the driven shaft when the driven shaft rotates faster than the driveshaft.
+
+When rider reduces the throttle,
+  * a clutch disengages and the vehicle coasts regardless of motor rpm (freewheeling)
+  * the wheels drive the motor faster than what the throttle calls for (braking)
+
+freewheeling vs engine braking
+  * rider
+  * throttle
+  * controller
+
+
+===== Applications =====
+
+== Drone ==
+  * rpm high
+  * load: light
+  * weight: weight
+  * voltage: low (to keep battery weight down)
+  * constant velocity (Kv) - rpm per volt
+
+== Water pump ==
+  * rpm: constant, continuous 
+
+== Elevator ==
+  * rpm: constant, with start and top
+  * brake: mechanical brake when power off
+
+== Motorcycle mid ==
+
+  * rpm: 4500 - chain drive with 3:1 sprocket ratio
+  * voltage 72v
+  * watts 3000 to 10000
+  * amps
+  * brake: regen or freewheel at driver's option
+
+== Motorcycle hub ==
+
+  * rpm: 1500 - direct correlation to wheel diameter and vehicle speed
+  * voltage 72v
+  * watts 3000 to 10000
+  * amps
+  * brake: regen or freewheel at driver's option
+
+AC Motors
+
+single phase
+
+two phase
+
+three phase
+
+Generators
+
+single phase.  Into homes. 120 volts in America.  240 volts everywhere else.
+
+two phase
+
+three phase
+
+Three wires.  voltage and current 120 degrees out of phase on the three wires.  
+
+high voltage on each wire.  120 degrees apart.
+
+===== Electric Power =====
+
+Generation, transmission, and distribution of electricity.
+
+Several systems for electric power distribution have been attempted.  Evidently Edison argued for DC but Tesla prevailed with AC.
+
+=== AC ===
+
+AC could easily be transformed to higher voltages for long distance transmission, and than transformed down to lower voltages for distribution.  A grid is populated with numerous transformers along the way.
+
+== Three-Phase ==
+The most common method used by electrical grids worldwide to transmit power.  Three wires, the voltage and current of each wire 120 degrees out of phase.
+
+Some factories and large buildings take in the three-phase current and use it directly in three-phase motors with large loads like elevators and industrial pumps.
+
+== Two-Phase ==
+Early 1900's.  Now mostly replaced by three-phase.  Commonly used with four wires, two circuits, each circuit out of phase by 90 degrees.
+
+== Single-Phase ==
+The most common method of distribution into the household.  Single phase is split off at the transformer for each household.
+
+Single-phase motors sometimes need an extra voltage to get started.  My air conditioner has two such motors, one for the compressor and one for the fan.  A starter component, which contains two capacitors, is used to start the two motors.
+
+The standard U.S. household wiring design has two 120 volt "hot" wires and a neutral which is at ground potential. The two 120 volt wires are obtained by grounding the centertap of the transformer supplying the house so that when one hot wire is swinging positive with respect to ground, the other is swinging negative. This versatile design allows the use of either hot wire to supply the standard 120 volt household circuits. For higher power applications like clothes dryers, electric ranges, air conditioners, etc. , both hot wires can be used to produce a 240 volt circuit.
+
+
+==== International Power Grids ====
+
+^                               ^ USA     ^ Thailand ^ other countries      ^
+|frequency (hz)                 | 60      | 50       | either 50 or 60      |
+|household single-phase (volts) | 120/240 | 230      | mostly 240, some 120 |
+|industrial two-phase (volts)   | 240/480 | 380      | between 240 and 480  |
+
+https://en.wikipedia.org/wiki/Mains_electricity_by_country
+
+=== DC ===
+
+Modern electronics can raise the voltage of DC with high efficiency, so now high-voltage direct current (HVDC) can give lower losses over long distances.
+

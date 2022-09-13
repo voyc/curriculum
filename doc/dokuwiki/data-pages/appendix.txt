@@ -5,8 +5,9 @@
 [[Timeline]]\\
 [[References]]\\
 [[Recent Developments]]\\
-[[Essays, Interviews]]\\
 [[Samantha Project]]\\
 [[Notes]]\\
 [[Dokuwiki]]\\
-[[Projects]]
+[[Projects]]\\
+[[Essays]]\\
+[[Todo]]\\

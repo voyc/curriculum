@@ -1,0 +1,104 @@
+====== Chemical Reactions, Equations ======
+back to [[Chemistry]]
+$$\require{mhchem}$$
+
+
+===== Chemical Equation =====
+
+describe a reaction
+
+
+===== Chemical Reactions =====
+
+
+{{https://youtu.be/TStjgUmL1RQ | 
+video: Salman Khan: Chemical Reactions Introduction}} 
+
+using two examples
+  * combine molecular hydrogen and oxygen into energy and water (oxidation-reduction) 
+  * combine bicarbonate anion and a hydrogen cation into carbonic acid (reversible)
+
+
+reduction
+
+oxidation-reduction
+
+
+hydrolysis
+
+
+$$\require{mhchem}$$
+
+
+reactants $->$ products
+
+reagents $->$ products
+
+
+
+==== Balancing ====
+
+{{https://youtu.be/TUuABq95BBM | video: Salman Khan: Balancing Chemical Equations}}
+
+using example of combining aluminum and oxygen (dioxygen) to form aluminum oxide
+
+finding the quantity of each molecule on both sides of the equation.
+
+The initial equation identifies the molecules and the reaction.  Theoretical
+
+Balancing shows the quantity of each molecule in the reaction.  Actual
+
+==== Equation====
+
+1.  the molecules involved
+
+2.  the quantity of each molecule
+
+3.  the change in charge of each molecule
+
+4.  the energy exchange (thermodynamics)
+
+
+===== Complete vs Net Equations =====
+
+{{https://youtu.be/BgTpPM9BMuU | 
+video: Salman Khan: Molecular, complete iconic, and net iconic equations}}
+
+
+Showing ionic charge explicitly in an equation.
+
+
+Sodium chloride plus silver nitrate -> ? plus silver chloride
+
+Molecular equation:
+$$\ce{NaCl(aq) + AgNO3(aq) -> NaNO3(aq) + AgCl(s)}$$
+
+Complete ionic equation:
+$$\ce{Na+(aq) + Cl^{-}(aq) + Ag+(aq) + NO3^{-}(aq) -> Na+NO3^{-}(aq) + AgCl(s)}$$
+
+Net ionic equation:
+$$\ce{Cl^{-}(aq) + Ag+(aq) -> AgCl(s)}$$
+
+
+spectator ion
+
+
+"Water is a polar molecule.  That's what makes it such a good solvent."
+
+
+
+
+====  reactions that join elements into a compound molecule based on valence =====
+
+wants an electron, halogens
+
+has an extra electron to give away, alkali metals
+
+sodium chloride NaCl
+
+sodium iodide NaI
+
+potassium chloride KCl
+
+lithium chloride LiCl
+
