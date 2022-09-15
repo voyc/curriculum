@@ -1,0 +1,40 @@
+Steady Cam software to steady my Android camera videos shot while walking.
+
+VirtualDub \\ 
+with two plugins: \\ 
+DeShaker - steady cam \\ 
+ffinput - reads multiple input formats
+
+These plugins install just by copying files to the plugins directory, then restart VirtualDub.
+
+XVid - compression \\ 
+
+After you install XVid, it will be recognized by VirtualDub.
+
+Steps:
+  -  Open Virtual Dub
+  -  Open your video file within VirtualDub
+  -  Mark beginning and ending selection points on the timeline
+  -  Click Video - Compression
+  -  Choose XVid MPEG-4 Codec
+  -  Click Configure to bring up configuration options
+  -  Set bitrate to 300 kbps, Close
+  -  Click Video - Filters - Add - Deshaker
+  -  Double-click on Deshaker to bring up the config screen
+  -  Choose Pass 1, Close
+  -  Click File - Run Video Analysis Pass
+  -  wait for it to complete
+  -  Click File - Save as AVI, enter desired filename
+  -  wait for it to complete
+
+output by Android camera \\ 
+Codec 4CC: H264 \\ 
+Image size: 1920 x 1080 \\ 
+
+output by VirtualDub \\ 
+Codec 4CC: XVID \\ 
+Image size: 1920 x 1080 \\ 
+
+output by Camtasia \\ 
+Codec 4CC: H264 \\ 
+Image size: 854 x 480 \\ 

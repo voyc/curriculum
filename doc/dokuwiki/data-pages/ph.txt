@@ -1,0 +1,62 @@
+In chemistry, pH is a numeric scale used to specify the acidity or basicity of an aqueous solution.
+[https://en.wikipedia.org/wiki/PH from Wikipedia]
+
+pH is a numeric value from 0 to 14 and beyond.  7 is neutral. \\ 
+
+0 > 7 > 14
+
+acid > neutral > base (alkaline)
+
+{| class=wikitable
+! style=text-align:left;| pH Value
+! style=text-align:left;| Compartment
+|-
+|0
+|hydrochloric acid
+|-
+|2.5 - 4.0
+|Safe Kombucha
+|-
+|5.5
+|human skin
+|-
+|6.0
+|urine
+|-
+|7.0
+|pure water
+|-
+|7.34 - 7.45
+|blood
+|-
+|7.5 - 8.4
+|sea water
+|-
+|14
+|sodium hydroxide
+|}
+
+acid-base homeostasis \\ 
+acid-alkaline balance \\ 
+
+==Alkaline Diet==
+
+The claims are:
+
+  *  excessive acidity in the body causes disease
+  *  eating certain foods can re-balance the ph in the body
+
+The counter-claims:
+
+  *  No diet can affect the pH of any bodily system except the urine.
+
+==notes==
+acid: vinegar, kombucha,
+
+alkaline: oil, baking soda
+
+The burning of a food leaves an ash.  It is this ash that remains in the body to make it acid or alkaline.
+
+Citrus fruits are acidic, but burning them produces an alkaline ash.  Therefore, counter-intuitively, eating a citrus fruit increases alkalinity.
+
+ph strips ordered from lazada, Order summary for 383336739, 1 item ordered
