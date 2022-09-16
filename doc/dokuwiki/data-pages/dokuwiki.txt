@@ -43,7 +43,9 @@ Also note:
 
 ===== Math Equations =====
 
-For math equations, we use the MathJax extension.
+For math equations, we use the [[https://mathjax.org|MathJax]] extension.
+
+$$ \frac{\Delta f(x)}{\Delta x} = \frac{f(x+h)-f(x)}{(x+h)-(x)} = \frac{f(x+h)-f(x)}{h}$$
 
 ===Text===
 For upright text, use \text{hello} instead of \textup{hello}.

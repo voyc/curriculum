@@ -7,13 +7,15 @@
 # how to install into a2hosting
 
 # 1. unzip dokuwiki into ~/webprod/samwiki
+cd ~/webprod/samwiki
+wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
+tar -xzvf dokuwiki-stable.tgz
+mv dokuwiki-2022-07-31a/ dokuwiki
 
-# 2. point curriculum to the wiki
-cd ~/webprod/curriculum/curriculum/html
-ln -s ~/webprod/samwiki/dokuwiki wiki
+# 2. if necessary, upgrade PHP version at a2hosting CPanel "select PHP version"
 
 # 3. run the dokuwiki install
-http://curriculum.voyc.com/wiki/install.php
+http://curriculum.voyc.com/install.php
 # Wiki Name: Samantha
 # Superuser: jhagstrand
 # Real name: John Hagstrand
@@ -38,13 +40,29 @@ cd ~/webprod/curriculum/curriculum
 ln -s ~/webprod/samwiki/dokuwiki html
 
 # 6. delete the install.php file
-
-# 7. Install the mathjax plugin for equations. Test on calculus page.
+cd ~/webprod/samwiki/dokuwiki/
+rm install.php
+ 
+# 7. Install the mathjax plugin for equations.
 cd ~/webprod/samwiki/dokuwiki/lib/plugins/
 wget https://github.com/liffiton/dokuwiki-plugin-mathjax/archive/master.zip
 # unzip and rename folders: lib/plugins/mathjax
+unzip master.zip
+mv dokuwiki-plugin-mathjax-master mathjax
 
-# MathJax [http://mathjax.org] parsing of TeX math expressions in wiki pages.
-# Edit equations online here: https://www.codecogs.com/latex/eqneditor.php
-# in mathjax, use \textrm instead of \textup
-# use \require{mhchem} to get \ce{} for chemical equations
+#8. Install the yalist extension for definition lists.
+# see https://www.dokuwiki.org/plugin:yalist
+# Admin -> Extension Manager
+# Search Extension: yalist
+# yalist Plugin by Mark Prins  ::  Install
+# after install, modify the style.css file as follows
+vi ~/webprod/samwiki/dokuwiki/lib/plugins/style.css
+# div.dokuwiki .dt {
+#     color: black;      /* __text_alt__; */
+#     max-width: 50%;    /* 30%           */
+#     float: none;       /* left;         */
+# div.dokuwiki dd {
+#     margin-bottom: 0.5em;  /* (new) */
+
+# 9. Test extensions on "curriculum - appendix - dokuwiki" page.
+
