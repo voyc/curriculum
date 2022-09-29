@@ -1,0 +1,44 @@
+====== Mai object model ======
+
+every class is a global singleton \\
+all objects instantiated in voyc.mai.setup() \\
+voyc.sam = new voyc.Sam();  // instantiation, lower-case object, proper-case class \\
+(new voyc.Sam).method();  // same as voyc.sam.method().  this is used for subcomponents
+
+Specialists
+  * voyc.sam
+  * voyc.lee - public methods drill() and respond() called by Sam
+  * voyc.noam - public methods parse...() used by sam, editor, story
+  * voyc.sengen - sentence generator, used within noam
+  * voyc.numgen - number generator, used within noam
+         
+Data Model
+  * voyc.story - used by sam and storyview
+  * voyc.dictionary
+  * voyc.alphabet
+  * voyc.vocab - represent user's vocabulary, used by Lee and Noam
+  * voyc.grammar
+  * voyc.translit
+  * voyc.vowelpatterns
+
+View
+  * voyc.storyview - drives storyview, list, insert, view
+  * voyc.editor - drives editor page
+  * voyc.chat - drives the chat window on the home page, used by sam and lee
+  * voyc.keyboard2
+
+Controller
+  * voyc.mai - starting point.  instantiated on windows.load event
+  * voyc.view - drives home page, left-nav, settings-dropdown
+  * voyc.browserhistory - public method nav() called by mai, storyview, sam, editor, view
+
+Utilities
+  * voyc.observer - called by sam, view, story, vocab, dictionary
+  * voyc.comm - called by the four "model classes"
+  * voyc.speech - public method speak() called by Sam and Editor
+
+User Management
+  * voyc.user
+  * voyc.account
+  * voyc.accountview
+

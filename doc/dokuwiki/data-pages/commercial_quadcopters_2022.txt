@@ -1,0 +1,60 @@
+====== Commercial Quadcopters 2022 ======
+
+Ultimate Drone Buying Guide for Total Beginners 2022 \\
+https://www.youtube.com/watch?v=9Xje3cqnG-Q&t=1s
+
+His choice: DJI Mini 2
+
+| DJI    | Mini SE          |      $ 300 |      |        |
+| DJI    | Mini 2           |      $ 450 |      | 1/2.3" |
+| DJI    | Mini 3 Pro       |      $ 750 | 2022 |  .76"  |
+| DJI    | Mavic Air 2S     |      $1000 | 2021 | 1"     |
+| DJI    | Mavic 2 Pro      | Used $1000 | 2018 | 1"     |
+| DJI    | Mavic 3          |      $2100 |      | 4/3"   |
+| Autel  | Evo Nano+        |      $1000 |      | 1"     |
+| Autel  | Evo II Pro 6K    | Used $1200 |      |        |
+| DJI    | Inspire 2 X5S    | Used $8000 |      | 4/3"   | 
+
+Older, do not buy:
+
+| DJI    | Mavic 2 Zoom     |      $ 800 |      | 1/2.3" |
+| Autel  | Evo              |      $ 400 | 2020 | 1/2.3" |
+| DJI    | Mavic Air        |      $ 250 |      | 1/2.3" |
+| Parrot | Anafi            |      $ 300 |      | 1/2.3" |
+| Yuneec | Typhoon          |      $ 600 |      | 1/2.3" |
+|        | phantom 4 Pro    |      $ 600 |      | 1"     |
+
+Autel - buggy, horrible experience
+Parrot
+Skydio - excellent tracking
+
+All drones have these Common Features
+5 Miles
+GPS
+Hover
+Collision Sensors
+System Warnings
+Smart Battery
+Won'f Fly at Airports
+Fly Home Automatically
+
+
+Anything under $300 is a toy, a piece of crap.
+
+
+
+
+
+No such thing as a beginner drone.  They all work the same.
+
+Fly with app on phone, connected to a remote.
+
+Stabilized cameras take photos and videos and save it to a memory card.
+
+Price difference is photo and video quality.
+
+larger sensor
+resolution doesn't matter: 4K is fine.  6K, 8K allow cropping down to 4K
+fps doesn't matter: cinematic quality is 24fps, 60 and 120 fps are for slow motion
+
+  

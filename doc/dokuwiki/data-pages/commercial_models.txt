@@ -1,0 +1,148 @@
+====== Commercial Drones ======
+
+
+===== Vehicles using ArduPilot =====
+
+These drones run ArduPilot software on the flight control (FC) chip, and therefore they can be contacted, managed, and programmed from compatible Ground Stations.
+
+List of Ready-to-fly drones using ArduPilot, Sep 2022 \\
+https://ardupilot.org/ardupilot/docs/common-rtf.html#common-rtf
+
+BaskAerospace, AU
+  * Cube, FC, formerly Pixhawk 2, runs ArduPilot
+  * AeroDrone MR4, 15-inch quad
+
+CUAV
+  * XunWing X4 Quad, $10,000
+
+Holybro
+  * Cinewhoop 5-inch $500, top mounted FPV camera
+
+SkyViper
+  * Journey, downward camera, GPS, video stream, ArduPilot, $78 Amazon
+    * uses MAVLink 2, https://discuss.ardupilot.org/t/other-ground-stations-not-working/22560/11
+    * 2018 Journey Flight Board, $18, (NOT Compatible with the 2021 Journey SE model)
+
+TT Robotix
+  * X-450 Scout, PX4 FC, gimballed camera, retractable landing gear
+
+UAV Systems
+  * various, heavy pay-load lifting, PX4, ArduPilot, $5000
+
+VIMDrrones
+  * lightshow swarm
+
+
+===== Quadcopters under $1000 =====
+
+[[Commercial Quadcopters 2022]]
+
+==== Camera and Follow Me ====
+
+DJI Inspire 2 $3000
+  * no camera, use your own camera and lenses
+
+DJI Mavic 2 Pro $1750
+  * omni-directional obstacle avoidance: yes
+
+Skydio 2 (Parrot?) $999
+  * excellent optical follow me
+  * optional gps beacon for times when optical follow me fails
+
+Parrot ANAFI, 4K HDR camera drone
+
+DJI Mavic Air $800
+  * hand gestures: yes
+
+DJI Mavic Mini $400
+  * omni-directional obstacle avoidance: no
+  * follow me: no
+
+Potensic D58, FPV Drone with 1080P Camera, 5G WiFi HD. $200
+
+Eachine 52 max $150
+  * follow me: yes
+  * FPV: yes
+
+C-me GPS Follow Me Folding Selfie Drone ฿2,570
+  * 2 years old
+  * follow me: gps, no sensors
+  * point to me
+  * 360 degree pan (rotate)
+  * return to home
+  * landing
+  * range 20 meters
+
+JINXINGDA JXD 528 ฿2338
+  * follow me: gps
+
+HJ38
+
+==== educational ====
+
+Ryze Tello $99
+  * 4000 thb at lazada
+  * WiFi comm, 100 meter max
+  * Control with smartphone
+  * Intel chip onboard
+  * Forward-facing camera
+  * Program with Scratch or with SDK
+
+Ryze Tello EDU
+  * Tello vs Tello EDU
+    * According to two youtubers, there are two features added to the EDU model:
+      - Tello EDU supports Swift, Python, Scratch, while Tello supports only Swift
+      - Tello EDU supports swarms, Tello does not
+    * Presumably the above applies to onboard software added to the EDU.  Because obviously if you are flying the Tello from a computer on the ground, you can use any language and any number of drones.
+
+Parrot AR
+
+Parrot Mambo
+
+Parrot Bebop
+
+==== FPV ====
+
+=== Mr Steel ===
+recommended for beginners:
+  * controller: TBS Team Black Sheep
+  * Simulator: velocidrone
+  * Goggles: ?
+  * Drones, brushless, small:
+    * NewBeeDrone AcroBee Pro
+    * Beta 65 hd
+    * Beta 85x fpv
+    * Beta 95 (steel's fav)
+  * when ready to get serious, you will build your own 5-inch drone
+  * Ethix, brand name
+  * branded products with TBS and Beta
+
+=== Tiny Whoop ===
+Jesse P., Fort Collins, Co.
+
+=== Team Black Sheep
+  * Tiny Whoop Nano (partnership)
+  * Crossfire, RC TX RX
+
+=== NewBeeDrone ===
+
+=== Beta ===
+
+All of these tiny drones use a top-mounted forward-facing camera.
+
+=== DJI FPV System ===
+  * Camera
+  * Air Unit, vtx, $99
+  * Goggles, $529
+  * RC, $299
+  * Camera, air unit, goggles required. RC optional. No drone. The concept is to upgrade your drone with high def low latency video.
+
+=== caddx Vista ===
+  * Smaller, lighter version of the DJI Air unit
+
+=== Horizon Hobby ===
+Blade Inductrix
+  * Small drone, compared to whoop
+
+=== Rotor Riot ===
+

@@ -278,6 +278,30 @@ size of one 26S10P battery pack
 
 ===== custom battery pack build =====
 
+battery packs, serial and parallel
+  * 6s to 12s, 6 to 12 cells in series, More cells more voltage
+  * 2p, cells in parallel
+  * Recommended 10s2p or 10s3p
+
+capacity, how long a charge lasts, determines range of vehicle
+  * 5,000 milliamp hours
+  * 180 watt hours
+
+Chemistry
+  * nickel
+  * hydride
+  * cadmium
+  * lithium
+  * lithium-ion
+  * lithium-polymer
+  * lead acid
+  * cobalt
+  * zinc
+  * manganese
+
+Story of Electric Vehicle Batteries
+https://www.youtube.com/watch?v=3pz5LxiEndA
+
 ===== Battery Management System (BMS) =====
 
 The BMS controls:

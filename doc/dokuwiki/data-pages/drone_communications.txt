@@ -1,0 +1,239 @@
+====== Drone Communications =====
+
+https://www.911security.com/learn/airspace-security/drone-fundamentals/drone-communication-data-link
+
+===== Three groups of data =====
+
+UAV Control (ground to uav)
+  * Fly: throttle, yaw, pitch, roll
+  * Settings
+  * Flight modes and manuevers
+  * Camera gimbal
+
+Video (uav to ground)
+
+Telemetry (uav to ground)
+  * Sensor readings: GPS, compass, altimeter, speed, orientation
+  * Battery charge level
+
+Three sets of data to be communicated
+  - flight commands, radio to drone
+  - Telmetry, drone to GCS
+  - Video stream, drone to GCS
+
+
+===== Three transmission types =====
+
+RF radio frequency
+  * long range, up to 50 miles
+  * 900MHz to 5.8GHz, controlled by FCC
+
+WiFi
+  * 100m range, can be extended with Xiaomi Mi Wifi Extender
+  * 802.11
+2.4 GHz
+
+BT Bluetooth
+  * 60m range
+  * useful to configure the FC from your phone via the SpeedyBee Android app
+  * 2.4 GHz
+
+===== Radio Frequency =====
+
+Inverse relationship between frequency and wavelength.  
+  * High frequency => short wavelength
+  * Low frequency => long wavelength
+
+Long wavelength radio waves have ability to get around trees and other obstacles.
+
+Short wavelength signals have longer range.
+
+==== UAV Control ====
+
+The most popular data links used in a UAS are 2.4Ghz and 900Mhz.
+
+  * 4Ghz – 1 mile range, does not do well in mountainous or wooded areas.
+  * 900Mhz – 60+ mile range, can be used in mountainous and wooded areas with little to no effect on range.
+
+==== Video Transmission ====
+
+The most popular data links used in a UAS are 1.3Ghz, 2.4Ghz, and 5.8Ghz
+
+  * 3Ghz – Depending on the wattage used, this system can have a range of 40+ miles. The downfall of this system is poor video quality due to minimum data rates. However, since the wavelength is relatively long enabling stronger penetration capabilities.
+  * 4Ghz – This system can have a range of 15+ miles. The downfall of this system is many of the UAVs use 2.4Ghz for control. If 2.4Ghz is used for video, it cannot be used for control or this will cause interference.
+  * 8Ghz – This is the most popular frequency used for video transmission due to its short wavelength and large data rate transfer capability. This results in a clear video compared to the other options available. However, due to the short wavelength this system is only capable of 5+ miles and has limited penetrating capability.
+
+===== Wireless Electronic Communications =====
+
+Protocol Stack
+
+streaming, packet switching
+real-time, time-sharing
+
+FPV racing, real-time continuous communcations between pilot and vehicle
+transmission speed needs to be instantaneous from the perspective of the pilot
+right, left, 30 degrees right, joysticks, right, left, up, down
+
+autonomous quad-copter given a series of waypoints
+time, speed, is not so important
+goto to lat long altitude and hold
+lock onto and track that object
+
+
+==== Wireless Electronic Protocol Stack ====
+
+^  Protocol Stack  ^ 
+|        IP        |
+|       WiFi       |
+|       Radio      | 
+
+The protocal stack starting at the bottom.
+
+=== Radio ===
+
+radio = wireless electronic communications
+
+As distinct from wired communciations like telegraph, land-line telephone, and ethernet.
+
+And as distinct from wireless non-electonic systems like the infrared TV remote.
+
+Transmit-Receive (TX,RX)
+carrier signal, modulation
+point-to-point, broadcast
+
+Examples:
+  * RC
+  * Wifi
+  * Cell Phone: 3G, LTE, 4G, 5G
+  * Bluetooth
+  * Walkie-Talkie
+  * Citizen's Band (CB)
+  * AM-FM broadcast
+
+Note: Your phone contains at least four radios: wifi, bluetooth, LTE, 4G.
+
+=== Wifi ===
+
+WiFi = the short name for IEEE 802.11, a set of standards for a radio.
+
+An advanced digital radio using frequencies between 2 gigahertz and 5 gigahertz
+ in the electromagnetic spectrum, which is around the same area as microwave ovens.
+
+The different versions of Wi-Fi are specified by various IEEE 802.11 protocol standards, 
+with the different radio technologies determining 
+radio bands, and 
+the maximum ranges, and 
+speeds that may be achieved. 
+
+Wi-Fi most commonly uses the 2.4 gigahertz (120 mm) UHF and 5 gigahertz (60 mm) SHF radio bands; 
+these bands are subdivided into multiple channels. 
+Channels can be shared between networks but, 
+within range, only one transmitter can transmit on a channel at a time.
+
+radio bands
+speeds, signal strength, frequency bands, channels
+modulation?
+
+
+=== IP ===
+
+Internet Protocols (IP)
+IP address, hierarchical
+packet, header, payload,
+routing, 
+
+== internet ==
+
+a local IP network includes a finite set of devices connected to a hub or switch\\
+an internet is a connection of two or more local networks\\
+"the Internet" is the global connection of every computer and device on the planet\\
+
+== port forwarding ==
+
+Through port forwarding you can make a device in your home available to the public internet.
+
+devices in your home have a local IP address assigned by the Access Port\\
+if the Access Port has an internet connection, then the host server will also assign a global IP address\\
+but that address is used internally only, it is NOT available publicly,\\
+UNLESS you do port forwarding\\
+
+Managing a local network.
+
+
+== Internet of Things (IoT) ==
+
+It's not enough to connect all the computers.
+We now want to connect your refrigerator, toaster, TV, air conditioner, car, and garage door.
+Your smartphone becomes your universal remote.
+When leaving the restaurant, you can turn on your home air conditioner 
+so it's cooled off by the time you get there.
+
+==== IP for Drones ====
+
+Picture a battlefield.   \\
+Planes and copters in the sky. \\
+Tanks, trucks and missle launchers on the ground. \\
+Boats and submarines in the water. \\
+All autonomous.  All connected.  Every vehicle has an IP address. \\
+
+Same with a peaceful village.\\
+Taxis, buses, delivery vehicles, aerial security cameras.\\
+All autonomous, all connected.  \\
+
+With IP and the internet provides an infrastructure for drone communications.
+
+So now the question is, how to get a WiFi radio and IP into each drone.
+
+===== WiFi =====
+
+WiFi - is a family of wireless network protocols, based on the IEEE 802.11 family of standards, 
+which are commonly used for local area networking of devices and Internet access, allowing nearby digital devices to exchange data by radio waves. 
+
+WiFi is NOT short for "wireless fidelity".  It is a meaningless term made up by a marketing firm, hired by the IEEE.
+
+WiFi and Ethernet work closely together.  A household internet router usually a WiFi hub and four or five Ethernet ports on one device.
+
+Sibling, inter-operable protocols
+  * IEEE 802.11, WiFi, wireless
+  * IEEE 802.03, Ethernet, wired
+
+Bluetooth is similar to WiFi but with a short 10-meter range. \\ 
+It was once standardized by IEEE as 802.15, but is now maintained by the Bluetooth SIG, not by IEEE. \\
+A WiFi module often supports Bluetooth as well, and they can share the antenna. \\
+
+==== WiFi Module ====
+
+A microcontroller that implements WiFi protocol.
+
+Note:
+  * microcontroller - CPU, memory, IO, self-contained in one chip
+  * microprocessor - CPU only, memory and IO connected externally on a motherboard
+
+=== ESP8266 ===
+
+A widely-used WiFi module made by Espressif Systems in Shanghai China. \\
+As of 2014 an SDK is available, so it can be programmed and used as a standalone microcontroller. \\
+And therefore it is popular in IoT. \\
+It's local IP address is 192.168.4.1
+
+version history
+  - ESP-01
+  - ESP8266
+  - ESP32 family
+    * ESP32-C3 is pin-compatible with ESP8266
+
+The ESP8266 uses serial communications: one pin in (RX), one pin out (TX).
+
+The ESP8266 AT command set:\\
+https://content.instructables.com/ORIG/F0H/30XP/ILGVEEE5/F0H30XPILGVEEE5.pdf
+
+AT (Attention) commands, were created by Dennis Hayes for his 300 baud modem in 1981.
+
+Tutorial: Use an ESP8266 to control an LED over the internet \\
+https://maker.pro/esp8266/tutorial/esp8266-tutorial-how-to-control-anything-from-the-internet
+
+==== WiFi Direct (P2P) ====
+
+Create an Access Point (AP) that allows only one connection. \\
+Not used as a hub, but used for point-to-point communications between two devices.
+

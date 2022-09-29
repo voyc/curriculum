@@ -1,0 +1,12 @@
+====== Bahasa Implementation =====
+
+  - Clone Model.
+  - Add in Flash as a submodule.
+  - Add in the db scripts.
+  - Create a db script for thai.
+
+  - Add sound playback.
+  - Add drawing.
+  - Add typing.
+
+

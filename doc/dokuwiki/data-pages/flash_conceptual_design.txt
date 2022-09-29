@@ -1,0 +1,65 @@
+====== Flash Conceptual Design ======
+
+[[Progressive]]
+
+[[https://drive.google.com/open?id=1Gf15Psm2taEOu3mXcU5EenzHnmP_yAxQ7cOSVnlJRdc | Directions]]
+
+[[Flash Object Model]]
+
+[[flash External Data Sources]]
+
+==== UI ====
+
+  * Choose set: lesson, category, manual
+  * Check box list, sort, filter
+  * Review set
+  * Algorithm: Sequential, random, shuffle, progressive
+  * Direction: Native, Foreign, Translit, Audio, etc.
+  * Store: name and code for language names, TH Thai, EN English 
+
+==== Coach ====
+  * two methods:
+    * nextQuestion
+    * scoreAnswer - loops back to nextQuestion
+
+  * Coach and Desk pass Notes back and forth
+  	Coach publishes 'question'
+  	Desk publishes 'answer'
+
+  * three algorithms
+    * pull
+      * pull new cards into the working stack
+    * choose
+      * choose next question, from which stack
+    * promote
+        *move card from work to review to mastered
+
+methods
+  * setup
+  * start
+  * nextQuestion
+  * scoreAnswer
+  * toggleDir
+  * onDirectionChange
+  * choose
+  * promote
+  * pull
+
+direction
+  * can be changed manually by user
+  * can be changed automatically by coach depending on settings
+  * after change, new question is pulled and asked (like start)
+
+main loop
+  nextQuestion
+  while not all mastered
+      scoreAnswer
+      nextQuestion
+  endwhile
+  
+  pull
+  choose 
+
+promote
+  * if work and acnt > max and pct > max, promote
+  * if review and acnt > max and pct > max, promote

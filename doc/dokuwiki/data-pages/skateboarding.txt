@@ -1,0 +1,28 @@
+====== Skateboarding ======
+
+skateboard cones               
+
+Three events:   
+  * barrel racing
+  * slalom https://www.youtube.com/watch?v=sYSr-Sft4Zk
+  * freestyle
+
+Freestyle Aesthetics:         
+  * choose order of barrels
+  * choose direction around each barrel, cw or ccw
+  * collision detect
+    * pass by with slight bend, or
+    * circle around
+
+Multi*tasking:
+  * strategy, plot course (see Aesthetics)
+  * tactics, steering, staying on course
+
+steering:                                
+  * calc relative bearing
+  * set steering angle
+
+plot course:
+  * calc entry and exit points for the arc around each cone
+    * enter on the left, go clockwise around the cone
+    * enter on the right, go counter-clockwise

@@ -1,6 +1,6 @@
 ====== Samantha Project ======
 
-[[Requirements]]
+[[Samantha Requirements]]
 
 [[Conceptual Design]] 
 

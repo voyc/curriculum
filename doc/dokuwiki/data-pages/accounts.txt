@@ -1,0 +1,36 @@
+====== Account ======
+
+  * update readme
+      * Kerckhoff's principle: A cryptosystem should be secure even if everything about the system, excep
+  * revisit svctest
+  * header fancy
+      * show a special user icon when the user is in a pending state
+      * display "processing" message between post and received
+          * disable all svcs while processing
+      * display success message after every operation, before closing modal, or up in the header
+      * implement user menu
+      * combine modal and header into AccountView
+      * make autofocus work on openPopup()
+      * add theme
+      * implement nicer strings
+  * expiry
+      * implement si expiration * test stub
+      * implement si timeout
+      * implement si replace  
+      * new events
+          * session timeout (inactivity)
+          * session expired (a long time after login)
+          * session id replaced
+  * expire auth pending states
+      * registered. Never.
+      * resetpending.  when he successfully logs on with previous password
+      * email pending.  after a few days or minutes.
+  * allow a logged-in user to manually backout a reset or email change
+      * is necessary?  or can repeat forgot, change, register
+  * input format checking
+    * check input format of username and password only on Register, not on Login
+    * allow developers a way to use simple usernames and passwords
+    * provide a guest/guest login account
+  * error sending email with code for password reset
+
+

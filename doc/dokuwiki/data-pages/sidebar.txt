@@ -81,6 +81,7 @@
       * [[Python]]
       * [[Web Development]]
       * [[Database]]
+      * [[Chat]]
       * [[Media Editing]]
       * [[Developer Tools]]
       * [[Networking]]

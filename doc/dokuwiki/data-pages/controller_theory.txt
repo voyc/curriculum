@@ -1,0 +1,12 @@
+====== Controller Theory ======
+
+
+Bang-bang controller.  One-off. Two-step.  Like a household thermostat.
+
+Continuous feedback.
+
+Classical control.
+
+Modern control.
+
+Governor

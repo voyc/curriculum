@@ -1,0 +1,99 @@
+====== Skateboard ======
+
+==== todo ====
+
+  Battery specs for nano
+  
+  Boot nano in embedded mode
+  
+  Run python program on boot
+  
+  Python webserver
+  https://docs.python.org/3/library/http.server.html
+  https://github.com/howCodeORG/Simple-Python-Web-Server/blob/master/serv.py
+  
+  Python Ajax server
+  https://stackoverflow.com/questions/336866/how-to-implement-a-minimal-server-for-ajax-in-python
+  
+  How to get IP?  Polling?
+  hostname -i
+  
+  start webserver.py and ajaxserver.py simultaneously
+
+==== State of the Art ====
+
+As of June 2020, a youtube search reveals only one project involving a robotic or autonomous skateboard.
+* https://www.youtube.com/watch?v=LEmKBrcBGcM
+This manipulates weight distribution to "pump" a skateboard in a small half-pipe. No steering.
+
+==== Physics ====
+  * steer - tilt the board right or left to twist the trucks
+  * lean - the faster the speed, the more the rider must lean into the turn
+
+==== Intelligence ====
+  * run a course - steer around traffic cones, accelerate to maximum possible speed
+
+==== Vehicle design ====
+  * Jetson Nano mounted on skateboard
+  * one electric hub motor on the skateboard for forward and backward acceleration
+  * two linear servos distributing a weight side-to-side for steering
+  * one downward-facing camera drone connected to the Jetson via wifi
+  * batteries for the drone, the hub motor, the linear servos, and the Jetson
+  * the Jetson plots the course and steers the skateboard and drone around the course
+  * a web interface to the Jetson allows humans to stop and start the vehicle 
+  * a smart-phone wifi hotspot, the Jetson and drone connect to the hotspot
+
+Step 1. RC, forward, stop, right, left
+
+
+Drone
+  *  Step 1. Aerial photo. Identify cones, obstacles.
+  *  Step 2. Plot course.
+
+Options
+  *  Drone can fly over the course.
+  *  Drone only sends video and follows skateboard.
+  *  System can work with camera mounted on the skateboard.  Works better airborne.
+
+electric skateboard that drives itself with weight-shifter for steering
+  *   and a drone with downward camera for vision
+  *    drone launches off the skateboard and follows the board
+  *    video from the drone transmits to computer and steering instructions then transmit to skateboard
+  *    software on the computer draws the scene, identifies cones and obstacles, draws lines, calculates angles
+
+step 1, use an off the rack jetson nano vehicle
+  *    but instead of a camera on the vehicle, use one from a drone
+  *    establish comm between vehicle and drone
+  *    build indoor courses with cones
+
+Buy
+  * USB web cam
+  * Battery for Jetson
+  * Drone
+  * Skateboard
+
+
+  Photos of Cones and vehicle
+  Detect with camera and Jetson
+    Use drone camera handheld
+  Camera feed from drone to Jetson
+  Identify the course
+  Reference each frame
+  Draw angles among cones
+  Plot course
+  
+  Jetson control drone
+  Fly the course
+  Keep overhead
+  
+  Jetson control skateboard
+  Run the course
+  
+  Web interface to Jetson
+  What is WiFi range?
+  (Phone controlled drones use wifi)
+  Cheap drones send camera feed to phone
+  How can we get that feed to the Jetson?
+  
+  https://youtu.be/7ukDKVHnac4
+  Transistor

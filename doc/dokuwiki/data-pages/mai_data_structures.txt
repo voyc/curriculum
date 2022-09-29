@@ -1,0 +1,9 @@
+====== Mai data structures ======
+
+  * flat  
+  * dict  
+  * mean  
+  * loc
+  * word  
+  * story 
+

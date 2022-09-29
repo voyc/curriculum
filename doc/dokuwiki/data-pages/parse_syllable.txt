@@ -1,0 +1,12 @@
+====== Mai parse syllable ======
+
+=== ToDo ===
+
+  * identify rules
+    * ccredup
+    * cciva
+    * ccive (are cciva and ccive the same?)
+    * cct
+    * ccf
+  * test dict
+  * load test suite from dict pf=true

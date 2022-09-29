@@ -1,0 +1,70 @@
+====== Bahasa Conceptual Design ======
+
+Bahasa requires an accurate id of each card so the state of each card can be saved.  Therefore the teacher needs a feature to generate lists including the id.  Or if a card does not have an id, why not query the db for a matching q and a.
+
+===== For Thai =====
+Test practice from Thai  
+  * Add sound  
+  * Add draw answer  
+  * Add type answer, with automatic scoring 
+
+===== save scores =====
+Two arrays in memory: cards, scores  
+
+cards (original)
+  * card-id
+  * q
+  * a
+  * category (array)
+  * lesson
+
+scores
+  * card-id
+  * use-type: read, write-draw, write-type, listen
+  * time-first-use
+  * time-most-recent-use
+  * num-asked
+  * num-answered-correct
+  * current stack
+
+===== additional directions =====
+  * instead of normal, reverse  
+  * reading, writing, listening, speaking  
+  * translit  
+
+===== generate lessons from db, overridden by custom html =====
+
+multiple keywords for categorizing cards: alphabet, vowel, high class, midtone, single syllable
+
+===== reimplement the svc's and a svctest program =====
+  * getprograms
+  * getcards: si, programid, levelh
+  * putprogress
+  * setprogram: what program is user currently using
+  * resetprogram: delete all usercard records for this user
+  * this will require jslib/Comm, some php code from Account
+
+===== implement ProgramDB =====
+  * display homescreen with choice of language
+  * select a language from the homescreen
+  * implement modal dialog for level completed
+  * get cards and display all answers as multiple choice click for each question
+  * implement Account fully
+
+==== after user login ====
+  * read userprogram record with greatest recent date
+  * read programid, level
+  * getcards for that level
+  * revise language menu to show which languages user is already working on
+
+==== when user selects a language ====
+  * create a userprogram record
+	
+===== display authoring page =====
+
+with one panel for level, dnd between panels, update of level/seq for all moved cards
+
+===== sql =====
+
+createdb.sql
+

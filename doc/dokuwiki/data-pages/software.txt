@@ -12,12 +12,30 @@ Risc
 https://en.wikipedia.org/wiki/ARM_architecture
 
 Data architecture
-data structures
-self-describing
-table, columnar, tabbed, csv
-related tables, relational db
-xml
-object-oriented 
+  * data structures
+  * self-describing
+  * table, columnar, tabbed, csv
+  * related tables, relational db
+  * xml
+  * object-oriented 
+
+Software architecture
+
+Distributed systems
+  * master-slave
+  * peer-to-peer
+  * client-server
+
+Client-server systems for the web
+  * HyperText Transport Protocol (http) - implemented by Apache file server.  clients use html, css, and javascript, making async calls to the server to retrieve files.
+  * Async javascript and XML (ajax) - While http usually means downloading whole files. In an ajax architecture, the javascript can make multiple calls to custom programs written within Apache plugings to   
+  * web sockets (ws) - implemented by a custom server.  Clients establish a synchronous connection with the server for a two-way conversation.
+
+linux daemon
+
+sockets, ipc, shared memory
+
+multiprocessing
 
 
 ==== Distributed Intelligence ====

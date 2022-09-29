@@ -1,0 +1,67 @@
+====== Chat ======
+
+===== definitions =====
+**chat client and server** - The server accepts connection requests from the clients and organizes them into conversations or chatrooms.  Each client sends messages to the server, and the server forwards those messages to appropriate clients.
+
+**socket** - A chat client and server can be implemented using sockets.  The clients can be implemented with a GUI or using the terminal command line.  This requires a network, but not the internet.
+
+**webchat** - must run over the internet with the client chat window in a browser page, and it must use TCP and HTTP.  Prior to 2010, webchat would require client polling, constantly checking for new messages.
+
+**websocket** - Since 2010, with HTML5, the websocket protocol enables full-duplex (two-way) communications over the internet, after a connection between client and server.
+
+**WAMP** - Web Application Messaging Protocol.  Two additional protocols built on top of websockets.
+  * Publish and Subscribe (PubSub)
+  * rRPC - routed Remote Procedure Calls
+
+===== websockets =====
+  * part of HTML5
+  * implemented in browsers since 2010,2011
+  * supported by nginx since 2013
+  * predecessor: Comet
+  * full-duplex communication
+  * two new URI schemes
+    * ws//: using port 80
+    * wss//: using port 443, secure
+  * browser developer tools inspect handshake and frames
+  * not restricted by same-origin policy
+  * demos at websocket.org, like [[wss://echo.websocket.org]]
+
+===== Python websockets =====
+
+websockets is a python package maintained by PyPI.<br/>
+  $ pip install websockets<br/>
+  $ import websockets
+
+websockets requires asyncio
+
+===== websocket hosting at A2 =====
+
+
+===== Examples and demos =====
+
+
+===== commercial servers =====
+
+Pusher
+  * a service providing webchat capabilities for your website
+  * Requires
+    * virtualenv - python package
+    * flask - python package, web framework
+    * jquery - 
+
+websockets
+  * SocketIO - client-side api
+  * flask - python web framework
+  * flask_socketio, allow flask to use full-duplex low-latency comm protocols like websockets
+
+tornado
+
+
+Note
+  * wifi = wlan
+
+Communications without a hub or router.
+  * wifi p2p, aka wifi direct, used by Tello
+  * Wireless ad hoc network (WANET)
+  * Mobile ad hoc network (MANET)
+  * Flying ad hoc network (FANET)

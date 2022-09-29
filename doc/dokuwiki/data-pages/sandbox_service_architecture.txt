@@ -1,0 +1,51 @@
+====== sandbox service architecture ======
+
+==== directory architecture ====
+
+    /webprod                                    - root for all apps
+    /webprod/sandbox                            - git clone location
+    /webprod/sandbox/sandbox/                   - repository
+    /webprod/sandbox/sandbox/.git
+    /webprod/sandbox/sandbox/html               - document root
+    /webprod/sandbox/sandbox/html/svc.php       - php service entry point
+    /webprod/sandbox/sandbox/html/pvc/wsgi.py   - python service entry point
+    /webprod/sandbox/sandbox/python             - python services
+    /webprod/sandbox/sandbox/php                - php services
+
+==== url architecture ====
+    https://sandbox.voyc.com/index.php           - main page
+    https://sandbox.voyc.com/svc/getalpha        - php service
+    https://sandbox.voyc.com/pvc/getsmart        - python service
+
+Comm is the javascript object used to call services, both php and python.
+It has one public method: request().
+
+PHP entry point \\
+dot htaccess url rewrite changes /svc/ to svc.php, the entry point
+
+    https://sandbox.voyc.com/svc/
+    webprod/sandbox/sandbox/html/svc.php
+
+Python entry point \\
+a2hosting, cPanel, Setup Python App, sets entry point to
+
+    https://sandbox.voyc.com/pvc/
+    webprod/sandbox/sandbox/html/pvc/wsgi.py, function application()
+
+test Comm
+  * python pvc
+  * pack and unpack complex javascript objects
+  * equally effectively in php and python
+  * set of stock test services, svc and pvc
+  * to test various aspects
+  * guru echo
+  * mai database read
+  * push complex object for database update
+  * plot graphic and display in webpage
+
+test example services
+  * svc/echo: PHP GET, receive JSON
+  * pvc/echo: Python GET, receive JSON
+  * svc/getmai: PHP POST, send JSON, receive JSON
+  * pvc/getmai: Python POST, send JSON, receive JSON
+

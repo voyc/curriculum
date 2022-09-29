@@ -1,0 +1,11 @@
+====== Model ======
+
+todo
+  * do not allow user profile if user not logged in, do not attempt to read profile
+      * remove cancel button from user profile page?
+      * enable save button only when data has been entered
+  * browserhistory, first page has no name= param, so back button to that page does not redraw the page
+  * internationalization: language menu, strings, dates, currencies
+      * voyc.Str.strings, window['voyc']['strings']['en']
+  * AB Testing
+  * user roles

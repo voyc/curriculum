@@ -1,0 +1,39 @@
+====== Wordnet Adjective Clusters ======
+
+Evidently, all this cluster business may be present in the original lexicographer files, but NOT in the data.adj file.
+
+In the data.adj file
+  * non-satellite synsets are identified with pos "a"
+  * satellite synsets are identified with pos "s"
+  * head and satellite synsets have "&" (similar to) pointers to each other
+
+adjective cluster \\
+A group of adjective synsets that are organized around antonymous pairs or triplets. An adjective cluster contains two or more head synsets which represent antonymous concepts. Each head synset has one or more satellite synsets .
+
+direct antonyms \\
+A pair of words between which there is an associative bond resulting from their frequent co-occurrence. In adjective clusters , direct antonyms appears only in head synsets .
+
+indirect antonym \\
+An adjective in a satellite synset that does not have a direct antonym has an indirect antonyms via the direct antonym of the head synset .
+
+head synset \\
+Synset in an adjective cluster containing at least one word that has a direct antonym .
+
+satellite synset \\
+Synset in an adjective cluster representing a concept that is similar in meaning to the concept represented by its head synset .
+
+Adjectives are arranged in clusters containing head synsets and satellite synsets. Each cluster is organized around antonymous pairs (and occasionally antonymous triplets). The antonymous pairs (or triplets) are indicated in the head synsets of a cluster. Most head synsets have one or more satellite synsets, each of which represents a concept that is similar in meaning to the concept represented by the head synset. One way to think of the adjective cluster organization is to visualize a wheel, with a head synset as the hub and satellite synsets as the spokes. Two or more wheels are logically connected via antonymy, which can be thought of as an axle between the wheels.
+
+
+Adjective may be organized into clusters containing one or more head synsets and optional satellite synsets. Adjective clusters are of the form:
+
+  [ 
+  head synset 
+  [satellite synsets] 
+  [-] 
+  [additional head/satellite synsets] 
+  ] 
+
+Each adjective cluster is enclosed in square brackets, and may have one or more parts. Each part consists of a head synset and optional satellite synsets that are conceptually similar to the head synset's meaning. Parts of a cluster are separated by one or more hyphens (- ) on a line by themselves, with the terminating square bracket following the last synset. Head and satellite synsets follow the syntax of basic synsets, however a "Similar to" pointer must be specified in a head synset for each of its satellite synsets. Most adjective clusters contain two antonymous parts. See wngloss(7WN) for a discussion of adjective clusters, and Special Adjective Syntax for more information on adjective cluster syntax.
+
+Synsets for relational adjectives (pertainyms) and participial adjectives do not adhere to the cluster structure. They use the basic synset syntax.

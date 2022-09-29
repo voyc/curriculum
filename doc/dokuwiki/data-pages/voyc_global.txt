@@ -1,0 +1,18 @@
+====== voyc global ======
+
+todo:
+  * cron scripts are updated; push to git, pull to dev, copy to local
+  * find original create database sql
+  * make when a separate project
+  * make timeline a separate project
+  * resolve timeline bars, fgd vs bkd, current vs historical, sync prod and diff
+  * make work with touch and android
+  * support for closure compiler
+  * implement jslib submodule, esp Observer
+  * focus on the high-level timeline for plunder
+  * write about page with list of other projects
+  * why is there a warning about noapikeys?
+  * remove email address from welcome screen
+  * reimplement post@voyc.com
+  * remove copyright from dashboard and from all source code
+

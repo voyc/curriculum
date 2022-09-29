@@ -1,0 +1,259 @@
+====== Navigation Trigonometry ======
+
+This page provides knowledge to backup the functions in **nav.py**
+
+see also: https://docs.google.com/spreadsheets/d/1LO3Nu2v9EHzgbMTeB59HaXaxw9gm1k48L6JluEeYWGw/edit#gid=0
+
+=== route ===
+a series of lines and arcs between points on a map
+
+=== point ===
+can be defined relative to a center point in two ways:
+  * by cartesian coordiates: x,y
+  * by polar coordinates: theta, radius
+
+=== line ===
+line can be represented in two ways:
+  + by two points
+  + by starting point, heading, and length
+
+an arc can be represented as:
+  * two thetas, radius, direction (clockwise or counter-clockwise)
+
+===== Drop a Triangle =====
+
+Example navigation problem: **given a line AB, find the heading and length of the line**
+
+Solution:
+
+Add point C to make a right triangle ABC, such that
+  * point C is the right angle c
+  * line AB is the hypotenuse
+  * angle a at point A is parallel to the x-axis, with length dx from point C
+  * angle b at point B is parallel to the y-axis, with length dy from point C
+
+From the two points A,B, we know:
+  * angle c = 90 degrees
+  * dx = xB - xA, horizontal vector, length of the adjacent side
+  * dy = yB - yA, vertical vector, length of the opposite side
+  * slope of AB = dy/dx, the ratio of vertical over horizontal
+
+Now using the equations below we can calculate the remaining factors:
+  * length of AB = square root of (dx squared + dy squared) # pythagorean theorem
+  * angle a = arcsin(dy / AB)   # inverse trigonometry functions
+  * angle b = arccos(dx / AB) 
+
+===== Trigonometry Functions =====
+
+The primary functions return the ratio of the sides, per "soh cah toa".
+  * sin(a) = opp/hyp
+  * cos(a) = adj/hyp
+  * tan(a) = opp/adj
+
+The inverse functions return the angle, given the ratio of the two sides. 
+  * a = arcsin(opp/hyp)
+  * a = arccos(adj/hyp)
+  * a = arctan(opp/adj)
+
+===== Pythagorean Theorem =====
+
+        sq(dx) + sq(dy) = sq(hyp)  
+
+===== Law of Sines =====
+
+The ratios of each side over the sine of its opposing angle are equal.
+
+                opp(a)/sin(a) = opp(b)/sin(b)  = opp(c)/sin(c)
+
+see: https://www.mathsisfun.com/algebra/trig-sine-law.html 
+
+===== Terms =====
+
+^ object           ^ standard                             ^ indicates                  ^ system        ^
+| point            | (x,y)                                | place                      | cartesian     |
+| line             | (A, B)                               | place, direction, distance | cartesian     |
+| vector           | [dx,dy]                              | direction, distance        | cartesian     |
+| length           | signed float                         | distance                   | cartesian     |
+| slope            | signed float                         | vague direction            | cartesian     |
+| angle            | radians (or degrees)                 | vague direction            | polar         |
+| theta            | radians (or degrees or piscalar      | direction                  | polar         |
+| quadrant         | integer (1-4)                        | vague direction            | polar         |
+| ray              | center, theta                        | direction, place           | polar         |
+| polar point      | center, theta, radius                | place                      | polar         |
+| arc              | center, theta1, theta2, radius, wise | place, direction, distance | polar         |
+| wise             | 'cw' or 'ccw'                        | rotational direction       | polar         |
+| heading          | degrees                              | direction                  | mercator map  |
+| course           | degrees                              | direction                  | mercator map  |
+| bearing          | degrees                              | direction                  | mercator map  |
+| relative bearing | degrees                              | direction                  | mercator map  |
+
+
+
+        Heading - direction the vehicle is pointing
+        Course - direction the vehicle is moving, may be different from heading due to drift
+        Bearing - direction to destination or navigational aid
+        Relative bearing - angle between heading and bearing
+
+        angle - the angle within the right triangle, always < 90 degrees (in radians)
+        theta - the obtuse angle indicating direction within the circle (in radians)
+
+===== Units Conventions =====
+  radians - 2pi to a circle, oriented at 3 o'clock
+  compass degrees - 360 to a circle, oriented to 12 o'clock
+
+  heading, course and bearing are given in compass degrees
+  relative bearing is given in degrees
+  angle and theta are given in radians
+
+  an inverse function undoes the function
+  arctangent is the inverse of tangent
+
+  ratio = tan(angle)      # tangent takes an angle and returns a ratio 
+  angle = arctan(ratio)   # arctangent takes the ratio and returns the angle
+  slope = tan(theta)      # toa, ratio of opposite to adjacent, y/x, slope      
+  theta = arctan(slope)   # inverse of tangent, get the angle theta from the slope  
+  
+  slope does not distinguish between lines going up or down
+  positive slope indicates a direct relationship between x and y
+  negative slope indicates an inverse relationship between x and y
+  negative change in y means line is going down, else up 
+  negative change in x means line is going left, else right
+
+  theta does distinguish between lines going up or down
+  theta is an obtuse angle between 0 and 2pi
+  theta between 0 and pi indicates the line is going up
+  theta between pi and 2pi indicates the line is going down
+
+  . -dy, -dx => +slope, down to the left , quadrant 3 ll
+  . +dy, +dx => +slope, up   to the right, quadrant 1 ur
+  . -dy, +dx => -slope, down to the right, quadrant 4 lr
+  . +dy, -dx => -slope, up   to the left , quadrant 2 ul
+
+  theta should always be positive
+  arctan(negative slope) returns a negative theta
+
+  as slope approaches vertical from the right it approaches infinity
+  as slope approaches vertical from the left it approaches -infinity
+
+  an angle can be expressed as radians or degrees
+  let angle refer to the angle within a right triangle, always < 90 degrees or pi/2
+  let theta refer to the obtuse angle relative to the right-side x axis
+
+  slope = ratio dy/dx = tan(angle)   # tan() returns a ratio
+  angle = arctan(dy/dx)              # arctan() returns an angle in radians
+
+  . -90 degrees < angle < +90 degrees 
+  .  -1.57 rads < angle < +1.57 rads      # pi/2 = 1.57
+
+  if dy/dx is negative, arctan(dy/dx) is negative (in quadrants 2 and 4)
+
+  Summary
+        slope -> angle -> theta -> heading
+
+  sides -> ratio -> angle -> theta -> heading
+  dx,dy -> dy/dx -> arctan() -> theta -> heading
+  sides = dx,dy
+  ratio = dy/dx
+  angle = arctan(ratio)
+  theta = thetaFromAngle(angle,dx,dy)
+  heading = headingFromTheta(theta)
+
+  given a line AB
+  where
+    slope is the ratio of dx,dy,  between -inf and +inf
+    angle is the angle of our line to the x-axis, between -pi/2 and +pi/2 in radians
+    theta is between +=2pi radians, oriented to horizontal axis pointing right
+    heading is between 0-360 degrees, oriented to straight up north
+    quadrant is 1,2,3, or 4
+
+   .---slope--->    angle-> -----theta---->  heading   quadrant
+                             rads   *pi degr  
+  .+inf +dy / 0dx     1.57   1.57  0.50   90        0   vertical north 
+      1 +dy / +dx     0.79   0.79  0.25   45       45   ur quadrant 1 
+      0 0dy / +dx        0   0     0       0       90   horizontal east 
+     -1 +dy / -dx    -0.79   5.50  1.75  315      135   lr quadrant 4 
+  .-inf -dy / 0dx    -1.57   4.71  1.50  270      180   vertical south     
+      1 -dy / -dx     0.79   3.93  1.25  225      225   ll quadrant 3
+      0 0dy / -dx        0   3.14  1.00  180      270   horizontal west
+     -1 +dy / -dx    -0.79   2.35  0.75  135      315   ul quadrant 2
+
+===== Cartesian vs Polar Coordinates =====
+        cartesian coordinate point: x,y
+        polar coordinate point: center, theta, radius
+
+polar coordinates
+
+        as if, looking at a globe at the north pole
+
+        picture a globe
+        rotatated so that you are looking down on the north pole
+        the prime meridian is on the right, and the international dateline is on the left
+        that means the meridians are going counter-clockwise from 0 to 180
+        if you go counterclockwise, the meridians are -1 to -180
+
+        therefore, 
+        theta is always positive
+        angle can be negative or positive
+        theta originates at the positive x-axis
+        angle originates at the x-axis, either negative or positive
+        angle is relative to the quadrant
+        theta is relative to the whole circle
+
+        to calculate 
+        drawing counter-clockwise, the angle will be negative 
+        draw from 40 degrees to -o
+        a point can be positioned 
+        
+        a line between two points can only be drawn one way
+        an arc between two points can be drawn two ways: cw and ccw
+        
+        wise = cw
+        wise = ccw
+        cw = -1
+        ccw = 1
+
+        A, B, center, radius, wise
+        A, B, thetaA, thetaB, center, radius, wise
+
+        can you calculate a center from two points?
+                yes if you know the radius
+        can you calculate the radius?
+                yes if you know the center
+        it would be the point where the lengths are equal
+        and there would be two possible points
+        
+
+if dx is 0, we don't know if the line is going up or down
+options
+        look at the last known heading
+        don't allow identical x values in the cones array
+                also scan left and right values for match
+
+===== Angle vs Theta =====
+        both are given in radians 
+        theta indicates direction, angle does not
+        in fact, angle can indicate one of four thetas, depending on quadrant
+        the signs of dx,dy are required to determine quadrant
+https://socratic.org/questions/how-do-you-convert-3-4-into-polar-coordinates
+
+===== Heading vs Theta =====
+        heading and theta both indicate direction within a circle
+
+        heading is given in compass degrees, 0 to 360, clockwise
+        theta is given in radians, 0 to 2pi, counter-clockwise
+        
+        theta is used in the matplotlib Arc() function
+        heading is used by humans
+
+        conversion functions:
+                theta = thetaFromHeading(heading)
+                heading = headingFromTheta(theta)
+
+line AB has slope, length, heading
+
+thetafrom, theta2
+difference between the two thetas, as a percentage of total theta for the circle 2pi
+
+total length of the circle = circumference = 2pir
+
+pct_thetadiff * circumference

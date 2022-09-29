@@ -1,0 +1,159 @@
+====== Plunder ======
+
+resources
+  * Game feel by Steve swink
+
+submodules
+  * account
+    * user login/ token for db access, needed for manual editing, drawing, voting
+    * jlog, config
+    * svc/comm framework
+    * browser history
+    * observer
+  * fx, now separate project
+
+todo
+  * messaging
+      * alerts, modeless, modal, show, hide, overlaying gameboard
+  * sprite
+      * walking
+      * swimming
+  * Separate button for cheat, icon?
+  * Map scroll animation
+  * Restart game after cheat
+  * choose db
+      * db plunder exists but is empty
+      * db voyc schema plunder has tables used only for generating JS files.  No online tables.
+      * use db plunder, schemas plunder and account
+  * to fix built-bug
+      *restructure without the global pointers, like voyc.plunder.world.
+      *use sub/pub messaging
+  * remove onload.js
+  * move onload from index.html to plunder.js
+  * new jslib
+      * observer replaces dispatcher
+  * these three files are dependent on dispatcher/observer.  Can this dependency be eliminated?
+      * fx/asset.js
+      * fx/sound.js
+      * jslib/scriptloader.js
+  * Hide features until hero discovers them.
+  * platform issues
+      * uncompiled
+          * Cheat mode, touch comes thru hittest twice
+          * setfocus to the map, sometimes works, sometimes not
+          * cheat mode OFF, where should game start, get & time coordinates
+      * compiled
+      * android chrome
+          * during loading, circular arrow rotates off center
+          * Cheat mode OFF, does not go into game mode
+  * polygon editing
+      * must be in context of whole map	
+      * select one item for editing
+          * Alt-K on item in WhereamI
+      * draw as line connecting points, showing first/last/middle
+      * point editing
+          * select one
+              * drag/drop
+              * delete
+              * insert after (not allowed on last point)
+          * select multiple, one at a time, or with rectangle
+              * drag/drop
+              * delete
+      * display json string
+  * Stormfall advancement involves discovery, building, saving money
+  * hittest empire must happen when empire appears, even if hero has not moved
+  * draw presentday
+  * hittest presentday
+  * save/restore game
+      * implement account
+      * table game (one record for each saved game)
+  * describe treasure in cheatmode
+  * make a unique icon for each point, invoke crowd-sourcing
+  * data voyages
+      * jump on a ship with Captain Cook
+      * join a caravan with Marco Polo
+      * join up with ceasar's army
+      * join up with genghis khan
+  	* Warp for Alexander, Genghis, Marco, cook, 
+  * implement pinch for zooming in cheatmode
+  * sid meiers Civilization uses hexagon tiles
+  * travel through oceans
+  * detect whereami in oceans
+      * if not on land, it must be water. hittest against land.
+  * medium and low mountains, spritesheet for patterns
+  * chrome warning, settimeout > 50ms within event handler
+  * animated move/zoom world
+  * animated redraw
+  * cities with start date
+
+more data		
+  * jetstream (ocean currents)
+  * get the data from GeaCron
+  * add lakes including Caspian Sea [done already I think]
+  * Tiruvannamalai
+  * Mono stone temple near Mumbai 10th c
+  * taj mahal
+  * mughal
+  * the genre is usually set during the Tokugawa era (1600–1868). The samurai film he
+  * Train
+  * Telegraph
+  * Radio
+  * TV
+  * Printing press
+  * Henry Ford
+  * Thomas Edison
+  * First movie (France?)
+    *  D.W. Griffith
+    *  1890's
+    *  1905 - The Nicklodeon in Pittsburg, first permananent film-only theatre
+    *  1910 - actor's screen credits
+    *  1920's - era of highest output: 800 features per year
+    *  1927 - The Jazz Singer, first talkie
+    *  1929 - all talkies
+  * England
+      * King Arthur 
+      * Ivanhoe 
+      * Richard iii 
+      * Robin hood
+      * Beowulph
+      * Shakespeare 1600
+      * Sir Walter Scott 1820
+      * Saxons from Germany.
+      * Normans from France.
+      * But it was not until the reign of Edward the Third that the mixed language, now termed English, was spoken at the court of London, and that the hostile distinction of Norman and Saxon seems entirely to have disappeared.
+          * Robin Hood, aka locksley 
+          * Friar Tuck
+          * Little John
+          * Richard I the lion hearted
+          * Brian Bois de Gilbert, Templar
+          * Cedric the Saxon
+          * Rowena
+          * Wilfred of Ivanhoe
+          * Issac of York
+          * Rebecca
+  * hampi, karnataka
+      * Vijaya
+      * Vijayanagara Empire 1343-1565 
+      * Hampi predates and lies within the city of Vijayanagara, which in 1500 had a population of half-million, 2nd largest city to Beijing, 3x the pop of Paris.
+  * treasures
+      * UNESCO heritage sites
+      * Wonders of the world
+      * A nawab or nawaab (Urdu: نوّاب‎) is an honorific title ratified and bestowed by the reigning Mughal emperor to semi-autonomous Muslim rulers of princely states in South Asia. "Nawab" usually refers to males; the female equivalent is "begum" or "nawabbegum".
+      * Kim by Rudyard Kipling
+  * single features
+      * AH1, part of Asian Highway Network, aka Grand Trunk Road
+      * Khyber pass: Intersection of border and AH 1, Between Kabul and Islamabad, Between Jalalabad and Peshawar
+      * Everest
+  * empire
+      * Timur == Timurland == Tamerlane, 3 generations after Genghis, 7 generations before Babar
+      * Babur invaded India in 1526, captured Delhi, in his 40s, died 5 years later
+      * Rajput: Ethnic name, Pre mughal ruling class, Caste name
+      * Mughal Empire: 1526, Babar, Akbar, British Raj 1858
+      * Awadh - state including Agra and Lucknow, during mughal empire. British say Oudh. The Nawabs were the aristocratic rulers of the area. The maximum being the top nawab.
+      * 1350 Delhi Sultanate
+      * Maurya period (c. 300 BC) 
+      * in 1966, found in delhi: an inscription of the Mauryan Emperor Ashoka (273–235 BC)
+      * ‘But I – descendant of the great Timur though I am – what have I? Just Ferghana, a kingdom not two hundred miles long or one hundred wide. Look at it – a place of sheep and goats grazing in valleys ringed on three sides by mountains.’ He flung out an arm towards the soaring, cloud-circled peaks of Mount Beshtor. ‘Meanwhile three hundred miles to the west my brother rules golden Samarkand, while south across the Hindu Kush my cousin holds wealthy Kabul. I am their poor relation to be snubbed and despised. Yet my blood – your blood – is as good as theirs.’
+      * 02 - The British acquired Bombay in 1661 and Calcutta in 1690 opening the spice trade to a much wider market.
+      * 03 - A style of curry powder was introduced to UK in seventeenth century along the lines of the popular 'kitchen pepper' used in recipes since 1682 with ginger, pepper, cloves, nutmegs and cinnamon.
+

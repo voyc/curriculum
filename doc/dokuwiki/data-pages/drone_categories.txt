@@ -1,0 +1,130 @@
+====== Drone Categories ======
+
+Categories
+  * Camera
+  * Follow me
+  * FPV
+  * Educational
+
+Components
+  * Sensors
+  * Communications (Comms)
+
+Size
+  * Prop size
+  * Frame size
+  * Miniquad, microquad
+  * Indoor/outdoor
+  * Foldable, pocket
+
+Use
+  * Outdoor athlete
+  * Sports videographer
+  * Cinematography
+  * Industrial
+  * Military
+  * Delivery/transport
+  * Search and rescue
+
+
+We tend to use the word "drone" to mean quadcopter.\\
+But actually it refers to any unmanned vehicle.
+
+== Type of Drones ==
+  * drone = unmanned vehicle (UV)
+    * unmanned aerial vehicle (UAV)
+      * copter, one or more rotors
+          * helicoptor, one rotor
+          * multirotor
+            * quadcopter, 4 rotors
+            * hexcopter, 6 rotors
+            * octocopter, 8 rotors
+      * plane, fixed wing
+      * vertical takeoff and landing (VTOL), some combination of fixed wing and rotors
+    * unmanned water-based vehicle (UWV)
+      * boat, surface water
+      * submarine, under waterV
+    * unmanned land-based vehicle (ULV)
+      * rover
+        * wheels
+        * tracks
+        * legs
+    * animal shapes: bird, snake, bee, fish
+    * humanoid, looks like a human
+    * android
+    * cybernaut
+
+=== Degree of Autonomy ===
+
+
+How dependent is the drone on his human overlord?
+
+== remote control, radio control ==
+An unmanned vehicle can be completely controlled by a human pilot operating from a distance.
+
+== hybrid ==
+The vehicle is capable of acting on its own, but sometimes receives 
+
+
+Airplanes have long had an "autopilot".\\
+The human pilot has complete control of the aircraft, but can turn the autopilot on for periods of stable flight.\\
+When the autopilot is on, the plane might be said to be unmanned temporarily.\\
+
+remote controlled
+
+radio controlled
+  FPV
+  autonomous
+
+human control with optional autopilot
+
+combination of human remote control and autonomy
+
+Tesla automobiles, the human can drive the car if he wants, or he can take advantage of autonomous features.
+
+In a sailboat, in a steady sea, the skipper can tie the tiller down, and lean back to smoke his pipe. 
+
+ 
+
+== fully autonomous ==
+
+A vehicle is completely on its own, with no human supervision.\\
+This is theoretically possible, but has not yet been demonstrated.\\
+At the least, humans must build the thing, program it, turn it on, and fix it if it breaks.\\
+
+This requires motivation.
+An that is getting into some advanced AI concepts.j
+
+
+In an automous car, the car does not know where to go
+A human must give the UAV instructions.
+
+Imagine an Uber car. 
+Its motivation is to earn money by giving people rides.
+To some extent it can choose which geographic regions to operate it, 
+which customers to accept or reject.
+It must keep itslef 
+
+In order of priority.
+  - Keep yourself safe.  Stay out of bad neighborhoods.  Avoid customers and passersby who might try to steal or vandalize you.
+  - Keep yourself charged.  When the battery gets low, proceed to the nearest charging station and recharge yourself.
+  - Earn as much money as possible by giving people rides.
+
+This brings to mind...
+
+=== Isaac Asimov's Three Rules of Robotics ===
+
+First Law. 
+A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+
+Second Law. 
+A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
+
+Third Law. 
+A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+
+|  -- from the //Handbook of Robotics, 56th Edition, 2058 A.D.//, described in Asimov's 1942 short story "Runaround" (included in the 1950 collection //I, Robot//)|
+
+Notice that a robot programmed in this way is NOT fully autonomous.\\
+It has no motivations other than to obey humans.\\
+

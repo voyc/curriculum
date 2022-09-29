@@ -2,6 +2,21 @@
 
 [[Virtual Robotics]]
 
+Robotics Components
+
+  * [[Drones]]
+  * [[Batteries]]
+  * [[Processors]]
+
+[[Object Detection]]
+
+[[Processors]]
+
+[[Controller Theory]]
+
+[[chat]]
+
+
 A cyborg (/ˈsaɪbɔːrɡ/), a portmanteau of "cybernetic organism", is a being with both organic and biomechatronic body parts. The term was coined in 1960 by Manfred Clynes and Nathan S. Kline.[1]
 
 The term cyborg is not the same thing as bionic, biorobot or android; it
@@ -9,10 +24,6 @@ The term cyborg is not the same thing as bionic, biorobot or android; it
 biomimetic
 
 biomimicry
-
-
-
-
 
 Swarm
 
@@ -44,17 +55,11 @@ Servo
 The word "servo" usually implies position control, and is usually controlled by sending a PCW signal
 to the device.
 
-* an electric motor is built with a specific torque and speed
-
-* use a gearbox to choose desired ratio between torque and speed: more torque, less speed
-
-* a servo can be also defined by it's rotation: 360, 504, 663, 840, 1260, or continuous.
-360 is a single rotation
-
-* control: speed, position, both
-
-* use a gearbox to choose blend of rotation, torque, speed
-
+  * an electric motor is built with a specific torque and speed
+  * use a gearbox to choose desired ratio between torque and speed: more torque, less speed
+  * a servo can be also defined by it's rotation: 360, 504, 663, 840, 1260, or continuous. 360 is a single rotation.
+  * control: speed, position, both
+  * use a gearbox to choose blend of rotation, torque, speed
 
 Matching Battery to Motor
 

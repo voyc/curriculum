@@ -1,0 +1,48 @@
+====== Business Ideas ======
+
+Create a company to:
+  * design and build electric scooters
+  * design and manufacture smart batteries
+  * provide electric surfboards for hourly rental, in Pattaya, Phuket, Koh Samui
+  * provide solar panel sales and installation
+  * provide a UL-like service for green tech
+  * provide a global simcard for travelers
+  * design and manufacture scooter helmet with drone and hud
+
+Own and operate a:
+  * guesthouse, food court, coffeeshop
+  * art gallery
+  * eco surf resort
+  * surf wave machine
+  * nursery, selling fruit tree seedlings
+  * makerspace
+  * a chain of tattoo removal parlors
+
+Create a website to:
+  * play music for dance workouts, slider for bpm, search by bpm
+  * out-of-copyright music portal
+  * personal royalty payment system
+    * real-time accounting reports
+    * date of each payment
+    * anonymous, to avoid govt subpoenas
+    * keyed by imdb, cddb, books?
+    * recommended payment amount tied to a comparative cost-of-living index by region
+  * language teaching software
+    * get funding and support from Unesco Mother Tongue project
+  * Voting system, for elections, also congressional bills by line item
+  * DIY college
+  * Projects:
+  * Sketch globe with multiple projections
+  * Add spreadsheet to flash
+  * replace google docs with wiki, drawing, equations, etc
+
+Create a:
+  * kitchen garden for fruits, vegetables, herbs.
+  * holographic globe software for Oculus Quest
+  * group of volunteers to add docs to the Thai National Corpus
+
+Teach:
+  * media literacy
+  * english
+  * college prep
+

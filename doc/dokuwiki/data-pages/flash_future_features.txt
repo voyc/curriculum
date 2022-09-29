@@ -1,0 +1,7 @@
+====== Flash Future Features ======
+
+[[Flash Auto-Score]]
+
+[[Flash AI Parameter Optimization]]
+
+[[Flash Game Theory]]

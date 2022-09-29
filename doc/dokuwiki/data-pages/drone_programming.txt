@@ -1,0 +1,250 @@
+====== Drone Programming ======
+
+see spreadsheet of Quadcopter software: \\
+https://drive.google.com/drive/folders/0ByidsAQcVcUUOHpFZzFsaThTazg?resourcekey=0-mSHd_O56fPVihNa7uVd_bw
+
+
+===== Flight Controller (FC) Firmware =====
+
+Open Source FC firmware, onboard
+
+^ Name        ^ fork*^ FPV ^ Autonomous ^                                                    ^
+| Betaflight  | Yes  | Yes |    No      | Most popular, much supported hardware, many users. |
+| Cleanflight | Yes  | Yes |    No      | Ancestor of betaflight, now the same as.           |
+| Flight One  |  No  | Yes |    No      | Latest version: FalcoX. Easy setup.                |
+| KISS        |  No  | Yes |    No      | Hardware specific KISS hardware, pricey.           |
+| EmuFlight   | Yes  | Yes |    No      |                                                    |
+| INAV        | Yes  | Yes |   Yes      | Autonomous flight on Betaflight hardware.          |
+| Ardupilot   |  No  |  No |   Yes      | Not good for small drones.                         |
+| Silverware  |  No  | Yes |    No      | Specific for Tiny Hoops.                           |
+ 
+* originaly forked from Betaflight.  This means it runs on all the same hardware as Betaflight. 
+
+Comparative Review, Josha Bardwell \\
+https://www.youtube.com/watch?v=xTurdXkSJsg
+
+Comparative Review, Pawel Spychowski \\
+https://quadmeup.com/what-is-the-best-flight-controller-firmware-betaflight-ardupilot-or-inav/
+
+PID Tuning
+
+==== ArduPilot ====
+
+hardware : Pixhawk 4 mini, and GPS module
+
+First Experience
+https://www.youtube.com/watch?v=0DnflN9C3cc
+
+Mission Planner software to configure ArduPilot
+
+development began on Arduino
+
+Ardupilot FPB with DJI \\
+How to setup Arduino \\
+https://www.youtube.com/watch?v=k8GC1UFGVos
+
+with DJI
+F745, F765, or F405
+
+4S lithium ion
+
+ArduPilot used MAVLink
+
+
+Tracer and Crossfire
+
+INAV loiter is really good, but ArduPilot is better
+
+surveilance
+
+EKF 3, Extended Kalman Filter 
+
+INAV and Betaflight have horizon inertial drift, ArduPilot does not
+
+receiver, crossfire, MAVLink
+
+motor mixer
+
+5 inch drone
+
+autotune
+
+PID tune
+
+OSD = on screen display, telemetry data laid over the video feed, similar to HUD
+
+CRSF = crossfire, proprietary two-way radio by Team Blacksheep, from controller to drone
+
+
+===== Intro =====
+
+
+How do you fly a drone from a program?
+
+Onboard, in the FC or an attached microcomputer.l
+
+Offboard, from a computer on the ground.
+
+
+inav firmware on the fc.  Does it have an API?
+
+Arduino outputs PWM codes.  What kind of codes does the radio controller transmit?
+
+RC cars receive PWM codes.
+
+https://www.instructables.com/id/Computer-Controlled-Quadrotor-the-Easiest-Way/
+
+===== Platforms =====
+
+Ground off-board
+  *  Linux
+  *  Windows
+  *  Mac
+  *  Android
+  *  iOS
+
+UAV onboard
+  *  FC
+  *  Arduino
+  *  Raspberry Pi
+  *  Jetson Nano (Nvidia)
+  * Manifold 2 (DJI)
+
+
+dronekit
+
+https://www.jetsonhacks.com/2016/04/11/gtc-2016-flying-robot-demo/
+
+FrSky makes
+  * Taranis RC which runs 
+  * OpenTX firmware which embeds
+  * Lua scripting language
+
+OpenCV, computer vision, 2500 algorithms, mostly non-neural-net
+
+SciKit, a python library, the name stems from the notion that it is a "SciKit" (SciPy Toolkit), a separately-developed and distributed third-party extension to SciPy.  
+features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN.
+
+  * Real-time Image stitching
+  * Object detection 
+  * Navigation
+  * Controlling the aircraft
+
+Parrot
+  *  Ground SDK Mobile, iOS or Android
+  *  PDrAW, video player pipeline
+  *  OLYMPE, python SDK for drone and simulator
+  *  SPHINX, simulator based on Gazebo engine
+  *  3D Model, a blender model of the ANAFI drone
+  *  Freeflight, Android app to pilot your drone from your phone
+
+Gazebo, open source robotics simulator
+
+ArduPilot, open source autopilot software for any kind of vehicle
+
+MAVLink, micro aerial vehicle link\\
+
+  *  lightweight open source messaging protocol for communicating with drones. Enables both offboard and onboard communications (e.g. between a GCS and drone, and between drone autopilot and MAVLink enabled drone camera).
+  *  follows a modern hybrid publish-subscribe and point-to-point design pattern.
+  *  runs on numerous microcontrollers/operating systems (including ARM7, ATMega, dsPic, STM32 and Windows, Linux, MacOS, Android and iOS).
+  *  Allows up to 255 concurrent systems on the network (vehicles, ground stations, etc.)
+  * https://mavlink.io/en/about/overview.html
+
+
+Tello, demo with reading the camera, object detect, and fly the drone, in python.
+https://m.youtube.com/watch?v=vDOkUHNdmKs
+
+===== CoDrone =====
+  *  As in "code drone", from RoboLink, an educational drone designed to teach children to write code, no camera.
+  *  CoDrone, 
+  *  CoDrone Mini, $80, comes with RC, program in Blocky language
+  *  CoDrone Lite, $130, comes with BLE board, code in Snap language
+  *  CoDrone Pro, $180, comes with RC and Arduino-"compatible" board, code in python on an Arduino
+
+===== Dronecode, a Linux Foundation non-profit =====
+  *  PX4 Autopilot, open source flight control software
+  *  MAVLink, micro air vehicle communication protocol, open source
+  *  MAVSDK, open source MAVLink library with APIs for C++, Swift, and Python.
+  *  QGroundControl, open source GCS for Android, iOS, Windows, Mac, Linux.
+
+===== QGroundControl =====
+https://docs.qgroundcontrol.com/master/en/index.html
+
+vehicle must be running ArduPilot or PX4
+
+
+===== Robot Operating System (ROS) =====
+https://www.ros.org/
+
+Not to be confused with Real Time Operating System (RTOS), which refers to a category of OS designed for real-time, as opposed to time-sharing OS's like Linux.
+
+RTOS is a category, ROS is a specific product.
+
+
+===== DJI Software =====
+
+==== Onboard ====
+
+Manifold 2 - processor mounted on higher-end DJI drones
+  * Released in Nov 2015
+  * ARM chip plus Nvidia GPU
+  * Runs Ubuntu Linux
+
+SDK's
+  * Onboard SDK (OSDK) 
+    * https://developer.dji.com/onboard-sdk/documentation/introduction/homepage.html
+
+  * Payload SDK
+    * evidently an extension of the Onboard SDK
+    * "payload" refers to additional hardware attached to the drone for specific tasks:
+      * camera and gimbal
+      * spotlight
+      * sensors and detectors
+      * companion computer
+
+==== Offboard ====
+
+DJI Ground Control products run on Android and IOS. \\
+
+SDK's
+  * Mobile SDK
+    * used for developing Ground Station apps for IOS and Android
+    * as of 11 July 2022, discontinuing new dev for IOS, focusing on Android
+    * includes UX SDK
+
+  * UX SDK
+    * included in Mobile SDK v4.0 and later
+    * three components: Widget, Collection, Panel
+
+  * Windows SDK
+    * evidently a port of the Mobile SDK to Windows
+    * supports only Mavic 2 and Mavic Air Wifi mode
+
+Here is a video made by a company that builds custom apps using DJI SDKs.
+https://www.youtube.com/watch?v=2uy7j_3oTQA
+
+===== software stack =====
+
+  * Ground station
+  * Autopilot ground
+  * Communications
+  * Autopilot onboard
+  * FC firmware
+
+===== distributed processing =====
+
+Onboard
+  * FC
+  * Microcontroller
+
+Offboard
+  * GCS
+  * RC
+  * Vrx
+
+Autopilot
+  * Inputs: video, telemetry, human requests
+  * Output: flight control commands
+
+Aerial surveillance drone
+

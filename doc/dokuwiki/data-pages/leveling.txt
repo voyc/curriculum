@@ -1,0 +1,84 @@
+====== Mai Leveling ======
+
+===== Recommendation =====
+
+A typical recommendation engine would choose stories with similar content.
+We leave that to the student to judge by reading the story titles.
+
+Leveling is one of the tools we use.
+
+student: vocabulary size, average level \\
+each story: average level, number of mastered words, number of new words, ratio, total number of words
+
+find stories with words that the student should know by now to be at this level.
+
+
+Goal.  Introduce vocabulary to the student gradually, more common words first, more advanced words later. \\
+Always reinforcing and building upon what the student already knows.
+
+totally wrong.  stories are recommended based on specific vocabulary comparison of known and unknown words.
+
+leveling is a vague way of sorting stories and words and students and choosing what to offer to the student next.
+
+the level of a student can be used to as motivational, but would be better to just use size of mastered vocabulary.
+
+controlled vocabulary.  stories or paragraphs can be designed with specific level of words.
+
+
+The goal of leveling is to recommend appropriate stories to a student depending on his vocabulary.  An appropriate story is one that has many known words and a few new words.  (Coach and student are expected to sometimes override these recommendations and instead choose stories based on the student's interest in the subject matter.)
+
+The "level" of a word is an index from 1 to 100. \\
+A lower level indicates a more common word. \\
+A higher level is more advanced, rarely-used word.
+
+The level of a story is the weighted average of the levels of all the words used in the story.
+
+The levels of words and stories are re-calculated on the server once each day.
+
+The level of a student is the average level of all the mastered words in his vocabulary.
+
+===== Calculate level of all words in the dictionary =====
+
+  - Make the mean-table in memory with an entry for every word/mean in the dictionary.  Each entry in the table contains word, mean, old-count, old-level, new-count, new-level.
+  - Read all the stories.  For each:
+    * open the consolidated words field into an array
+    * (the number of loc items in the array is the use-count for that word/mean)
+    * add the use-count to the new-count in the master word table
+  - Loop thru the mean table saving lowest and highest use-count.
+  - Loop thru the mean table again.  For each entry:
+    * calculate and set the level for the mean, by interpolating an index from 1 to 100 as follows:
+      * level = 100 - (use-count * (high-low)/high)
+      * max/min : 1/100
+      * freq/max-min = 100-level/100
+      * 100 * (freq/max-min) = 100-level
+      * level + (100 * (freq/max-min)) = 100
+      * level = 100 - (100 * (freq/max-min))
+    * Update mean table record setting count and level if changed.
+
+===== Calculate level of all stories =====
+
+  - Read all stories.  For each:
+    * open the consolidated words field into an array
+    * get the level of each word from the dictionary
+    * save total-use-count
+    * save total-level as level*use-count
+  -  Calculate average-level.
+    * average-level = total-level / total-use-count
+    * update the story record, setting level
+
+
+For each story
+  * Num words
+  * Num uniques
+  * Avg level
+
+For each story per student
+  * Num mastered
+  * Num new words
+  * Num working
+  * % new / uniques
+
+Calc avg level for each user
+
+New table, story-user
+

@@ -1,0 +1,15 @@
+====== sandbox logs ======
+
+javascript logs to the console. \\
+
+The apache logs can be read at cPanel, Errors. \\
+
+User log file locations are defined here:
+
+  * php: defined in ../config.php
+  * php compile errors: defined in php.ini
+  * python: defined in cPanel, Setup Python Apps
+
+
+We are routing all user logging to one file: /home/username/logs/user/sandbox.log \\
+

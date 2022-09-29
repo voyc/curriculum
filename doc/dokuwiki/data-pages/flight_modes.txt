@@ -1,0 +1,48 @@
+====== Flight Modes ======
+
+A hard-core FPV pilot will eschew any kind of autonomous flight control, demanding full manual control of the aircraft, focusing on light weight, manueverability, and sensitivity.  Though sometimes light weight is sacrificed for a heavier GoPro camera.
+
+The outdoor athlete wants a fully autonomous drone that can replace a professional camera crew so he can focus on his sport.
+
+FPV
+  * FPV first person view. Manual flight by viewing a video feed from a forward-facing camera on the drone, usually in a headset.
+
+Stabilized
+  * Angles, pitch and roll angle limits,  prevent flip
+  * Horizon, when sticks centered, stay level
+  * Acrobatic, no stabilization
+
+Hover
+  * Hold height, hold altitude
+  * Hold position
+    * GPS
+    * Optical flow, Down-facing camera/sensor
+  * 3D hold, both height and position
+
+take-off
+
+Toss to launch
+
+Landing
+
+RTH return to home
+
+Follow me
+  * Keep camera aimed at subject and stay within proximity of subject
+  * Methods
+    * GPS beacon or phone on the subject, cheap, less accurate "selfie" drone
+    * Camera and object detection, high-end "autonomous" drone used by outdoor athletes
+  * Maneuvers
+    * Orbit, circle 360° around subject
+    * Spiral 360° away from or towards subject
+    * Cable, fly a straight line overhead keeping camera aimed at subject
+    * Rocket, shoot straight up away from subject
+    * Spotlight, fly pitch and roll with one joystick while computer handles throttle and yaw to keep subject centered 
+
+Waypoint, mission
+  * Pre-programed flight-path of GPS coordinates
+
+Obstacle avoidance
+  * Multiple camera/sensors plus object detection to alter course around obstacles
+  * Used during all autonomous modes and manuevers and sometimes even during FPV flight
+

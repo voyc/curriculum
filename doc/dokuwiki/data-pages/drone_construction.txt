@@ -1,0 +1,270 @@
+====== Drone Construction ======
+
+Joshua Bardwell, YouTube FPV drone builder
+
+===== Drone Components =====
+  * body or frame, usually made of carbon fiber
+  * 4 motors and 4 props
+  * 4 motor controllers, required by all DC brushless motors
+  * ESC
+  * flight controller
+  * radio receiver, with antenna
+  * GPS module, with antenna, optional compass aka magnometer
+  * video transmitter, with antenna
+
+===== sensors =====
+  * GPS
+  * Magnometer/compass
+  * Barometer/Alimeter, detects height above sea-level
+  * Accelerometer, detects linear motion along an axis (x,y,z)
+  * Gyroscope, detects rotational motion around an axis (x,y,z)
+
+Note.  There may be two compass/magnetometers, one on the flight controller, and another on the GPS. You must configure the fc, the fc firmware, and inav, so that everyone knows which compass we're using.
+
+The GPS is installed on the top of the vehicle so it's antenna is open to the satellites.
+
+The compass/magnetometer must be installed at a distance from metal and electronics which can interfere with it's operation.
+
+
+===== Radio Transmitter =====
+Jumper T16 multiprotocol radio transmitter.
+
+Open TX - the software OS that runs on the radio transmitter.
+
+TX Companion software runs on a PC. You can plug your radio transmitter into your PC and change settings from the PC.
+
+Setup model.  Can fly multiple aircraft with one controller.  Setup a model for each drone.
+
+Taranis, made by FrSky, used by, but Not recommended by, Mr. Steele.
+
+The transmitter is often a separate add-on board within the RC. 
+
+2.4 GHz, most common frequency. 900 MHz is used by Mr. Steele as it has longer range and less susceptible to obstacles.
+
+Crossfire made by TBS, the current state-of-the-art transmitter, because of its long range. 900MHz.
+
+You have to buy a receiver for each drone specific to the RC.  Companies sell the RC cheap and make profit on the receivers.
+
+TBS Tango II, $160, Crossfire built-in, battery built in, USB-C charging, recommended by Mr Steele.
+
+===== Simulator =====
+Velocidrone, $20, windows
+
+Game simulators, with moon gravity.
+  * DRL drone racing league
+  * DCL drone championship league, European version of DRL
+  * Liftoff, on steam
+
+===== Flight Controller Firmware =====
+Firmware to flash on to the flight controller, using a PC.
+  * Betaflight - for racing
+  * inav - for autonomous flight
+
+inav configurator software runs on PC, Mac, or Linux.  Allows you to flash the flight controller and then change the settings.
+
+
+===== UART =====
+A serial port, similar to USB port on a laptop
+
+The flight controller has multiple UARTs.  The pins of a UART can be a jack, or solder pads, or both.
+
+We use the UARTs to connect the GPS module, the radio receiver, and other components.
+
+The UART is a serial port.  It has 5 pins: 
+  * power, 
+  * GND - ground, 
+  *  ?, 
+  * TX - transmit
+  * RX - receive
+
+TX on the periperal connects to RX on the host, and vice-versa.
+
+GCS ground control station
+
+What is the difference between GCS and RC transmitter?  
+
+===== video =====
+==== camera =====
+  * CMOS or CCD
+  * Complementary Metal Oxide Semiconductor (CMOS) most common.
+  * Charge Coupled Device (CCD). More expensive, greater power consumption, higher quality image.
+  * PAL vs NTSC
+
+Camera vs sensor.  Camera includes a sensor plus image processing hardware/software. That's why a sensor image is black and white; the color correction is image processing that happens in the camera.
+
+==== vtx =====
+Mounting size
+
+Mounting hardware. Sticky tape or stack mountable.
+
+They get hot. Sometimes equipped with heat sensor and automatic shut-off.
+
+Input voltage capability.  5v or more. Wire to the battery correctly so as not to smoke the vtx with too much voltage.
+
+Power output in milliwatts. 25 to 800.  Lower can be better. For racing, lower power reduces interference.  In an area with trees, building, and obstacles, a "multipath" environment, the high power signal gets bounced around, interfering with itself. Otherwise greater power gives more range. Switchable (choose this) between 25 and 800.
+
+Connectors: power, antenna, wiring.
+
+Antenna connector.
+  * uf.l, small and light but comes loose. Reinforce with glue, tape, zip ties. Never run transmitter without antenna attached; it acts as resistor to drain the power load.
+
+  * mmcx, stronger but bigger and inflexible. Takes up space on frame.
+
+  * SMA. Biggest. For bigger long range antenna. Looks like coax, with center pin.
+
+Wiring connector.  From FC or camera. Plug or solder pads.
+
+Power connector. Take power from FC or direct from battery.
+
+Frequencies.
+  * Band and channel. 8 channels per band.
+
+  * 40 channels but only a few commonly used. Only eight people in the air at a time to avoid interference. Tricky to choose band and channel to avoid interference.
+
+  * Race band. (Choose this) 8 channels, low to high, good separation, no interference. Numbered 1 thru 8 so you don't have to memorize frequencies.
+
+Smart audio or tram protocol. Allows you to change the channel from your RC. Without it the vtx will have button and LEDs.
+
+Antenna.
+  * Dipole. Small, common.
+  * Right-hand circular polarized. Pagoda or AX2. Longest range. Requires bigger SMA connector or adapter.
+  * Cloverleaf. One type of right hand circular polarized.
+  * Omni vs directional.
+
+Recommended.
+Matek Sys. https://m.youtube.com/watch?v=0AKBNyJ4dTg
+
+==== vrx =====
+
+Diversity.  Use two receivers and let a microprocessor flip back and forth to the one with the best signal at any moment. Often one receiver will have an omni-directional antenna and the other will have a uni-directional antenna.
+
+Auto-Scan, an increasingly common feature on VRx units that allows the user to scan through available channels to find ones that are in use.
+
+==== Video transmission =====
+  * Camera, transmitter, antenna on the drone.
+  * Antenna, receiver, display on a ground control station (GCS) or a pair of goggles.
+  * Frequencies. Most common: 5.8 GHz. Divided into bands and channels, eight channels per band. 
+  * RF radio frequency.
+  * Analog. Most common. Compact, low cost. Real time, no latency, no compression or processing required.
+  * Digital HD. Expensive processing required to bring latency down to acceptable levels.
+
+  * Video formats ?
+  * Compression ?
+  * Does every camera work with every display?
+
+Camera, TX, RX bought separately, used together:
+https://youtu.be/PrQYdr8GgLY
+
+
+=== Flight Controller (FC) Hardware
+
+History of ArduPilot hardware.
+
+| Arduino      | 2007 |
+| ArduPilot    | 2009 |
+| APM 1        | 2010 |
+| APM 2        | 2011 |
+| APM 2.5/2.6  | 2012 |
+| Pixhawk      | 2013 |
+
+Eventually Arduino was made to run on the Pixhawk board, and the Arduino hardware line was discontinued.
+
+Pixhawk
+Navio2
+
+=== Flight Controlleer (FC) Firmware
+
+Arduino - made by the Arduino team
+PX4 - made by the Pixhawk team
+
+Both ArduPilot and PX4
+  * use MAVLink middleware for communications
+  * offer high-level API's so programmers can control the drone in language of choice
+  * popular API
+    * for AuduPilot: dronekit
+    * fox PX4: MAVSDK
+
+=== Companion Computer
+
+  * Raspberry Pi
+  * Nvidia Jetson Nano
+  * Nvidia Jetson TX
+
+
+=== Ground Control Station (GCS) Hardware ===
+
+https://dojofordrones.com/ground-control-stations/
+
+== Radio Controller (RC) ==
+
+=== GCS Software Applications ===
+
+Mission Planner
+
+MAVProxy - send MAVLink packets over IP, no, evidently MAVProxy is a command-line GCS software package developed by CanberraUAV in 2012, written for Python 2.6
+
+QGroundControl
+
+
+
+=== Middleware Communications Protocol
+
+MAVLink - used by both ArduPilot and PX4 
+
+python wrapper around MAVLink 
+http://mavsdk-python-docs.s3-website.eu-central-1.amazonaws.com/plugins/camera.html
+
+
+=== Radio Comm Hardware ===
+
+Sky-Drones SmartLink
+  * evidently works only with Smartap GCS
+  * All three  sets of data handled in one device
+  * Air Unit and Ground Unit.
+  * Ground Unit connects to laptop via USB.
+
+
+==== IP, Port, Socket, Thread ====
+
+connect to ip addr and port
+  * a very large number of simultaneous connections are possible 
+  * in a typical scenario, one drone is connected to one GCS 
+
+but, 
+  * a GCS can talk to multiple drones
+  * one drone can connect to another drone
+  * multiple GCS's can connect and work together
+
+a port is a socket
+
+sockets programming, all languages, all os's
+
+example python opening sockets
+
+Each drone will have three ports, one for each type of data.
+  * video stream, from drone to Ground
+  * telemetry stream, from drone to Ground
+  * commands, from Ground to Drone
+
+=== Video ===
+
+Ways to use video
+  * not at all.  Drones don't need a camera.
+  * record onto a memory card
+  * send to a companion computer for realtime pattern recognition
+  * transmit to a pair of goggles for FPV flying
+  * transmit to a GCS for display, analysis, and navigation decisions
+
+Four pieces of video equipment for FPV:
+  * camera
+  * video transmitter (vtx)
+  * video receiver (vrx)
+  * goggles
+
+In 2015, the systems were analog, and the video receiver was sold separately, 
+and would attach to and plug into your choice of goggles. \\
+2015: https://www.youtube.com/watch?v=PrQYdr8GgLY \\
+2016: https://www.youtube.com/watch?v=CBmkRtDM_Yc&t=0s  \\
+
+In 2022, new digital systems are available from DJI and from FatShark/Walksnail. \\ 
+These come with integrated receiver/goggles.  You cannot buy the receiver sseparately. \\

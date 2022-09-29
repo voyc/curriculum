@@ -1,0 +1,27 @@
+====== Mai ======
+
+[[Mai goals]]
+
+[[Mai svc-api]]
+
+[[Mai chat command language]]
+
+[[Mai object model]]
+
+[[Mai data structures]]
+
+[[Mai navigation]]
+
+[[Mai algorithms]]
+
+[[Mai marketing]]
+
+[[Mai automated test suite]]
+
+[[Mai dictionary]]
+
+[[Mai grammar]]
+
+[[Mai implementation plan]]
+
+[[Mai NLP]]

@@ -1,0 +1,21 @@
+====== Processors ======
+
+Popular processors found in robotics.
+
+Nvidia Jetson
+  * Nano
+  * TX1, TX2
+  * AGX Xavier
+  * Xavier NX
+
+Arduino
+  * Uno
+  * Mega
+  * sensor shield: add-on board
+
+Raspberry Pi
+  * 3
+  * 4
+
+Adafruit
+

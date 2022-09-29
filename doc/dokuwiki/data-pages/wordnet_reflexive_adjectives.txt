@@ -1,0 +1,17 @@
+====== WordNet Reflexive Adjectives ======
+
+Many pointer types are reflexive, meaning that if a synset contains a pointer to another synset, the other synset should contain a corresponding reflexive pointer. grind(link is external)(1WN)(link is external) automatically inserts missing reflexive pointers for the following pointer types:
+
+^Pointer                  ^Reflect                 ^
+|Antonym                  |Antonym                 |
+|Hyponym                  |Hypernym                |
+|Hypernym                 |Hyponym                 |
+|Instance Hyponym         |Instance Hypernym       |
+|Instance Hypernym        |Instance Hyponym        |
+|Holonym                  |Meronym                 |
+|Meronym                  |Holonym                 |
+|Similar to               |Similar to              |
+|Attribute                |Attribute               |
+|Verb Group               |Verb Group              |
+|Derivationally Related   |Derivationally Related  |
+|Domain of synset         |Member of Doman         |

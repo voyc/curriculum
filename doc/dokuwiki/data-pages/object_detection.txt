@@ -1,0 +1,38 @@
+====== Object Detection ======
+
+Machine learning approaches:
+  * Viola–Jones object detection framework based on Haar features
+  * Scale-invariant feature transform (SIFT)
+  * Histogram of oriented gradients (HOG) features
+
+Deep learning approaches:
+  * Region-based Convolutinoal Neural Network (R-CNN) [[https://arxiv.org/abs/1311.2524 | 2014 Ross Girshick, et al, UC Berkeley]]
+  * Single Shot MultiBox Detector (SSD)
+  * You Only Look Once (YOLO) [[https://arxiv.org/abs/1506.02640 | 2015 Joseph Redmond et al]]
+  * Single-Shot Refinement Neural Network for Object Detection (RefineDet)
+  * Retina-Net
+  * Deformable convolutional networks
+
+Pre-trained models
+  * COCO SSD MobileNet v1 model
+
+Training from scratch
+  * collect images
+  * label images
+  * run training
+  * test effectiveness
+
+Transfer Training
+  * start with a pre-trained model
+  * add your own images and labels
+
+Python libraries with built-in object detection algorithms
+  * OpenCV
+  * TensorFlow
+
+What is a model?
+  * the output of a training session?
+  * Data structure of a "model" or "network"?
+
+Inference Graph?
+

@@ -1,0 +1,9 @@
+====== Mai parse string ======
+
+Scans a string, separating into dictionary words.
+
+Longest words first.
+
+=== ToDo ===
+
+repeat symbol ๆ is sometimes missed.  see story Maanii.
