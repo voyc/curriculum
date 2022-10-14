@@ -12,6 +12,33 @@ Joshua Bardwell, YouTube FPV drone builder
   * GPS module, with antenna, optional compass aka magnometer
   * video transmitter, with antenna
 
+===== Quadcopter Components =====
+
+  * body, frame, usually carbon fiber
+  * 4 motors
+  * 4 props
+  * 4 ESC's
+  * Flight Controller (FC), an Integrated Circuit
+    * usually includes sensors
+      * 3 accelerometers, to detect linear motion on 3 axes
+      * 3 gyroscopes, to detect rotational motion on 3 axes
+      * compass (optional)
+  * GPS, antenna, compass
+  * Companion Computer, optional
+  * video camera, transmitter, antenna
+  * telemetry transmitter, antenna
+  * RC receiver, antenna
+  * battery
+  * payload (optional)
+  * feet or landing gear
+  * power distribution bus
+
+Ground station
+  * goggles or display
+  * Radio Controller (RC) "radio" with transmitter
+
+diagram \\
+https://www.pinterest.com/pin/531495193507157141/
 ===== sensors =====
   * GPS
   * Magnometer/compass

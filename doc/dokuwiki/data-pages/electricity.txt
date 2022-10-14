@@ -205,7 +205,7 @@ There are three ways to denote the size of a wire.
   - by cross-sectional area, measured in $mm^2$, used in EU countries
 
 This wire size chart compares the three systems.
-https://docs.google.com/spreadsheets/d/1r1-3WnBmyDpDbZnRkZ8a1wJSJUb3sJyFJXpQcI2ucDY/edit#gid=0
+https://docs.google.com/spreadsheets/d/1rTeLpV_CcZR8-DhbEExSx8_EGOr-80V_An1KQbldgYc/edit#gid=1590490442
 
 Calculate cross-sectional area from diameter with this equation:
 $$ A = \frac{D^2 * pi}{4}$$
@@ -249,14 +249,16 @@ Types of transistor:
 
 ====== Electromagnetism ======
 
+Force (physics)
+  * mechanical linear
+  * mechanical rotational
+  * electrical 
+  * magnetic
+
+
 inductance
 reluctance = resistance
 conductance
-
-mechanical linear
-mechanical rotational
-electrical 
-magnetic
 
 flux
 force
@@ -312,46 +314,68 @@ coulomb
 1C ~= 6.24 * 10^18e
 e = 1.60 * 10^-19C    reciprocal
 
-Coulomb's Law
+==== Coulomb's Law ====
+
 https://www.khanacademy.org/science/physics/electric-charge-electric-force-and-voltage/charge-electric-force/v/coulombs-law?modal=1
 
 1785 Charles Augustin de Coulomb
-q_1 = charge 1
-q_2 = charge 2
-r = distance between charges
 
-F_e = K_e |q_1q_2|   / r^2       Coulomb's law of electrostatic force
-K_e ~= 8.987551 * 10^9   * Nm^2 / C^2                    electrostatic constant
-resulting units Newton meter squared / coulomb squared
+Coulomb's law of electrostatic force
 
-F_G = G m_1 m_2 / r^2       Newton's law of gravity
-G ~= 6.674×10^−11 m^3⋅kg^−1⋅s^−2
+\begin{align}
+F_e &= K_e \frac{|q_1q_2|}{r^2} &&\text{electrostatic force}\\
+\text{where:}\\
+q_1 &= \text{charge 1} \\
+q_2 &= \text{charge 2} \\
+r &= \text{distance between charges} \\
+K_e &~= 8.987551 * 10^9   * Nm^2 / C^2    &&\text{electrostatic constant} \\
 
+&&&\text{resulting units Newton meter squared / coulomb squared} \\
+\end{align}
 
-q_1 = +5 * 10^3 C 
-q_2 = -1 * 10^-1 C
-r = 0.5m
+Analogous to Newton's Law of Gravity
 
-
-voltage drop across a component
-the entire voltage is dropped across the whole circuit
-resistors wired in series share the voltage drop proportionate to the resistance in ohms
-
-AC generator types
-standard - produce electricity in a single phase
-invertor - produce electricity in three phases, invert to DC, invert back to more stable AC
-induction (asynchronous) - 
-synchronous - 
-brushed - produce AC with sine wave fairly close to grid wave
-brushless - use electromagnetic induction instead of mechanical brushes
-
-                      generator motor AC DC single 3-phase
-induction
-brushed
-brushless
+\begin{align}
+F_G &= G m_1 m_2 / r^2       &&\text{force of gravity} \\
+G &~= 6.674×10^−11 m^3⋅kg^−1⋅s^−2 &&\text{gravitic constant} \\
+\end{align}
 
 
+q_1 &= +5 * 10^3 C \\
+q_2 &= -1 * 10^-1 C \\
+r &= 0.5m \\
+\end{align}
 
+==== Circuit ====
+voltage drop across a component \\
+the entire voltage is dropped across the whole circuit \\
+resistors wired in series share the voltage drop proportionate to the resistance in ohms \\
+
+==== AC generator types ====
+  * standard - produce electricity in a single phase
+  * invertor - produce electricity in three phases, invert to DC, invert back to more stable 
+  * AC
+  * induction (asynchronous) - 
+  * synchronous - 
+  * brushed - produce AC with sine wave fairly close to grid wave
+  * brushless - use electromagnetic induction instead of mechanical brushes
+
+
+==== generator vs motor ==== 
+
+mirror image
+                 
+==== Motor Types ====                      
+  * induction
+  * brushed
+  * brushless
+  * AC 
+  * DC 
+  * single phase
+  * 3-phase
+
+
+==== Battery Chemistry ====
 
 any two different kinds of metal can be placed in a conducting solution and you get a battery. 
 
@@ -731,4 +755,159 @@ Syllogism vs dialectic
 
 Eletromagnet vs permanent magnet.
 
-Often a permanent magnet is painted, so the south pole is blue, and the north pole is red.
+Often a permanent magnet is painted, \\
+so the south pole is blue, \\
+and the north pole is red.
+
+South pole is positive.\\
+North pole is negative.
+
+Earth's north is actually south
+
+| north | red  | negative | Earth's south pole, antartic |
+| south | blue | positive | Earth's north pole, artic    |
+
+Electromagnet also has poles.\\
+Fleming's right-hand-rule.\\
+http://kitbook.com/electromagnet-poles/
+
+battery plus to solenoid, wrap clockwise, starting at south pole, \\
+https://www.youtube.com/watch?v=n63DAWvaHlk
+
+letter N is counter-clockwise arrow symbol\\
+look at the north pole of the magnet\\
+current will be going thru the coil counter-clockwise\\
+
+letter S is clockwise arrow symbol\\
+look at the south pole of the magnet\\
+current will be going thru the coil clockwise\\
+
+
+
+
+
+
+===== Electricity =====
+
+A generator produces AC.
+
+A battery produces DC.
+
+AC does not have positive and negative.
+
+AC has hot and neutral.
+
+| Alternating | AC | hot - neutral       | vibrating back and forth  | sine wave     | generator |
+| Direct      | DC | positive - negative | continuous flow           | straight line | battery |
+
+
+
+great animations of magnetic fields
+https://www.youtube.com/c/Physicsandanimation
+
+==== Direct Current (DC) ==== 
+
+A battery has two terminals, positive and negative.
+Between the two terminals is an electrolyte.
+
+Chemistry.  A charged battery has a buildup of extra electrons at the negative terminal.
+
+When a circuit is completed, the extra electrons flow from the negative terminal to the positive terminal, until the two terminals are balanced, and the battery has lost its charge. 
+
+=== Conventional, Positive, Wrong ===
+
+When scientists first started working with electricity, they did not know about protons and electrons.
+
+making batteries, 
+
+| electron        | negative to positive | correct        | electronic engineers |
+| positive charge | positive to negative | "conventional" | electrical engineers |
+
+Electronic engineers say electric current is the flow of electrons from negative to positive.
+
+Stubborn electrical engineers say current is the flow of a positive "space" from positive to negative.  They call this "conventional" current or positive current.  I call this wrong.
+
+Conciliatory persons say there are two simultaneous currents: negative bits flow one way, and positive bits flow the opposite way.
+
+Consider a queue of persons waiting in line for ice cream.  When the person at the counter is served he moves away leaving a space.  The next person in line moves forward to the space at the counter, leaving a space behind him.  The person behind him steps forward to fill the space.  And so on with each person back to the end of the line.
+
+In this example, what is moving: the people, or the space?
+
+some of the excuses I have heard.
+  * Too hard to change now.  Like telling Americans to drive on the left, there would be chaos.
+  * It doesn't matter mathematically in circuit analysis.  (not true for batteries, transistors and diodes)
+  * There are two simultaneous and opposite circuits: the electrons flow from negative to positive, the positive charge flows from positive to negative.  (False) 
+
+Ben Franklin is often blamed for the mixup, because he described positive and negative charges 50 years before the first battery, and 150 years before the electron was discovered.
+
+Animation of ice cream queue.
+Circuit drawings: battery, LED.  Two drawings, electron and "conventional".
+
+{{ ::queue_chair.mp4?loop | Electron Queue Analogy}}
+
+
+right-hand rule\\
+first-finger gives direction of the flux\\
+second-finger gives direction of the current\\
+which current is this?  electron or conventional
+He decided that the glass rod being rubbed with silk would be a positive charge while the rubber and fur would be a negative charge. So, with that convention, by removing electrons, the glass rod became positively charged and by adding electrons, the rubber rod became negatively charged.
+
+
+
+  * 1752 Ben Franklin flew his kite in a storm and captured electricity from lighting.  He described positive and negative charges.
+    * Rubbing a glass rod with silk produces a positive charge.
+    * Rubbing rubber with fur produces a negative charge.
+  * 1800 Alessandro Volta invented the first battery, the voltaic pile. https://www.liquisearch.com/alessandro_volta/first_battery
+    * zinc: negative electrode
+    * copper: positive electrode
+    * saltwater: electrolite
+  * 1861 Maxwell presents his equations (right-hand thumb rule?)
+  * 1897 J.J. Thomson discovers the electron, described it as a negatively charged particle floating in a sea of positive charge, like plums in a pudding, the "plum pudding model"
+  * 1909 Rutherford discovers the nucleus in the gold foil experiments and develops the planetary model
+  * 1913 Niels Bohr discovers the specific energy levels of electrons in the atom
+  * 1940 US Navy begins training electronics engineers using the electron current.
+  * 1945 John Ambrose Fleming dies
+
+
+Battery\\
+two terminals marked + and -\\
+Is that true?  Does the - terminal really have a superfluence of electrons?
+annode, cathode
+
+chemical reactions:
+  * oxidation = loss of electrons
+  * reduction = gain of electrons
+
+anion - has gained an electron, negative charge
+cation - has lost an electron, positive charge
+
+cathode - reduction occurs, 
+
+anode - oxidation occurs, anions give off electrons, negative charge
+
+species?
+
+electrons flow from anode to cathode, from oxidation half to reduction half
+
+inside the battery, electrons flow from positive to negative inside the battery
+outside the battery, from negative to positive
+
+flow is reversed by a battery charger, something with a bigger voltage
+
+, AAA, AA, C, D dry cell
+
+^ description    ^ anode (-)    ^ cathode (+)          ^ electrolyte                        ^
+| zinc-carbon    | zinc         | manganese            | ammonium chloride or zinc chloride |
+| alkaline       | zinc powder  | manganese dioxide    | potassium hydroxide (alkaline)     |
+| lithium-ion    | carbon, graphite | lithium metal    | aquaeous salts                     |
+| li-ion polymer | carbon, graphite | lithium cobalt oxide | polymer                        |
+| lead-acid      | lead dioxide | metallic lead        | sulfuric acid                      | 
+
+The electrolyte helps transport ions between positive and negative electrodes.
+ 
+
+
+==== Alternating Current (AC) ==== 
+
+
+

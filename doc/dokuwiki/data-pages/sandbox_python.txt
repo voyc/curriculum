@@ -49,11 +49,11 @@ I sometimes need to do a restart to make my program changes take effect.  \\
 
 ==== Virtual Environment ====
 
-The cPanel, Setup Python App, program already created a virtual environment for this app.
-Its location is /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7.
-This folder contains bin/, lib/, and lib64 folders.
-To activate this enviroment offline.
-source /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7
+The cPanel, Setup Python App, program already created a virtual environment for this app.\\
+Its location is /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7.\\
+This folder contains bin/, lib/, and lib64 folders.\\
+To activate this enviroment offline:\\
+  source /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7
 
 Then I can install packages using Pip, and these packages are available to the web app as well.
 

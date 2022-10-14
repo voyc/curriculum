@@ -232,6 +232,15 @@ AT (Attention) commands, were created by Dennis Hayes for his 300 baud modem in 
 Tutorial: Use an ESP8266 to control an LED over the internet \\
 https://maker.pro/esp8266/tutorial/esp8266-tutorial-how-to-control-anything-from-the-internet
 
+== ESP8266 Development Board ==
+
+There are several "development" boards available which include an ESP8266 plus additional components.
+  * Wemos D1 Mini
+  * NodeMCU
+  * Adafruit Heather Huzzah
+  * ESP8266 Thing Development Board, has onboard FTDI USB-to-Serial chip
+
+
 ==== WiFi Direct (P2P) ====
 
 Create an Access Point (AP) that allows only one connection. \\

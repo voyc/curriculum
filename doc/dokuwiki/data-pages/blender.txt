@@ -83,13 +83,14 @@ To close a workspace, right-click on its tab and select Delete.
 To open a workspace, click on the Add Workspace (plus-sign) button in the Topbar,
 and then choose from among the default workspaces listed in the menu.
 
-To create a custom workspace, right-click on any tab and select Duplicate.
-Then double-click the new tab and rename it.
-
 [Note: When Blender says add and delete workspace, they really mean open or close.]
 
-[Note: Custom workspaces are saved in the blend file.  
-To make them globally available, click File - Defaults - Save Startup File.]
+To create a **custom workspace**, right-click on any tab and select Duplicate.
+Then double-click the new tab and rename it.
+
+A custom workspace is saved in the blend file.  To make it globally available, click File - Defaults - Save Startup File.  This will create a startup.blend file in a new folder named for the workspace in the user's config.
+
+  ./config/blender/2.82/config/Video_Editing/startup.blend
 
 === Area === 
 
@@ -462,7 +463,7 @@ right-click on any value in the property panel to bring up the keyframes context
     - Edit the file in etc named ImageMagick-6/policy.xml
     - Comment out the line containing "PDF"
 
-===== Audio Voiceover Enhancement =====
+==== Audio Voiceover Enhancement ====
 
 In Blender, separate the video and audio strips.
   - Create a new project, open the video with a voiceover.
@@ -485,7 +486,7 @@ https://www.youtube.com/watch?v=dQCB72S64L4 \\
 https://www.youtube.com/watch?v=TYF5ytMDFpA \\
 https://www.youtube.com/watch?v=twlY29iX1dU \\
 
-===== File Extensions =====
+==== Media File Extensions ====
 
   * mp4 - original shoot from camera phones, with variable framerate
   * m4v - from Handbrake, with constant framerate of 24 fps
@@ -498,26 +499,7 @@ https://www.youtube.com/watch?v=twlY29iX1dU \\
   * odp - slideshow presentation from LibreOffice Impress
   * slides/*.png - individual frames from slideshow, output by ImageMagick from PDF
 
-===== Directory Structure =====
-
-clips
-stills
-host
-slides
-
-=====Install=====
-
-Today is 10 Oct 2021.
-  * My current version is 2.82.
-  * sudo apt search blender returns blender 2.82
-  * blender.org says the latest version is 2.93
-
-If I want to move to 2.93,
-I think I have to uninstall my current version 
-and then install the new version by downloading from blender.org.
-
-
-====== Video Editing Setup ======
+==== Video Editing Setup ====
 
 Preferences
   * Interface
@@ -549,7 +531,9 @@ Timeline
 [[ https://www.youtube.com/watch?v=zh6tKdhThME&t=2s | 
 YouTube: Ryan Art King: Video Editing with Blender! Part 1]]
 
-====== Combine 3D Model, Python, Timeline, Sequencer ======
+===== All Together =====
+
+Combine 3D Model, Python, Timeline, Sequencer.
 
 In the Layout editor, choose a camera view.
 
@@ -559,17 +543,13 @@ You can only add other non-current scenes.)
 
 In the Sequencer, Add - Scene - select the scene.
 
-
-
-
 [[https://www.youtube.com/watch?v=o8nIHVGWyCY |
 YouTube: Adding 3d scene into video sequencer]]
 
-
 ==== Animate drawing on a video ====
 
-You are working in the video sequencer, but 
-the drawing animation must be done in the modeling view. 
+You are working in the video sequencer, but \\
+the drawing animation must be done in the modeling view. \\
 Therefore three steps are required.
 
   - In the video sequencer:
@@ -587,6 +567,34 @@ Therefore three steps are required.
         * can be animated automatically from one end of the curve to the other
         * [[https://www.youtube.com/watch?v=QYYKAUO312c | YouTube: Blender Made Easy: Easy Handwriting Animation ]]
     - Render the animation as a movie.
-  - In the video sequencer:
+  - Back in the video sequencer:
     * Add the movie output from step 2
 
+===== Install, Config, Setup =====
+
+Today is 10 Oct 2021.
+  * My current blender version is 2.82.
+  * sudo apt search blender returns blender 2.82
+  * blender.org says the latest version is 2.93
+
+If I want to move to 2.93,\\
+I think I have to uninstall my current version\\ 
+and then install the new version by downloading from blender.org.\\
+
+The user's linux config folder contains these files:
+  * userpref.blend
+  * startup.blend - default startup blend file
+  * Video_Editing/startup.blend - created when you save a startup file
+
+In the github sandbox project, folder blender, find these example blend files:
+  * proto.blend - start with this for video editing per Ryan King video
+  * magetic.blend - demo particle system
+  * curtis_holt.blend - companion to video Python Crash Course for Blender
+  * donut.blend - companion to 3D modeling tutorial by Blender Guru
+
+Directory structure for a blender project folder:
+  * projectname
+    * clips
+    * stills
+    * host
+    * slides
