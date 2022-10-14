@@ -1,0 +1,12 @@
+This folder contains blender projects 
+used to create media files embedded in curriculum webpages.
+
+Final output is usually a single mp4 file, which is uploaded to dokuwiki/data-media.
+
+This output file, along with all intermediate rendered files, 
+are addid to .gitignore to save space in the repository.
+
+gitignore example: *rendered*
+
+At project completion, this ignored files can be deleted to save local disk space.
+
