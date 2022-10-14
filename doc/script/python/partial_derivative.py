@@ -1,4 +1,6 @@
+import numpy as np
 from sympy import symbols, diff
+
 x, y = symbols('x y', real=True)
 
 # this does not work with run()
@@ -20,9 +22,7 @@ diff(f, y)
 
 # linear cost function, 1/2 MSE
 m,X,Y,a,b = symbols('m X Y a b', real=True)
-c = ((1/2) * (1/m) * sum(((a*X + b) - Y)**2))
-
-c = ((1/2) * (1/m) * sum( ((a*X + b) - Y)**2) )
+#c = ((1/2) * (1/m) * sum( ((a*X + b) - Y)**2) )   # fails
 
 
 
@@ -35,6 +35,6 @@ d = (1/m) * (np.power(((a*X + b) - Y),2)).sum()   # mean squared error
 d = (1/2) * (1/m) * (np.power(((a*X + b) - Y),2)).sum()   # one-half mean squared error
 
 m,X,Y,a,b = symbols('m X Y a b', real=True)
-d = (1/2) * (1/m) * (np.power(((a*X + b) - Y),2)).sum()   # one-half mean squared error
+d = (1/2) * (1/m) * (np.power(((a*X + b) - Y),2)).sum()   # one-half mean squared error  # fails
 diff(d, x)
 diff(d, y)

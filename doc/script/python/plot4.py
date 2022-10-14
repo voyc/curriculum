@@ -1,3 +1,8 @@
+from plothelper import *
+import matplotlib.pyplot as plt
+import numpy as np
+
+saving = False
 
 # legend loc
 # per https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend
@@ -13,7 +18,7 @@ formatgraph('Four Data Points')
 ax = plt.gca();
 ax.set_xlim([0,10])
 ax.set_ylim([0,10])
-savegraph('Four Data Points')
+if saving: savegraph('Four Data Points')
 plt.show()
 
 # start over
@@ -33,7 +38,7 @@ plt.plot(x,1.5 * x + 2, label='y=1.5x+2');
 plt.plot(x,.8 * x + 2, label='y=.8x+2'); 
 plt.legend()
 formatgraph('Trial and Error')
-savegraph('Trial and Error')
+if saving: savegraph('Trial and Error')
 plt.show()
 
 # start over
@@ -53,6 +58,6 @@ plt.plot(x,.56 * x + 3.1, label='y=.56x+3.1'); # normal equation
                                                # gradient descent
 plt.legend()
 formatgraph('Three Techniques')  # ? advanced techniques, mathematical techniques, least squares techniques
-savegraph(  'Three Techniques')
+if saving: savegraph(  'Three Techniques')
 plt.show()
 

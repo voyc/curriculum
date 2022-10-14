@@ -1,21 +1,27 @@
+from plothelper import *
+import matplotlib.pyplot as plt
+import numpy as np
+
 def saveplot(fname):
     fig = plt.gcf()
     fname = '../../../dokuwiki/media/' + fname + '.png'
     fig.savefig(fname);
     return;
 
+saving = False
+
 x = np.linspace(0,4,40);
 plt.plot(x,30*x, label='ƒ(x) = 30x'); 
 plt.plot(x,0*x+30, label='ƒ′(x) = 0x+30'); 
 formatgraph('Constant Rate of Change')
-saveplot  ('constant_rate_of_change')
+if saving: saveplot  ('constant_rate_of_change')
 plt.show()
 
 x = np.linspace(0,4,40);
 plt.plot(x,32 * x ** 2, label='ƒ(x) = 32x²'); 
 plt.plot(x,32*x, label='ƒ′(x) = 32x'); 
 formatgraph('Constant Acceleration')
-saveplot  ('constant_acceleration')
+if saving: saveplot  ('constant_acceleration')
 plt.show()
 
 x = np.linspace(0, 2*np.pi, 50);
@@ -23,7 +29,7 @@ plt.plot(x,np.sin(x), label='ƒ(x) = sin(x)');
 plt.plot(x,np.cos(x), label='ƒ′(x) = cos(x)'); 
 plt.plot(x,-np.sin(x), label='ƒ′′(x) = -sin(x)'); 
 formatgraph('Sine')
-saveplot('sine_derivative_and_second_derivative')
+if saving: saveplot('sine_derivative_and_second_derivative')
 plt.show()
 
 x = np.linspace(-2, 2, 50);
@@ -32,7 +38,7 @@ e = np.exp(1);
 plt.plot(x,e**x, label='ƒ(x) = eˣ'); 
 plt.plot(x2,e**x2, label='ƒ′(x) = eˣ'); 
 formatgraph('Exponent')
-saveplot('exponent_equals_its_own_derivative')
+if saving: saveplot('exponent_equals_its_own_derivative')
 plt.show()
 
 x = np.arange(-.7, 1.5, .1);
@@ -40,19 +46,19 @@ plt.plot(x,(x**3)-(x**2), label='ƒ(x) = x³ - x²');
 #plt.plot(x,((3*x)**2)-2*x, label='ƒ′(x) = 3x² - 2x'); 
 #plt.plot(x,(6*x)-2, label='ƒ′′(x) = 6x - 2'); 
 formatgraph('Polynomial')
-saveplot  ('polynomial')
+if saving: saveplot  ('polynomial')
 plt.show()
 
 x = np.arange(-.7, 1.5, .1);
 plt.plot(x,(3*x**2)-(2*x), label='ƒ′(x) = 3x² - 2x'); 
 formatgraph('Polynomial Derivative')
-saveplot  ('polynomial_derivative')
+if saving: saveplot  ('polynomial_derivative')
 plt.show()
 
 x = np.arange(-.7, 1.5, .1);
 plt.plot(x,(6*x)-2, label='ƒ′′(x) = 6x - 2'); 
 formatgraph('Polynomial Second Derivative')
-saveplot  ('polynomial_second_derivative')
+if saving: saveplot  ('polynomial_second_derivative')
 plt.show()
 
 x = np.linspace(-5, 5);
@@ -60,25 +66,25 @@ plt.plot(x,e**((-x**2)/2));
 formatgraph('')
 fig = plt.gcf()
 fig.set_size_inches(4,1)
-saveplot  ('bell_curve_limit')
+if saving: saveplot  ('bell_curve_limit')
 plt.show()
 
 x = np.linspace(-3, 3);
 plt.plot(x,e**((-x**2)/2), label='ƒ(x)e**((-x**2)/2)'); 
 formatgraph('')
-saveplot  ('bell_curve')
+if saving: saveplot  ('bell_curve')
 plt.show()
 
 x = np.linspace(-3, 3);
 plt.plot(x,x*e**((-x**2)/2), label='ƒ′ = x*e**((-x**2)/2)'); 
 formatgraph('')
-saveplot  ('bell_curve_first_derivative')
+if saving: saveplot  ('bell_curve_first_derivative')
 plt.show()
 
 x = np.linspace(-3, 3);
 plt.plot(x,((x**2)-1)*e**((-x**2)/2), label='ƒ ′′(x) = ((x**2)-1)*e**((-x**2)/2)'); 
 formatgraph('')
-saveplot  ('bell_curve_second_derivative')
+if saving: saveplot  ('bell_curve_second_derivative')
 plt.show()
 
 x = np.linspace(-3, 3);
@@ -86,7 +92,7 @@ plt.plot(x,e**((-x**2)/2), label='ƒ(x) = e**((-x**2)/2)');
 plt.plot(x,x*e**((-x**2)/2), label='ƒ ′(x) = x*e**((-x**2)/2)'); 
 plt.plot(x,((x**2)-1)*e**((-x**2)/2), label='ƒ ′′(x) = ((x**2)-1)*e**((-x**2)/2)'); 
 formatgraph('')
-saveplot  ('bell_curve_with_first_and_second_derivative')
+if saving: saveplot  ('bell_curve_with_first_and_second_derivative')
 plt.show()
 
 #-----------------

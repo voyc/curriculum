@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt  
 import math
 
+saving = False
+
 def graph(title, formula1, label1, *more, x_range=np.arange(-10,11,.1)):
 	# first plot
 	x = np.array(x_range)
@@ -33,7 +35,7 @@ def graph(title, formula1, label1, *more, x_range=np.arange(-10,11,.1)):
 	fname = fname.replace('\'', '');
 	fname = fname.lower();
 	fname = '../../image/plot/' + fname + '.png'
-	fig.savefig(fname);
+	if saving: fig.savefig(fname);
 	plt.show()
 	return;
 
@@ -76,8 +78,8 @@ graph('Sigmoid', lambda x: 1 / (1 + e**-x), 'y = 1 / (1 + e**-x)') # Octave: y =
 
 
 # linear regression
-y = a1x1 + a2x2 + a3x3 + b
-y = A . X + b
+#y = a1x1 + a2x2 + a3x3 + b
+#y = A . X + b
 
 # straighten the parabola, e.g. u=(1+x)^2; that's trivial. 
 # Reference https://www.physicsforums.com/threads/transforming-parabola-to-straight-line.301713/

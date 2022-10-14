@@ -16,6 +16,7 @@ from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import numpy as np
 
+saving = False
 
 fig = plt.figure()
 ax = fig.gca(projection='3d')
@@ -44,5 +45,5 @@ fig = plt.gcf()
 fig.set_size_inches(4,3)
 title = 'Surface Plot'
 plt.title(title)
-fig.savefig('plots/' + title + '.png')
+if saving: fig.savefig('plots/' + title + '.png')
 plt.show()

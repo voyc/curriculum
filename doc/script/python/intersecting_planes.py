@@ -23,7 +23,7 @@ Z2 = Y2 + 1
 Z2 = Z2 * [3,-2]
 ax.plot_surface(X2, Y2, Z2, color='blue', alpha=.5, linewidth=0, zorder=-1)
 
-#a·x+ b·y + c·z  + d  = 0
+#ax + by + cz + d  = 0
 
 
 
