@@ -1,0 +1,19 @@
+slot	x	
+		
+-2	968	png width
+-1	847	door
+0	726	door
+1	605	waiter slot
+2	484	waiter slot
+3	363	waiter slot
+4	242	waiter slot
+5	121	waiter slot
+6	0	waiter slot
+		
+		
+		
+		
+slot width	121	
+num slots	6	
+total frames	77	
+		
