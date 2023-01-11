@@ -7,9 +7,11 @@
   * branding
     * user guide, appendix, rename geosketch to voyc
     * videos, appendix
-    * change curriculum logo and title from Samantha
-    * private vs public pages in curriculum, https://www.dokuwiki.org/acl
-
+    * docroot: move voyc to global
+    * docroot: move geosketch to voyc
+    * rename repository: voyc to global
+    * rename repository: geosketch to voyc
+    
   * database
     * ST_GeomFromGeoJSON, add Caspian Sea to lakes
     * simplify Caspian sea
@@ -66,7 +68,7 @@
         * named palettes
     * put palette in local storage
 
-  * enable user login
+  * save user data
     * save custom layers to db, svc writeLayer
     * read custom layers from db, svc readLayer
     * store palettes in db, svc writePalette

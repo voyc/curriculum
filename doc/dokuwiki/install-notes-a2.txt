@@ -16,7 +16,7 @@ mv dokuwiki-2022-07-31a/ dokuwiki
 
 # 3. run the dokuwiki install
 http://curriculum.voyc.com/install.php
-# Wiki Name: Samantha
+# Wiki Name: Curriculum
 # Superuser: jhagstrand
 # Real name: John Hagstrand
 # E-Mail: john@hagstrand.com
@@ -65,4 +65,10 @@ vi ~/webprod/samwiki/dokuwiki/lib/plugins/style.css
 #     margin-bottom: 0.5em;  /* (new) */
 
 # 9. Test extensions on "curriculum - appendix - dokuwiki" page.
+
+#10. Upload logo.png in Media Manager.
+
+#11. In Administrator, ACL, set permissions on draft namespace.
+#     @ALL none
+#     @user none
 
