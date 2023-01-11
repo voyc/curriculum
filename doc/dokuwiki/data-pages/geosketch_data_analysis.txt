@@ -1,0 +1,214 @@
+====== Geosketch Data Analysis ======
+
+plunder database
+
+table georegions, originally 1048 records from osmtilemill shapefiles
+
+attributes featureclass and scalerank
+
+==== scalerank ====
+scale = on-screen, the number of pixels in the radius of the globe, used for realtime map drawing
+
+scalerank = in the data, a number from 1 to 6, or from 0 to 2000, indicating the relative magnitude of the feature
+
+=== scalerank by featureclass ===
+
+== Water ==
+^ featureclass     ^ count ^   0^  1^  2^  3^  4^  5^   6^  7^ 9^ 10^ 12^
+| alkaline lake    |    40 |  27|  2|  1|  5|   |  2|   3|   |  |   |   |
+| basin            |     9 |    |  2|  2|  3|  2|   |    |   |  |   |   |
+| canal            |     4 |    |   |   |   |   |   |   1|   |  |  3|   |
+| delta            |    12 |    |   |   |  6|  6|   |    |   |  |   |   |
+| lake             |   320 | 220| 58|  2|  5|  2|  7|  26|   |  |   |   |
+| lake centerline  |   113 |    |  5|  4| 13| 17| 20|  46|  1| 2|  3|  2|
+| reservoir*       |    52 |  25|  8|  1|   |  5|  4|   9|   |  |   |   |
+| river*           |   361 |    | 22| 31| 41| 54| 49| 164|   |  |   |   |
+
+== Land ==
+^ featureclass     ^ count ^  0^ 1^  2^  3^  4^   5^  6^  7^
+| coast            |    36 |   |  |   | 20|  4|  11|  1|   |
+| continent        |     7 |  7|  |   |   |   |    |   |   |
+| island           |   295 |   | 3| 10| 26| 27| 123| 67| 39|
+| island group     |   167 |  4| 5| 12| 31| 35|  57| 22|  1|
+| isthmus          |     4 |   | 1|   |  3|   |    |   |   |
+| geoarea          |    44 |   | 4|  5| 12|  8|   1|  1|   |
+| pen/cape         |    55 |   | 4|  6| 11| 11|  21|  2|   |
+| peninsula        |    11 |   | 1|   |   |  1|   8|  1|   |
+
+== Terrain ==
+^ featureclass     ^ count ^  0^  1^  2^  3^  4^  5^  6^
+| depression       |     2 |   |   |   |   |   |   |   |
+| desert*          |    58 |   |   |   |   |   |   |   |
+| foothills*       |     3 |   |   |  1|  2|   |   |   |
+| gorge            |     3 |   |   |   |   |  3|   |   |
+| lowland          |     5 |   |   |   |  3|  2|   |   |
+| plain*           |    30 |   |  4| 10|  4|  3|  9|   |
+| plateau*         |    71 |   |  4| 12| 16| 13| 21|  5|
+| range/mtn*       |   222 |   | 10| 21| 45| 53| 85|  8|
+| tundra*          |     4 |   |  2|  1|  1|   |   |   |
+| valley*          |     6 |   |   |  1|  2|  2|  1|   |
+| wetlands*        |     3 |   |   |   |  1|  1|  1|   |
+
+== Political ==
+^ featureclass     ^ count ^   ^ 100^ 500^ 900^ 1000^ 2000^ 
+| drangons-be-here |     1 |   |   1|    |    |     |     |
+| empire*          |   427 |   |    |    |    |  427|     |
+| treasure*        |    67 |  7|    |  15|   1|   43|    1|
+
+* classes used in the original plunder
+
+==== scalerank ====
+
+^ scalerank ^ count ^
+|         0 |   283 |
+|         1 |   144 |
+|         2 |   118 |
+|         3 |   261 |
+|         4 |   266 |
+|         5 |   453 |
+|         6 |   361 |
+|         7 |    41 |
+|         9 |     2 |
+|        10 |     6 |
+|        12 |     2 |
+|       100 |     1 |
+|       500 |    15 |
+|       900 |     1 |
+|      1000 |   470 |
+|      2000 |     1 |
+|           |     7 |
+
+===== water =====
+
+loaded from Natural Earth Data, 50m set
+
+  * oceans
+  * seas
+  * lakes
+  * rivers
+
+==== rivers ====
+
+A. examine rivers
+1:50m 460 rivers, scalerank 1 thru 6, 42 rows in our target geo
+
+#all rivers combined, almost 1 MB
+psql -t -d voyc -U jhagstrand <rivers.sql >../json/rivers.js
+
+==== lakes ====
+select scalerank, count(*) from plunder.plunder \\
+where featureclass = 'lake' \\
+group by scalerank order by scalerank;\\
+
+         0 |   220
+         1 |    58
+         2 |     2
+         3 |     5
+         4 |     2
+         5 |     7
+         6 |    26
+
+select scalerank, count(*) from plunder.plunder\\ 
+where featureclass = 'reservoir
+group by scalerank order by scalerank;\\
+
+         0 |    25
+         1 |     8
+         2 |     1
+         4 |     5
+         5 |     4
+         6 |     9
+
+
+==== seas ====
+
+A table on this page includes names of the major seas.
+https://en.wikipedia.org/wiki/List_of_political_and_geographic_borders
+
+
+Caspian Sea is currently missing.
+
+Maybe needed for labeling or hit testing.
+
+Examples
+  * Mediterranean
+  * Bay of Bengal
+  * Arabian Sea
+  * Carribean
+
+==== oceans ====
+
+Natural Earth's Ocean file has only one polygon.
+
+We don't currently have an oceans data.
+We just paint the background blue, and start drawing on top of it.
+
+If we want to do labeling or hit testing by ocean name, 
+then we will need a polygon
+for each named ocean.
+
+3 oceans: Pacific, Atlantic, Indian\\
+optional: Arctic, Southern\\
+optional: North Pacific, South Pacific, North Atlantic, South Atlantic
+
+arctic and southern oceans are each a circle, or just explicitly test for north of 80
+
+
+===== Political data ======
+
+pulled from database voyc, table fpd
+  * empire - polygon
+  * treasure - point
+
+==== Cities ====
+
+^ population                 ^  count ^
+| more than ten million      |      40|
+| one million to ten million |     700|
+| 100,000 to one million     |    4247|
+| 20,000 to 100,000          |  12,979|
+| 10,000 to 20,000           |  10,354|
+| less than 10,000           |  13,910|
+| Total                      |  42,180|
+
+^  id   ^       name       ^     country      ^   pop    ^
+| 17463 | Tokyo            | Japan            | 39105000 |
+| 17464 | Jakarta          | Indonesia        | 35362000 |
+| 17465 | Delhi            | India            | 31870000 |
+| 17466 | Manila           | Philippines      | 23971000 |
+| 17467 | São Paulo        | Brazil           | 22495000 |
+| 17468 | Seoul            | South Korea      | 22394000 |
+| 17469 | Mumbai           | India            | 22186000 |
+| 17470 | Shanghai         | China            | 22118000 |
+| 17471 | Mexico City      | Mexico           | 21505000 |
+| 17472 | Guangzhou        | China            | 21489000 |
+| 17473 | Cairo            | Egypt            | 19787000 |
+| 17474 | Beijing          | China            | 19437000 |
+| 17475 | New York         | United States    | 18713220 |
+| 17476 | Kolkāta          | India            | 18698000 |
+| 17477 | Moscow           | Russia           | 17693000 |
+| 17478 | Bangkok          | Thailand         | 17573000 |
+| 17479 | Dhaka            | Bangladesh       | 16839000 |
+| 17480 | Buenos Aires     | Argentina        | 16216000 |
+| 17481 | Ōsaka            | Japan            | 15490000 |
+| 17482 | Lagos            | Nigeria          | 15487000 |
+| 17483 | Istanbul         | Turkey           | 15311000 |
+| 17484 | Karachi          | Pakistan         | 15292000 |
+| 17485 | Kinshasa         | Congo (Kinshasa) | 15056000 |
+| 17486 | Shenzhen         | China            | 14678000 |
+| 17487 | Bangalore        | India            | 13999000 |
+| 17488 | Ho Chi Minh City | Vietnam          | 13954000 |
+| 17489 | Tehran           | Iran             | 13819000 |
+| 17490 | Los Angeles      | United States    | 12750807 |
+| 17491 | Rio de Janeiro   | Brazil           | 12486000 |
+| 17492 | Chengdu          | China            | 11920000 |
+| 17493 | Baoding          | China            | 11860000 |
+| 17494 | Chennai          | India            | 11564000 |
+| 17495 | Lahore           | Pakistan         | 11148000 |
+| 17496 | London           | United Kingdom   | 11120000 |
+| 17497 | Paris            | France           | 11027000 |
+| 17498 | Tianjin          | China            | 10932000 |
+| 17499 | Linyi            | China            | 10820000 |
+| 17500 | Shijiazhuang     | China            | 10784600 |
+| 17501 | Zhengzhou        | China            | 10136000 |
+| 17502 | Nanyang          | China            | 10013600 |

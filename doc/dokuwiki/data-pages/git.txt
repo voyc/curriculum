@@ -4,7 +4,18 @@ source code version control
 
 Written by Linus Torvalds to replace svn and cvs.
 
+The "commit" is the unit of git.
+
+Each commit is given a unique 20-character name by sha1.
+
+To display the history of commits on a project:
+
+  $ git log
+  
+
+
 ===== How to use =====
+
 
 ====Create a new repository====
 create a remote repository in the git folder
@@ -18,7 +29,7 @@ create a local repository in the flash folder
 	git add .
 	git commit -m 'Initial file load.'
 in the local repository, point the name 'origin' to the remote repository
-	git remote add origin http://git.hagstrand.com/flash.git
+	git remote add origin xttps://git.hagstrand.com/flash.git
 	git remote  # list all remotes.  A remote is a "shortcut" to another repository.
 in the local repository, push all files up to the remote repository
 	git push origin master
@@ -64,15 +75,155 @@ In .gitconfig, add
 
 ====Add submodule to super-project====
 	cd webapps/peg
-	git submodule add https://github.com/necolas/normalize.css
-	git submodule add http://git.hagstrand.com/repos/accounts.git
+	git submodule add xttps://github.com/necolas/normalize.css
+	git submodule add xttps://git.hagstrand.com/repos/accounts.git
 	git commit -am 'added submodules'
 	git submodule update --init    # init + update info in .git/config.  (You may also edit manually.)
 	git submodule foreach git pull origin master  # pull latest files for all submodules
 
+
+===== superproject and submodule =====
+
+A superproject is one that has submodules.
+The submodules are listed in .gitmodules file of the superproject.
+They are also listed in .git/config file, but not right away.
+
+.gitmodules comes down with the clone
+.git/config gets updated when you do the git submodule init
+
+create sub
+create super
+add sub to super - makes a clone of the sub
+
+we now have three gits: two of the sub and one of the super.
+if they have been pushed, then we have six gits.  
+Ultimately I want to keep them all in sync, though during development they will drift out of sync.
+
+To solve the "detached head" situation.
+git checkout master
+
+"commit recorded in the superproject" - what?  where?
+
+
+A superproject has submodules.
+
+A submodule is a full-fledged git project and can be treated as such.
+It has been cloned from a remote project.
+You can modify, commit, push, pull just like another other git project.
+
+It addition, a pointer to the submodule is contained in the superproject.\\
+In three places:
+  - the .gitmodules file
+  - the .git/config file
+  - the working tree
+
+When you make changes in the submodule, you then:
+  - commit in the submodule
+  - commit in the superproject
+  - push the submodule
+  - push the superproject 
+  - optional: pull into any other clones of the submodule project
+
+Likewise, if you pull fresh changes into the submodule, 
+you also want to do a commit in the superproject.
+
+Submodules can be nested in a hierarchy.\\
+Some submodule commands offer a --recursive option 
+so that all sub-submodules in the hierarchy are processed in the same way.
+
+==== clone a superproject ====
+
+  $ git clone <projectname>
+
+Create a clone of the project.  Checkout all files of the current branch.
+If the project is a superproject,
+  * the .gitmodules files is present.
+  * an empty subdirectory for each submodule is present.
+
+  $ git submodule init
+
+Adds the submodule info to the .git/config file.
+
+  $ git submodule update
+
+what does the submodule update command do?  Three things:
+  - clone missing submodules
+  - fetch missing commits in submodules
+  - update the working tree of the submodules
+
+How is this "update" done?  it depends:
+  * checkout (default)
+  * rebase
+  * merge
+  * custom
+  * none
+
+By default, the checkout, as in
+"the commit recorded in the superproject will be checked out in the submodule on a detached head."
+
+  $ git submodule update
+  Cloning into '/home/john/webapps/test/model/html/icon'...
+  Cloning into '/home/john/webapps/test/model/html/jslib'...
+  Cloning into '/home/john/webapps/test/model/html/minimal'...
+  Cloning into '/home/john/webapps/test/model/php/account'...
+  Submodule path 'html/icon': checked out '850cd6e9b06629ec0a5bff5b1ff66f725747a9fa'
+  Submodule path 'html/jslib': checked out '84fa035aef9537eae68b9652a74f3e09cbcbd398'
+  Submodule path 'html/minimal': checked out 'ed76e62d530f32ffabcbd5a615e4fb81e9d1cfc2'
+  Submodule path 'php/account': checked out 'ef11ada975ff25f3c2bd5ab566c0149d0c351168'
+
+It's almost a clone.  One of the differences is the .git is not a directory.
+Is is a text file that contains a pointer to the real .git directory.
+
+  $ cat .git
+  gitdir: ,,/,,/.git/modules/html/jslib
+  
+  $ ls ,,/,,/.git/modules/html/jslib
+  branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs
+
+Also, the HEAD file contains the sha1 identifier of the commit that was checked out.
+
+  $ cat .git/modules/html/jslib/HEAD
+  84fa035aef9537eae68b9652a74f3e09cbcbd398
+
+This is by definition a detached head.
+
+After doing the git checkout master.
+
+  $ cat .git/modules/html/jslib/HEAD
+  ref: refs/heads/master
+
+==== Detached Head ====
+
+Who wants a detached head?  Not me.
+The solution to this state is:
+
+  git checkout master
+
+The term "detached head" means the project is not pointed to a branch, but to a specific commit.
+
+The git submodule update command leaves each submodule project in a detached head state.
+
+  $ git status
+  HEAD detached at ed76e62
+  nothing to commit, working tree clean
+
+The solution is to explicitly checkout the master branch.
+
+  $ git checkout master
+  Previous HEAD position was ed76e62 removed extraneous semicolon from css
+  Switched to branch 'master'
+  Your branch is up to date with 'origin/master'.
+  
+  $ git status
+  On branch master
+  Your branch is up to date with 'origin/master'.
+  nothing to commit, working tree clean
+
+
+
 ====Clone a super-project====
 	cd webapps
-	git clone http://git.hagstrand.com/peg.git
+	git clone xttps://git.hagstrand.com/peg.git
 	cd peg
 	git submodule update --init --recursive
 	git submodule foreach git pull origin master  # pull latest files for all submodules
@@ -85,17 +236,36 @@ In .gitconfig, add
 
 ====Begin====
 	cd webapps/drzinn
-	git clone https://github.com/voyc/model    # start with model
+	git clone xttps://github.com/voyc/model    # start with model
 	mv model drzinn           # rename to drzinn
 	cd drzinn       
 	git submodule update --init   # copies entries from .gitmodules to .git/config, and pulls each
+
+==== Combinations ====
+
+Some git command options effectively execute multiple git commands simultaneously.
+Here are some examples.
+
+  1. git add .
+  2. git commit -m 'latest fix'
+  1+2. git -a commit -m 'latest fix'      # combine add and commit
+
+  1. git clone <project>
+  2. git submodule init
+  3. git submodule update
+  2+3. git submodule update --init
+  1+2+3. git clone --recursive-submodules <project> 
+
+  1. git fetch     # download patch files
+  2. git merge     # apply patches to local files
+  1+2. git pull    # fetch and merge
 
 ====Fork====
 In github ui, fork repo from voyc to hagstrand.  A fork is a server-side clone.
 
 Locally:
-	git clone https://github.com/hagstrand/flash flashbang   # specified target <directory>
-	git remote add upstream https:github.com/voyc/flash   # second remote
+	git clone xttps://github.com/hagstrand/flash flashbang   # specified target <directory>
+	git remote add upstream xttps:github.com/voyc/flash   # second remote
 	git pull --rebase upstream master   # pull changes from upstream, update local, no commit
 	# pull does a fetch and merge into local directory.  No need to commit.
 	git push origin master   
@@ -124,8 +294,16 @@ Same as Feature Branch Workflow, plus, it assigns very specific roles to differe
 Fundamentally different than the other workflows discussed in this tutorial. Instead of using a single server-side repository to act as the “central” codebase, it gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.	
 
 =====Terms=====
+
 index
 
 working tree
 
+head
+
+sha1
+
+commit
+
+branch
 

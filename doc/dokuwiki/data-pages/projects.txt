@@ -17,6 +17,8 @@ Hosted Web Projects
 
 [[plunder]]
 
+[[geosketch]]
+
 [[sandbox]]
 
 [[sanskrit]]

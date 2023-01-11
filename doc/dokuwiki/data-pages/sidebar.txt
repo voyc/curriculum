@@ -87,6 +87,7 @@
       * [[Networking]]
       * [[Hacking]]
     * [[Math]]
+    * [[Organic Machine Hybrid]]
     * [[AI]]
       * machine learning
       * narrow

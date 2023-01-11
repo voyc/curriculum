@@ -29,9 +29,10 @@ Max power
 
 Amp rating
 
-Max amps
+Max amps, max current that can safely pass through the motor, 
+depends on coil wire thickness and heat dissipation mechanism.
 
-RPM
+RPM - normally the no-load rpm
 
 Max RPM
 
@@ -47,6 +48,184 @@ more volts, less amps, thinner wires, less weight
 examples
   * Tesla motors run at 400 volts.
   * Porsche at 800V.
+
+Power rating of 12 v dc motor can be few watt to kw depending on design and size: 
+tape recorder, cd motor, industrial carriage, lifter, automobiles, etc.
+
+Powerful supply sources are required for big 12v motors.
+A battery cell can be used for small 12v motors.
+
+=== Power ===
+
+1 kilowatt = 1 horsepower
+
+kilowatt, horsepower, torque, newton, 
+
+rpm, tachometer, hall sensor
+
+power, force, energy, work
+
+energy
+power
+force
+work
+
+^ property ^ unit of measurement ^        ^
+| energy | joule, calorie        | scalar |
+| work   | joule, calorie        | scalar |
+| force  | Newton N (formerly P) | vector |
+| power  | horsepower HP         | scalar |
+
+
+===== Torque =====
+
+When we use the word force, we usually mean a linear force, a push or a pull on an object.
+
+Torque is a rotational force, a twist of an object.
+
+=== Linear Force ===
+
+F = ma
+
+Force = mass times acceleration.
+
+Acceleration is rate of change of velocity
+velocity is 10 meters per second
+the acceleration 10 meters per second per second
+
+
+
+A linear force is acceleration.
+
+A Newton is a measure of linear force.\\
+The amount of force it takes to accelerate 1 kg of mass 
+at a rate of 1 metre per second squared.
+
+\begin{align}
+1 \text{ Newton} = 1 \text{ kg} \frac{m}{s^2}
+\end{align}
+
+How do you measure acceleration?
+0 to 60 in 10 seconds.  Whats the acceleration?
+Let's make it 0 to 100 kph in 10 seconds.
+acceleration = 100 km /10 * seconds^2
+= 10 km / second^2
+
+I find it difficult to think about force this way.
+I would rather just think about speed.
+If I push a 10 kg weight 1 meter.
+That might be done in 1 second, or it might take me all day.
+A stronger force can do it in a shorter time.
+
+So, push a 1 kg weight, a distance of 1 meter, in 10 seconds.
+But that is not a reasonable measure of force, because of momentum.
+Once the weight is moving, it will continue to move at that speed indefinitely.
+It will require force to stop the movement, or to speed it up.
+Therefore we measure acceleration.
+
+A force can be applied to get an object moving, and it will continue moving with no force.
+So to measure the force, we must measure the acceleration.
+
+=== Force of Gravity ====
+
+The acceleration due to gravity is 9.8 Newtons.
+
+An object falls to earth accelerating at 9.8 meters per second every second.
+
+9.8 meters = 32 feet
+
+=== Rotational Force ===
+
+When I hear the term Newton-meter, I immediately think, that must mean to move a 
+
+The Newton-meter is a measure of rotational force, or Torque.
+
+I find the term Newton-meter misleading because it sounds like 
+
+The term does NOT mean moving 1 Newton a distance of 1 meter.
+A foot-pound of force means moving a 1 pound mass through a distance of one foot.
+
+=== How to measure torque ===
+
+
+
+
+=== Stall Torque === 
+
+Attach a one-meter arm to a motor's drive shaft, 
+hang a weight on the arm, and see if the motor can lift it.
+
+So what if I rig a motor in this way and find it can lift a 1 kg weight. 
+
+If I buy a torque wrench in America, what are the units?  foot-lbs?
+
+power vs force: HP, Watts, Nm/s
+
+What about the weight of the arm?
+
+
+
+
+=== Output Watts ===
+
+speed and torque
+
+=== Watts to Torque conversion ===
+
+Bullshit!!
+
+Watts to Torque Calculator
+https://www.electrical4u.net/calculator/watt-w-to-torque-nm-conversion-calculator/
+
+This webpage has replicated dozens of clickbait sites.
+
+Tradeoffs
+  * current vs voltage
+  * voltage vs speed
+
+This makes us ask:  is Watts a viable number?
+
+We use watts as a single number to rate and compare motors.
+
+What we really want to know about is speed and torque.
+
+And what we really need to know to hook a motor up is charge and current.
+
+DeWalt uses the term "Unit Watts Out".  
+As opposed to the rated watts which would be watts in.
+https://www.protoolreviews.com/max-watts-out/
+
+=== Efficiency, input power, output power ===
+
+
+
+input: 8000 watts (amps * volts)
+
+output: torque and speed
+
+How do you compare these two?
+
+efficiency = output power / input power
+
+Watts input = volts * amps
+
+Watts output = ?, HP * 746, torque * speed * a constant? 
+
+horsepower = 
+
+input voltage, aka supply voltage
+
+Shaft power vs voltage and current \\
+https://www.engineeringtoolbox.com/electrical-motor-horsepower-d_653.html
+
+DC Motor Specifications \\
+http://www.learningaboutelectronics.com/Articles/DC-motor-specifications.php
+
+=== Summary of Equations ===
+
+W = A * V  && watts = amps * volts  & power = current * voltage
+V = A * R  && volts = amps * resistance  & voltage = current * resistance 
+
 
 ===== Hub vs Mid =====
 
@@ -130,13 +309,6 @@ stepper
     * single-phase
     * three-phase
 
-==== Power ====
-
-1 kilowatt = 1 horsepower
-
-kilowatt, horsepower, torque, newton, 
-
-rpm, tachometer, hall sensor
 
 ==== EMF ====
 

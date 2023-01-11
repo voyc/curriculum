@@ -321,6 +321,77 @@ types
   * empty, type of visual representation
   * force field, aka field, aka effector, type of force
 
+==== Subassembly Organization ====
+
+How to group multiple objects into a subassembly:
+  * Collection
+  * Collection Instance
+  * Parenting
+  * Boolean Union (NOT for subassembly)
+
+=== Collection ===
+
+There are two ways to use a collection.
+  - Use it to organize the hierarchy in the outliner.
+  - Use it as a class that can be instantiated multiple times.
+
+You can hide/unhide the whole collection with one click. \\
+But you cannot move/rotate/animate the collection as a unit.
+
+=== Collection Instance ===
+
+Every collection can be instantiated.\\
+The instance appears as a single line in the outliner, and is treated as a single object.
+
+How to:
+  * Build a collection someplace  - separate file, separate scene, separate hidden area of outliner.
+  * Add an instance of that class to your project.  
+    * Add-Collection Instance-your collection.  This does a link.
+
+Not recommended: Object-Apply-Make Instances Real. This copies all the component objects flatly, 
+not organized.
+
+=== Parent ===
+
+How to:
+  * Select two or more objects in the outliner.
+  * One of the objects will be "selected", the others merely highlighted.
+    * Shift-click leaves first object clicked as selected.
+    * Cntrl-click leaves last object clicked as selected.
+  * Object-Parent-Object.  Makes selected object the parent; moves the others under it in the outliner.    
+  * Recommended: Add empty object to be the parent.
+
+You can move/rotate/animate the group as a unit.\\
+But you still have to hide/unhide components individually.
+
+=== Boolean Union ===
+
+Use for sculpting a single component. \\
+NOT appropriate for a subassembly. \\
+
+How to:
+  * select object to modify.
+  * Wrench - Add Modifier - Boolean - Union
+  * second object: a copy of this is merged into the selected object
+  * hide the second object to see the results
+  * Apply - this makes the modification permanent.
+
+The selected object is modified.  Its mesh is altered. \\
+The second object is unaffected and may now be deleted.
+    
+=== Comparison ===
+
+^                                           ^ Parent ^ Collection ^ Instance ^
+| Can be undone                             | Yes    | Yes        | Yes      |  
+| Show hierarchy of components in outliner  | Yes    | Yes        | No       |
+| Hide/Unhide whole group with one click    | No     | Yes        | Yes      |
+| Move/rotate/animate whole group as a unit | Yes    | No         | Yes      |
+| Copy/paste as a unit                      | No     | No         | Yes      |
+
+Usage recommendations:
+  - For a unique, one-off subassembly, use an empty parent within a collection. Use the collection to hide/unhide; use the empty parent to move/rotate/animate.
+  - For a subassembly replicated multiple times, build a collection as a class, kept in a normally hidden collection of the outliner hierarchy, and add multiple instances into the final assembly.
+  - For a component that will be 3D printed, keep it a separate simple object without modifiers or materials, so that it can be exported to a separate .STL file.
 
 =====Video Sequence Editing=====
 

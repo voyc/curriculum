@@ -358,7 +358,29 @@ Match battery to controller
 
 Match BMS to battery
 
+===== Science Project =====
 
+metal strips
+
+  * 3 strips ordered from IXGNU at Amazon
+  * nickel
+  * copper
+  * zinc
+
+12 strips ordered from ScienceKitStore.com
+
+  * Mg  magnesium
+  * Ti  titanium
+  * Ni  nickel
+  * Pb  lead
+  * Fe  iron
+  * Cu  copper
+  * Zn  zinc
+  * Al  aluminum
+  * C   carbon
+  * BS  brass
+  * SS  stainless steel
+  * BZ  bronze
 
 ===== Reference =====
 

@@ -87,16 +87,17 @@ The magnetic field deflects the solar wind.
 
 matter, motion, behavior, space, time
 
-energy
+energy\\
 In physics, energy is the quantitative property that is transferred to a body or to a physical system, recognizable in the performance of work and in the form of heat and light. Energy is a conserved quantity; the law of conservation of energy states that energy can be converted in form, but not created or destroyed. The unit of measurement in the International System of Units (SI) of energy is the joule, which is the energy transferred to an object by the work of moving it a distance of one metre against a force of one newton.
+
+Newton\\
 It (newton) is defined as 1 kg⋅m/s2, the force which gives a mass of 1 kilogram an acceleration of 1 metre per second per second. It is named after Isaac Newton in recognition of his work on classical mechanics, specifically Newton's second law of motion.
 
-force
+force\\
 In physics, a force is an influence that can change the motion of an object. A force can cause an object with mass to change its velocity (e.g. moving from a state of rest), i.e., to accelerate. Force can also be described intuitively as a push or a pull. A force has both magnitude and direction, making it a vector quantity. It is measured in the SI unit of newton (N). Force is represented by the symbol F (formerly P).
 
 
-
- Electricity and magnetism have been studied as a single branch of physics since the intimate connection between them was discovered in the early 19th century; an electric current gives rise to a magnetic field, and a changing magnetic field induces an electric current. Electrostatics deals with electric charges at rest, electrodynamics with moving charges, and magnetostatics with magnetic poles at rest.
+Electricity and magnetism have been studied as a single branch of physics since the intimate connection between them was discovered in the early 19th century; an electric current gives rise to a magnetic field, and a changing magnetic field induces an electric current. Electrostatics deals with electric charges at rest, electrodynamics with moving charges, and magnetostatics with magnetic poles at rest.
 
 work
   * is measured in joules, same as energy
@@ -116,6 +117,26 @@ terms:
   * watt - electrical power as the instantaneous product of voltage and current 
   * force
   * efficiency - a percentage: (output/input) * 100
+
+$ m\cdot s^{-2} $
+
+Units of measure
+
+Things to measure
+
+^ term   ^ description              ^ equation ^ SI unit ^ other unit ^ 
+| energy | the potential to do work | | joule | scalar |
+| work   | the amount of energy spend to do some work | | joule | scalar |
+| power  | the rate at which work is done | joules per second  || |
+
+| speed  | movement | | $m/s$ | mph, kph |
+| acceleration | increasing speed |$ m/s^2$||$ \frac{m}{s} \nicefrac{m}{s} m/s $ |
+| force  | a push or pull to produce acceleration | 1 kg⋅m/s^2 | Newman | scalar | 
+| power  | the rate at which work is done | mass * distance / time | Nm/s | Watts, HP |
+| mass   | | |
+| weight | | |
+
+https://en.wikipedia.org/wiki/International_System_of_Units
 
 Newton is a unit of force, not power, but 1 horsepower = 746 Nm / sec.
 

@@ -257,3 +257,50 @@ difference between the two thetas, as a percentage of total theta for the circle
 total length of the circle = circumference = 2pir
 
 pct_thetadiff * circumference
+
+===== Haversine =====
+
+versine = 1 - cosine\\
+haversine = half versine
+
+{{:unit_circle_versin.png?400|}}
+
+arc, chord, tangent
+
+===== Negative Latitude =====
+
+Numeric systems use signed digital numbers for latitude and longitude.
+
+45°30'56"N becomes 45.5155556, but is it negative or positive.
+
+In mathematical graphs, 
+  * the centerpoint is 0,0
+  * points above the x-axis have a positive y-value
+  * points below the x-axis have a negative y-value 
+  * y-values increase as the point moves up
+  * In this system,
+    * the equator is at latitude 0 
+    * North latitudes are positive
+    * South latitudes are negative
+
+In computer graphic systems, 
+  * 0,0 is at the top-left 
+  * all y-values are positive and they go down
+  * y-values increase in value as the point moves down the screen
+  * In this system,
+    * the equator is at latitude 0 
+    * North latitudes are negative
+    * South latitudes are positive
+
+In our data and programs, all coordinates use the math graph system: North is positive.
+
+EXCEPT for the projection system.  It uses the computer graphic system: North is negative.
+
+Therefore when going to and from the projection system, we flip the sign of the latitude value.
+
+===== Distance between Point and Line =====
+==== Line defined by two points ====
+If the line passes through two points P1 = (x1, y1) and P2 = (x2, y2) then the distance of (x0, y0) from the line is:[4]
+
+{\displaystyle \operatorname {distance} (P_{1},P_{2},(x_{0},y_{0}))={\frac {|(x_{2}-x_{1})(y_{1}-y_{0})-(x_{1}-x_{0})(y_{2}-y_{1})|}{\sqrt {(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}}}.}{\displaystyle \operatorname {distance} (P_{1},P_{2},(x_{0},y_{0}))={\frac {|(x_{2}-x_{1})(y_{1}-y_{0})-(x_{1}-x_{0})(y_{2}-y_{1})|}{\sqrt {(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}}}.}
+

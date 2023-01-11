@@ -11,3 +11,5 @@
 [[Projects]]\\
 [[Essays]]\\
 [[Todo]]\\
+
+[[Draft:index]]\\

@@ -9,3 +9,37 @@ electrical circuit - controlled by mechanical switches
 electronic circuit - controlled by electronic signals
 
 electronics begins with the vacuum tube and the transistor
+
+==== Resistor ====
+
+Can be used in these ways:
+  * current limiting
+  * voltage limiting
+  * pull-down
+  * pull-up
+
+=== Current Limiting Resistor ===
+
+Wire in series with an LED.
+
+A **braking resistor** is a special case of the limiting resistor used in DC motors and 
+can be used in three braking circuits: 
+
+  * plugging, or counter-current, braking
+  * dynamic, or rheostatic, braking
+  * regenerative braking
+
+=== Voltage Limiting Resistor ===
+
+Create a **voltage divider circuit** with two resistors.
+
+Limit voltage to any value.
+
+=== Pull-down Resistor ===
+
+Place between an open switch and ground, to force the switch to appear open.
+
+=== Pull-up Resistor ===
+
+Place resistor between an open switch and the voltage source, to force the switch to appear closed.
+

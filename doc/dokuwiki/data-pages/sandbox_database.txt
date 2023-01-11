@@ -10,3 +10,7 @@ Do everything from psql.  \\
     \? list psql commands
     \dt list tables in public schema
     SELECT * FROM information_schema.tables WHERE table_schema = 'mai';
+    SELECT column_name, data_type FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'mai';
+   
+    
+    

@@ -497,6 +497,10 @@ t = time
 N = Number of turns
 e = EMF
 
+flux -> change in flux -> EMF\\
+https://youtu.be/Y2XvIofbwpc
+
+
 
 electromagnetic induction
 https://en.wikipedia.org/wiki/Electromagnetic_induction
@@ -909,5 +913,13 @@ The electrolyte helps transport ions between positive and negative electrodes.
 
 ==== Alternating Current (AC) ==== 
 
+===== Magnetic Field ===== 
 
+==== Calculate and Plot a Magnetic Field ====
+
+Numerical Error with Simulation...\\
+https://physics.stackexchange.com/questions/139479/numerical-error-with-simulation-of-electric-charge-in-homogeneous-magnetic-field
+
+Mathematical Model of Magnetic Field Lines\\
+https://spacemath.gsfc.nasa.gov/earth/9Page23.pdf
 

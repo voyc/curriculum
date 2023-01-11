@@ -1,0 +1,226 @@
+====== Geosketch Data Origin ======
+
+4 dec 2022 re-create plunder database in a2hosting
+
+database: **voyccom_plunder**
+
+used by both plunder and geosketch
+  * geosketch is used to update the data
+  * plunder reads the data
+
+Historical note: three databases were used at webfaction. 
+  - jhagstrand_plunder - the original plunder database of geographical data.
+  - voyc - used temporarily for building some of the plunder data js files.
+  - jhagstrand_voyc - the historical political data used in voyc.
+
+In the move from webfaction to a2hosting, those second two files were lost.
+That is not critical, because they were used only temporarily.
+
+Plunder loads its data from static js files, generated from the database.
+
+Voyc uses google maps api, and therefore does not need geographical data.
+
+Going forward, we will rebuild the voyccom_plunder database.
+It will contain all the geographic data for drawing the map.
+It will also contain political data, copied from the Voyc database. 
+How will we resolve this dual maintenance of the political data?
+
+==== Create the database ====
+
+Create voyccom_plunder database on a2hosting/cPanel tool
+
+Create the schema
+
+  psql -d voyccom_plunder -U voyccom_jhagstrand -c "create schema plunder;"
+
+==== Load in the OSM-Tilemill archive ====
+
+This is evidently an older version of data found on natural earth data website.
+
+  cd ~/webprod/geosketch/geosketch/datasource/osmtilemill
+  wget https://github.com/polpols/OSM-Tilemill/archive/master.zip
+  unzip -j master */10m_geography_regions_polys.*
+  shp2pgsql -c -W LATIN1 10m_geography_regions_polys plunder.georegions >load.georegions.sql
+  psql -d voyccom_plunder -U voyccom_jhagstrand <load.georegions.sql
+
+This creates a table named georegions containing 1048 records classified by terrain type.
+
+  select gid, scalerank, featurecla, name, namealt, region, subregion, geom from plunder.georegions;
+
+==== Load rivers from natural earth data ====
+
+  cd ~/webprod/geosketch/geosketch/datasource/naturalearthdata/rivers
+  wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip
+  unzip -j ne_50m_rivers_lake_centerlines.zip
+  shp2pgsql -c -W LATIN1 ne_50m_rivers_lake_centerlines plunder.rivers50 >load.rivers50.sql
+  psql -d voyccom_plunder -U voyccom_jhagstrand <load.rivers50.sql
+
+
+select guid, scalerank, featurecla, name, note, min_zoom, name_alt, min_label, name_en, label
+from plunder.rivers50
+
+==== Load lakes and seas data from natural earth data ====
+
+  cd ~/webprod/geosketch/geosketch/datasource/naturalearthdata/lakes
+  wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_lakes.zip
+  unzip ne_50m_lakes.zip
+  shp2pgsql -c -W LATIN1 ne_50m_lakes plunder.lakes50 >load.lakes50.sql
+  psql -d voyc -U jhagstrand <load.lakes50.sql
+
+
+
+A table on this page includes names of the major seas.
+https://en.wikipedia.org/wiki/List_of_political_and_geographic_borders
+
+==== Load politial data from voyc/fpd ====
+
+fpd.fpd contains 565,080 million rows
+
+empire.js contains 428 rows
+
+treasure.js contains 67 rows
+
+
+Copy the fpd table from voyc to plunder
+
+  pg_dump -Fp -b -O --column-inserts -U voyccom_jhagstrand -n fpd -f dumpvoyc.sql voyccom_voyc
+  
+  psql -d voyccom_plunder -U voyccom_jhagstrand <dumpvoyc.sql
+
+
+==== Combine source tables into one ====
+
+Create master table plunder.plunder.
+
+  SET CLIENT_ENCODING TO UTF8;
+  SET STANDARD_CONFORMING_STRINGS TO ON;
+  create table plunder.plunder (
+  id serial,
+  source varchar,
+  gid integer,
+  name varchar,
+  featureclass varchar,
+  scalerank integer,
+  timebegin double precision,
+  timeend double precision,
+  maptype integer,
+  datatype integer,
+  forebear integer,
+  color integer
+  );
+  ALTER TABLE plunder.plunder ADD PRIMARY KEY (id);
+  SELECT AddGeometryColumn('plunder','plunder','geom','0','GEOMETRY',2);
+
+Load empire and treasure data.
+
+  insert into plunder.plunder (
+    source,gid,name,featureclass,scalerank,timebegin,timeend,
+    maptype,datatype,forebear,color,geom)
+  select 
+    'fpd',id,replace(headline, E'\n', ' '),'empire',magnitude,timebegin,timeend,
+    maptype,datatype,forebear,color,the_geom
+  from fpd.fpd
+  where editstatus < 10
+  and maptype in (3,4)
+  and datatype in (2,5,6,7,8,10);
+  
+  insert into plunder.plunder (
+    source,gid,name,featureclass,scalerank,timebegin,timeend,
+    maptype,datatype,forebear,color,geom)
+  select 
+    'fpd',id,replace(headline, E'\n', ' '),'treasure',magnitude,timebegin,timeend,
+    maptype,datatype,forebear,color,the_geom
+  from fpd.fpd
+  where editstatus < 10
+  and maptype = 2
+  and datatype in (2,5,6,7,8,10)
+  and timebegin < 1900;
+
+Load osmtilemill data into plunder table.
+
+  insert into plunder.plunder (
+    source,gid,name,featureclass,scalerank,geom)
+  select 
+    'osmtilemill',gid,name,featurecla,scalerank,geom
+    from plunder.georegions;
+    
+Load rivers data into plunder table.
+
+  insert into plunder.plunder (
+    source,gid,name,featureclass,scalerank,geom)
+  select 
+    'natearth50',gid,name,featurecla,scalerank,geom
+    from plunder.rivers50;
+
+Load lakes data into plunder table.
+
+  insert into plunder.plunder (
+    source,gid,name,featureclass,scalerank,geom)
+  select 
+    'natearth50',gid,name,featurecla,scalerank,geom
+    from plunder.lakes50;
+
+Massage
+  update plunder.plunder set featureclass = lower(featureclass);
+
+==== File Folder Structure ====
+
+geosketch/sql/geo - sql files that generate data js files from plunder database\\
+geosketch/sql/poli - sql files that generate data js files from voyc database \\
+geosketch/datasource - original shapefiles downloaded from the interenet\\
+
+The datasource directory is not put in github, because the data is all zipped.
+But we retain a copy of it all anyway, in case it gets deleted from the cloud someday,
+and we need it for recovery. 
+
+This page documents how the the zipped shapefiles in datasource were loaded into 
+the plunder database.
+
+==== Delete the temp tables ====
+
+Keep plunder.plunder.\\
+plunder.plunder 2433 rows\\
+
+Drop the others.\\
+plunder.georegions 1048 rows\\
+plunder.rivers50 478 rows\\
+pluner.lakes50 412 rows\\
+fpd.fpd 565,080 rows\\
+
+drop table plunder.georegions;
+drop table plunder.rivers50;
+drop table pluner.lakes50;
+drop table fpd.fpd;
+drop schema fpd cascade;
+
+==== Fix Rivers ====
+
+select id, name, scalerank from plunder.plunder where id in (2009,2011);
+update plunder.plunder set scalerank=6 where id in (2009,2011);
+
+==== shp2pgsql ====
+
+  voyccom@az1-ss8 [~/webprod]# grep -r shp2pgsql .
+  ./voyc/voyc/datasets/natural earth data/ne_50m_admin_0_countries_lakes/countries.sql:shp2pgsql -W LATIN1 -w ne_50m_admin_0_countries_lakes.shp fpx >countries.sql
+  ./voyc/voyc/datasets/natural earth data/ne_110m_admin_0_countries/ne_110.txt:shp2pgsql -W LATIN1 -w ne_110m_admin_0_countries.shp fpx >countries.sql
+  ./plunder/plunder/sql/geo/geo-regions-notes.txt:shp2pgsql -c -W LATIN1 10m_geography_regions_polys plunder.georegions >load.georegions.sql
+  ./plunder/plunder/sql/geo/water.sql:shp2pgsql -c -W LATIN1 ne_50m_lakes plunder.lakes50 >load.lakes50.sql
+  ./plunder/plunder/sql/geo/water.sql:shp2pgsql -c -W LATIN1 ne_50m_ocean plunder.ocean50 >load.ocean50.sql
+  ./plunder/plunder/sql/geo/rivers.sh:shp2pgsql -c -W LATIN1 ne_50m_rivers_lake_centerlines plunder.rivers50 >load.rivers50.sql
+  ./curriculum/curriculum/doc/dokuwiki/data-pages/geosketch_data_origin.txt:  shp2pgsql -c -W LATIN1 10m_geography_regions_polys plunder.georegions >load.georegions.sql
+  ./curriculum/curriculum/doc/dokuwiki/data-pages/geosketch_data_origin.txt:  shp2pgsql -c -W LATIN1 ne_50m_rivers_lake_centerlines plunder.rivers50 >load.rivers50.sql
+  ./curriculum/curriculum/doc/dokuwiki/data-pages/geosketch_data_origin.txt:  shp2pgsql -c -W LATIN1 ne_50m_lakes plunder.lakes50 >load.lakes50.sql
+  ./
+  
+==== Cities ====
+
+from: simplemaps.com, 42,000 cities, downloaded as a csv file
+  
+by contrast, Natural Earth has 243 cities
+
+
+==== Countries ====
+  5 Jan 2023
+  wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+  unzip ne_110m_admin_0_countries.zip 
+  shp2pgsql -c -W LATIN1 ne_110m_admin_0_countries plunder.ne110_admin0_countries >load.countries.sql
