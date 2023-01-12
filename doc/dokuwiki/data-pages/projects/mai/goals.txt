@@ -1,0 +1,15 @@
+[[projects:projects]]:[[mai]]
+
+====== Goals ======
+
+Bring coach and student together and assist both.
+
+Repetitive practice.
+
+Introduce material to the student gradually, always reinforcing and building on what is already known.
+  * Progressive drill.
+  * Controlled vocabulary.  We know what words the user has mastered already, and we know the words in each story.
+
+Use the story as a basic unit - instead of random vocabulary, or lessons - to make the learning engaging and purposeful.
+
+We include songs, news stories and encyclopedia articles in the stories.

@@ -1,0 +1,22 @@
+[[projects:projects]]:[[flash]]
+
+====== Detail Design ======
+
+==== Algorithms ====
+
+=== Pull ===
+
+
+=== Next Question ===
+
+=== Startup ===
+program publishes "program-ready".
+
+=== Auto Dir ===
+isAutoDir is boolean. \\
+isAutoDir is maintained by object program. \\
+When user clicks button, program toggles isAutoDir, and publishes "changedirection-complete". \\
+
+Two objects subscribe to changedirection-complete: coach and desk. \\
+Coach - save internal copy of isAutoDir, call Pull, call Next Question.\\
+Desk - save internal copy of isAutoDir, changes UI.\\

@@ -1,0 +1,11 @@
+[[projects:projects]]:[[mai]]
+
+====== data structures ======
+
+  * flat  
+  * dict  
+  * mean  
+  * loc
+  * word  
+  * story 
+

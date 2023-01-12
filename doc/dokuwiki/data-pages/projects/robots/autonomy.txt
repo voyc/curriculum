@@ -1,0 +1,214 @@
+[[projects:projects]]:[[robots]]
+
+====== autonomy ======
+
+==== Route Planning ====
+
+  - start with 5 points placed at random
+
+  - draw circle around each point
+
+  - pick position on circle A at random
+
+  - choose circle B at random
+
+  - choose side of B: right or left
+
+  - draw line tangential from A to B
+
+
+[[Skateboarding]]
+
+[[Navigation Trigonometry]]
+
+[[Piloting]]
+
+[[OpenCV vs matplotlib]]
+
+==== keep helm within turning radius ====
+  - how to convert turning_radius to min/max relative_bearing
+  - can you do a unit test, circling a skate around a cone
+    - too tight, it collapses into the cone
+    - too loose, it spirals off the page
+  - slow down for tight turns
+  - gradually speed up with each iteration
+
+==== notes: ====
+  - random options cannot be used for unittests
+  - plot route as you go, ala billiards
+  - how many cones?  if event = barrel racing, find valid barrels and ignore the extraneous.
+  - why are we doing spiral?  why not unittest freestyle first?
+  - arena size and gate are passed by args only in sim mode
+  - turning radius can be adjusted by machine learning and should be saved with the skate id
+  - Course racing can have no more that 180 turns, no cloverleafs.  Cloverleafs are not possible with more than one skate on the track.
+
+==== in normal live mode ====
+  - operator passes event name to computer
+  - all other info derived from camera
+  - if we do an afternoon of multiple events,
+    - do we restart the computer for each event?
+      - reset cones
+      - restart computer with new event name
+    - or
+      - let computer sit in a wait loop
+      - operator can restart with new event name
+
+==== lap counter ====
+
+  - add lap counter
+  - frames, laps, elapsed, top speed
+  - start time, log with timer
+  - display all specs
+  - numlaps = 1
+    - freestyle
+      - lap concept is inadequate
+      - lap, do not return to finish gate until
+    - slalom laps, return to starting gate and begin again
+    - barrel laps
+    - slalom and barrel racing
+      - one lap, stop, begin again
+  - why are we doing laps?
+    - only course racing uses laps
+    - are we setting up for course racing?
+  - a freestyle lap (is this a lap?)
+    - choose pattern, stay 3 laps ahead
+    - choose cones and sides, depending on pattern
+
+==== unittest one lap of freestyle ====
+  - pass specs from unittest to main loop, using saved game
+  - lap counter
+  - write loop with funky (optional)
+  - run one lap with trail, save final image, stop
+  - after each lap and event, skate returns to start orientation at gate
+
+==== operator controls ====
+  - event name
+  - start
+  - stop - skate moves to gate, in start orientation
+  - kill - emergency stop everything
+
+==== gates ====
+  - allow human skaters
+  - two gates, start and finish, may be the same with opposite orientation
+  - two points for each gate, right and left
+  -
+==== style points ====
+  - aesthetics
+  - in route planning
+  - in piloting
+
+==== patterns ====
+  - starting gate, speed between two cones to first cone
+  - finish gate, speed between two cones from last cone
+  - return to home (rth), land on a point.
+  - slalom, along a selected set of cones
+  - perimeter, around a selected set of cones
+  - spiral in, from and to selected cones
+  - spiral out, from and to selected cones
+  - three-leaf clover
+  - barrel race, three-leaf clover plus two gates
+  - figure 8, a set of two cones, or two groups of cones
+  - s-curve, half of a figure 8
+  - full course random, today's planRoute()
+  - course racing, static course with laps, and two gates
+  - freestyle, a chain of patterns, planned in advance, or chosen on the fly
+  - add imaginary points
+
+Event vs Pattern
+
+Pattern Recognition
+
+It should be possible to recognize patterns of cones, such as a gate, straight-line, or mandala, and determine from that event is intended.
+
+Task: unit test each pattern
+==== events ====
+  - spiral
+  - freestyle
+  - slalom: straight-line or course
+  - barrel race
+  - porch mandala
+  - perimeter
+  - slalom around the perimeter
+  - unit test named patterns, ie spiral
+    - run main and sim loop
+    - x leave a trail
+    - save image and compare image to reference
+  - repeat and timing each run
+    - barrel racing: run once and out
+    - freestyle: route, run, repeat, until what
+    - spiral: plot route, same cone again and again
+
+==== legs ====
+  - line
+  - arc
+
+==== freestyle patterns ====
+  - spiral
+  - perimeter
+  - spiral in, out, starting at multiple cones or perimeter
+  - figure 8
+  - mandalas
+  - compulsories
+
+==== spiral pattern ====
+  - only one cone in dead center, run a spiral around it, within the arena boundaries
+  - no route, just forever circle one cone; gate, cone, gate
+  - add reverse
+  - find the centermost cone and spiral around it
+  - how to plot a route?  cannot.  has to be done at execution time
+    - cone center
+    - largest circle within arena given center
+    - smallest radius
+    - largest radius
+    - number of circles
+    - gradually increasing radius
+  - make spiral a leg shape
+    - given: center, start radius, end radius, radial pct increase radius each frame
+      - direction, in or out, cw or ccw
+    - any arc could be treated as a spiral
+      - with additional parameters
+        - number of passes
+        - radial change per frame
+      - set by plotRoute
+      - can a spiral intersect another cone?
+        - the spiral leg could be used like a line, as a route to the next cone
+
+Place cones per event.
+
+==== refactor ala sk8 sensoryMotorCircuit ====
+  - split into brain parts
+  - 2 simultaneous tasks
+    - fly the drone
+    - drive the skate
+  - both require navigation and piloting
+  - navigator and pilot
+  - to navigate - plot a route, strategy
+  - to pilot - steer the vehicle along the route, tactics
+  -
+  - 1st time
+    - if spec.live:
+      - use OpenCV to read frame from drone camera
+      - use TensorFlow to do object detection and segmentation of cones and skate
+    - elif spec.sim:
+      - generate arena, cones, skate
+    - use matplotlib to build map and plot route
+  - subsequent times:
+    - orient new map to master map
+  -
+  - while running:
+    - if spec.live:
+      - use OpenCV to read frame from drone camera
+      - use TensorFlow to do object detection and segmentation of cones and skate
+    - elif spec.sim:
+      - plot new position via dead reckoning
+  - huh
+    - set gate = skate starting position
+    - use matplotlib to plan route: calculate heading, bearings, route
+    - use matplotlib to navigate: calculate heading, bearings
+    - use matplotlib to pilot: calculate helm, speed
+    - use matplotlib to draw map
+    - use OpenCV.addWeighted to overlay map on top of camera image
+    - use OpenCV to show the finished photo
+    - use OpenCV.waitKey(0) to allow user override
+
+

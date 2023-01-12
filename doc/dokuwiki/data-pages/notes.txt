@@ -8,12 +8,12 @@
 
 [[Notes on Sutton-Barto]]
 
-[[Notes from Keep 2018]]
-
-[[Notes Miscellaneous]]
-
 [[Notes on Sapolsky Human Behavioral Biology]]
 
 [[Notes on Sadhguru]]
 
 [[Notes on Gilbert Strang Deep Learning]]
+
+[[Notes Miscellaneous]]
+
+[[Notes Miscellaneousi 2]]

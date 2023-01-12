@@ -1,0 +1,10 @@
+[[projects:projects]]:fx
+
+====== fx ======
+
+submodule, game effects
+
+todo
+  * asset
+    * retry on failure
+    * message progress of image loading

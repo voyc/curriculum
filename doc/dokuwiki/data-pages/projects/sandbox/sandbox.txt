@@ -1,0 +1,22 @@
+[[projects:projects]]:sandbox
+
+====== sandbox ======
+
+Useful commands
+
+    tail -f sandbox.log | sed '/ruby/d;/   import/d'
+    
+    source /home/voyccom/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7/bin/activate
+
+[[hosted subdomain]]
+
+[[python]]
+
+[[database]]
+
+[[logs]]
+
+[[service architecture]]
+
+[[github]]
+

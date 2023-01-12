@@ -1,0 +1,45 @@
+[[projects:projects]]:[[robots]]
+
+====== sk8 ======
+
+robotzone, parent company, winfield, kansas \\
+actobotics, parts brand name \\
+servocity, distributor
+
+skateboard deck
+  * length: 700mm
+  * width: 200mm (at widest point)
+  * height: 110mm (to top of deck, when flat)
+  * height low edge: 90mm   (at maximum tilt, at widest point)
+  * height high edge: 130mm
+
+weight plate
+  * id: 25mm (.98in)
+  * od: 150mm (5.9in)
+  * weight: 2.5kg
+
+{{ :geogebra-sk8-rack.png?400|}}
+
+linear actuator (obsolete idea)
+  * qty: 2 pieces, 
+  * retracted length: 250mm (10 in), 
+  * extended length: 370mm (15 in), 
+  * stroke length: 120mm (5 in), 
+  * speed: 60mm/s (2.5 in/s), 
+  * force: 30 N
+  * include: 4 mounting brackets, 2 at each end of each piece
+
+springs
+  * closed ground
+  * outside diameter  24 mm  (.944882 in)
+  * free length   16 mm  (.629921 in)
+  * wire diameter  1mm  (.0393701 in)
+  * coils   4 total
+  * product number: century 3663
+  * supplier: century spring corp, mw industries, 
+
+object detection
+
+pad angles
+
+{{ ::sk8_pad.png?400|}}

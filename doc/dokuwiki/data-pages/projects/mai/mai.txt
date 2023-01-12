@@ -1,0 +1,26 @@
+[[projects:projects]]:mai
+
+====== Mai ======
+
+[[goals]]
+
+chat command language
+
+[[object model]]
+
+[[data structures]]
+
+[[navigation]]
+
+[[algorithms]]
+
+[[automated test suite]]
+
+[[dictionary]]
+
+[[grammar]]
+
+[[implementation plan]]
+
+[[NLP]]
+

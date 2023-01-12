@@ -1,0 +1,63 @@
+[[projects:projects]]:[[flash]]
+
+====== Future Features ======
+
+===== Auto Score =====
+
+Know automatically if the user gets it right.  (Currently, the user must score himself by clicking the "Right" or "Wrong" button.
+
+Use the microphone, compare user's speech input, and decide whether it's right or wrong.
+
+Let the user type in the answer, and do a text string compare to see if it is correct.
+
+Reading, writing, listening, speaking.
+
+User can input by typing, drawing, or speaking.
+  - typing - string compare
+  - drawing - AI pattern matching of pen strokes
+  - speaking - use microphone and Web Speech API to convert input to text, then to a string compare
+
+===== AI Parameter Optimization ===== 
+
+The algorithm for manipulating the stacks of flash cards is implemented in coach.js.
+
+The algorithm is based on parameters.
+
+At present, we set the parameters manually.
+
+We should be able to use the autoplay feature, repetitively altering the parameters striving for optimal success in mastering the cards.
+
+We should also introduce parameters describing the human.
+  * number of cards in working set
+  * average number of attempts to learn a new cards
+
+Set up a meta-learning AI who repetitively sets up decks and parameter sets and runs autoplay, saving the result of each run, gradually improving the parameter set.
+
+class Train
+  * set parameters
+  * run with autoplay
+  * record result: number of attempts to master all cards
+  * loop
+    * adjust parameters
+    * run with autoplay, max 10000 runaway escape
+    * record result
+
+adjust parameters
+  * a weight multiplied times each parameter
+  * vary the weight up, see the effect on result
+  * vary the weight down, see the effect on result
+
+===== Game Theory ===== 
+
+==== Pacing ====
+
+A never-ending stream of cards is exhausting.  Break it into sets.  Give the user a completion, celebration, and rest before the next set.
+
+==== Aural Reinforcement ====
+
+Music.  Explosions.
+
+==== Empathy ====
+
+Note the user's speed and accuracy, compared to his average, and guess at his emotional state, or at least his levels of energy and focus.
+

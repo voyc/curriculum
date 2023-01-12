@@ -140,3 +140,16 @@ Made possible by plugin yalist, as used in ReStructered Text and Sphinx.
 
 Note.  After installing the yalist plugin for dokuwiki, 
 we modified the style.css file in the lib/plugin/yal/ directory.
+
+
+===== Namespace =====
+
+We have these namespaces: Draft, UserGuide, Projects, Videos.
+
+The first page in each namespace has the same name as the namespace 
+and serves as the index page for that namespace.  Example drafts:drafts.
+
+===== Access Control List (ACL) =====
+
+In Admin-ACL, set permissions to none for @user and @ALL for namespace "draft".
+

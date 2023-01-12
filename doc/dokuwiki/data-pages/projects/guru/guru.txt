@@ -1,0 +1,8 @@
+[[projects:projects]]:guru
+
+====== Guru ======
+
+todo
+  * real-time add and edit, work and quote.  requires account, user roles. (good for teaching)
+  * upgrade db name and owner
+

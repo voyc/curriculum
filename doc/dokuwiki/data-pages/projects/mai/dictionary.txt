@@ -1,0 +1,65 @@
+[[projects:projects]]:[[mai]]
+
+====== dictionary ======
+
+two tables, dict and mean, joined by dict.id = mean.did
+  * dict contains the thai word
+  * mean contains one or more english translations for each thai word
+
+dict.g is type
+  * o - one syllable word or syllable
+  * m - multi-syllable word
+  * s - symbol, ie, ๆ
+
+pos Part of Speech, included in mean table
+  * n noun
+  * v verb
+  * c conjunction
+  * p preposition
+  * j adjective
+  * e adverb
+  * r pronoun
+  * a particle
+  * i interjection
+  * s syllable - note: this is not a part of speech
+
+One meaning can have multiple pos.
+
+==== pm parse manual ====
+  * cp, ru, tl have been manually edited by the user, because the parser failed
+  * click the pm checkbox in the editor to open these fields to editing
+  * replaces and combines tlm and cpm
+  * Note: pm = true indicates the parser failed. this field must be updated when the parser succeeds
+
+==== pf parse fixed (y/n) ====
+  * the record cannot be re-parsed
+  * cp, ru, tl cannot be changed by a user
+  * the testsuite is built dynamically selecting these records from the dict
+  * when we train an AI to do parsing, these records become the training set
+  * Note: when pf = true, pm may be true or false
+
+==== search special ====
+in addition to search exact and search partial:
+  * find words which have some known glyphs (replacing Noam::collect())
+  * find words which have only known glyphs
+  * pf = true/false
+  * pm = true/false
+  * lc = ก
+  * lc.length > 1
+  * lc includes ก
+  * ditto fc, tm, t
+  * includes rule
+  * type = m/o/s
+
+options
+  * include only known words
+  * include only new words
+
+implement via sql or dictionary iterate
+
+==== ToDo ====
+  * rewrite translate()
+  * rewrite translit()
+  * rewrite iterate()
+  * repurpose tlm/cpm to pm/pf (see above)
+  * implement search special (see above)

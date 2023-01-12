@@ -1,0 +1,71 @@
+[[projects:projects]]:[[flash]]:[[conceptual design]]
+
+====== Directions ======
+
+on file\\
+thai\\
+english\\
+translit\\
+sound\\
+picture\\
+\\
+inputs\\
+knowing (manually specify right or wrong)\\
+speaking (voice recognition)\\
+typing (simple match)\\
+handwriting (handwriting recognition)\\
+choosing (menu, which items to put on the menu)\\
+\\
+question/hints\\
+q: show thai writing, optional hint: show picture, play audio, show translit\\
+play sound\\
+example, show word in thai, then for hint, speak it in thai\\
+vice-versa\\
+\\
+q-a-input\\
+thai-english-speaking\\
+english-thai-speaking\\
+thai-sound-speaking\\
+english-thai/sound-speaking\\
+english-thai/sound-writing\\
+sound-thai-writing\\
+sound-thai-speaking\\
+\\
+q-input-a\\
+thai-knowing-english\\
+english-knowing-thai\\
+thai-speaking-english\\
+english-speaking-thai\\
+thai-sound-speaking\\
+english-thai/sound-speaking\\
+english-thai/sound-writing\\
+sound-thai-writing\\
+sound-thai-speaking\\
+\\
+how to say it?\\
+what it means?\\
+how to write it?\\
+\\
+thai\\
+read: what it means in english\\
+listen: what it means in english\\
+\\
+english\\
+read: how to say it, how to write it\\
+\\
+q\\
+thai: english, sound.  hint: translit, picture\\
+english\\
+translit\\
+sound\\
+picture\\
+\\
+a\\
+thai\\
+english\\
+translit\\
+sound\\
+picture\\
+\\
+\\
+\\

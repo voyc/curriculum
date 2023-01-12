@@ -1,0 +1,13 @@
+[[projects:projects]]:[[sandbox]]
+
+====== Hosted Subdomain ======
+
+at a2hosting.com
+
+  * Make html the docroot, in cPanel Subdomains
+  * in the docroot
+    * delete cgi-bin folder (cgi scripts can run in any folder)
+    * add a phpinfo.php script to the docroot
+    * add and modify a php.ini file, to turn on logging to xxxxx.log (Did not take effect until I viewed cPanel, Select PHP Version.)
+    * add and modify a dot htaccess file with a lsapi_phpini directive to apply php.ini to all folders
+  * also, add and modify a config.ini file to point the log file

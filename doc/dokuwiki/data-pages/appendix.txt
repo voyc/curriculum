@@ -1,15 +1,16 @@
 ====== Appendix ======
 
 [[Index]]  \\
-[[Online Education]]\\
-[[Timeline]]\\
 [[References]]\\
-[[Recent Developments]]\\
-[[Samantha Project]]\\
-[[Notes]]\\
+[[Timeline]]\\
 [[Dokuwiki]]\\
-[[Projects]]\\
-[[Essays]]\\
-[[Todo]]\\
 
-[[draft:index|Draft index]]\\
+[[Online Education]]\\
+[[Notes]]\\
+[[Recent Developments]]\\
+
+[[User Guide]]\\
+[[Videos]]\\
+
+[[projects:Projects]]\\
+[[drafts:Drafts]]\\

@@ -1,5 +1,0 @@
-====== Flash Requirements ======
-
-Keep it simple.  No db, no login, only fundamental smart flash card algorithm.  More complicated features can be added to [Bahasa](https://github.com/voyc/bahasa/wiki) a fork of Flash.
-
-Provide an API so that algorithms can be initiated remotely, with or without the UI.

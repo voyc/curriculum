@@ -1,0 +1,63 @@
+[[projects:projects]]:[[sandbox]]
+
+====== python ======
+
+===== Python Scripts =====
+
+I can test my python script from the command line. \\
+python index.cgi \\
+
+In the default a2hosting account, I can run any version of python. \\
+python --version \\
+python3 --version \\
+python3.7 --version \\
+
+I can also create a virtual environment, in which I can use pip to install packages. \\
+Then I can use this environment to run cgi scripts. \\
+
+===== Python Web App =====
+
+We already have python cgi available, as in index.cgi.
+But cgi is not an efficient way to run python.
+So now we will setup a more modern python implementation. \\
+See a2hosting docs here. \\
+[[http://www.a2hosting.com/kb/cpanel/cpanel-software/using-the-python-selector|How to use the Python Selector in cPanel]] \\
+[[http://www.a2hosting.com/kb/developer-corner/python|Python Articles]] \\
+
+==== Web Server Gateway Interface (WSGI) ====
+
+In cPanel, Setup Python App, Create Application.
+
+Fill in the form thusly:
+
+  * Python version:  3.7.12
+  * Application root:  /home/username/webprod/sandbox/sandbox/html/pvc
+  * Application URL: sandbox.voyc.com/pvc
+  * Application startup file: passenger_wsgi.py   (default, created automatically)
+  * Application Entry point: application    (default, the name of a function in the startup file)
+  * Passenger log file: /home/username/logs/user/sandbox.py.log
+
+Evidently this is Phusion Passenger. \\
+From the URL we can call only one python function: the Entry Point in the Startup File. \\
+Page navigation must be handled by the entry point function. \\
+Presumably one could create multiple applications on one subdomain? \\
+
+The Application Root is similar to DocRoot. \\
+The setup creates this folder and installs the startup file and three folders. \\
+passenger_wsgi.py  public/  __pycache__/  tmp/ \\
+
+This application can be stopped, restarted, and destroyed from the cPanel page. \\
+I sometimes need to do a restart to make my program changes take effect.  \\
+
+==== Virtual Environment ====
+
+The cPanel, Setup Python App, program already created a virtual environment for this app.\\
+Its location is /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7.\\
+This folder contains bin/, lib/, and lib64 folders.\\
+To activate this enviroment offline:\\
+  source /home/username/virtualenv/webprod/sandbox/sandbox/html/pvc/3.7
+
+Then I can install packages using Pip, and these packages are available to the web app as well.
+
+==== websockets ====
+

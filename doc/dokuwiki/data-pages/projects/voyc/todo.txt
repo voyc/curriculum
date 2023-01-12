@@ -1,0 +1,172 @@
+[[Projects:projects]]:[[voyc]]
+
+====== todo ======
+
+  * hittest/hilite
+    * hilite of cities, has moved true, redraws whole screen ?
+    * clear hilite on zoom (or reposition label on every move/zoom redraw)
+
+  * branding
+    * user guide, appendix, rename geosketch to voyc
+    * videos, appendix
+    * docroot: move voyc to global
+    * docroot: move geosketch to voyc
+    * rename repository: voyc to global
+    * rename repository: geosketch to voyc
+    
+  * database
+    * ST_GeomFromGeoJSON, add Caspian Sea to lakes
+    * simplify Caspian sea
+
+  * ? animate projection switch, equirectangular projection
+  * ? mercator stitch, in GeoIteratorClip
+
+  * palette options
+    * blur (feather) a border https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter
+    * multi shapes
+
+  * edit layer 
+    * x. save geom in custom01
+    * 2. save geom in any custom layer, from menu of custom layers
+    * 3. edit an already existing shape
+      * how do we select a shape for editing?
+        * before saving, you can grab any point and move it
+        * you can select any object on the page and begin editing it, moving points, close it if not already 
+      * how do we select a layer for editing?
+    * 4. save in base layer, restricted shape type
+      * setting: allow base layer editing
+
+  * custom layers
+    * x put layer menu in local storage
+    * new layer
+    * attributes and data saved in database by userid
+      * Public, private
+      * Description, tags
+      * custom palettes
+    * Search engine
+    * example Custom Layers
+      * CIA puppets
+      * china expansion
+      * international dateline
+      * wars, battles
+      * choke points
+
+  * sketch
+    * mask land https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping, ctx.clip()
+    * auto close, and start new shape
+      * double click (line and polygon)
+      * drop the next point on the first point (polygon only)
+    * distance
+    * Globe: great circle
+    * Mercator: rhumb line
+      * https://javascript.hotexamples.com/examples/%40turf.rhumb-distance/-/default/javascript-default-function-examples.html
+      * https://stackoverflow.com/questions/4541134/rhumb-line-calculation-javascript-to-php
+ 
+  * editable palette
+    * consider base palette vs custom palette
+    * KEEP data and presentation separate
+    * data goes in database, palette in local storage.
+        * custom layers require 1 palette for each layer
+        * named palettes
+    * put palette in local storage
+
+  * save user data
+    * save custom layers to db, svc writeLayer
+    * read custom layers from db, svc readLayer
+    * store palettes in db, svc writePalette
+    * read palettes from db, svc readPalette
+    * save localStorage in db
+
+  * search, return list, select one, highlight selected, similar to hittest
+    * find a place for the search button
+    * multi-match
+    * find "Kush", id 109
+    * Names
+      * Spelling
+      * Add river, mountains, range, etc
+      * Alternative names
+      * Wiki link
+      * Fewer cities
+    * Alpha search index
+
+Features
+  * setup ctx ahead of time, not at draw time, after layer creation, "fixup layer palettes"
+  * db update for editing base layers
+  * db update for custom layers
+  * cities and treasure layers with point medalions
+  * Little x to close label, main menu, search results
+  * North button, appears when gamma non-zero
+  * time
+    * add <<  >> fast forward
+    * when touching mouse to date, resolve to slider
+
+Bugs
+  * when mouse moves off the board, blank out the whereami
+  * pointInPolygon() does not always work, see Crystal Mountains
+  * rank 1,2 gridlines hit only sometimes
+    * seems to always work at intersection with other geoms
+  * treat wheel zoom same as zoom slider
+  * timepicker, arrow keys attempt string instead of numeric addition, until after first use of slider
+  * timeslider appears on startup even when history layer is disabled
+
+Mysteries
+  * Big bang
+  * DNA
+  * Life only eats life. So the origin requires at least two life forms, or canabalism.
+  * Civilization
+  * Is there life without a cell?
+  * Is there a life form that eats only inorganic minerals? Maybe some eat amino acids and proteins?
+
+Chokepoints
+  * Cumberland
+  * Two horns, Africa, Arabia, straits
+  * Capes, good hope, cod, 
+  * Strait Malacca, piracy
+  * Natural vs man-made, canal, bridge, turnpike, borders Crossing
+  * Miles Davis twice
+  * Berlin
+  * Athens school
+  * Kuyber Pass
+  * greece-turkey
+
+
+iterator Callbacks
+  * Drawing
+  * Qualify
+  * Choose palette
+  * Scaling
+
+drawing pipeline (palette choices)
+  * per group,
+  * Per scale
+  * per geom
+
+Palette Editor Dialog
+  * checkboxes: line,poly,point
+
+^            ^ line  ^ poly  ^ point  ^
+| lineWidth  | x     | x     | x      |
+| Dash       | x     | x     | x      |     
+| Radius     |       |       | x      |
+| Line color | x     | x     | x      |
+| Fill color |       | x     | x      |
+| Pattern    |       | x     |        | 
+| Blur       |       | x     |        |
+| Opacity    |       | x     |        |
+
+Layer Editor
+  * name
+  * description
+  * palettes (line/point/poly), scaling, multicolored
+  * (Sketch and custom use three palettes)
+
+Layers
+  * Oceans: hand crafted
+  * Land: continents, islands
+
+voyc user guide
+  * Separate wiki ?
+  * Structure inc with curriculum
+  * Doku.php : require separate DNS?
+  * user_guide -> doku.php
+  * doku.php?id=keyword

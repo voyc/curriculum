@@ -1,0 +1,15 @@
+[[projects:projects]]:[[mai]]
+
+====== implementation plan ======
+
+launch 1, stories, dictionary and drills
+  * load stories, one per day
+  * drill, one per day
+
+launch 2, grammar and sengen and review drills
+
+launch 3, conversation
+
+launch 4, chat amoung coach, student, sam, lee
+
+

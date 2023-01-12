@@ -1,6 +1,0 @@
-====== fx ======
-
-todo
-  * asset
-    * retry on failure
-    * message progress of image loading

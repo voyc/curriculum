@@ -1,0 +1,16 @@
+[[projects:projects]]:[[sandbox]]
+
+====== github ======
+
+Microsoft has purchased Github, and they are slowly sinking it.\\
+Eventually I will have to move to another git platform, possibly private.
+
+=== Change default branch from "master" to "main". ===
+
+Therefore, after creating a new repo, before cloning it:
+
+  * Create a new branch named "master".
+  * Make "master" the default branch.
+  * Delete the "main" branch.
+
+Now feel free to clone the repository.

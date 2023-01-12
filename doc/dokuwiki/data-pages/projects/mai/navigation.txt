@@ -1,0 +1,33 @@
+[[projects:projects]]:[[mai]]
+
+====== navigation ======
+
+http://mai.voyc.com/?name=storyview-25
+
+Push pop replace state in browser history
+
+BrowserHistory.nav(pageid) takes a single parameter, pageid,
+and passes that to history.pushState({'pageid':pageid});
+
+Instead, we need to allow an unlimited number of parameters, as might be added to a url querystring.
+
+Step one, make a new version of the browserhistory.html test app to test an array of parameters instead of only the pageid.
+
+  * ?page=home (alias for chat)
+  * ?page=chat
+  * ?page=about
+  * ?page=profile
+  * ?page=story&view=one&sid=25&view=th&tview=n & mode=edit,replace,view,insert
+  * ?page=story&search=all
+  * ?page=story&search=th,en,tag
+  * ?page=story&view=list&search=all
+  * ?page=story&view=list&search=ว่า
+  * ?page=story&view=list&search=speak
+  * ?page=dictionary&view=popup&did=145
+  * ?page=dictionary&view=edit&did=145
+  * ?page=dictionary&view=list&search=ว่า
+  * ?page=dictionary&view=list&search=speak
+  * ?page=keyboard&view=learn&hilite=123,978,5702,0284,
+  * ?page=keyboard&view=type
+  * ?page=chat&state=drill (stacks saved in local storage)
+  * ?page=chat&state=ready  (NO.  no point in nav back through chat states)

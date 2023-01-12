@@ -1,0 +1,91 @@
+====== User Guide ======
+
+[[projects:voyc:todo]]
+
+[[Projects:Voyc | developer's wiki]]
+
+===== Credits =====
+
+[[Credits]]\\
+https://cartographyvectors.com/map/1224-caspian-sea
+
+
+===== Four Tools ====
+
+These four tools determine the operation of the mouse and of a single finger.
+
+{{::movetool_black_24.png|}} Move - click, tap, or drag to move the map
+
+Point - click, tap, or drag highlight and identify a feature on the map
+
+Sketch - click, tap, or drag to sketch a new feature or edit an existing one 
+
+Measure - click or tap twice to measure the distance between two points
+
+
+You can also move the map by dragging with two fingers, and by using the arrow keys.
+
+
+Move in Move Mode 
+    drag the mouse or one finger
+    click or tap to jump to a point
+        
+Move in any mode
+    drag the middle mouse button        
+    drag two fingers
+    right, left, up, down arrow keys
+
+Zoom 
+    mouse wheel
+    shift-up and shift-down arrow keys
+    two finger pinch in and out
+    zoomer tool        
+
+Rotate the globe on the z-axis
+    shift-right and shift-up arrow keys        
+
+Point 
+    shift-click the mouse
+
+double click
+double tap
+
+
+Sketch - drag to draw a shape on the map
+
+Point - click only, highlight and identify an object on the map
+
+Measure - two mouse clicks, measure the distance between the two points
+
+===== Controls =====
+
+Zoomer 
+
+Time Slider
+
+Globe/Mercator
+
+Search
+
+Where Am I - lower-left corner, lat/long coordinates of mouse
+
+===== Menus =====
+
+Main Menu
+
+Tools
+
+Layers
+
+User
+
+===== Layers =====
+
+==== Custom Layers ====
+
+
+
+
+
+
+

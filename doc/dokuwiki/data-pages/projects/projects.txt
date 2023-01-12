@@ -1,0 +1,38 @@
+Projects:
+======Projects======
+
+[[projects:voyc:voyc]] - previously GeoSketch
+
+[[projects:samantha:samantha]] - AI webchat
+
+[[projects:classy:classy]] - comment classifier
+
+[[projects:sandbox:sandbox]] - experiment and demo
+
+[[projects:bahasa:bahasa]] - language
+
+[[projects:flash:flash]] - flash card memorization
+
+[[projects:guru:guru]] - random quote
+
+[[projects:mai:mai]] - language
+
+[[projects:plunder:plunder]] - game added atop voyc
+
+[[projects:sanskrit:sanskrit]] - language
+
+[[projects:robots:robots]] - multiple hardware projects
+
+[[projects:vote:vote]] - ranked choice voting
+
+[[projects:global:global]] - previously voyc
+
+[[projects:wordnet:wordnet]] - database only, sql version of Princeton's WordNet
+
+[[projects:account:account]] - submodule, user management
+
+[[projects:fx:fx]] - submodule, library of game effects
+
+[[projects:model:model]] - starter project template
+
+[[https://docs.google.com/spreadsheets/d/19pIRXgSPT8AFUTCPh-eTPc8Ej9RInxtj518fo-t2HVs/edit?usp=sharing | projects checklist]]

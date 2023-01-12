@@ -1,0 +1,10 @@
+[[projects:projects]]:sanskrit
+
+====== Sanskrit ======
+
+Todo
+
+  * add sound, via fx?, or a sound util function (weight of another lib include)
+  * add a way to select a single column vs tag
+  * add additional Indic languages
+

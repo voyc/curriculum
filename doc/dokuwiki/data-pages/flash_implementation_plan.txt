@@ -1,7 +1,0 @@
-====== Flash Implementation Plan ======
-
-  * add n directions, drop-down, labels, defaults
-  * add mode (sequential, reverse, shuffle, progressive): drop-down, defaults
-  * allow restart of custom
-  * reorganize messaging (neurotransmitter, hormone)
-  * add “mastered” button

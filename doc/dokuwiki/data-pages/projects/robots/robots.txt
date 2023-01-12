@@ -1,0 +1,29 @@
+[[projects:projects]]:robots
+
+====== robots ======
+
+See also: [[:Robotics]]
+
+[[tram]]
+
+[[billiards]]
+
+[[sk8]] - first skateboard project with Tello drone
+
+[[autonomy]] - second skateboard project with cgi only
+
+[[skateboard]] - early notes investigating skateboard project possibilities
+
+[[journal]] - history of early sk8 progress
+
+
+==== Drone Requirements ====
+
+  * inav flight controller
+  * Android radio controller
+      * Wifi
+      * Two-way
+      * Telemetry
+  * optical flow sensor, Down-facing camera
+  * Video transmitter (wifi?)
+  * Indoor, small
