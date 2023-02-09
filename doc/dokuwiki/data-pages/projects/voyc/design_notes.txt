@@ -130,3 +130,32 @@ In voyc, all of our polygon data is closed.\\
 Therefore, we do not use closePath().
 
 
+===== Perspective Correction ===== 
+
+Drawing the Hires layer.
+
+Projecting a bitmap onto a sphere.
+
+Splitting a rectangular bitmap into smaller tiles, and projecting each onto the sphere.
+
+Each bitmap tile must be perspective corrected.
+
+Javascript canvas ctx commands available:
+  * rotate()
+  * scale()
+  * skew()
+  * translate()
+  * transform() - all of the above using matrix math
+  * clip()
+
+These commands will NOT do perspective correction. aka distort, warp, free transform.
+
+http://tulrich.com/geekstuff/canvas/perspective.html \\
+http://pubs.sciepub.com/ajme/2/7/29/index.html#Figure3 \\
+http://www.java2s.com/Tutorials/Javascript/Canvas_How_to/Image/Shear_image_with_scale_function.htm\\
+
+
+
+
+
+

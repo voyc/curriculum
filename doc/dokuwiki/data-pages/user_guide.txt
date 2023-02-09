@@ -2,7 +2,7 @@
 
 [[projects:voyc:todo]]
 
-[[Projects:Voyc | developer's wiki]]
+[[projects:voyc:voyc | developer's wiki]]
 
 ===== Credits =====
 

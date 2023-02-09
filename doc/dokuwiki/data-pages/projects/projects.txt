@@ -7,6 +7,8 @@ Projects:
 
 [[projects:classy:classy]] - comment classifier
 
+[[projects:splits:splits]] - three-way browser screen splitter
+
 [[projects:sandbox:sandbox]] - experiment and demo
 
 [[projects:bahasa:bahasa]] - language

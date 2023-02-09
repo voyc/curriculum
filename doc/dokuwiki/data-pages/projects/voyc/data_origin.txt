@@ -216,6 +216,8 @@ update plunder.plunder set scalerank=6 where id in (2009,2011);
   
 ==== Cities ====
 
+[[projects:voyc:cities]]
+
 from: simplemaps.com, 42,000 cities, downloaded as a csv file
   
 by contrast, Natural Earth has 243 cities
@@ -226,3 +228,30 @@ by contrast, Natural Earth has 243 cities
   wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
   unzip ne_110m_admin_0_countries.zip 
   shp2pgsql -c -W LATIN1 ne_110m_admin_0_countries plunder.ne110_admin0_countries >load.countries.sql
+
+===== Raster Data =====
+
+from Natural Earth
+
+1:50m Natural Earth II, shaded relief, water (oceans), colorized ground cover\\
+10800 x 5400 pixels\\
+NE2_50M_SR_W.tif
+
+1:10m Natural Earth II, same plus drainage (rivers, lakes) (5x resolution?)\\
+21600 x 10800 pixels,  (2x resolution?) \\
+NE2_HR_LC_SR_W_DR.tif
+
+cut the tif images into tiles\\
+tilesize pixels: 300 x 300, or 600 x 600\\
+tilesize degrees: 10 x 10\\
+36 columns * 18 rows = 648 tiles
+
+  * document hires
+    * file locations
+    * ln -s /home/voyccom/media/data/natural_earth_data/raster/NE2_50M_SR_W.png 50mtex.png
+    * to test local, start browser from the command line
+<code>  
+brave-browser --allow-file-access-from-files
+</code>
+
+

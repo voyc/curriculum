@@ -2,22 +2,90 @@
 
 ====== todo ======
 
-  * hittest/hilite
+  * bugs
+    * x on close layer popup, "querySelectorAll"
+    * both geo/geo.js and js/texture.js contain a drawTexture() function
+    * loading order, land first, add importance to list.sort and renametiles
+    * touch and zooming does not use noscrollgroup, fast-twitch
+    * texture mercator displays as cylindrical
+
+  * layer choice:
+    * water, land, mountains, deserts - fast-twitch, quick draw
+    * lores - when ready
+    * hires - when ready and scale > 2.4
+
+  * draw texture mercator wraps around antimeridian (yay)
+    * make vector layers do the same
+
+  * new database
+    * db: geo ?
+    * schema: account
+    * schema: geo
+    * natural earth data
+    * cities
+    * empire, from voyc.fpd
+    * extraction sql: sr, fc, lat, lng
+    * ST_GeomFromGeoJSON, add Caspian Sea to lakes, simplify Caspian sea
+
+  * Empire: plunder vs fpd
+    * sql for layer extraction, fpd
+    * sql for search, plunder 
+    * Kush, Mongols
+
+  * github
+    * rename voyc to global
+    * rename geo to geolib
+    * rename geosketch to geo
+    * add layout, uses jslib
+
+  * a2hosting
+    * move voyc to global, move files, pt docroot, global.voyc.com
+    * add geo, remove geosketch, geo.voyc.com
+    * pt voyc.com to geo.voyc.com
+
+  * New db.
+    * Column show vs search
+    * Layer features.
+      * Caspian
+      * Mountains
+      * Tundra, plateau, steppe, 
+
+
+  * Features layer
+  * Georegions layer
+  * Search only featureclass in use?
+  * Finish online hiLite, choose test case
+  * Palette by x, scale, fc, c, 
+  * City icons
+  * Metro pop
+  * xanadu
+  * Zoom into metro for component cities
+  * Boundaries for metros?
+  * Fix names all layers, how many?
+  * Marianna Trench
+  * Rift valley, africa, home to birthplace of homo sapiens
+
+  * search, hittest, hilite
     * hilite of cities, has moved true, redraws whole screen ?
     * clear hilite on zoom (or reposition label on every move/zoom redraw)
+    * db: create alpha name index table, and support alternate name spellings
+    * add wiki link for each record, show link in label
+    * add extra data depending on featureclass
+      * cities: pop, country, b, e
+      * rivers: length
+      * mountains: height
+    * cleanup names
+      * proper case
+      * spelling, unicode characters
+      * allow alternative names
+      * add "Mts", "River", "Desert" where necessary
 
   * branding
-    * user guide, appendix, rename geosketch to voyc
-    * videos, appendix
     * docroot: move voyc to global
     * docroot: move geosketch to voyc
     * rename repository: voyc to global
     * rename repository: geosketch to voyc
     
-  * database
-    * ST_GeomFromGeoJSON, add Caspian Sea to lakes
-    * simplify Caspian sea
-
   * ? animate projection switch, equirectangular projection
   * ? mercator stitch, in GeoIteratorClip
 
@@ -77,18 +145,6 @@
     * read palettes from db, svc readPalette
     * save localStorage in db
 
-  * search, return list, select one, highlight selected, similar to hittest
-    * find a place for the search button
-    * multi-match
-    * find "Kush", id 109
-    * Names
-      * Spelling
-      * Add river, mountains, range, etc
-      * Alternative names
-      * Wiki link
-      * Fewer cities
-    * Alpha search index
-
 Features
   * setup ctx ahead of time, not at draw time, after layer creation, "fixup layer palettes"
   * db update for editing base layers
@@ -109,13 +165,16 @@ Bugs
   * timepicker, arrow keys attempt string instead of numeric addition, until after first use of slider
   * timeslider appears on startup even when history layer is disabled
 
-Mysteries
+Mysteries/Frontiers
   * Big bang
   * DNA
-  * Life only eats life. So the origin requires at least two life forms, or canabalism.
+  * Life only eats life. 
+    * first mover: the origin requires at least two life forms, or cannabalism
+    * Is there a life form that eats only inorganic minerals? Maybe some eat amino acids and proteins?
+    * Is there life without a cell?
   * Civilization
-  * Is there life without a cell?
-  * Is there a life form that eats only inorganic minerals? Maybe some eat amino acids and proteins?
+  * Pleasure pain
+  * Agency
 
 Chokepoints
   * Cumberland
@@ -128,7 +187,7 @@ Chokepoints
   * Athens school
   * Kuyber Pass
   * greece-turkey
-
+  * crusades, ghengis khan, marco polo (kublai khan) (chokepoint or coincidence?)
 
 iterator Callbacks
   * Drawing
@@ -164,9 +223,27 @@ Layers
   * Oceans: hand crafted
   * Land: continents, islands
 
+  * Cities, metro, pop, historical
+  * Countries historical
+  * Continents, europe, Asia
+  * Groups: Balkans yugoslavakia, 
+  * stans, western Russia,
+  * Where did WW1 start?
+  * Cia puppets
+  * j
+  * Tobacco to food industry
+  * Dragger in layout add touch
+  * mountains, google "list of mountain ranges", "list of highest mountains", himalaya, karakorum, hindu kush
+  * KHABIB NURMAGOMEDOV, dagestan, russia
+  * Borat, Kazakhastan
+
+mythological utopia
+  * xanadu, marco polo, kublai khan, https://www.worldhistory.org/Xanadu/
+  * tibet (Lost horizon?, 7 years)
+  * timbuktu
+  * katmandu
+
 voyc user guide
-  * Separate wiki ?
-  * Structure inc with curriculum
-  * Doku.php : require separate DNS?
-  * user_guide -> doku.php
-  * doku.php?id=keyword
+  * can we remove doku.php from the link url?
+    * doku.php?id=user_guide
+    * curriculum.voyc.com?id=user_guide

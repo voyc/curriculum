@@ -2,6 +2,9 @@
 
 ====== Mai ======
 
+This project contains some early experiments with python, \\
+which have now been taken further in project [[projects:sandbox:sandbox]].
+
 [[goals]]
 
 chat command language

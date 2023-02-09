@@ -1,6 +1,6 @@
 [[projects:projects]]:classy
 
-====== Classy ======
+====== classy ======
 
 comment classifier
 
