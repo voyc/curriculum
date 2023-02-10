@@ -63,10 +63,11 @@
     * psychopathy
     * [[Eastern models]]
     * human is machine
-    * [[Transcendence]]
     * [[Cognition]]
     * [[Language]]
     * [[Consciousness]]
+    * [[Transcendence]]
+    * [[Frontiers]]
 
 **[[Tools]]**
     * [[Vehicles]]
