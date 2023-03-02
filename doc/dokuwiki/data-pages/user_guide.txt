@@ -1,3 +1,5 @@
+[[Projects:projects]]:[[voyc]]
+
 ====== User Guide ======
 
 [[projects:voyc:todo]]

@@ -2,57 +2,29 @@
 
 ====== todo ======
 
-Fixed or implemented in current commit
+Commit history:
 
+  * 27 Feb 2023 - fix Antarctica and latClamp
+    * fudge Antarctica data for cylindrical projections
+    * fix grid creation bug, was creating array instead of number
+    * add viewport to onscreen layer list
+    * draw viewport for equirectangular as well as mercator
+    * cylindrical stitch for equirectangular as well as mercator
+    * set default latitude clamp at 85.05113
+  
+  * 27 Feb 2023 - small-circle clipping for iteratorCustom as subclass of iteratorClip
 
+  * 28 Feb 2023 - replace projtype with mix
+    * dev mix slider value 1 to 100
+    * mix 80 to 100 equirectangular to mercator adjusts mercator factor .1 to 1
 
-Bugs
-  * both geo/geo.js and js/texture.js contain a drawTexture() function
-  * loading order, land first, add importance to list.sort and renametiles
-  * touch and zooming does not use noscrollgroup, fast-twitch
-  * texture mercator displays as cylindrical
-  * pointInPolygon() does not always work, see Crystal Mountains
-  * rank 1,2 gridlines hit only sometimes
-    * seems to always work at intersection with other geoms
-  * treat wheel zoom same as zoom slider
-  * timepicker, arrow keys attempt string instead of numeric addition, until after first use of slider
-  * timeslider appears on startup even when history layer is disabled
-  * hilite of cities, has moved true, redraws whole screen ?
+  * 2 Mar 2023 - mixer table, soupcan projection
 
-Features
-  * setup ctx ahead of time, not at draw time, after layer creation, "fixup layer palettes"
-  * db update for editing base layers
-  * db update for custom layers
-  * cities and treasure layers with point medalions
-  * Little x to close label, main menu, search results
-  * North button, appears when gamma non-zero
-  * time
-    * add <<  >> fast forward
-    * when touching mouse to date, resolve to slider
-  * clear hilite on zoom (or reposition label on every move/zoom redraw)
-  * layer choice:
-    * water, land, mountains, deserts - fast-twitch, quick draw
-    * lores - when ready
-    * hires - when ready and scale > 2.4
-  * mercator stitch, in GeoIteratorClip
-    * draw texture mercator wraps around antimeridian (yay)
-    * make vector layers do the same
-  * animate projection switch, equirectangular projection
+  * 2 Mar 2023 - replace Geo class with function lib
 
-Reorg
-  * github
-    * rename voyc to global
-    * rename geo to geolib
-    * rename geosketch to geo
-  * a2hosting
-    * move voyc to global, move files, pt docroot, global.voyc.com
-    * add geo, remove geosketch, geo.voyc.com
-    * pt voyc.com to geo.voyc.com
-  * new repos
-    * classy
-    * geolib
-    * layout
-      * Dragger in layout add touch
+  * 2 Mar 2023 - rename geo to geolib, rename DualProjection to Projection
+
+todo:
 
 DB fixup
   * what is Georegions?
@@ -97,16 +69,66 @@ DB fixup
 
 
 
+
+Bugs
+  * fix cylindrical invert to accomodate the three screens of mercator stitch
+  * Set zooming on touch and mousewheel
+  * treat wheel zoom same as zoom slider
+  * loading order, land first, add importance to list.sort and renametiles
+  * touch and zooming does not use noscrollgroup, fast-twitch
+  * pointInPolygon() does not always work, see Crystal Mountains
+  * rank 1,2 gridlines hit only sometimes, seems to always work at intersection with other geoms
+  * timepicker, arrow keys attempt string instead of numeric addition, until after first use of slider
+  * timeslider appears on startup even when history layer is disabled
+  * hilite of cities, has moved true, redraws whole screen ?
+  * tile loading gets slower with every restart, until browser is cycled
+
+Features
+  * setup ctx ahead of time, not at draw time, after layer creation, "fixup layer palettes"
+  * db update for editing base layers
+  * db update for custom layers
+  * cities and treasure layers with point medalions
+  * Little x to close label, main menu, search results
+  * North button, appears when gamma non-zero
+  * time
+    * add <<  >> fast forward
+    * when touching mouse to date, resolve to slider
+  * clear hilite on zoom (or reposition label on every move/zoom redraw)
+  * layer choice:
+    * water, land, mountains, deserts - fast-twitch, quick draw
+    * lores - when ready
+    * hires - when ready and scale > 2.4
+  * animate projection switch
+    * adjust latClamp along with mf
+    * finish soupcan, mix globe-soupcan, soupcan-equirectangular
+
+
+Reorg
+  * github
+    * rename voyc to global
+    * rename geo to geolib
+    * rename geosketch to geo
+  * a2hosting
+    * move voyc to global, move files, pt docroot, global.voyc.com
+    * add geo, remove geosketch, geo.voyc.com
+    * pt voyc.com to geo.voyc.com
+  * new repos
+    * classy - ai classifier of comments and texts
+    * geolib
+    * layout
+      * Dragger in layout add touch
+
 Sketch
-    * mask land https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping, ctx.clip()
-    * auto close, and start new shape
-      * double click (line and polygon)
-      * drop the next point on the first point (polygon only)
-    * distance
-    * Globe: great circle
-    * Mercator: rhumb line
-      * https://javascript.hotexamples.com/examples/%40turf.rhumb-distance/-/default/javascript-default-function-examples.html
-      * https://stackoverflow.com/questions/4541134/rhumb-line-calculation-javascript-to-php
+  * sketch custom objects crossing antimeridian
+  * mask land https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping, ctx.clip()
+  * auto close, and start new shape
+    * double click (line and polygon)
+    * drop the next point on the first point (polygon only)
+  * distance
+  * Globe: great circle
+  * Mercator: rhumb line
+    * https://javascript.hotexamples.com/examples/%40turf.rhumb-distance/-/default/javascript-default-function-examples.html
+    * https://stackoverflow.com/questions/4541134/rhumb-line-calculation-javascript-to-php
  
 
 Palette

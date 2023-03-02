@@ -13,3 +13,13 @@
 [[ToDo]]
 
 [[Exaggerated Typography Maps]]
+
+[[Map Projections]]
+
+[[Zoom Level]]
+
+[[GeoIterator]]
+
+[[Mercator switch]]
+
+[[Straddle Antimeridian]]

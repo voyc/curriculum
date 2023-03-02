@@ -1,0 +1,179 @@
+[[projects]]:[[voyc]]
+
+====== Zoom and Scale ======
+
+Google, ESRI and other systems use a fixed system.
+
+**zoom level** is a number from 0 to 20
+
+**scale** is the ratio of distance on the map vs distance on the earth
+
+Zoom level and scale are inversely related.
+
+
+Zoom changes the field of view.
+
+Scale changes the level of detail.
+
+
+===== Zoom Level 0 =====
+
+At zoom level 0, scale is 1:591657527.591555.
+
+On the mercator map, the equator is 256 pixels long.
+
+Scale is calculated using 256 pixels at 96 pixels per inch (ppi), or 37.79527559 pixels per cm (ppcm).
+
+On the globe, we see only half of the equator and its length is described by: 
+
+$$256 / (PI / 2)$$
+
+
+
+
+
+
+
+
+
+| level | pow2 | scale | 
+|     0 |    1 |       | 
+|     1 |    2 | 
+
+number of tiles
+
+
+==== Scale ====
+
+Scale is a ratio of distances on the map to distances on the earth's surface.
+  * A scale of 1:100 means 1 cm on the map represents 1 meter on the earth.
+  * A scale of 1:100,000 means 1 cm on the map represents 1 km on the earth
+  * A scale of 1:80,000,000 allows us to display the earth as a 10 cm globe on screen.
+
+==== k ====
+
+The radius of the earth in pixels.
+
+==== Zoom Level ====
+
+At level 0, the entire earth is displayed in one tile.
+At level 1, the width and height are both doubled, meaning 4 tiles are required.
+At level 2, width and height are both doubled again, requiring 16 tiles.
+
+==== k ====
+
+At zoom level 0, if the browser window is 900 pixels square, and k is 450,
+the globe will exactly fit in the window.
+
+The mercator projection is how much larger than the orthographic?
+
+Orthographic
+Diameter of the globe is 500 pixels.
+Radius = k = 250
+
+Mercator
+radius = k * PI/2 = 392.5
+width = height = 845 pixels
+
+https://liorsinai.github.io/mathematics/2020/08/27/secant-mercator.html
+
+
+==== Resize ====
+
+what to do on window resize?  two choices:
+  * keep map scale constant, ala Google Maps
+  * keep zoom level constant, ala Google Earth and voyc
+
+field of view (FOV) follows the zoom level
+
+scale determines the level of detail possible
+
+When you enlarge the window, you could show a wider area, or show more detail.
+
+map drawing is done from the center outward with three factors: rotate, scale, translate
+  * rotate - center coordinate [lng,lat]
+  * translate - center pixel [x,y]
+  * scale - zoom level
+
+window dimensions provide a viewport into the map after it is drawn
+
+user actions
+  * rotate - spin the globe, or slide the mercator back and forth
+  * zoom - zoom in and out
+  * resize the window - this translates the center pixel, and may optionally change the zoom
+  * startup - do all three: rotate, zoom, resize
+  * restart - maintain settings from localStorage
+
+the size of the map at zoom level 0
+  * fixed at radius 256 pixels at 96 pixels per inch
+  * based on the window size
+
+on resize, we have two options
+  * keep the zoom constant so the field of view (FOV) changes
+  * change the zoom to keep the field of view constant
+    * in this case, the proportion between window size and zoom level 0 is lost
+    * voyc current, the next user zoom will be wonky because it will reset to the new screen size 
+
+proportion between zoom level and window size is maintained by "k"
+
+k is the radius of the globe in pixels, and is set to half the window square / pi
+
+at zoom level zero the full mercator square just fits in the window.  the globe is pi/2 smaller.
+
+
+Ways of representing scale
+  * scale
+  * k
+  * zoom level
+
+ratio 1cm on the map : how many cm on the earth's surface
+
+k - number of pixels to display the radius of the globe
+
+https://docs.google.com/spreadsheets/d/1ke6Qn_dxM6pKPYjXO0UKiwGXSUHdPTeeGnZkYoXL9wA/edit#gid=0
+
+realistic distances
+mercator: distance along the equator
+orthographic: distance at the window centerpoint
+
+the orthographic globe
+  6371 km earth radius
+  12742 km earth diameter
+  1274200000 cm earth diameter
+
+  arcgis level 0 -> scale 1:591657528
+  1274200000 cm / 591657528 = 2.15
+  ergo, earth diameter displayed in 2.15 cm
+  mercator square displayed in ? cm
+
+
+what determines scale?
+  * orthographic: k
+  * equirectangular: ?
+  * mercator: pow(2,zlevel)
+
+
+halfwid * factor = k = "scale"
+only the factor is saved in localStorage
+on resize, factor stays the same, scale changes
+factor = scale / 2
+
+scale = factor * halfwid
+factor= scale / halfwid
+
+google
+  zoom level 0 thru 20
+
+zoom from whole earth to india
+  * voyc: 16 levels
+  * google: 3 levels
+
+voyc k is based on window size
+google zoom level is based on 0 - 20 
+
+
+scalefactor chosen by user zoom
+k = windowsize / 2 * scalefactor
+pxlPerDgr = k * 4 / 360
+
+change orthographic and equirectangular to use google zoom level, and make them match up

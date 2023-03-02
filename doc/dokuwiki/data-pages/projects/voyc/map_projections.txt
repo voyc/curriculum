@@ -1,0 +1,79 @@
+[[Projects:projects]]:[[voyc]]
+
+====== Map Projections ======
+
+Projecting a 3D sphere onto a 2D map results in distortions.
+
+Place a lamp in the center of a translucent sphere. Let it project a shadow onto a sheet, hanging flat or curled in a cylinder.
+
+All 2D maps are distorted.  Distortion occurs in:
+  * shapes
+  * areas
+  * distances
+  * directions
+  * angles
+
+Types of distortion correction:
+  * conformal - preserves angles
+  * equal-area - preserves areas
+
+Each type of map projection has a different approach to distortion correction.
+
+Three projection types, with variations:
+  * conic
+    * Albers
+    * Equidistant
+    * Lambert Conformal
+  * cylindrical
+    * **Equirectangular**
+    * **Mercator**
+  * planar
+    * azimuthal perspective
+      * **orthographic**
+
+===== Cylindrical Projection =====
+
+
+https://duckduckgo.com/?q=map+projection+cylinder&t=brave&iax=images&ia=images&iai=http%3A%2F%2Fwww.flightlearnings.com%2Fwp-content%2Fuploads%2F2017%2F08%2F1-22.jpg
+
+===== Equirectangular Projection =====
+
+aka equidistant cylindrical projection, geographic projection, lat/lon projection, or plane chart
+
+Stretch the sphere into a cylinder.
+
+Then unroll like peeling the label off a soup can.
+
+Shapes at the poles are stretched horizontally.
+
+===== Mercator Projection =====
+
+Start with the Equirectangular Projection.
+
+Stretch it vertically, to match the horizontal stretch of the equirectangular projection.
+
+The amount of stretch increases geometrically with distance from the equator.
+
+
+===== Orthographic Projection =====
+
+The orthographic projection looks like a globe.
+
+It can display only one hemisphere at a time.
+
+Only the center of the map is free of distortion. Distortion values increase radially from the origin.
+
+The orthographic projection is neither conformal nor equal-area. Shapes, areas, distances, directions, and angles are all generally distorted.
+
+===== Web Mercator Projection =====
+
+https://en.wikipedia.org/wiki/Web_Mercator_projection\\
+https://gist.github.com/shiffman/a0d2fde31f571163c730ba0da4a01c82\\
+https://developer.tomtom.com/blog/decoded/understanding-map-tile-grids-and-zoom-levels\\
+
+mercator uses ellipsoid model, has time-consuming calculation\\
+webmercator uses spheroid model, introduces "zoom level", and simplifies the calculation\\
+a sphere is a subset of an ellipsoid object\\
+
+
+Similar to mercator, but with much faster calculation.
