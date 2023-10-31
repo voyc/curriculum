@@ -1,5 +1,27 @@
 ====== Data Analysis ======
 
+  * personality traits of the land
+    * fixed
+      * altitude: basin, lowland, highland, plateaux (high plain, tableland)
+      * relief:
+      * flatness: plain, hills, foothills, mountain range
+      * features: mountain peak, rift, canyon, 
+      * water: wet, dry
+      * size, boundaries, isolation: continent, island, peninsula, coastal, inland
+    * changing:
+      * plate tectonics, volcanos, erosion
+    * weather (average, seasonal)
+      * rainfall 
+      * temperature: hot, cold (altitude)
+      * wind
+    * soil: erosion, sand, rock, dirt, topsoil: 
+    * plant cover: forest, steppe (grassland), scrub, desert, tundra, ice
+    * animal cover: 
+    * canals, man-made chokepoints
+
+
+
+
 plunder database
 
 table georegions, originally 1048 records from osmtilemill shapefiles

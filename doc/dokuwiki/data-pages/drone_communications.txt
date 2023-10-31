@@ -246,3 +246,63 @@ There are several "development" boards available which include an ESP8266 plus a
 Create an Access Point (AP) that allows only one connection. \\
 Not used as a hub, but used for point-to-point communications between two devices.
 
+===== Speeds =====
+
+Hz - hertz, a measure of bandwidth \\
+bps - bitrate, limited by bandwidth and SNR \\
+
+
+==== RC ====
+
+72 MHz (older analog RC gear in the US)  \\
+35 MHz (older analog RC gear in Europe)  \\
+433 MHz (RC and telemetry, in Europe)  \\
+900-915 MHz (video and telemetry, in the US)  \\
+1.3 GHz (video)  \\
+2.4 GHz (digital RC gear, video and telemetry)  \\
+5.8 GHz (video)  \\
+
+https://diydrones.com/profiles/blogs/some-tips-on-picking-frequencies
+
+==== Cellular =====
+
+2G  \\
+3G  \\
+4G  \\
+5G - theoretical max: 10 GHz  \\
+
+=== 5G vs 5GHz ===
+ 
+5G - 5th generation cellular networks, a marketing term designed to be vague and misleading \\
+5 GHz - a wifi band at 5000 hertz, as opposed to the alternative 2.4 GHz \\
+
+
+==== Wifi ====
+
+2.4 GHz  \\
+5 GHz
+
+
+
+
+==== ESP32-C5 ====
+
+The ESP32-C5 comes with dual-band WiFi 6 (802.11ax) and still has the backward compatible 802.11b/g/n.
+
+//Has this been used with Arduino at 5 GHz?//
+
+https://www.espboards.dev/blog/connect-esp32-to-5ghz-wifi/
+
+
+==== Espressif ====
+
+The company that makes the ESP chips and boards.\\
+Open source. \\
+IPO on Shanghai Stock Exchange (SSE) in June 2019.\\
+
+https://www.espressif.com/en
+
+
+
+
+

@@ -5,14 +5,25 @@
 A disk is a block device.
 
 == fdisk ==
-Used to create partitions on a disk.
+
+Used to manage partitions on a disk.
 
   $ sudo fdisk -l # list partitions
-
-Note: In addition to listing disks and partitions, fdisk also lists loop mounts. A loop mount looks like a disk but is in fact a file containing a file system, created by a snap package install.
+  
+  $ sudo fdisk -l | sed -e '/Disk \/dev\/loop/,+5d'   # ignore Snap loop mounts
 
 == df ==
   $ df -T  # disk filesystem format type
+  
+  $ df -H | grep -v ^/dev/loop   # ignore Snap loop mounts
+
+
+== Note on Snap Loop Mounts ==
+In addition to listing disks and partitions, fdisk and df also list loop mounts. A loop mount looks like a disk but is in fact a file containing a file system, created by a Snap package install.
+The Snap package system is proprietary to Canonical.
+It is deeply embedded into Canonical's Ubuntu and therefore should not be uninstalled from Ubuntu.
+But I uninstalled it anyway according to https://haydenjames.io/remove-snap-ubuntu-22-04-lts/
+
 
 == du ==
   $ du pub # number of blocks for all subdirectories, summary total at end

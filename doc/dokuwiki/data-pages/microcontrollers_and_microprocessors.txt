@@ -1,0 +1,86 @@
+====== Microcontrollers and Microprocessors ======
+
+Chip
+
+
+Integrated Circuits (IC)
+
+
+555 Timer Chip
+
+
+===== Microprocessors =====
+
+
+===== Microcontrollers =====
+
+Arduino
+
+
+
+Raspberry
+
+
+^ microcontroller             ^ microprocessor                  ^
+| Arduino Uno                 | Microchip ATmega328             |
+| Arduino Mega                | Microchip ATmega328             |
+| Arduino Pro Mini            | Microchip ATmega328             |
+| Arduino Nano                | Microchip ATmega328             |
+| Arduino Nano Every          | Microchip ATmega4809            |
+| Arduino Nano 33 BLE         | Nordic Semiconductor nRF52840   |
+| Arduino Nano 33 BLE Sense   | Nordic Semiconductor nRF52840   |
+| Arduino Nano 33 IoT         | Microchip SAMD21                |
+| Arduino Nano RP2040 Connect | Raspberry Pi RP2040             |
+| Arduino Nano ESP32          | Espresif ESP32                  | 
+| u-blox NORA-W106-10B        | Espresif ESP32-S3               |
+| Digispark ATtiny85          | Microchip ATtiny85              |
+
+Atmel started operations in 1984 and was acquired by Microchip Technology in 2016.
+
+mount \\
+dual inline package (DIP) \\
+surface mount \\
+
+
+
+DroneBot Workshop: make your own microcontroller using ATmega328 \\
+https://www.youtube.com/watch?v=1dR6L7Wp7-U  clip starting at 24:05
+
+
+DroneBot Workshop: use standalone ATmega328 on breadboard, replicating Arduino components and functions, using FTDI adapter to load program  \\
+https://www.youtube.com/watch?v=Sww1mek5rHU
+
+FTDI - USB to serial converter
+
+CPU
+
+core
+
+single-board computer
+
+OS
+
+WiFi 6 = 802.11ax
+
+earlier versions: 802.11ac, 802.11a/g/b/n
+
+dual band: 2.4GHz and 5GHz
+
+Wifi 6 does NOT imply 5GHz
+
+
+=== Prototyping Electronic Circuits ===
+
+Three types of boards.  All use square grid of 0.1 inches (2.54 mm) spacing to accomodate DIP chips.
+
+perfboard - holes, each hole surrounded by with square or round solder pad
+
+stripboard - holes and strips, aka Veroboard
+
+breadboard - solderless holes and strips, aka protoboard
+
+stacking with standoffs
+
+
+
+

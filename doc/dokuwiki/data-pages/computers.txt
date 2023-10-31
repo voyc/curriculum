@@ -29,6 +29,6 @@ I  assume  that  the reader  is  familiar  with  the  idea  of  extra-sensory  p
 
 In the process of trying to imitate an adult human mind we are bound to think a good deal about the process which has brought it to the state that it is in. We may notice three components, //(a)// The initial state of the mind, say at birth, //(b)// The education to which it has been subjected, //(c)// Other experience, not to be described as education, to which it has been subjected. Instead of trying to produce a programme to simulate the adult mind, why not rather try to produce one which simulates the child’s? If this were then subjected to an appropriate course of education one would obtain the adult  brain.
 
-[[Microprocessors]]
+[[Microcontrollers and Microprocessors]]
 
 [[Distributed Processing]]

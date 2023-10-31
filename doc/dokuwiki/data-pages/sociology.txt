@@ -198,3 +198,24 @@ some of our psychological programming is a result of human interactions
 some human actions are enforced by sociological patterns
 
 Therefore a study of psychology is not complete without looking at sociology.
+
+==== Business Enterprise ====
+
+=== Organization Forms ===
+  * open source
+  * employee-owned
+  * NGO, activist, charity
+  * state-owned
+  * family-owned
+  * public listed
+  * public unlisted 
+  * private
+  * cartel, mafia
+  * solo
+  * criminal gangs
+
+=== Lists ===
+https://docs.google.com/spreadsheets/d/1O1V7Yw5MmEKytV1aGnoVVA9FEgtKzLguGOZjfHZxwA0/edit#gid=1150796701
+
+=== Control ====
+business or state

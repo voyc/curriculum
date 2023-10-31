@@ -23,3 +23,9 @@
 [[Mercator switch]]
 
 [[Straddle Antimeridian]]
+
+=== Spreadsheets ===
+
+[[https://docs.google.com/spreadsheets/d/1Awik0YO8_AF4qbHn_Z4mJF2ILMT7bNyWxkIqfEUh4m4/edit?usp=sharing | cover]]
+
+[[https://docs.google.com/spreadsheets/d/1Hs1h9R91J8e3biNyIzN-aX_iER-cJ1zTMMGI4BeC-IA/edit#gid=1706980549 | projects]]

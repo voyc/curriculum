@@ -5,56 +5,74 @@
 Commit history:
 
   * 27 Feb 2023 - fix Antarctica and latClamp
-    * fudge Antarctica data for cylindrical projections
-    * fix grid creation bug, was creating array instead of number
-    * add viewport to onscreen layer list
-    * draw viewport for equirectangular as well as mercator
-    * cylindrical stitch for equirectangular as well as mercator
-    * set default latitude clamp at 85.05113
-  
   * 27 Feb 2023 - small-circle clipping for iteratorCustom as subclass of iteratorClip
-
   * 28 Feb 2023 - replace projtype with mix
-    * dev mix slider value 1 to 100
-    * mix 80 to 100 equirectangular to mercator adjusts mercator factor .1 to 1
-
   * 2 Mar 2023 - mixer table, soupcan projection
-
   * 2 Mar 2023 - replace Geo class with function lib
-
   * 2 Mar 2023 - rename geo to geolib, rename DualProjection to Projection
+  * 4 Mar 2023 - option devmix, touch zoom and mousewheel zoom fasttwitch
+  * 4 Mar 2023 - fix scale of cities 
+  * 4 Mar 2023 - let invert accommodate cylindrical stitch
+  * 11 Mar 2023 - cover layer
+  * 11 Mar 2023 - reorg voyc to global, geosketch to geo
+  * 12 Mar 2023 - add layout submodule
+  * 12 Mar 2023 - move geolib to submodule
+  * 15 Mar 2023 - create and load schema geo, load osmtilemill, fix deserts
+  * 15 Mar 2023 - reorg sql
+  * 17 Apr 2023 - on save, create custom layer and add shapes
+  * 23 Apr 2023 - on save, write to usergeo table
 
 todo:
 
-DB fixup
-  * what is Georegions?
-  * what is origin of tundra, grasslands, etc?
-  * create new db named geo
-    * add schema:accounts 
-    * add schema:geo
-    * load data from plunder
-    * load data from natural earth
-    * load data from voyc/fpd
-    * load feature data
-  * columns
-    * optional palette string
-    * original name, display name, wikipedia name, alternate names
-      * proper case
-      * spelling, unicode characters
-      * add "Mts", "River", "Desert" where necessary
-    * city population: muni, metro, mega
-    * cities: pop, country, b, e
-    * rivers: length
-    * mountains: height
-    * empire, ground cover: blur
-  * alpha lookup table, with alternate names
-  * new database
-    * db: geo ?
-    * schema: account
-    * schema: geo
-    * natural earth data
+save sketch
+  * on save, 
+    * require login
+    * require layername (fc)
+    * on new layer
+      * add layer
+      * make the layer visible
+      * add layer menu button 
+  * on startup 
+    * extract and load usergeo layers
+    * add layer menu buttons
+    * fix localStorage layers
+
+sketch
+  * draw across antimeridian
+
+general
+  * db backup script cron: backup geo
+
+  * change title to voyc
+  * pt voyc.com docroot symlink to geo
+
+  * db design for custom user data
+    * palette table, defaults, named, user-custom
+    * layer table, base, user-custom
+    * custom geo data, within layers
+
+  * grep: rewrite accounts to use config.ini instead of config.php
+  * move and zoom don't work right for hires layer
+  * cylindrical stitch not implemented for empire, animation, cover
+
+load data to schema geo
+  * x load ground-cover from osmtilemill-georegions
+  * fixup ground-cover from osmtilemill-georegions
+    * x deserts
+    * mountains
+  * load data from natural earth data
+  * fixup data from natural earth data
+    * rivers
+    * lakes
     * cities
-    * empire, from voyc.fpd
+
+  * load data from plunder
+  * load data from voyc/fpd
+    * empire
+
+  * generate alpha table
+
+layer extraction scripts
     * extraction sql: sr, fc, lat, lng
     * ST_GeomFromGeoJSON, add Caspian Sea to lakes, simplify Caspian sea
     * Column show vs search
@@ -67,21 +85,17 @@ DB fixup
     * sql for search, plunder 
     * Kush, Mongols
 
-
-
-
 Bugs
-  * fix cylindrical invert to accomodate the three screens of mercator stitch
-  * Set zooming on touch and mousewheel
-  * treat wheel zoom same as zoom slider
   * loading order, land first, add importance to list.sort and renametiles
-  * touch and zooming does not use noscrollgroup, fast-twitch
   * pointInPolygon() does not always work, see Crystal Mountains
   * rank 1,2 gridlines hit only sometimes, seems to always work at intersection with other geoms
   * timepicker, arrow keys attempt string instead of numeric addition, until after first use of slider
   * timeslider appears on startup even when history layer is disabled
-  * hilite of cities, has moved true, redraws whole screen ?
   * tile loading gets slower with every restart, until browser is cycled
+  * hilite of cities
+    * sets moved true, redraws whole screen ?
+    * hittest on close group of cities returns the wrong one 
+  * hagstrand/lab is too big, move media out of git
 
 Features
   * setup ctx ahead of time, not at draw time, after layer creation, "fixup layer palettes"
@@ -100,25 +114,14 @@ Features
     * hires - when ready and scale > 2.4
   * animate projection switch
     * adjust latClamp along with mf
-    * finish soupcan, mix globe-soupcan, soupcan-equirectangular
-
-
-Reorg
-  * github
-    * rename voyc to global
-    * rename geo to geolib
-    * rename geosketch to geo
-  * a2hosting
-    * move voyc to global, move files, pt docroot, global.voyc.com
-    * add geo, remove geosketch, geo.voyc.com
-    * pt voyc.com to geo.voyc.com
-  * new repos
-    * classy - ai classifier of comments and texts
-    * geolib
-    * layout
-      * Dragger in layout add touch
+    * adjust co upwards during mercatorStretch and vice-versa
+    * finish soupcan
+    * mix globe-soupcan
+    * mix soupcan-equirectangular
+  * bookmarks, share
 
 Sketch
+  * grep: rename sketchpad.js to sketch.js, we now have two versions of voyc.Sketch object
   * sketch custom objects crossing antimeridian
   * mask land https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping, ctx.clip()
   * auto close, and start new shape

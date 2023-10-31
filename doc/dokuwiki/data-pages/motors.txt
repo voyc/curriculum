@@ -477,3 +477,19 @@ https://en.wikipedia.org/wiki/Mains_electricity_by_country
 
 Modern electronics can raise the voltage of DC with high efficiency, so now high-voltage direct current (HVDC) can give lower losses over long distances.
 
+
+==== Resistance, Resistivity, Electromagnet ====
+
+\begin{align}
+
+R &= ρ × \frac{L}{A} \\
+\text{where:}\\
+R &= \text{resistance in Ω} \\
+ρ &= \text{resistivity of material in Ωm }\\
+L &= \text{length of the wire in m} \\
+A &= \text{cross-sectional area of the wire in m}^{2} \\
+
+\end{align}
+
+source 
+https://www.omnicalculator.com/physics/wire-resistance#conductance-formula-and-resistance-formula

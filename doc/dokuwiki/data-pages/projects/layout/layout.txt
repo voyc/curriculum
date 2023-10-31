@@ -1,0 +1,5 @@
+[[projects:projects]]:layout
+
+====== layout ======
+
+layout browser window into three panels with thumb scroller

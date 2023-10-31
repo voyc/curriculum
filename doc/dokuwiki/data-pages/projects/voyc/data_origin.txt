@@ -2,6 +2,17 @@
 
 ====== Data Origin ======
 
+cd ~/webprod/geosketch/geosketch/datasource/osmtilemill
+wget https://github.com/polpols/OSM-Tilemill/archive/master.zip
+unzip -j master */10m_geography_regions_polys.*
+shp2pgsql -c -W LATIN1 10m_geography_regions_polys plunder.georegions >load.georegions.sql
+psql -d voyccom_plunder -U voyccom_jhagstrand <load.georegions.sql
+
+
+
+
+====== Previous Data Origin ======
+
 4 dec 2022 re-create plunder database in a2hosting
 
 database: **voyccom_plunder**

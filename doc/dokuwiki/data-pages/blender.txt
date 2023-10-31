@@ -1,5 +1,6 @@
 ======Blender======
 
+
 Blender contains a:
 
   * 3D Modeler, and a
@@ -32,6 +33,7 @@ A collection can be appended or linked from another blend file.
 
 
 ===== UI =====
+
 
 The Blender window is divided into three parts:
   - Topbar - one line at the top containing menus.
@@ -199,12 +201,53 @@ Blender Manual: Command-Line Options]]
 
 =====3D Modeling=====
 
-==== UI ====
+3D objects exist within the 3D world.
 
 [[https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U&index=2
 | YouTube: Blender Guru: Blender Beginner Tutorial Part 1]]
 
+==== World ====
+
+testline
+
+=== View ===
+
 Layout workspace, 3D viewport
+
+
+=== Navigate ===
+
+navigate within the world
+
+scroll wheel, mmb
+  * drag with scroll wheel down, orbit, rotate the view around the center point
+  * shift-drag scroll wheel, pan the view away from center
+  * scroll wheel, zoom view in and out
+
+gizmo in upper-right corner also allows orbit and and pan 
+
+~ tilde key, emulate numpad
+  * View Selected, zoom into the active object
+
+User preferences:
+  * Emulate numpad on
+  * Select with left mouse button
+  * View3D - View 3D Global - map semicolon to view_selected
+
+Mouse:
+  * Left mouse button: select object (customized)
+  * Middle mouse button: orbit
+  * Shift + middle mouse: pan
+
+Numpad: 
+  * Numpad (emulation)
+  * Numpad ; focus on select object, view selected (customized)
+  * Numpad 7: top view
+  * Numpad 1: front view
+  * Numpad 3: side view
+  * Numpad 5: swap orthographic and perspective views
+
+==== Objects ====
 
 === move active object ===
 
@@ -220,56 +263,17 @@ confine movement to an axis
   * x, y, z
   * click mmb
 
-=== navigate within the world ===
-
-scroll wheel, mmb
-  * drag with scroll wheel down, orbit, rotate the view around the center point
-  * shift-drag scroll wheel, pan the view away from center
-  * scroll wheel, zoom view in and out
-
-gizmo in upper-right corner also allows orbit and and pan 
-
-~ tilde key, emulate numpad
-  * View Selected, zoom into the active object
-
 === add objects ===
   * duplicate
   * shift a, add, add - mesh - primitives menu: cube, plane, cone, monkey, torus
+
+shift+A: add an object primitive
 
 === render engine ===
 
 Cycles - slow, ray-traced, unbiased, for high-end movies
 
 Eevee - fast, for real-time games
-
-
-
-
-
-
-==== Huh? ====
-User preferences:
-  Emulate numpad on
-  Select with left mouse button
-  View3D =>View 3D Global => map semicolon to view_selected
-
-Left mouse button: select object (customized)
-
-Middle mouse button: orbit
-
-Shift + middle mouse: pan
-
-Numpad ; focus on select object, view selected (customized)
-
-Numpad 7: top view
-
-Numpad 1: front view
-
-Numpad 3: side view
-
-Numpad 5: swap orthographic and perspective views
-
-shift+A: add an object primitive
 
 ==== Force Fields, Particles, Animation ====
 
@@ -327,7 +331,7 @@ How to group multiple objects into a subassembly:
   * Collection
   * Collection Instance
   * Parenting
-  * Boolean Union (NOT for subassembly)
+  * Boolean Un1on (NOT for subassembly)
 
 === Collection ===
 
@@ -364,14 +368,14 @@ How to:
 You can move/rotate/animate the group as a unit.\\
 But you still have to hide/unhide components individually.
 
-=== Boolean Union ===
+=== Boolean Un1on ===
 
 Use for sculpting a single component. \\
 NOT appropriate for a subassembly. \\
 
 How to:
   * select object to modify.
-  * Wrench - Add Modifier - Boolean - Union
+  * Wrench - Add Modifier - Boolean - Un1on
   * second object: a copy of this is merged into the selected object
   * hide the second object to see the results
   * Apply - this makes the modification permanent.

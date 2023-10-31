@@ -1,13 +1,15 @@
 Projects:
 ======Projects======
 
-[[projects:voyc:voyc]] - previously GeoSketch
+[[projects:voyc:voyc]] - aka [[projects:geo:geo]], replaced by global and then by geo
+
+[[projects:global:global]] - previously voyc, before geo
 
 [[projects:samantha:samantha]] - AI webchat
 
 [[projects:classy:classy]] - comment classifier
 
-[[projects:splits:splits]] - three-way browser screen splitter
+[[projects:layout:layout]] - browser screen splitter
 
 [[projects:sandbox:sandbox]] - experiment and demo
 
@@ -27,8 +29,6 @@ Projects:
 
 [[projects:vote:vote]] - ranked choice voting
 
-[[projects:global:global]] - previously voyc
-
 [[projects:wordnet:wordnet]] - database only, sql version of Princeton's WordNet
 
 [[projects:account:account]] - submodule, user management
@@ -36,5 +36,7 @@ Projects:
 [[projects:fx:fx]] - submodule, library of game effects
 
 [[projects:model:model]] - starter project template
+
+[[projects:jslib:jslib]] - library of javascript tools
 
 [[https://docs.google.com/spreadsheets/d/19pIRXgSPT8AFUTCPh-eTPc8Ej9RInxtj518fo-t2HVs/edit?usp=sharing | projects checklist]]

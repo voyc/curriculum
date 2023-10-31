@@ -1,0 +1,9 @@
+[[projects:projects]]:geo
+
+====== geo ======
+
+geo is the new voyc
+
+originally named GeoSketch
+
+voyc.com points to the geo project

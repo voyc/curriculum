@@ -153,3 +153,8 @@ and serves as the index page for that namespace.  Example drafts:drafts.
 
 In Admin-ACL, set permissions to none for @user and @ALL for namespace "draft".
 
+===== 403 Errors =====
+
+The word "Un1ion" cannot be used in a dokuwiki page.
+
+[[https://www.dokuwiki.org/faq:mod_security]]

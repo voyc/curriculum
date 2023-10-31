@@ -1,0 +1,7 @@
+[[projects:projects]]:jslib
+
+====== jslib ======
+
+todo:
+
+  * dragger, mouse has to go really slow or it flies away from the drag object
