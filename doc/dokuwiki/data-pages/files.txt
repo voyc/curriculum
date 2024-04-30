@@ -1,4 +1,3 @@
-
 ====== Files ======
 
 File Types
@@ -42,6 +41,17 @@ find
   $ find . -name "*.js" -exec java -jar compiler.jar --js {} --js_output_file new{} \;
   $ find . -name "*.jpg" -exec convert {} -resize 1920x1080 ../assets_youtube/{} \; 
 
+find unique list of file types
+  $ find ../ -type f | awk -F. '!a[$NF]++{print $NF}'
+
+find and execute command on files across files
+  $ find /media/seagate/media/ -name Thumbs.db -exec rm {} \; # delete files across folders
+  $ find ../ -type f \( -name "*.jpg" -o name "*.JPG" \) -exec rm {} \;
+  $ find ../ -type f -name "*.JPG" -exec rename s/JPG/jpg/ {} \;
+
+find a file anywhere on the disk and ignore the "Permission denied" messages
+  $ find / -name Wire.h 2>&1 | grep -v "Permission denied"
+
 grep
   $ grep -r "progressive" . 
 
@@ -54,11 +64,11 @@ copy files
   $ scp SRC DEST
   $ rsync SRC DEST
 
-synchronize two external hard disks
+synchronize two external hard disks, dry run, real thing, ending slash required
 
-  rsync --dry-run --itemize-changes --delete -avh /media/passport/ /media/seagate/ # dry run
+  rsync --dry-run --itemize-changes -avh /media/john/My\ Passport/pub/ /media/john/Seagate\ Expansion\ Drive/pub/
   
-  rsync --delete -avh /media/passport/ /media/seagate/     # for real
+  rsync -avh /media/john/My\ Passport/pub/ /media/john/Seagate\ Expansion\ Drive/pub/
   
   --dry-run
   --itemize-changes
@@ -78,10 +88,3 @@ sync songs from hard disk to phone, skipping the cover art
 
   rsync --delete -avh -e "ssh -p 2222" --exclude '*.jpg' /media/passport/pub/songs/ '192.168.1.100:/storage/emulated/0/media/songs/'
 
-find unique list of file types
-  $ find ../ -type f | awk -F. '!a[$NF]++{print $NF}'
-
-find and execute command on files across files
-  $ find /media/seagate/media/ -name Thumbs.db -exec rm {} \; # delete files across folders
-  $ find ../ -type f \( -name "*.jpg" -o name "*.JPG" \) -exec rm {} \;
-  $ find ../ -type f -name "*.JPG" -exec rename s/JPG/jpg/ {} \;

@@ -1,0 +1,68 @@
+====== Michael Wrona notes ======
+
+youtube name: MicWro Engr
+
+Note that these videos contain theory learned from Michael's reading. \\
+He does not have any demonstrable hardware or software.
+
+==== Intro to Inertial Measurement Units (IMU) ====
+\https://youtu.be/LjeFZetmfYc?si=fNag0weh7Y1BTe6-
+
+Inertial Reference Frame \\
+Earth-Centered Inertial Frame, ECI Frame \\
+
+IMU = accelerometer + gyroscope + (optional) magnetometer
+
+===gyroscope===
+
+measures angular rotation rate in radians per second or degrees per second \\
+has bias and drift \\
+
+bias \\
+when the sensor is stationary, the measurement is non-zero.\\
+this means that the measurements are off-center. \\
+
+drift \\
+when we calculate the angles of the current orientation, 
+by looking at the measurements over time,
+the bias in those measurements leads to drift in the current position angles.
+
+summary: gyro bias causes gyro drift
+
+how to eliminate bias and drift: Extended Kalman Filter
+
+=== accelerometer ===
+
+measures linear acceleration in 3 axes: x,y,z
+
+four accelerations:  linear, gravity, coriolis, centripetal
+
+measured acceleration = linear and gravity - coriolis + centripetal
+
+coriolis and centripetal acceleration depend on earth's rotation, velocity, and position \\
+These are fine measurements relevant only to high-precision sensors.
+
+by looking at acceleration due to gravity, we can estimate roll and pitch \\ 
+roll, phi, φ \\
+pitch, theta, θ
+
+integrate acceleration to velocity \\
+integrate velocity to position \\
+
+accelerometer also has bias which leads to drift in velocity and position \\
+Extended Kalman Filter can be used to eliminate bias \\
+
+accelerometer also has noise, due to vibration \\
+Low-pass filter can be used to eliminate noise.
+
+Note: do NOT use a low-pass filter on gyroscope readings
+
+IMU grade and accuracy
+
+^ IMU grade      ^ acc bias   ^ gyr bias ^
+| unit           | g          | degr/hr  |
+| Marine & space | 1E-5       | .001     |
+| Aviation       | 3E-5       | .01      |
+| Tactical       | .001 - .01 | 1-100    |
+| Automotive     |  >.01      | >100     |
+ 

@@ -45,7 +45,7 @@
     * Multi-Variate Linear Regression
     * [[Non-Linear Regression]]
     * [[Logistic Regression]]
-  * [[Neural Net]]
+  * [[Neural Network]]
     * NN Variations
     * Deep Learning
 
@@ -53,7 +53,7 @@ Gil Strang's course 18.065
   * Linear Algebra (Matrix Math)
   * Statistics and Probability
   * Optimization (Calculus)
-  * Deep Learning (Neural Net)
+  * Deep Learning (Neural Network)
 
 project-based. no tests.  "that's how people learn"
 

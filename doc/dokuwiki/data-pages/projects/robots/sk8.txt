@@ -40,6 +40,232 @@ springs
 
 object detection
 
+{{ ::sk8_pad.png?400|}}
+
 pad angles
 
-{{ ::sk8_pad.png?400|}}
+===== sk8mini =====
+
+Adjust speed for helm, for deck slant
+  * Arrows rt left center
+  * Shift up down, go stop
+  * Calibrate
+
+Dorm room swarm motion capture
+https://m.youtube.com/watch?v=0ql20JKrscQ&pp=ygUYRXNwMzIgZHJvbmUgc3dhcm0gdmlzaW9u
+
+Diy drone
+https://th.aliexpress.com/item/32776829828.html?gatewayAdapt=glo2tha
+
+Pull-up resistor project
+https://m.youtube.com/shorts/y_QIEyC-uUk
+
+
+Calculate turning radius and use this to plot destination point to the right or left of the cone
+  * Max steering angle 27°
+  * wheelbase WB = 12.5cm
+  * Turning radius TR = WB/tan(a)
+  * TR = 125mm / tan(27)
+  * TR = 125mm / 0.509525449
+  * TR = 245mm
+
+Make chart of deck angle to rudder angle \\
+Find equation or interpolation \\
+Interpolate table of deck tilt to steering angle then check a deck tilt of half.
+  * Max deck tilt 18° 
+  * Max steering angle 27°
+
+^ resting helm angle ^ deck tilt ^ steering angle ^             ^ circumference ^
+|   0                |   0       |   0            |  amidships  |  
+|                    |   4.5     |   6.75         |  1/4        |
+|                    |   9       |  13.5          |  1/2        |
+|                    |  13.5     |  20.25         |  3/4        |
+|                    |  18       |  27            |  full       |
+ 
+steering angle = comparison of front and back wheels
+  * the pair of right wheels and the pair of left wheels will have the same angle 
+  * steering angle = rudder angle = wheel angle
+
+=== Throttle adjustment ===
+
+Develop direct ratio for rudder to right wheel throttle.
+  * Consider turning radius and circumference of each wheel.
+  * develop ratios for both right and left wheels
+  * In future, we might use two motors
+
+radius = 245mm
+circumference = 245 * pi = 769.7
+
+axle width = 
+right wheel TR 
+left wheel circumference
+
+speed differential for each wheel depending on deck tilt
+
+=== PID ===
+
+A type of controller.
+
+Develop PID for helm to rudder
+
+
+=== IMU ===
+
+Implement IMU on sk8 to get deck roll angle
+  * Digital motion processor (DMP), included on the mpu 6050.
+
+What is a DMP?
+  * gyros have Lots of fluctuation 
+  * even when sitting motionless on the floor
+  * Noise in the data
+  * Smoothing or Averaging
+  * Fusion algorithms: of data from multiple sensors: gyroscope and accelerometers
+
+Inertial navigation system
+
+Kalman filter
+
+When stationary, every object is experiencing 1G of downward Force.
+
+
+=== TODO ===
+
+make a map of yellow cones, center points
+
+x  cover motor with tape
+
+make another photo set
+
+write python code to:
+	find the wheels, center points
+	calc the centerpoint and angle of the sk8 (two choices)
+	weight target, centerpoint
+	calc the vector of the sk8, ie, change angle to vector (one choice)
+
+convert python code to c++ and install on awacs
+
+implement esp now to send coordinates from awacs to sk8
+ 
+write code on sk8 to plot course (taken from previously written python program)
+
+----------------------------
+
+write code to 
+	find yellow cones
+	make a list of coordinates
+	send changes from awacs to sk8
+
+find earlier python code for plotting course
+
+
+wheels black 0d0e06, threshhold 5
+
+cones yellow 
+bcb44f
+b7b159
+9b925b
+
+
+Azimuthal projection with minimum interruption \\
+https://en.m.wikipedia.org/wiki/Interruption_(map_projection)
+
+==== pilot ====
+
+Arduino IDE settings:
+  * Board: Arduino Nano ESP32
+  * Port: ttyACM0
+
+==== IMU ====
+
+
+MPU6050
+
+
+IMU AHRS
+
+[[Inertial Navigation System]]
+
+
+==== AWACS ====
+
+ESP32-CAM, by Espressif and AI Thinker \\
+Best source of info:  https://github.com/espressif/esp32-camera
+
+Arduino IDE settings:
+  * Board: AI Thinker ESP32-CAM
+  * Port: ttyUSB0
+
+Isolate minimal code to
+        - return Jason from url get
+        - set camera settings'
+        - return image from camera
+Is it possible to edit EXIF header?B
+
+3 lenses: 60, 120, 160 degrees fov wide
+
+photo folders:
+  * ~/sk8mini/awacs/photos/60/
+  * ~/sk8mini/awacs/photos/120/
+  * ~/sk8mini/awacs/photos/160/
+
+webapps/robots/robots/sk8mini/awacs/cam.ino
+  * empty setup() and loop() methods
+  * not used
+
+robots/sk8mini/awacs/example/CameraWebServer/CameraWebServer.ino
+  * modified to connect to wifi as access point
+    * connected as station: slow
+    * connected as access point: less slow
+  * implement webserver commands
+    * /index.html
+    * /capture
+    * :81/stream
+
+cam.py
+  * connect to the wifi
+  * call the webserver on the awacs
+  * use the esp32-cam "capture" command
+  * receive the returned image
+  * save it to hard disk
+
+two decisions:
+  * framesize
+  * lens
+    * fov
+    * distortion
+    * clarity
+    * color
+
+==== Lens Comparison ====
+
+=== ov2640 ===
+{{ ::projects:robots:a_ov2640_svga_8.jpg?400|}}
+original \\
+label: OV2640 \\
+fov: 60 degrees\\
+a_ov2640_svga_8.jpg \\
+~CLEAR~
+
+=== longlens ===
+{{ ::projects:robots:d_longlens_svga_8.jpg?400|}}
+label: DCX 2640 V2 \\
+fov: 120 degrees \\
+long lens \\
+maximum fish-eye type of distortion \\
+filename: d_longlens_svga_8.jpg \\
+~CLEAR~
+
+=== dcxv2 ===
+{{ ::projects:robots:b_dcxv2_svga_8.jpg?400|}}
+label: DCX 2640 V2 \\
+fov: 160 degrees \\
+filename: b_dcxv2_svga_8.jpg \\
+~CLEAR~
+
+=== dcv3r ===
+{{ ::projects:robots:c_dcv3r_svga_8.jpg?400|}}
+label: DC 2640 V3 R \\
+fov: 160 degrees \\
+filename: c_dcv3r_svga_8.jpg \\
+~CLEAR~
+

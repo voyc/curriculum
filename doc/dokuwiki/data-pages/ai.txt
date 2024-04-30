@@ -139,9 +139,13 @@ General intelligence\\
 
 ==== Applications ====
 There are three types of AI.
-  - Predicter
+  - Predictor
   - Optimizer
   - Classifier
+
+applications of predictor
+  - [[object detection]]
+
 
 self-driving cars\\
 recommendation engines\\

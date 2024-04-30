@@ -34,6 +34,7 @@
     * [[Humanity]]
     * [[Health Science]]
     * [[Global Geopolitics]]
+    * [[Murmuration]]
 
 **[[Mind]]**
     * [[Neurology]]
@@ -87,6 +88,7 @@
       * [[Developer Tools]]
       * [[Networking]]
       * [[Hacking]]
+      * [[Arduino]]
     * [[Math]]
     * [[Organic Machine Hybrid]]
     * [[AI]]

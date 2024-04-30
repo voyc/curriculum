@@ -1,0 +1,280 @@
+====== Inertial Navigation System (INS) ======
+
+spreadsheet of data:\\
+https://docs.google.com/spreadsheets/d/1SMg0OuFvwoGWqhNJKjKyEFaudhpbxwleUFlkU9-4UDw/edit?usp=sharing
+
+
+INS Intertial Navigation System - Sensors, processors, and software to estimate position.
+
+3D cartesian space - a cube, 3 dimensions: x,y,z
+
+A vehicle exists in 3D cartesian space.  It can be measured in three dimensions, such as width, height, and depth.
+
+The movement of a vehicle can also be measured in 3 dimensions: x, y, and z.
+
+
+  * The x-axis runs the length of the vehicle, from nose to tail.
+  * The y-axis runs from side to side, from wingtip to wingtip.
+  * The z-axis runs up and down, from the center of the earth on up.
+
+Motion sensors measure the movement of a vehicle along the three axes.
+
+  * accelerometer - measures linear motion along an axis.
+  * gyroscope - measures rotational motion around an axis.
+
+
+  * magnetometer - measures the strength of the magnetic fields operating on a vehicle. 
+  * barometer/altimeter - measures air pressure, which can be used to calculate altitude above sea level.
+
+
+=== Inertial Measurement Unit (IMU) ===
+
+A collection of 3 accelerometers and 3 gyroscopes.
+This device gives us six numbers: linear motion along each of the x,y,z axes, 
+and rotational motion around each of the x,y,z axes.
+This gives us the complete picture of inertial motion of the vehicle.
+
+
+It is not enough to measure motion.
+We also need to know our current position, or orientation, or attitude.
+
+Imagine we experienced an acceleration along the x-axis for two seconds.
+During that two seconds we went from standing still to moving upwards at 8 meters per second squared. 
+Now where are we 
+
+???? does the accelerometer measure acceleration or motion ?
+
+3 types of accelerometer: mems, piezo electric, piezo resistive
+https://youtu.be/To7JagpPDwY
+
+
+velocity vs acceleration
+
+per Steppe School youtubes:
+
+bias, aka offset, must be removed from each measurement
+  * accelerometer
+    * measures linear acceleration, not velocity
+    * unit: mg, 1g = 9.8 m/s2, 1mg = 1 thousandth of a g
+    * has bias, but not so critical as gyroscope and magnetometer 
+    * gravity is an acceleration of 1g or 1000mg.  This acceleration is always acting on the sensor.
+    * the upright and at-rest measurement should be x:0, y:0, z:1000.
+    * as the sensor is rotated the acceleration due to gravity is distributed among the x,y,z axes.
+  * gyroscope
+    * gyroscope measures angular velocity, not acceleration
+    * gyroscope unit: degrees per second
+    * at rest, gyroscope returns the bias
+    * by subtracting the bias from a readingd, the at rest measurement is x:0, y:0, z:1000
+    * calibration is done at rest for some seconds, the average of readings is the bias
+    * 20948 chip has "offset" registers that we can set with the 3 bias values, each divided by 4
+  * magnetometer
+    * no registers, so we must keep variables and do the subtraction from each measurement
+    * calibration is done during 3D rotation for some seconds
+    * ((max - min) / 2) should be zero, so the actual value during calibration is the bias
+    * in addition to the bias, we also have an adjustment for declination, to convert magnetic north to true north 
+
+localization = changing reference system from the body of the sensor to the earth
+  * sensor readings give data relative to the body, the vehicle
+  * ahrs values give data relative to the earth
+
+units:
+  * linear velocity: meters per second
+  * linear acceleration: meters per second squared
+  * angular velocity: degrees per second, radians per second
+  * angular acceleration: ?
+  * rotation velocity: hertz, cycles per second
+  * 10**-6  one millionth, μ, micro
+  * 10**-3  one thousandth, m, milli
+
+accelerometer and gyroscope measure motion
+we know that the z-axis is pointing straight up, but the x and y-axes are relative to some random or arbitrary starting point
+by adding a magnetometer, we can fix the x axis relative to north-south, and the y-axis relative to east-west
+
+the magnetometer measures the strength of magnetic fields acting on the sensor
+the most significant magnetic field is that of the earth
+
+naming absurdities: 
+  * IMU inertial measurement unit
+    * does not measure inertia. It's components measure accleration, velocity, and magnetic field strenth.
+    * is not a unit of measurement
+  * 6-axis imu or 9-axis imu.  There are only three axes: x,y,z.
+  * 6dof or 9dof.  A sensor does not have degrees of freedom.
+
+
+==== AHRS ====
+AHRS - Attitude and Heading Reference System - 
+
+Attitude - the orientation of a vehicle in cartesian space.  Pitch, roll, yaw.
+
+Heading - the direction a vehicle is facing, the x-axis, in compass degrees.
+
+Dead reckoning - estimate current position of a vehicle by keeping track of changes in speed and direction over time. 
+
+
+
+IMU
+Kalman Filter, a type of sensor fusion
+Low Pass Filter
+GPS - 1 meter accuracy at best, 3 meter average in position. No heading info. 
+Sensor Fusion 
+DMP
+
+RTK - two gps: base station plus rover, triangulate, to get position with 1 cm accuracy
+Compassing - two gps to get heading
+
+Odometer - wheel odometer
+Cameras
+Lidar 
+
+IMU - 3x3 sensors
+AHRS - use kalman filter to fuse sensor data and output roll, pitch, and yaw
+INS - add gps input and dead reckoning to the Kalman Filter, for position and heading
+
+Commercial company, explaining sensor types intermd of their product offering
+https://youtu.be/4CZQQ0VLCG8?si=CiCEKmKsOqWOa6bP
+
+Hideakitai library, esp32 + mpu9250 for heading output
+https://github.com/hideakitai/MPU9250
+
+9250 obsolete, replace with ICM-20948
+https://youtu.be/Oen3HqUbctM?si=3UnWGo-XOvs3ZwCZ
+
+video by very creepy guy using adafruit bno055, but no compass heading, source code on screen but not downloadable
+https://www.youtube.com/watch?v=uJVzkl73A74
+
+quaternion
+    4 numbers, 0 to 1, w,x,y,z
+
+euler angles
+    3 numbers, 0 to 360, x,y,z, pitch, roll, yaw
+    susceptible to gimbal lock at 90 degrees
+    over 45 degrees, not so smooth
+
+
+sparkfun 9dof imu
+https://learn.sparkfun.com/tutorials/sparkfun-9dof-imu-icm-20948-breakout-hookup-guide
+library for arduino
+https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary/archive/main.zip
+
+Kris Winer, see github examples for MPU9250
+
+In general, start search in github, as opposed to youtube or google.
+
+
+
+
+
+Magnetic-Declination.com
+
+Khon Kaen Khon Kaen
+Latitude: 16° 26' 48.2" N
+Longitude: 102° 49' 58.8" E
+BAN NONG WAENG
+Magnetic Declination: -1° 11'
+Declination is NEGATIVE (WEST)
+Inclination: 22° 20'
+Magnetic field strength: 43808.0 nT
+
+18.7966251, 98.9648206
+Declination: -1.11° Total Field: 44929.7 nT
+
+Magnetometer calibration
+hold the sensor level and spin it horizontally
+the graph of the results should be a perfect circle, and the radius of the circle is the strength of the magnetic field
+https://youtu.be/MinV5V1ioWg?si=Bh-e9aDgxxzKsm14
+
+Scott Lobdell, on AHRS calculations, specifically the Madgwick Quaternion Update
+start with 9 measurements from the 3 sensors * 3 axes
+calibrate the magnetometer using a 3D bias to get corrected values of the 3 magnetometer measurements
+begin ahrs
+localize the acceleration vector from [x,y,z] to [north,east,down]
+convert the 9 measurements into a quaternion
+convert the quaternion into a 3x3 rotation matrix
+multiply the acceleration vector times the inverse of the rotation matrix, giving the localized acceleration vector
+remove the acceleration due to gravity [0,0,1] to [0,0,0]
+apply the declination offset
+https://youtu.be/T9jXoG0QYIA?si=HjldywVEFu-QSfJp
+
+===== videos =====
+
+Paul McWhorter: 9-axis IMUs with Arduino, youtube \\
+Adafruit Bosch BNO055 \\
+26 videos, in particular: \\ 
+#10: Making a tilt-compensated compass \\
+#21: Visualizing 3D rotations in VPython using Quaternions \\
+
+Scott Lobdell: How to implement an IMU \\
+no specific chip or code \\
+hand-drawn diagrams and verbal description of calibration and AHRS calculations
+
+MicWro Engr, Michael Wrona: Magnetometer Errors and Calibration \\
+Adafruit Precision NXP 9-DOF Breakout Board - FXOS8700 + FXAS21002 \\
+series of youtubes made while developing his custom "Hummingbird" flight controller
+Magneto calibration software \\
+[[Michael Wrona notes | notes]]
+
+Steppe School: STM32 and ICM20948 IMU part 1. accelerator and gyroscope
+https://youtu.be/Oen3HqUbctM?si=SeUm8s62af9PdqDz
+3 videos
+
+===== Commercial Products =====
+
+Arduino-compatible, hobbyist IMU products from sparkfun, adafruit, polulu.
+
+=== MPU9250 ===
+chip: TDK Invensense MPU9250 \\
+date:  ? \\
+status: EOL as of 2018 (supposedly replaced by ICM20948) \\
+comments: users complain that this product is no longer being manufactured and the market is flooded with fakes that don't work. \\
+
+=== ICM20948 ===
+board: boards available from adafruit and sparkfun \\
+chip: TDK Invensense MPU9250 \\
+date: 2018 \\
+datasheet: https://invensense.tdk.com/wp-content/uploads/2024/03/DS-000189-ICM-20948-v1.6.pdf \\ 
+status: supposedly replaces MPU9250, but registers are different, therefore different driver required \\
+comment: users complain that the DMP is not finished. DMP output is not available in current libraries 
+videos:
+  * https://invensense.tdk.com/wp-content/uploads/2018/10/AN-000146-v2.0-TDK_Migration_MPU_9250toICM-20948.pdf
+  * see Paul McWhorter youtubes
+libraries:
+  * https://github.com/adafruit/Adafruit_ICM20X
+  * https://wolles-elektronikkiste.de/en/icm-20948-9-axis-sensor-part-i
+
+=== BNO055 ===
+board: Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout, BNO055 \\
+chip: Bosch Sensortec BNO055 \\
+date: 2014 \\
+status: "Not recommended for new designs...You could use BHI260AP...", (but that has no magnetometer). \\
+datasheet: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf \\
+components:
+  * Atmel SAM20D processor
+  * BMA280 accelerometer
+  * BMI055 gyroscope
+  * BMM150 magnetometer
+  * built-in fusion library, closed source:
+      * Euler angles
+      * quaternion
+      * modes: IMU, compass, M4G, NDOF
+libraries:
+  * https://www.arduinolibraries.info/libraries/adafruit-bno055
+videos:
+  * https://www.adafruit.com/product/2472
+  * video demo, no heading mentioned, euler and quat, quat more accurate, too slow for vehicle
+  * https://www.youtube.com/watch?v=EsgKAawwT9A&t=731s
+
+=== LIS3MDL ===
+board: Polulu #2862 MinIMU-9 v6 Gyro, Accelerometer, and Compass (LSM6DSO and LIS3MDL Carrier)
+chips:  ST LSM6DSO + LIS3MDL, two ST chips combined onto one Polulu board
+datasheets: 
+  * https://www.st.com/resource/en/datasheet/lsm6dso.pdf
+  * https://www.st.com/resource/en/datasheet/lis3mdl.pdf
+
+=== UM7-LT ===
+board: made by Redshift Labs, sold by Polulu
+chip: UM7
+description: 
+  * AHRS, includes microcontroller running a Kalman Filter
+  * expensive 160 USD
+  * Redshift Labs appears to be out of business
+

@@ -199,57 +199,98 @@ on any number of files in a background, GUI-less process.
 Blender Manual: Command-Line Options]]
 
 
-=====3D Modeling=====
-
-3D objects exist within the 3D world.
+===== 3D Modeling =====
 
 [[https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U&index=2
 | YouTube: Blender Guru: Blender Beginner Tutorial Part 1]]
 
-==== World ====
+==== Terms ====
 
-testline
+model - A collection of objects built within the world.
 
-=== View ===
+world vs object
+  * 3D objects exist within the 3D world.  
+  * There is one world, and multiple objects within that world.
+  * Objects are made of vertices, organized into edges and faces.
+  * A selection may refer to objects, vertices, edges or faces.
 
-Layout workspace, 3D viewport
+navigation vs transformation
+  * navigation applies to the world, or rather, to my view into the world
+  * transformation applies to an object or a selection
+  * both navigation and transformation occur along or around an axis
+  * there are three axes: x,y,z
+  * navigation does not change the world.  It only changes my view into that world.
+  * transformation actually changes the model.
 
+^ noun       ^ applies to ^ terms ^ changes what ^
+| navigation | world | pan, roll, orbit, zoom | my point of view |
+| transformation | object or selection | move, rotate, scale | the model |
 
-=== Navigate ===
+3D Viewport - The editor type we use to do 3D modeling.  Provides your view into the world.
+[[https://docs.blender.org/manual/en/latest/editors/3dview/index.html# | 3D Viewport]]
 
-navigate within the world
+gizmo - a UI device that allows navigation or transformation with the mouse.
+A gizmo always has three color-coded axes: X (red), Y (green), and Z (blue).
+[[https://docs.blender.org/manual/en/latest/editors/3dview/display/gizmo.html | Gizmo]] 
+  * Navigation Gizmo - applies to the world.  Found in upper-right of viewport.
+  * Transformation Gizmo - applies to object or selection.  Appears at the pivot point, aligned with the transform orientation.
 
-scroll wheel, mmb
-  * drag with scroll wheel down, orbit, rotate the view around the center point
-  * shift-drag scroll wheel, pan the view away from center
+pivot point - 
+  * for one object, or for a selection of objects, or in edit mode for a group of selected vertices
+  * determines the locaion of the "object gizmo", and thus is the center of transformations
+  * types:
+    * bounding box center
+    * median point
+    * center of mass
+    * center of geometry
+
+normal - the line perpendicular to a face.
+
+origin - 
+  * world origin - the point at world coordinates 0,0,0.  Constant.
+  * local origin - average center of all selected objects of vertices.
+  * object origin - local origin of a single selected object.  By default is the bounding box center of the object.  Can be moved by setting it to the 3D cursor.
+
+3D Cursor - a singleton object with location and rotation.  By default it is at the world origin.
+Set it using the toolbar or the Snap menu via left-click or shift-S.  The 3D Cursor has multiple purposes. 
+ It defines where newly added objects are placed.  It can be used to manually position and orient the transform gizmo.
+
+transform orientation - the orientation of the Object Gizmo.  Can be selected from the 3D Viewport Header menu.
+  * global - aligned with the world space
+  * local - aligned with the active object's orientation
+  * normal - fancy. normally equivalent to local.
+  * gimbal - fancy.  Involving Euler math.
+  * view - aligned with your viewpoint as you orbit.
+  * cursor - aligned with the 3D cursor.
+  * parent - aligned with the parent.
+
+rotation mode - fancy.  involving Euler math.
+
+Note: object origin vs pivot point vs transform gizmo
+  * A transformation requires a pivot point and a transform orientation.
+  * if a single object is selected, the pivot point is the object origin.  The object origin is by default the bounding box center, but it can be moved using the 3D cursor.
+  * If multiple objects or vertices are selected, the pivot point is at the average point of the selected objects.
+  * The transform orientation can be selected on the 3D viewport header, see above.
+  * The transform gizmo visualizes the pivot point and the transform orientation.
+
+==== How to navigate ====
+
+Views:
+  * orthographic (flat):  top, bottom, front, back, right, or left.
+  * perspective (having depth)
+
+To switch views:
+  * press tilde ~  and choose a menu option
+  * for hotkeys, set Preferences - Input - Emulate numpad.
+
+To navigate:
+  * use Navigation Gizmo, in upper-right corner, plus magnifying glass and hand.
+  * drag mmb to orbit.  View automatically switches to perspective.
+  * shift-drag mmb to pan. 
   * scroll wheel, zoom view in and out
+  * use Object Mode - View menu: pan, orbit, roll, zoom
 
-gizmo in upper-right corner also allows orbit and and pan 
-
-~ tilde key, emulate numpad
-  * View Selected, zoom into the active object
-
-User preferences:
-  * Emulate numpad on
-  * Select with left mouse button
-  * View3D - View 3D Global - map semicolon to view_selected
-
-Mouse:
-  * Left mouse button: select object (customized)
-  * Middle mouse button: orbit
-  * Shift + middle mouse: pan
-
-Numpad: 
-  * Numpad (emulation)
-  * Numpad ; focus on select object, view selected (customized)
-  * Numpad 7: top view
-  * Numpad 1: front view
-  * Numpad 3: side view
-  * Numpad 5: swap orthographic and perspective views
-
-==== Objects ====
-
-=== move active object ===
+==== How to transform an object ====
 
 t toolbar on the left, toggle on and off\\
 buttons to move, rotate, scale, all three
@@ -263,13 +304,13 @@ confine movement to an axis
   * x, y, z
   * click mmb
 
-=== add objects ===
+add an object
   * duplicate
   * shift a, add, add - mesh - primitives menu: cube, plane, cone, monkey, torus
 
 shift+A: add an object primitive
 
-=== render engine ===
+==== Render Engine ====
 
 Cycles - slow, ray-traced, unbiased, for high-end movies
 

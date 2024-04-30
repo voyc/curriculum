@@ -10,6 +10,13 @@ Linear algebra is central to geometry and to almost all areas of mathematics.
 Linear algebra is also used in most sciences and fields of engineering, 
 because it allows modeling many natural phenomena, and computing efficiently with such models.
 
+
+== Note ==
+linear - output is proportional to the input \\
+nonlinear - output is NOT proportional to the input \\
+chaotic - special case of nonlinear, where the model is sensitive to initial conditions
+
+
 == Linear Transformation ==
 
 == Eigen Values ==

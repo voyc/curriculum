@@ -36,3 +36,7 @@ What is a model?
 
 Inference Graph?
 
+[[YOLO]]
+
+Pose Estimation
+  - [[YOLO NAS POS]]

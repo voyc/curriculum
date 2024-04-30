@@ -11,6 +11,8 @@ Derivation (geometry) == Differentiation (calculus) == the process of finding th
 Derivative (geometry) == differential equation (calculus).\\
 Differential equations are equations involving derivatives.\\
 
+differentiable equation == a function whose derivative exists at each point in its domain.  It is smooth; it does not contain any break, angle or cusp.
+
 === Tangency ===
 The derivative is, in geometry, the slope of the tangent line of the function at the point of tangency.\\
 
